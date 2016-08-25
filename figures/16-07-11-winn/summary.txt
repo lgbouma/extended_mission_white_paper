@@ -1,0 +1,6 @@
+* The diffReports contain the yield from the primary, a I mag vs T_eff visualization,
+  a skymap visualization, and a pair-plot visualization of planet properties.
+
+* tables_vis is all bulk statistics compared
+
+* *_all.pdf are single-parameter distributions split across PS/FFI/both

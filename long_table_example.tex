@@ -1,0 +1,47 @@
+\documentclass{tufte-book}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\begin{document}
+
+\begin{table}[h]
+  \centering
+    \begin{tabular}{lcr}
+      \toprule
+      Heading & Style & Size \\
+      \midrule
+      Part & roman & {40} \\
+      Chapter & italic & {40} \\
+      Section & italic & {26} \\
+      Subsection & italic & {26} \\
+      Paragraph & italic & 10/14 \\
+      \bottomrule
+    \end{tabular}
+  \caption{Heading styles used in.}
+\end{table}
+
+Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here Foobar goes here 
+
+\begin{longtable}{lcccc}
+\caption{Verification methods.}\\
+\toprule
+Requirement id & Review of design & Analysis & Inspection & Test \\
+\toprule
+\endfirsthead
+\toprule
+Requirement id & Review of design & Analysis & Inspection & Test \\
+%\otoprule
+\endhead
+\bottomrule
+\endfoot
+One & * & & & \\
+\midrule
+Two & * & & & \\
+\midrule
+Three & * & & & \\
+\midrule
+Four & * & & & \\
+\end{longtable}
+
+\end{document}

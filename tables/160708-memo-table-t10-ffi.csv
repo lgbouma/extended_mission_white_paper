@@ -1,0 +1,13 @@
+property,nhemi-ffi,elong-ffi,eshort-ffi,npole-ffi,hemis14d-ffi,shemiAvoid-ffi
+N_uniqPlanets,1930,1730,1760,1780,1980,1920
+N_newPlanets,870,710,790,810,930,880
+N_pri,1070,1060,1070,1040,1050,1050
+N_newPlanets_Pgt20,130,100,120,120,160,120
+N_pri_Pgt20,90,90,90,80,90,90
+N_newPlanets_NEI,20,10,30,20,20,20
+N_pri_NEI,10,10,10,10,10,10
+N_sys_with_additional_planets,10,10,10,10,10,10
+N_atmospheres,140,130,160,80,180,180
+N_atmospheres_HZ,0,0,0,0,0,0
+N_atmospheres_primary,340,340,350,330,340,340
+N_atmospheres_primary_HZ,0,0,0,0,0,0

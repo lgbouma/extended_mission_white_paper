@@ -1,0 +1,46 @@
+\subsection{Summarized input assumptions to planet detection simulation}
+\label{sec:input_assumptions}
+%Garbage in, garbage out. Better to be clear about what's going in.
+\begin{itemize}
+	\item The TRILEGAL catalog (modified to match interferometric radii, as described in~\citetalias{Sullivan_2015}) is an accurate representation of the stellar neighborhood to $\lesssim2\text{kpc}$.
+	\item \tesss large pixel size ($21\times21''$) combined with crowding near the galactic disk will cause substantial source confusion and a large astrophysical false positive rate. We thus omit the 5\% of the sky closest to the galactic disk (see Fig.~\ref{fig:positions_pointings}), and focus on planet detection statistics for $R_p < 4R_\oplus$.
+	\item We know the radii and apparent magnitudes of TRILEGAL's synthetic stars, so we can prescribe a simple prioritization statistic (Eq.~\ref{eq:merit}) that we expect (but have not verified) maximizes the number of small planets we discover about bright stars\footnote{Although it is difficult to determine accurate photometric radii, we expect that by the time \tess launches \gaia will  provide accurate proper motions for the majority of \tess targets, allowing \tess to discriminate between red dwarfs and red giants for purposes of target prioritization.}.
+	\item The only `imperfection' in our (simulated) knowledge of a given host star's parameters is its apparent magnitude, which in reality could be dimmer than the value we use for prioritization owing to dilution from companion and background stars (whose presence will not be known a priori, but which we account for when computing `observed' SNRs).
+	\item Planet distributions derived from the \textit{Kepler} mission in \citet{fressin_false_2013} and~\citet{dressing_occurrence_2015} are accurate for the $P \lesssim 180\ \text{day}$ planets to which \tess is sensitive.
+	\item Multiple planet system distributions can approximated as repeated draws from the above distributions (with independent probability) with added impositions of co-planarity and orbital stability.
+	\item For our instrument and noise models, we assume:
+	\begin{itemize}
+		\item A point-spread function (PSF) derived from ray-tracing simulations, similar to that described in~\citetalias{Sullivan_2015}, Sec 6.1.
+		\item All stars are observed at the \textit{center} of the \tess CCDs. This ignores off-axis and chromatic aberrations within the \tess optics, and consequently ignores the angular dependence of the pixel response function (the fraction of light from a star that is collected by a given pixel). 
+		While~\citetalias{Sullivan_2015} took a different approach to this, we argue that the methodology used in that work was inconsistent (see appendix Sec.~\ref{sec:changes_from_S15}). Keeping a PSF that does not depend on observed stellar field angles is better suited to our goal of comparing extended mission pointings.
+		\item The time/frequency structure of all noise (except for stellar variability, see below) is `white'. 
+		This means that we ignore time-correlated instrumental effects such as spacecraft jitter, thermal fluctuations, and mechanical flexure, which will be addressed by the mission's data reduction pipeline.
+		\item The instruments work equally well in year 3 as in years 1 and 2.
+		\item Contributors to white noise include: CCD read noise, shot noise from stars, a systematic noise floor of 60 $\mathrm{ppm}\cdot\mathrm{hr}^{1/2}$, and zodiacal background. See Fig.~\ref{fig:noise_with_moon} for the relative contributions of these terms as a function of apparent magnitude.
+		\item Noise contributions from stellar intrinsic variability are identical to those described in~\citetalias{Sullivan_2015} Sec3.5, which uses variability statistics from the \textit{Kepler} data computed by~\citet{basri_comparison_2013}. 
+		Unlike all previously mentioned noise sources, we do not scale noise from stellar variability as $t_\mathrm{obs}^{-1/2}$, since the photon flux from stars may vary over time-scales similar to typical transit durations.
+		Instead, we assume the noise contribution from stellar variability is independent across transits, and thus scales as $N_\mathrm{tra}^{-1/2}$, for $N_\mathrm{tra}$ the number of observed transits.
+	\end{itemize}
+	\item For our detection model, we assume:
+	\begin{itemize}
+		\item A step-function detection threshold: for $\mathrm{SNR} \geq 7.3$, we rule transiting planets as detected, for $\mathrm{SNR} < 7.3$, they are not detected.
+		\item The top $2\times 10^5$ merit-ranked targets (Eq.~\ref{eq:merit}) are observed at two-minute cadence, and the next $3.8\times10^6$ stars are observed at thirty-minute cadence.
+		We use~\citetalias{Sullivan_2015} Sec. 6.8 approach to `blurring' transits with durations $\lesssim 1\mathrm{hr}$, so that for longer cadence images shorter transits get shallower depths and longer apparent durations.
+		As described in Sec.~\ref{sec:FFI_simulation}, we verify that under this assumption, our detections are complete for $R_p<4R_\oplus$, and incomplete for Jupiter-sized planets.
+		\item $\geq$ 2 transits for detection. No uncertainties in `derived' periods or in identifying which target stars are exhibiting the transit signals.
+	\end{itemize}
+	\item We do not have any knowledge of previous observations that may have been performed on our stars.
+	For instance, observing the ecliptic, we do not simulate the \tess-\ktwo overlap.
+	\item For Earth and Moon crossings, we assume we can drop a fixed number of orbits of observing time for the cameras that suffer most from the Earth, the Moon, or both being in \tesss camera fields. We summarize this effect in Table~\ref{tab:dropped_fields}. Although this ignores the time-correlated nature of the outages shown in Figs.~\ref{fig:earth_moon_primary} and~\ref{fig:earth_moon_elong}, it is sufficient for comparing detected planet yields across missions.
+	\item We can perfectly discriminate between astrophysical false positives (for instance background eclipsing binaries or hierarchical eclipsing binaries) and planet candidates.
+	\item We can compute SNR with effective signal $\delta_\text{eff} = \delta \times D$ for $\delta=(R_p/R_\star)^2$ the transit depth, and
+	\begin{equation}
+	D = \frac{\Gamma_N + \Gamma_T}{\Gamma_T} 
+	\end{equation}
+	where $D$ is the dilution factor of a target star with incident photon flux $\Gamma_T$ from the target star and incident photon flux $\Gamma_N$ from neighboring stars (e.g., on the sky background, or binary companions). 
+	
+	The noise is computed by creating a synthetic image for every host star with a planet that transits above a `pre-dilution' SNR threshold (this threshold is imposed for the sake of lowering our computational cost).
+	This $16\times16$ pixel image is of the number of photoelectrons \tess sees from the star and its companions/background stars at each pixel of each CCD. 
+	We produce it through our PRF model, which in turn requires the host star's $T_\mathrm{eff}$ and apparent $I_c$.
+	Over each image, the noise is computed for a range of possible aperture sizes about the brightest pixel (see~\citetalias{Sullivan_2015} Secs. 6.2 and 6.3), and then finally a single `noise' for each transit is selected by choosing the aperture size that minimizes the noise.
+\end{itemize}

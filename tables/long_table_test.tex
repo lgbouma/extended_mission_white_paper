@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fourier}
+\usepackage{booktabs}
+\usepackage{threeparttablex}
+\usepackage{longtable} 
+\usepackage{lscape} 
+
+\begin{document}
+\begin{landscape}
+\begin{ThreePartTable}
+  \begin{TableNotes}\footnotesize
+\item[a] Stochastic Programming.
+\item[b] Robust Optimization.
+\item [c] Fuzzy Programming.
+  \end{TableNotes}
+\begin{longtable}{*{16}{c}}
+
+\caption{A simple longtable example}\\
+\toprule
+    Study && \multicolumn{2}{c}{Flow} && \multicolumn{3}{c}{Uncertain Parameters} &&\multicolumn{5}{c}{Uncertainty Approach} &&
+         Key findings\\
+\cmidrule{3-4}
+\cmidrule{6-8}
+\cmidrule{10-14}
+    && Forward & Reverse
+    && Demand & Supply & Others
+        &&SP\tnote{a} & RO \tnote{b}& FP\tnote{c} & Sim & H-A
+        &&\\

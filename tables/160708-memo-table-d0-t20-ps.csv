@@ -1,0 +1,15 @@
+property,eshort-ps,nhemi-ps,npole-ps,hemis14d-ps,elong-ps,shemiAvoid-ps
+N_uniqPlanets,2193,2127,2312,2203,2191,2113
+N_newPlanets,468,494,611,597,554,487
+N_pri,1618,1628,1623,1606,1605,1613
+N_newPlanets_Pgt20,118,151,152,193,130,125
+N_pri_Pgt20,213,214,217,214,210,211
+N_newPlanets_NEI,98,111,106,144,102,105
+N_pri_NEI,214,215,215,214,217,210
+N_sys_with_additional_planets,58,69,54,91,39,58
+N_atmospheres,105,72,70,100,108,94
+N_atmospheres_HZ,13,12,5,18,10,14
+N_atmospheres_primary,422,429,427,421,427,426
+N_atmospheres_primary_HZ,26,31,27,28,27,26
+N_new_from_new_star,69,0,15,0,185,61
+N_new_from_SNR_boost,399,494,596,597,369,426

@@ -1,0 +1,99 @@
+\subsection{Broader science wants}
+\label{sec:broader_nonexo_science}
+Those which may or may not overlap with exoplanet science.
+
+\paragraph{Observing asteroseismic targets}
+\label{par:asteroseismic_disc}
+In stellar physics, asteroseismology can reveal the interior properties of stars and inform theories of stellar evolution;
+in exoplanet science, it can provide accurate estimates of stellar parameters such as mass, radius, and age (\citet{chaplin_asteroseismology_2013} give a broad review).
+Accurate stellar parameters mean accurate exoplanet parameters.
+Asteroseismic studies can also sometimes extract projected obliquities of exoplanet systems, as well as orbital eccentricities based on asteroseismic densities (see~\citet{huber_asteroseismology_2015} for an overview).
+
+Similar to \kepler\!, \tess will be able to detect solar-like oscillations for main sequence and red-giant stars.
+The \tess Asteroseismic Consortium (TASC) is compiling a list of asteroseismic targets that will be delivered to \tesss Payload Operations Center\footnote{The Payload Operations Center is a subset of the Science Operations Center, and is housed at MIT; the Science Operations Center also houses the Science Processing Operations Center. See \citet{jenkins_SPOC_2016} for a who-does-what in the \tess project.}
+The expected data allocation for these targets is $\sim\!1000$ stars at a cadence of $20$ seconds and $\sim\!10000$ at a cadence of $2$ minutes.
+Short-cadence observations are essential for realizing \tesss asteroseismic potential
+%the spectral power excess due to solar-like oscillations is roughly centered on a Gaussian envelope with a peak frequency $\nu_\mathrm{max}$ that scales as $gT_\mathrm{eff}^{-1/2}$, 
+since the relevant $p$-mode oscillation periods are of order minutes for main-sequence stars, and hours for giant stars.
+
+\citet{campante_asteroseismic_2016} (hereafter, \citetalias{campante_asteroseismic_2016}) estimate the signal-to-noise ratio of solar-like oscillations in the power spectra of plausible targets to predict \tesss asteroseismic yield.
+Considering the overlap of \tesss asteroseismic and transit sensitivities, they find that \tess should detect solar-like oscillations in a few dozen F dwarfs and subgiants that also have \tess\!-detected transiting planets.
+They also consider \tesss asteroseismic sensitivity with respect to the population of all known exoplanet-host stars found from transit and RV surveys.
+\tess will observe these targets at 2 minute cadence.
+For this latter sample, they predict detection of $p$-modes in over 300 solar type and red-giant planet-hosting stars -- a three-fold improvement in the asteroseismic yield of exoplanet-host stars compared to \kepler\!'s.
+
+Subgiants should be readily differentiated from similarly-colored M dwarfs following \gaia\!'s initial data releases~\citep{perryman_gaia_2002};
+ \citetalias{campante_asteroseismic_2016} thus also advocate for the inclusion of subgiants for purposes of studying asteroseismic oscillations, based on the estimate that $\mathcal{O}(2000)$ subgiants could have detectable asteroseismic modes.
+ %(Fig. 8 of~\citetalias{campante_asteroseismic_2016}).
+
+The relevance of all these points to extended \tess observations, as always, comes in the form of trade-offs.
+Firstly, the asteroseismic yield predictions estimated in~\citetalias{campante_asteroseismic_2016} are based on a test designed to resolve two important asteroseismic parameters: the frequency of the maximum oscillation amplitude $\nu_{\mathrm{max}}$ and the average splitting $\Delta \nu$ between neighboring overtones of the same spherical degree ($l$).
+These two parameters can be used to estimate stellar properties to $\lesssim 10\%$ precision, \textit{e.g.,}~\citep{aguirre_verifying_2012}, but multi-month datasets enable more precise and accurate measurements of the amplitudes and widths of oscillation-modes in main sequence stars.
+The extended mission trade-off for asteroseismology can be framed as quality \textit{vs.} quantity: observing a smaller area of sky for a longer duration as in \npole\ could enable more robust and varied asteroseismic detections.
+Repeating the primary mission as in \nhemi\ could enable a greater number of weaker detections in bright stars.
+Covering more sky would also enable access to a broader target sample, for instance including many young open clusters to perform ensemble asteroseismology~\citep{aerts_ensemble_2013}.
+% (for which the detection probability is greatly improved). 
+
+\begin{comment}
+\paragraph{Measuring rotation periods for a large sample of stars}
+Another reason to observing more rather than less sky is to enable measurements of rotation periods for the largest possible sample of stars.
+For instance~\citet{nielsen_rotation_2013} reported rotation periods derived from starspot variability for 12151 \kepler stars.
+Such studies (cf their introduction) are important for studies of stellar evolution and stellar dynamos.
+
+They also bear upon radial velocity searches for exoplanets, in which stellar activity can effectively `mask' planetary orbital periods commensurate with the stellar rotation period.
+The matters for prospects of detecting small planets in the habitable zones of M dwarfs~\citep{newton_HZ_2016}.
+
+THIS ALSO MATTERS FOR STELLAR ACTIVITY STUDIES.
+Long timescale characterization of stellar activity
+E.g. through spot detection, or other indicators of stellar magnetic activity.
+\end{comment}
+
+\paragraph{All-sky variable targets: pulsating stars, eruptive stars, cataclysmic variables, rotating variables, eclipsing binaries}
+\tess can obtain 0.01mag photometry over an hour's integration time for $I_c \lesssim 16$, and can achieve mmag photometry over the same binning for $I_c \lesssim 13$ (cf. Fig.~\ref{fig:noise_with_moon}).
+A cornucopia of variable sources can be observed at high precision with these magnitude thresholds.
+Uninterrupted, high quality \tess photometry for the brightest variable targets on the sky could provide new probes into the physical mechanisms of stellar pulsation phenomena, as well as improve the fidelity of standard candles.
+\citet{szabo_k2SEPWP_2013} give a compelling overview of the results that came from \keplers observations of dozens of RR Lyrae and a single Cepheid variable.
+The essential lesson: probing new regimes of precision brings about the discovery and explanation of new phenomena.
+The OGLE-III and IV campaigns have identified numerous variables stars in nearby galaxies as well as the in galactic bulge~\citep{soszynski_LMC_2009,soszynski_SMC_2010,soszynski_bulge_2011}.
+\tess could observe the brightest of these targets with photometry orders of magnitude more precise than has ever been done.
+\todo[inline]{really? could \tess see these? theyd be totally blurred over the fat pixels}
+We recommend specifically for the \tess team to solicit experts in the subfield of variable-star astronomy to contribute their knowledge of these targets for \tesss primary mission (perhaps in a working group; at least in Guest Observer proposals).
+
+Beyond periodic variables, \tess could observe cataclysmic variables.
+Likely the most interesting of this class of events would be observing the earliest stages of Type Ia supernovae (SNe).
+%A heavily discussed question across many sub-fields of astronomy concerns the physical origin of these standard candles.
+Type Ia SNe are almost certainly thermonuclear explosions of carbon-oxygen white dwarfs, but it is unclear whether their runaway is triggered through accretion of material from another white dwarf, or from a non-degenerate companion.
+Observations with \textit{Swift} have shown that at least some Ia SNe come from the non-degenerate companion case, but four supernovae observed with \kepler showed no signature of such companions~\citep{cao_swift_Ia_2015,olling_kepler_Ia_2015}.
+Observations with \tess could resolve the question: as noted in pp.43-45 of~\citet{science_definition_team_report_big_2016}, a dedicated search of \tesss full frame images could shift this subfield from having a few observational examples to a much larger population.
+This could provide inroads towards the decades-old SNe Ia progenitor question: ``what rate from each channel?''.
+
+Any of the proposed extended mission pointing strategies would enable a SNe Ia search, although they would need to be coupled with ground-based follow-up given the $\gtrsim 1$ month timescales of SNe.
+For purposes of observing variable stars, the same claim holds: any proposed pointing strategy would work.
+In all cases, we also note the `quality vs. quantity' trade-off: if the stars in a field are observed for longer (as in \npole), the light curves of any given star of interest will have more information in them.
+However, there will be fewer such stars compared to a scenario that covers more sky in a given year (\textit{e.g.}, \nhemi).
+Another practical point is that many of the best-characterized fields for variable-star astronomy, notably the MACHO and OGLE fields, are near the South Ecliptic Pole, which will also have a large overlap with LSST and \gaia\!.
+
+
+
+\paragraph{Solar system objects (TNOs, main belt asteroids)}
+The use of space-based photometers for solar-system observations is just being realized.
+\citet{szabo_mainbelt_2015} noted that it is possible to identify main belt asteroids and sometimes extract their shapes and rotation periods from \ktwo data.
+\citep{kiss_nereid_2016} applied a similar approach to \ktwo light curves and constrained the rotation period and asphericity of Nereid, Neptune's third-largest moon.
+These types of observations may be difficult to generalize for \tess because of its larger pixel size. 
+The chief relevance of main-belt asteroids to extended missions in particular is that any fields that observe close to the ecliptic plane will be contaminated by them (along with major planets, and zodiacal background light).
+Assuming that the event rates are similar to the $\sim\!1/2$ of targets that have at least one asteroid event over 90 days of \ktwo observing~\citep{szabo_mainbelt_2015}, \tesss photometric reduction pipelines will need to take these effects into account.
+
+\paragraph{Light curves from variable AGN}
+~\citet{edelson_agn_2013} have an algorithm to identify $\sim$4000 AGN candidates across the sky.
+Roughly $2\%$ of these candidates (80 of them) could be observed in the 1-year CVZ data from the primary mission.
+Any extended mission scenario will provide a reasonably-sized sample of them. %; therefore this particular observing program won't require any specific extended mission scenario.
+That said, \hemis\ would likely be the worst because of its 14-day window functions.
+
+
+
+
+\begin{comment}
+Kepler had a couple of these.
+They wouldn't argue for any specific field -- that paper is presenting a strategy to identify and gather light curves for dozens of AGN concurrent with the main observations of a repurposed Kepler mission.
+Blazars show optical `microvariability'; all-around these light curves are nuts.
+\end{comment}

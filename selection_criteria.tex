@@ -1,0 +1,93 @@
+\subsection{Selecting target stars (and full frame images)}
+\label{sec:selection_criteria}
+In the actual mission, \tesss short cadence (2 min) targets will be drawn from a subset of the \tic. 
+The prioritization statistic that the mission will use in this selection has yet to be explicitly defined.
+
+Regardless, we know that for \tess to detect small transiting planets it should observe stars that are small and bright.
+For this work, we define a simple statistic, \texttt{Merit}, proportional to the SNR we should expect from an arbitrarily sized planet orbiting any star:
+\begin{align}
+\texttt{Merit} &\equiv 
+	\frac{1/R_\star^2}{\sigma_\text{1-hr}(I_c)/\sqrt{N_\text{obs}}}\ ,
+\label{eq:merit}
+\end{align}
+where $R_\star$ is the radius of the star in question, $\sigma_\text{1-hr}$ is the relative precision in flux measurements over one hour of integration time, taken from an empirical fit to Fig~\ref{fig:noise_with_moon}, $I_c$ is the Cousins band $I$ magnitude \tess observes for the star (or more precisely, the star system) and $N_\text{obs}$ is the number of observations the star receives over the course of the mission.
+For multiple systems, we use the radius of the planet host for $R_\star$, and the combined flux from all companion stars to compute the system's $I_c$ magnitude.
+
+We evaluate \texttt{Merit} for all the star systems in our modified TRILEGAL catalog, and then choose the best $2\times10^5$ as target stars to be observed at 2 minute cadence.
+Target stars selected in this manner are shown in Fig.~\ref{fig:positions_pointings}.
+We take the next-best $3.8\times10^6$ stars and observe them at 30 minute cadence to simulate full frame image detections.
+This statistic is simpler than the procedure outlined in Section 6.7 of~\citetalias{Sullivan_2015} and it produces a nearly identical population of target stars (shown in Fig~\ref{fig:fig17_replica}).
+Our approach for full frame image simulation is different from that of~\citetalias{Sullivan_2015}, and we justify it further below.
+
+This statistic also generalizes to extended missions.
+Over an entire mission, the total number of observations a star receives is the sum of its observations in the primary and extended missions: $N_\text{obs}=N_\text{primary}+N_\text{extended}$.
+Our selection criterion then remains identical, with the added condition that if $N_\text{extended}=0$ for a given star, then we do not select that star as a target star for the extended mission.
+\begin{figure*}[!t] %[!thb]
+	\centering
+	\includegraphics{figures/positions_pointings_kepler.pdf}
+	%\missingfigure{foobar}	
+	\caption{Selected target stars in the primary mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
+	\label{fig:positions_pointings}
+\end{figure*}
+\begin{figure}[!th] %[!thb]
+	\centering
+	\includegraphics{figures/fig17_replica.pdf}
+	\label{fig:fig17_replica}
+	\caption{Replica of Figure 17 from~\protect\citetalias{Sullivan_2015}. Target stars are selected as the best $2\times10^5$ stars according to $\texttt{Merit}\equiv \sqrt{N_\text{obs}}(1/R_\star^2)/\sigma_\text{1-hr}(I_c)$. 
+	The top subplot shows 1 in 10 stars. This simple model could inform the target selection to be performed on the \tic. 
+	
+	The lower histogram is bimodal, selecting heavily for M dwarfs, and selecting more F and G dwarfs than K dwarfs. This shape arises from the combined $1/R_\star^2$ and $1/\sigma_\text{1-hr}(I_c)$ weights: the fact that the minimum falls around K dwarfs occurs because of both a Malmquist bias (there are more F than K stars of comparable brightness in our catalog from which to select) as well as a corresponding dip in the TRILEGAL (\& observed) $V$-band luminosity functions (see~\citetalias{Sullivan_2015} Figure 5). 
+	% N.b. Winn showed this bias ANALYTICALLY in the searchable stars memo (he showed there are ~4* more stars e.g. in 0.75<R/Rsun<0.85 than 0.5<R/Rsun<0.6)
+	
+	Outliers visible in the upper scatterplot are non-physical, possibly artifacts from~\citetalias{Sullivan_2015}'s Padova-to-Dartmouth interpolation as they tend to have greater masses than all other stars on the main sequence. They are less than $1\%$ of the target stars, so we ignore them in order to proceed.
+	%Outliers in the upper scatterplot are almost certainly non-physical, but are less than 1\% of the catalog. Call it `sloppy' but I can show you a bunch of plots that make me think this is~\citet{Sullivan_2015}'s Padova-Dartmouth replacement scheme gone awry. Maybe it was bad interpolation.
+	%\todo[inline]{reword snarky paragraph}
+	% Q: could these just be in the CVZs? A: no. A much larger proportion are actually close to the ecliptic, which suggests a bias that I don't understand. An above-average fraction are in binary systems, but I don't have easy access to the binary companions.
+	% Well, what are they? I think it might have something to do with the weird, likely non-physical (perhaps imposed by Peter's mass/radius fiddling) split you see in the Fig16 replica that you're not showing here.
+	% Why? See our replica of Fig4, showing the nasty things that happen with EB radii + different radius / luminosity tracks being all mixed together!!
+	% This would be important to address if it were the main focus.
+	% Even though it looks ugly it's only ~700 stars. This means it's a ~1 % effect. Consequently, I'm fine with ignoring it.
+	}
+\end{figure}
+\begin{marginfigure}[0in]
+	\includegraphics{figures/fig17_radius_on_x.pdf}
+	\label{fig:fig17_radius_on_x}
+	\caption{Same as Fig.~\protect\ref{fig:fig17_replica}, but as a function of stellar radius. $1/R_\star^2$ selection weight clearly visible, along with the same outliers.
+	}
+\end{marginfigure}
+
+\paragraph{Alternative prioritization approaches:}
+The procedure of simply applying Eq.~\ref{eq:merit} attempts to select a stellar sample that will yield the most small transiting planets around the brightest stars.
+An alternative approach would be to select stars that will give the most relative benefit in 2 minute postage stamps over 30 minute cadence observations.
+This `relative benefit' could be a function of improved transit detectability, or perhaps improved capacity to resolve ingresses and egresses.
+
+For transit detectability, the difference between 2 and 30 minute cadence matters most for short transit durations -- in other words for small stars, and for close-in planets.
+Switching to this alternative approach would consequently bias us even more strongly towards selecting M dwarfs.
+We already select almost every M dwarf with $I_c < 14$. 
+Referencing~\citet{winn_searchable_2013}, these are M dwarfs for which we can only detect $R_p > 2R_\oplus$ planets.
+The limiting $I_c$ magnitude for detecting $R_p > 4R_\oplus$ planets with \tess is $\sim 16$, which is where we see the dimmest stars in Fig.~\ref{fig:fig17_replica}.
+
+Additionally, the procedure of applying Eq.~\ref{eq:merit} and assuming that it will maximize the number of small planets that \tess will detect about bright stars ignores the functional dependence of planet occurrence rates on stellar properties.
+A more robust approach might be to take that probability into account, as in~\citet{kipping_transit_2016}.
+
+%\todo[inline]{make below paragraph less casual}
+%As far as improving our ability to resolve ingresses and egresses (\textit{valuable scientific information for many reasons! Should read Winn ch of Exoplanet text for this}), we can only resolve these for a small fraction (what fraction?) of stars in our initial primary mission regardless.
+%This extra information would be highly valuable, but for purposes of comparing extended missions (the point of this report), we neglect it and get on with out 
+
+\paragraph{Alternative prioritization approaches in extended missions:}
+Our \texttt{Merit} statistic also neglects the option of an extended mission which only observes stars with known planets or planet candidates (\tesss objects of interest, or those from other transit and RV surveys) at short cadence.
+This approach would free up a considerable portion of \tesss data mass for full frame images at \textit{e.g.}, 15 minutes rather than the current nominal 30 minutes.
+
+\paragraph{Approach to full-frame images:}
+\label{sec:FFI_simulation}
+To make simulating the full frame image detections computationally tractable, instead of considering every potentially transiting object about each of the $\sim 1.6\times10^8$ stars in our synthetic catalog (as~\citetalias{Sullivan_2015} did), most of which are too dim or too large for \tess to detect a $R_p < 4R_\oplus$ transiting planet about, we only simulate full frame image detections for the $3.8\times10^6$ next-highest \texttt{Merit} stars, after the $2\times10^5$ highest \texttt{Merit} stars observed as `postage stamps'.
+This number ($3.8\times10^6$) was initially estimated based on the number of searchable stars about which we expect \tess to be able to detect sub-Neptune radius planets~\citep{winn_searchable_2013}.
+The detection process is then identical to that for postage stamps, except with 30 minute instead of 2 minute exposures, which will extend the effective durations and shrink the apparent depths for transits with durations of $\lesssim$1 hour.
+To ensure that $3.8\times10^6$ stars is sufficient to include all stars about which \tess might detect sub-Neptune radius planets, we repeated this process for the primary mission using $5.8\times10^6$, $9.8\times10^6$ and $19.8\times10^6$ `full frame image' stars, and confirmed that there was no significant difference in the planet yields at $R_p\le4R_\oplus$ between any of the cases. %see ext_sim_notes/160817_on_the_FFI_assumtion. (10 Monte Carlo realizations each)
+There are still many stars that are dimmer or larger for which \tess detects planets with $R_p>4R_\oplus$.
+Increasing the number of FFI stars, the runs yield increasing numbers of giant planets (particularly near the galactic disk, where contamination is also highest).
+We argue that knowledge that there will be thousands of giant planet candidates is a sufficient level of accuracy, and focus our attention on $R_p<4R_\oplus$.
+
+%In summary, the targets we `observe' in full frame images are complete for detecting $R_p<4R_\oplus$ planets, and incomplete for planets above this radius. 
+%However, the majority of with planets of $\sim$Jupiter radius at $P\lesssim10$ days that \tess can detect are near the galactic disk, where source confusion may impede robust detection. 
+%Given this complexity, and \tesss priority of detecting small planets, we neglect analysis of $R_p>4R\oplus$ detections in full frame images for the remainder of this work, opting instead to focus on detections of planets with radii less than that of Neptune.
