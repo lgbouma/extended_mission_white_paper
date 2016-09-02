@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {3.3}Metrics by which we compare pointing strategies}{12}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Description of planet detection model}{14}{subsection.3.4}
 \contentsline {paragraph}{Background on synthetic catalogs:}{14}{paragraph*.6}
-\contentsline {paragraph}{Detection process:}{15}{paragraph*.7}
+\contentsline {paragraph}{Detection process:}{14}{paragraph*.7}
 \contentsline {paragraph}{Assumptions of SNR calculation:}{15}{paragraph*.8}
 \contentsline {subsection}{\numberline {3.5}Selecting target stars (and full frame images)}{15}{subsection.3.5}
 \contentsline {paragraph}{Alternative prioritization approaches:}{19}{paragraph*.9}
