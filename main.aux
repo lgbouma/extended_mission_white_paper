@@ -78,8 +78,8 @@
 \newlabel{sec:planet_detection_model}{{3.4}{14}{Description of planet detection model}{subsection.3.4}{}}
 \newlabel{sec:planet_detection_model@cref}{{[subsection][4][3]3.4}{14}}
 \@writefile{toc}{\contentsline {paragraph}{Background on synthetic catalogs:}{14}{paragraph*.6}}
+\@writefile{toc}{\contentsline {paragraph}{Detection process:}{14}{paragraph*.7}}
 \citation{Sullivan_2015}
-\@writefile{toc}{\contentsline {paragraph}{Detection process:}{15}{paragraph*.7}}
 \@writefile{toc}{\contentsline {paragraph}{Assumptions of SNR calculation:}{15}{paragraph*.8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Selecting target stars (and full frame images)}{15}{subsection.3.5}}
 \newlabel{sec:selection_criteria}{{3.5}{15}{Selecting target stars (and full frame images)}{subsection.3.5}{}}
@@ -233,7 +233,7 @@
 \citation{charbonneau_gj1214b_2009}
 \newlabel{eq:atmosphere_Deming}{{{3}}{39}{Comparing planet yields from all extended missions based on new planet detection metrics}{Item.12}{}}
 \@writefile{tdo}{\contentsline {todo}{Is this NIRISS SOSS mode? Why would you use V band and not like... I, or something redder like K?}{39}{section*.15}}
-\pgfsyspdfmark {pgfid1}{15336734}{27399004}
+\pgfsyspdfmark {pgfid1}{15336734}{26481500}
 \newpmemlabel{^_16}{39}
 \@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces  Scatter plot showing the SNR in transmission of detected planets with $R_p<4R_\oplus $ from one Monte Carlo realization of all 3 years of the \texttt  {nhemi}\ scenario. The SNR is computed from Eq.~\ref {eq:atmosphere_Deming}. Planets above the horizontal black line ($\mathrm  {SNR_{planet}/SNR_{GJ\ 1214b}} = 0.5$) are counted for Fig.~\ref {fig:yield_results}'s metric of planets with `good' atmospheres for transmission spectroscopy. GJ 1214b is marked with a star. The coloring of planets indicates their relative insolation, as well as whether they fall our ad-hoc habitable zone ($0.2<S/S_\oplus <2)$. }}{40}{figure.20}}
 \newlabel{fig:atmosphere_scatter}{{20}{40}{Comparing planet yields from all extended missions based on new planet detection metrics}{figure.20}{}}
@@ -241,6 +241,7 @@
 \@writefile{toc}{\contentsline {paragraph}{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}{41}{paragraph*.16}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}On the brightness of detected stars.}{41}{subsection.4.4}}
 \newpmemlabel{^_17}{41}
+\citation{gangestad_high_2013}
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Histogram of apparent $I_c$ magnitude of host star for newly detected $R_p<4R_\oplus $ planets from all extended mission scenarios, for \textit  {top:} postage stamp detections, \textit  {middle:} full frame image detections, \textit  {bottom:} the sums thereof. While \texttt  {npole}\ does well by most metrics, a larger proportion of the new planets it detects orbit dim stars compared to alternatives like \texttt  {hemis14d}\ or \texttt  {shemiAvoid}.}}{42}{figure.21}}
 \newlabel{fig:icmag_meta}{{21}{42}{On the brightness of detected stars}{figure.21}{}}
 \newlabel{fig:icmag_meta@cref}{{[figure][21][]21}{42}}
@@ -248,37 +249,149 @@
 \newlabel{tab:icmag_meta}{{2}{42}{On the brightness of detected stars}{table.2}{}}
 \newlabel{tab:icmag_meta@cref}{{[table][2][]2}{42}}
 \newpmemlabel{^_18}{42}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Broader science beyond exoplanet detection statistics}{42}{section.5}}
-\newlabel{sec:broader_science_beyond_planet_detection_stats}{{5}{42}{Broader science beyond exoplanet detection statistics}{section.5}{}}
-\newlabel{sec:broader_science_beyond_planet_detection_stats@cref}{{[section][5][]5}{42}}
-\citation{lyons_practical_1991}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Broader exoplanet science}{43}{subsection.5.1}}
-\newlabel{sec:broader_exoplanet_science}{{5.1}{43}{Broader exoplanet science}{subsection.5.1}{}}
-\newlabel{sec:broader_exoplanet_science@cref}{{[subsection][1][5]5.1}{43}}
-\@writefile{toc}{\contentsline {paragraph}{Ephemeris times: analytic motivation}{43}{paragraph*.17}}
-\newlabel{sec:ephemeris_timing_analytic}{{5.1}{43}{Ephemeris times: analytic motivation}{paragraph*.17}{}}
-\newlabel{sec:ephemeris_timing_analytic@cref}{{[subsection][1][5]5.1}{43}}
-\citation{price_transit_2014}
-\citation{price_transit_2014}
-\citation{carter_analytic_2008}
-\@writefile{toc}{\contentsline {paragraph}{Ephemeris times: numerics}{44}{paragraph*.18}}
-\newlabel{eq:price_rogers}{{7}{44}{Ephemeris times: numerics}{equation.5.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion of risks and opportunities}{42}{section.5}}
+\newlabel{sec:risks_opps}{{5}{42}{Discussion of risks and opportunities}{section.5}{}}
+\newlabel{sec:risks_opps@cref}{{[section][5][]5}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Opportunities}{43}{subsection.5.1}}
+\@writefile{toc}{\contentsline {paragraph}{What's best on a $>1$ year horizon for planet detections?}{43}{paragraph*.17}}
+\citation{jenkins_SPOC_2016}
+\@writefile{tdo}{\contentsline {todo}{did kepler actually reach this regime? ask J Rowe? maybe want same plot, colored by kep mag too? this \& above paragraph maybe cut...}{44}{section*.18}}
+\pgfsyspdfmark {pgfid2}{14943518}{34022557}
 \newpmemlabel{^_19}{44}
-\newpmemlabel{^_20}{44}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Uncertainty of mid-transit time on a single transit, $\sigma _{t_c}$, for all detected $R_p<4R_\oplus $ planets from the primary mission as computed from Eq.~\ref {eq:price_rogers}. Solid lines are medians, dashed lines are 25$^\mathrm  {th}$ and 75$^\mathrm  {th}$ percentiles. }}{45}{figure.22}}
-\newlabel{fig:uncertainty_tc_hist}{{22}{45}{Ephemeris times: numerics}{figure.22}{}}
-\newlabel{fig:uncertainty_tc_hist@cref}{{[figure][22][]22}{45}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces  Observed mid-transit times (dots) and best fits to a linear ephemeris (lines). The dotted lines fit 4 data points from a nominal planet. `SE' is the standard error on the slope which multiplied by 1.96 (rounded to 2 in the legend) gives a 95\% confidence interval by subtracting blue and orange lines. }}{45}{figure.23}}
-\newlabel{fig:lowering_uncertainty_tc}{{23}{45}{Ephemeris times: numerics}{figure.23}{}}
-\newlabel{fig:lowering_uncertainty_tc@cref}{{[figure][23][]23}{45}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \textit  {Top row}: histogram of 95\% confidence intervals 2 (\textit  {left}) and 4 (\textit  {right}) years following the first detected transit in the primary mission. 20 minute bins. \textit  {Bottom row}: histogram of 95\% confidence intervals 2 (\textit  {left}) and 4 (\textit  {right}) years following the first detected transit in the primary mission, but with an additional data point added to the analog of Fig.~\ref {fig:lowering_uncertainty_tc} one year after the transit in the initial time series (5 minute bins). Note that the top row's timescale is an order of magnitude more than the bottom row. Solid lines are medians, dashed lines are 25$^\mathrm  {th}$ and 75$^\mathrm  {th}$ percentiles. }}{46}{figure.24}}
-\newlabel{fig:conf_interval_gets_better}{{24}{46}{Ephemeris times: numerics}{figure.24}{}}
-\newlabel{fig:conf_interval_gets_better@cref}{{[figure][24][]24}{46}}
-\newpmemlabel{^_21}{46}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces  Did {\it  Kepler} reach the point of diminishing returns? The first catalog went up to KOI number 1000. Q6 took us to 2000, Q8 to 2800, Q12 to 4200, Q16 to 5500, and Q17 (DR24) to 7000. The pipelines changed in these times (Q6 pipeline method for single pass detections, multis from BLS, Q8 switch to multiple-pass wavelet, Q12 to community disposition, Q16 to automating disptions, Q17 to robovetting and deep EBs)}}{44}{figure.22}}
+\newlabel{fig:kepler_diminishing}{{22}{44}{What's best on a $>1$ year horizon for planet detections?}{figure.22}{}}
+\newlabel{fig:kepler_diminishing@cref}{{[figure][22][]22}{44}}
+\@writefile{toc}{\contentsline {paragraph}{Ability to upgrade cadence of targets detected in long-cadence images}{44}{paragraph*.19}}
+\@writefile{tdo}{\contentsline {todo}{so they're not doing ANY planet candidates?}{45}{section*.20}}
+\pgfsyspdfmark {pgfid3}{14943518}{34854373}
+\@writefile{toc}{\contentsline {paragraph}{Modify the cadence for full frame images and target stars; modify allocation of data mass between them.}{45}{paragraph*.21}}
+\citation{stevenson_communityJWST_2016}
+\@writefile{toc}{\contentsline {paragraph}{Follow-up for {\it  TESS} :}{46}{paragraph*.22}}
+\gdef \LT@i {\LT@entry 
+    {1}{63.17036pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{43.87001pt}}
+\gdef \LT@ii {\LT@entry 
+    {1}{63.17036pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{43.87001pt}}
+\gdef \LT@iii {\LT@entry 
+    {1}{63.17036pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{52.75482pt}\LT@entry 
+    {1}{43.87001pt}}
+\citation{gillon_trappist1_2016,barstow_trappist_2016}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{Newly detected sub-Neptune radius planets. $|\beta |>85^\circ $ can be observed all year by {\it  JWST} \tmspace  -\thinmuskip {.1667em}; $|\beta |>80^\circ $ can be observed for $\ge $ two-thirds of the year, $|\beta |>30^\circ $ for $\ge $ one-third.}}{47}{table.3}}
+\newlabel{tab:jwst0}{{3}{47}{Newly detected sub-Neptune radius planets. $|\beta |>85^\circ $ can be observed all year by \jwst \!; $|\beta |>80^\circ $ can be observed for $\ge $ two-thirds of the year, $|\beta |>30^\circ $ for $\ge $ one-third}{table.3}{}}
+\newlabel{tab:jwst0@cref}{{[table][3][]3}{47}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{$R_p>4R_\oplus $ and $\mathrm  {SNR_{atm}>SNR_{GJ\ 1214b}/2}$.}}{47}{table.4}}
+\newlabel{tab:jwst1}{{4}{47}{$R_p>4R_\oplus $ and $\mathrm {SNR_{atm}>SNR_{GJ\ 1214b}/2}$}{table.4}{}}
+\newlabel{tab:jwst1@cref}{{[table][4][]4}{47}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{$R_p>4R_\oplus $ and $\mathrm  {SNR_{atm}>SNR_{GJ\ 1214b}/5}$.}}{47}{table.5}}
+\newlabel{tab:jwst2}{{5}{47}{$R_p>4R_\oplus $ and $\mathrm {SNR_{atm}>SNR_{GJ\ 1214b}/5}$}{table.5}{}}
+\newlabel{tab:jwst2@cref}{{[table][5][]5}{47}}
+\citation{beichman_observations_2014}
+\citation{berta_cheops_2016}
+\citation{gaudi_prospects_2007}
+\citation{udalski_ogle0_2003,udalski_ogle1_2003}
+\citation{bakos_HAT_2004}
+\citation{alonso_tres1_2004}
+\citation{mccullough_xo_2005}
+\citation{pollacco_wasp_2006}
+\citation{pepper_KELT_2007}
+\citation{irwin_mearth_2008}
+\citation{jehin_trappist_2011}
+\citation{alsubai_qatar_2014}
+\citation{sozzetti_apache_2013}
+\citation{gillon_speculoos_2013}
+\citation{wheatley_ngts_2013}
+\citation{hellier_wasp47_2012,neveu-vanmalle_HJrelatives_2016,becker_wasp47_2015,dai_doppler_2015}
+\@writefile{toc}{\contentsline {paragraph}{TESS as a follow-up mission}{49}{paragraph*.23}}
+\newlabel{par:TESS_as_followup}{{5.1}{49}{TESS as a follow-up mission}{paragraph*.23}{}}
+\newlabel{par:TESS_as_followup@cref}{{[subsection][1][5]5.1}{49}}
+\citation{wang_longP_2015,uehara_transiting_2016,foreman_mackey_longP_2016}
+\citation{sullivan_KOIs_2013}
+\citation{sullivan_KOIs_2013}
+\citation{millholland_detection_2016}
+\citation{howell_k2_2014,crossfield_197_2016}
+\citation{foreman-mackey_k2_2015,vanderburg_234_2016,crossfield_197_2016}
+\citation{huber_epic_2016}
+\citation{osborn_single_2016}
+\citation{auvergne_corot_2009}
+\citation{walker_most_2003}
+\citation{deleuil_exo-dat_2009}
+\citation{donahue_senior_2016}
+\@writefile{toc}{\contentsline {paragraph}{Guest Investigator program}{52}{paragraph*.24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Risks}{52}{subsection.5.2}}
+\newlabel{sec:risks}{{5.2}{52}{Risks}{subsection.5.2}{}}
+\newlabel{sec:risks@cref}{{[subsection][2][5]5.2}{52}}
+\@writefile{toc}{\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{52}{paragraph*.25}}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{winn_searchable_2013}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{Sullivan_2015}
+\citation{sharma_galaxia_2011}
+\citation{robin2003synthetic}
+\citation{winn_searchable_2013}
+\citation{Sullivan_2015}
+\@writefile{toc}{\contentsline {paragraph}{Miscellaneous risks}{55}{paragraph*.26}}
+\citation{ricker_transiting_2014}
+\citation{donahue_senior_2016}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Concluding remarks and recommendations}{56}{section.6}}
+\newlabel{sec:conclusions}{{6}{56}{Concluding remarks and recommendations}{section.6}{}}
+\newlabel{sec:conclusions@cref}{{[section][6][]6}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Recommendations}{56}{subsection.6.1}}
+\newlabel{sec:recommendations}{{6.1}{56}{Recommendations}{subsection.6.1}{}}
+\newlabel{sec:recommendations@cref}{{[subsection][1][6]6.1}{56}}
+\citation{hunter_matplotlib_2007}
+\citation{walt_numpy_2011}
+\citation{jones_scipy_2001}
+\citation{acton_SPICE_1996}
+\citation{landsman_idl_1995}
+\citation{lyons_practical_1991}
+\@writefile{toc}{\contentsline {section}{Appendices}{59}{section*.27}}
+\@writefile{toc}{\cftpagenumberson  {section}}
+\@writefile{toc}{\contentsline {section}{Appendix \numberline {A}Broader science beyond exoplanet detection statistics}{59}{Appendix.1.A}}
+\newlabel{sec:broader_science_beyond_planet_detection_stats}{{A}{59}{Broader science beyond exoplanet detection statistics}{Appendix.1.A}{}}
+\newlabel{sec:broader_science_beyond_planet_detection_stats@cref}{{[section][1][]A}{59}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Broader exoplanet science}{59}{subsection.1.A.1}}
+\newlabel{sec:broader_exoplanet_science}{{A.1}{59}{Broader exoplanet science}{subsection.1.A.1}{}}
+\newlabel{sec:broader_exoplanet_science@cref}{{[subsection][1][1]A.1}{59}}
+\@writefile{toc}{\contentsline {paragraph}{Ephemeris times: analytic motivation}{59}{paragraph*.28}}
+\newlabel{sec:ephemeris_timing_analytic}{{A.1}{59}{Ephemeris times: analytic motivation}{paragraph*.28}{}}
+\newlabel{sec:ephemeris_timing_analytic@cref}{{[subsection][1][1]A.1}{59}}
+\citation{price_transit_2014}
+\citation{price_transit_2014}
+\@writefile{toc}{\contentsline {paragraph}{Ephemeris times: numerics}{60}{paragraph*.29}}
+\citation{carter_analytic_2008}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Uncertainty of mid-transit time on a single transit, $\sigma _{t_c}$, for all detected $R_p<4R_\oplus $ planets from the primary mission as computed from Eq.~\ref {eq:price_rogers}. Solid lines are medians, dashed lines are 25$^\mathrm  {th}$ and 75$^\mathrm  {th}$ percentiles. }}{61}{figure.23}}
+\newlabel{fig:uncertainty_tc_hist}{{23}{61}{Ephemeris times: numerics}{figure.23}{}}
+\newlabel{fig:uncertainty_tc_hist@cref}{{[figure][23][]23}{61}}
+\newlabel{eq:price_rogers}{{7}{61}{Ephemeris times: numerics}{equation.1.A.7}{}}
+\newpmemlabel{^_20}{61}
+\newpmemlabel{^_21}{61}
+\newpmemlabel{^_22}{61}
 \citation{agol_detecting_2005}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces  Observed mid-transit times (dots) and best fits to a linear ephemeris (lines). The dotted lines fit 4 data points from a nominal planet. `SE' is the standard error on the slope which multiplied by 1.96 (rounded to 2 in the legend) gives a 95\% confidence interval by subtracting blue and orange lines. }}{62}{figure.24}}
+\newlabel{fig:lowering_uncertainty_tc}{{24}{62}{Ephemeris times: numerics}{figure.24}{}}
+\newlabel{fig:lowering_uncertainty_tc@cref}{{[figure][24][]24}{62}}
+\@writefile{toc}{\contentsline {paragraph}{Observe more transits over a long baseline to enable TTV measurements}{62}{paragraph*.30}}
 \citation{fabrycky_whitepaper_2013}
-\@writefile{toc}{\contentsline {paragraph}{Observe more transits over a long baseline to enable TTV measurements}{47}{paragraph*.19}}
-\@writefile{toc}{\contentsline {paragraph}{Targets beyond bright cool dwarf stars:}{47}{paragraph*.20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces \textit  {Top row}: histogram of 95\% confidence intervals 2 (\textit  {left}) and 4 (\textit  {right}) years following the first detected transit in the primary mission. 20 minute bins. \textit  {Bottom row}: histogram of 95\% confidence intervals 2 (\textit  {left}) and 4 (\textit  {right}) years following the first detected transit in the primary mission, but with an additional data point added to the analog of Fig.~\ref {fig:lowering_uncertainty_tc} one year after the transit in the initial time series (5 minute bins). Note that the top row's timescale is an order of magnitude more than the bottom row. Solid lines are medians, dashed lines are 25$^\mathrm  {th}$ and 75$^\mathrm  {th}$ percentiles. }}{63}{figure.25}}
+\newlabel{fig:conf_interval_gets_better}{{25}{63}{Ephemeris times: numerics}{figure.25}{}}
+\newlabel{fig:conf_interval_gets_better@cref}{{[figure][25][]25}{63}}
+\@writefile{toc}{\contentsline {paragraph}{Targets beyond bright cool dwarf stars:}{64}{paragraph*.31}}
 \citation{meibom_same_2013}
 \citation{armstrong_abundance_2014,martin_planets_2014}
 \citation{martin_no_2015}
@@ -297,160 +410,47 @@
 \citation{campante_asteroseismic_2016}
 \citation{perryman_gaia_2002}
 \citation{campante_asteroseismic_2016}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Broader science wants}{68}{subsection.1.A.2}}
+\newlabel{sec:broader_nonexo_science}{{A.2}{68}{Broader science wants}{subsection.1.A.2}{}}
+\newlabel{sec:broader_nonexo_science@cref}{{[subsection][2][1]A.2}{68}}
+\@writefile{toc}{\contentsline {paragraph}{Observing asteroseismic targets}{68}{paragraph*.32}}
+\newlabel{par:asteroseismic_disc}{{A.2}{68}{Observing asteroseismic targets}{paragraph*.32}{}}
+\newlabel{par:asteroseismic_disc@cref}{{[subsection][2][1]A.2}{68}}
 \citation{campante_asteroseismic_2016}
 \citation{aguirre_verifying_2012}
 \citation{aerts_ensemble_2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Broader science wants}{52}{subsection.5.2}}
-\newlabel{sec:broader_nonexo_science}{{5.2}{52}{Broader science wants}{subsection.5.2}{}}
-\newlabel{sec:broader_nonexo_science@cref}{{[subsection][2][5]5.2}{52}}
-\@writefile{toc}{\contentsline {paragraph}{Observing asteroseismic targets}{52}{paragraph*.21}}
-\newlabel{par:asteroseismic_disc}{{5.2}{52}{Observing asteroseismic targets}{paragraph*.21}{}}
-\newlabel{par:asteroseismic_disc@cref}{{[subsection][2][5]5.2}{52}}
 \citation{szabo_k2SEPWP_2013}
 \citation{soszynski_LMC_2009,soszynski_SMC_2010,soszynski_bulge_2011}
+\@writefile{toc}{\contentsline {paragraph}{All-sky variable targets: pulsating stars, eruptive stars, cataclysmic variables, rotating variables, eclipsing binaries}{69}{paragraph*.33}}
+\@writefile{tdo}{\contentsline {todo}{really? could {\it  TESS} see these? theyd be totally blurred over the fat pixels}{69}{section*.34}}
 \citation{cao_swift_Ia_2015,olling_kepler_Ia_2015}
 \citation{science_definition_team_report_big_2016}
-\@writefile{toc}{\contentsline {paragraph}{All-sky variable targets: pulsating stars, eruptive stars, cataclysmic variables, rotating variables, eclipsing binaries}{53}{paragraph*.22}}
-\@writefile{tdo}{\contentsline {todo}{really? could {\it  TESS} see these? theyd be totally blurred over the fat pixels}{53}{section*.23}}
-\pgfsyspdfmark {pgfid2}{14943518}{17135534}
 \citation{szabo_mainbelt_2015}
 \citation{kiss_nereid_2016}
 \citation{szabo_mainbelt_2015}
+\pgfsyspdfmark {pgfid4}{14943518}{46312686}
+\@writefile{toc}{\contentsline {paragraph}{Solar system objects (TNOs, main belt asteroids)}{70}{paragraph*.35}}
 \citation{edelson_agn_2013}
-\@writefile{toc}{\contentsline {paragraph}{Solar system objects (TNOs, main belt asteroids)}{54}{paragraph*.24}}
-\@writefile{toc}{\contentsline {paragraph}{Light curves from variable AGN}{54}{paragraph*.25}}
-\citation{gangestad_high_2013}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion of risks and opportunities}{55}{section.6}}
-\newlabel{sec:risks_opps}{{6}{55}{Discussion of risks and opportunities}{section.6}{}}
-\newlabel{sec:risks_opps@cref}{{[section][6][]6}{55}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Opportunities}{55}{subsection.6.1}}
-\@writefile{toc}{\contentsline {paragraph}{What's best on a $>1$ year horizon for planet detections?}{55}{paragraph*.26}}
-\citation{jenkins_SPOC_2016}
-\@writefile{tdo}{\contentsline {todo}{did kepler actually reach this regime? ask J Rowe? maybe want same plot, colored by kep mag too? this \& above paragraph maybe cut...}{56}{section*.27}}
-\pgfsyspdfmark {pgfid3}{14943518}{23012509}
-\newpmemlabel{^_22}{56}
-\@writefile{toc}{\contentsline {paragraph}{Ability to upgrade cadence of targets detected in long-cadence images}{56}{paragraph*.28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces  Did {\it  Kepler} reach the point of diminishing returns? The first catalog went up to KOI number 1000. Q6 took us to 2000, Q8 to 2800, Q12 to 4200, Q16 to 5500, and Q17 (DR24) to 7000. The pipelines changed in these times (Q6 pipeline method for single pass detections, multis from BLS, Q8 switch to multiple-pass wavelet, Q12 to community disposition, Q16 to automating disptions, Q17 to robovetting and deep EBs)}}{57}{figure.25}}
-\newlabel{fig:kepler_diminishing}{{25}{57}{What's best on a $>1$ year horizon for planet detections?}{figure.25}{}}
-\newlabel{fig:kepler_diminishing@cref}{{[figure][25][]25}{57}}
-\@writefile{tdo}{\contentsline {todo}{so they're not doing ANY planet candidates?}{57}{section*.29}}
-\pgfsyspdfmark {pgfid4}{14943518}{23188300}
-\@writefile{toc}{\contentsline {paragraph}{Modify the cadence for full frame images and target stars; modify allocation of data mass between them.}{57}{paragraph*.30}}
-\citation{stevenson_communityJWST_2016}
-\@writefile{toc}{\contentsline {paragraph}{Follow-up for {\it  TESS} :}{58}{paragraph*.31}}
-\citation{gillon_trappist1_2016,barstow_trappist_2016}
-\citation{beichman_observations_2014}
-\citation{berta_cheops_2016}
-\gdef \LT@i {\LT@entry 
-    {1}{64.4872pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{43.87001pt}}
-\gdef \LT@ii {\LT@entry 
-    {1}{64.4872pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{43.87001pt}}
-\gdef \LT@iii {\LT@entry 
-    {1}{64.4872pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{52.75482pt}\LT@entry 
-    {1}{43.87001pt}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{Newly detected sub-Neptune radius planets. $|\beta |>85^\circ $ can be observed all year by {\it  JWST} \tmspace  -\thinmuskip {.1667em}; $|\beta |>80^\circ $ can be observed for $\ge $ two-thirds of the year, $|\beta |>30^\circ $ for $\ge $ one-third.}}{60}{table.3}}
-\newlabel{tab:jwst0}{{3}{60}{Newly detected sub-Neptune radius planets. $|\beta |>85^\circ $ can be observed all year by \jwst \!; $|\beta |>80^\circ $ can be observed for $\ge $ two-thirds of the year, $|\beta |>30^\circ $ for $\ge $ one-third}{table.3}{}}
-\newlabel{tab:jwst0@cref}{{[table][3][]3}{60}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{$R_p>4R_\oplus $ and $\mathrm  {SNR_{atm}>SNR_{GJ\ 1214b}/2}$.}}{60}{table.4}}
-\newlabel{tab:jwst1}{{4}{60}{$R_p>4R_\oplus $ and $\mathrm {SNR_{atm}>SNR_{GJ\ 1214b}/2}$}{table.4}{}}
-\newlabel{tab:jwst1@cref}{{[table][4][]4}{60}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{$R_p>4R_\oplus $ and $\mathrm  {SNR_{atm}>SNR_{GJ\ 1214b}/5}$.}}{60}{table.5}}
-\newlabel{tab:jwst2}{{5}{60}{$R_p>4R_\oplus $ and $\mathrm {SNR_{atm}>SNR_{GJ\ 1214b}/5}$}{table.5}{}}
-\newlabel{tab:jwst2@cref}{{[table][5][]5}{60}}
-\citation{gaudi_prospects_2007}
-\citation{udalski_ogle0_2003,udalski_ogle1_2003}
-\citation{bakos_HAT_2004}
-\citation{alonso_tres1_2004}
-\citation{mccullough_xo_2005}
-\citation{pollacco_wasp_2006}
-\citation{pepper_KELT_2007}
-\citation{irwin_mearth_2008}
-\citation{jehin_trappist_2011}
-\citation{alsubai_qatar_2014}
-\citation{sozzetti_apache_2013}
-\citation{gillon_speculoos_2013}
-\citation{wheatley_ngts_2013}
-\citation{hellier_wasp47_2012,neveu-vanmalle_HJrelatives_2016,becker_wasp47_2015,dai_doppler_2015}
-\@writefile{toc}{\contentsline {paragraph}{TESS as a follow-up mission}{61}{paragraph*.32}}
-\newlabel{par:TESS_as_followup}{{6.1}{61}{TESS as a follow-up mission}{paragraph*.32}{}}
-\newlabel{par:TESS_as_followup@cref}{{[subsection][1][6]6.1}{61}}
-\citation{wang_longP_2015,uehara_transiting_2016,foreman_mackey_longP_2016}
-\citation{sullivan_KOIs_2013}
-\citation{sullivan_KOIs_2013}
-\citation{millholland_detection_2016}
-\citation{howell_k2_2014,crossfield_197_2016}
-\citation{foreman-mackey_k2_2015,vanderburg_234_2016,crossfield_197_2016}
-\citation{huber_epic_2016}
-\citation{osborn_single_2016}
-\citation{auvergne_corot_2009}
-\citation{walker_most_2003}
-\citation{deleuil_exo-dat_2009}
-\citation{donahue_senior_2016}
-\@writefile{toc}{\contentsline {paragraph}{Guest Investigator program}{64}{paragraph*.33}}
+\@writefile{toc}{\contentsline {paragraph}{Light curves from variable AGN}{71}{paragraph*.36}}
+\@writefile{toc}{\contentsline {section}{Appendix \numberline {B}Models relevant to Earth-Moon crossings}{72}{Appendix.1.B}}
+\newlabel{sec:appendix}{{B}{72}{Models relevant to Earth-Moon crossings}{Appendix.1.B}{}}
+\newlabel{sec:appendix@cref}{{[section][2][]B}{72}}
+\newpmemlabel{^_23}{72}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Lens hood suppression plotted against the angular offset to the Earth or Moon. This suppression factor is defined as the fraction of incident flux that is blocked by the spacecraft, sunshade, lens hood, or combinations thereof.}}{72}{figure.26}}
+\newlabel{fig:lens_hood_suppression}{{26}{72}{Models relevant to Earth-Moon crossings}{figure.26}{}}
+\newlabel{fig:lens_hood_suppression@cref}{{[figure][26][]26}{72}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces The procedure described in Sec.~\ref {sec:earth_moon_crossings} drops fields in which $\sim $90\% of the target stars (in the lower two camera fields) cannot be observed.}}{73}{figure.27}}
+\newlabel{fig:outage_vs_background}{{27}{73}{Models relevant to Earth-Moon crossings}{figure.27}{}}
+\newlabel{fig:outage_vs_background@cref}{{[figure][27][]27}{73}}
 \citation{Sullivan_2015}
 \citation{Sullivan_2015}
 \citation{Sullivan_2015}
 \citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\citation{winn_searchable_2013}
-\citation{Sullivan_2015}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Risks}{65}{subsection.6.2}}
-\newlabel{sec:risks}{{6.2}{65}{Risks}{subsection.6.2}{}}
-\newlabel{sec:risks@cref}{{[subsection][2][6]6.2}{65}}
-\@writefile{toc}{\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{65}{paragraph*.34}}
-\citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\citation{sharma_galaxia_2011}
-\citation{robin2003synthetic}
-\citation{winn_searchable_2013}
-\citation{Sullivan_2015}
-\citation{ricker_transiting_2014}
-\citation{donahue_senior_2016}
-\@writefile{toc}{\contentsline {paragraph}{Miscellaneous risks}{68}{paragraph*.35}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Concluding remarks and recommendations}{68}{section.7}}
-\newlabel{sec:conclusions}{{7}{68}{Concluding remarks and recommendations}{section.7}{}}
-\newlabel{sec:conclusions@cref}{{[section][7][]7}{68}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Recommendations}{68}{subsection.7.1}}
-\newlabel{sec:recommendations}{{7.1}{68}{Recommendations}{subsection.7.1}{}}
-\newlabel{sec:recommendations@cref}{{[subsection][1][7]7.1}{68}}
-\citation{hunter_matplotlib_2007}
-\citation{walt_numpy_2011}
-\citation{jones_scipy_2001}
-\citation{acton_SPICE_1996}
-\citation{landsman_idl_1995}
-\@writefile{toc}{\contentsline {section}{Appendices}{71}{section*.36}}
-\@writefile{toc}{\cftpagenumberson  {section}}
-\@writefile{toc}{\contentsline {section}{Appendix \numberline {A}Models relevant to Earth-Moon crossings}{71}{Appendix.1.A}}
-\newlabel{sec:appendix}{{A}{71}{Models relevant to Earth-Moon crossings}{Appendix.1.A}{}}
-\newlabel{sec:appendix@cref}{{[section][1][]A}{71}}
-\newpmemlabel{^_23}{71}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Lens hood suppression plotted against the angular offset to the Earth or Moon. This suppression factor is defined as the fraction of incident flux that is blocked by the spacecraft, sunshade, lens hood, or combinations thereof.}}{71}{figure.26}}
-\newlabel{fig:lens_hood_suppression}{{26}{71}{Models relevant to Earth-Moon crossings}{figure.26}{}}
-\newlabel{fig:lens_hood_suppression@cref}{{[figure][26][]26}{71}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces The procedure described in Sec.~\ref {sec:earth_moon_crossings} drops fields in which $\sim $90\% of the target stars (in the lower two camera fields) cannot be observed.}}{72}{figure.27}}
-\newlabel{fig:outage_vs_background}{{27}{72}{Models relevant to Earth-Moon crossings}{figure.27}{}}
-\newlabel{fig:outage_vs_background@cref}{{[figure][27][]27}{72}}
-\citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\citation{Sullivan_2015}
-\newpmemlabel{^_24}{73}
-\@writefile{toc}{\contentsline {section}{Appendix \numberline {B}Changes from~\citet  {Sullivan_2015}}{73}{Appendix.1.B}}
-\newlabel{sec:changes_from_S15}{{B}{73}{Changes from~\citet {Sullivan_2015}}{Appendix.1.B}{}}
-\newlabel{sec:changes_from_S15@cref}{{[section][2][]B}{73}}
-\@writefile{toc}{\contentsline {paragraph}{On the angular dependence of \textit  {TESS}'s pixel response function:}{73}{paragraph*.37}}
+\newpmemlabel{^_24}{74}
+\@writefile{toc}{\contentsline {section}{Appendix \numberline {C}Changes from~\citet  {Sullivan_2015}}{74}{Appendix.1.C}}
+\newlabel{sec:changes_from_S15}{{C}{74}{Changes from~\citet {Sullivan_2015}}{Appendix.1.C}{}}
+\newlabel{sec:changes_from_S15@cref}{{[section][3][]C}{74}}
+\@writefile{toc}{\contentsline {paragraph}{On the angular dependence of \textit  {TESS}'s pixel response function:}{74}{paragraph*.37}}
 \bibdata{bibliography/biblio.bib}
 \bibcite{acton_SPICE_1996}{{1}{1996}{{Acton}}{{}}}
 \bibcite{aerts_ensemble_2013}{{2}{2013}{{Aerts et~al.}}{{Aerts, Zwintz, Marcos-Arenal, Moravveji, Degroote, P\IeC {\'a}pics, Tkachenko, De~Ridder, Briquet, Thoul, and {others}}}}
@@ -459,7 +459,7 @@
 \bibcite{alonso_tres1_2004}{{5}{2004}{{Alonso et~al.}}{{Alonso, Brown, Torres, Latham, Sozzetti, {Georgi Mandushev}, Belmonte, Charbonneau, Deeg, Dunham, O\IeC {\textquoteright }Donovan, and Stefanik}}}
 \bibcite{alsubai_qatar_2014}{{6}{2014}{{Alsubai et~al.}}{{Alsubai, Parley, Bramich, Horne, Cameron, West, Sorensen, Pollacco, Smith, and Fors}}}
 \bibcite{armstrong_abundance_2014}{{7}{2014}{{Armstrong et~al.}}{{Armstrong, Osborn, Brown, Faedi, Gomez Maqueo~Chew, Martin, Pollacco, and Udry}}}
-\@writefile{toc}{\contentsline {section}{References}{74}{paragraph*.37}}
+\@writefile{toc}{\contentsline {section}{References}{75}{paragraph*.37}}
 \bibcite{auvergne_corot_2009}{{8}{2009}{{Auvergne et~al.}}{{}}}
 \bibcite{bakos_HAT_2004}{{9}{2004}{{Bakos et~al.}}{{Bakos, Noyes, Kov\IeC {\'a}cs, Stanek, Sasselov, and Domsa}}}
 \bibcite{baraffe_massspectral_1996}{{10}{1996}{{Baraffe and Chabrier}}{{}}}

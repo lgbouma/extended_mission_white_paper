@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.25)  15 SEP 2016 08:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.15)  16 SEP 2016 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./preamble.tex
 (/usr/share/texlive/texmf-dist/tex/latex/tufte-latex/tufte-handout.cls
 Document Class: tufte-handout 2009/12/11 v3.5.0 Tufte-handout class
@@ -311,6 +311,9 @@ Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
+(/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
+Package: beramono 2004/01/31 (WaS)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -439,7 +442,7 @@ File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
-\langwohyphens=\language3
+\langwohyphens=\language80
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
@@ -1259,8 +1262,6 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count161
 \U@D=\dimen205
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -1452,49 +1453,54 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros (./abstract.tex
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 14.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 7.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 7.
+(Font)              scaled to size 9.37807pt on input line 14.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 7.
+(Font)              scaled to size 7.29405pt on input line 14.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 7.
+(Font)              scaled to size 5.21004pt on input line 14.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 7.
+(Font)              scaled to size 9.37807pt on input line 14.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 7.
+(Font)              scaled to size 7.29405pt on input line 14.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 7.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 7.
+(Font)              scaled to size 5.21004pt on input line 14.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1524,13 +1530,22 @@ Overfull \hbox (2.38058pt too wide) in paragraph at lines 23--23
  sim- 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 29.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 29.
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 29.
+
 Overfull \hbox (14.25063pt too wide) in paragraph at lines 30--30
  [][] [][]\T1/pplj/m/n/10 Comparing planet yields from all ex-tended mis-sions 
 based 
+ []
+
+
+Overfull \hbox (8.3264pt too wide) in paragraph at lines 48--48
+ [][] []\T1/pplj/b/n/10 Ap-pendix []Broader sci-ence be-yond ex-o-planet de-tec
+-tion statis- 
  []
 
 )
@@ -1538,7 +1553,7 @@ based
 \openout6 = `main.toc'.
 
  [2] (./exec_summary.tex
-<figures/proposed_pointings_texttt.pdf, id=120, 566.77745pt x 377.97209pt>
+<figures/proposed_pointings_texttt.pdf, id=121, 566.77745pt x 377.97209pt>
 File: figures/proposed_pointings_texttt.pdf Graphic file (type pdf)
 
 <use figures/proposed_pointings_texttt.pdf>
@@ -1569,6 +1584,8 @@ LaTeX Warning: Marginpar on page 4 moved.
 
 LaTeX Warning: Marginpar on page 5 moved.
 
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 6.80005pt on input line 106.
 [5]
 
 LaTeX Warning: Marginpar on page 6 moved.
@@ -1615,7 +1632,7 @@ Overfull \hbox (7.53976pt too wide) in paragraph at lines 20--24
 arches; 
  []
 
-[12] [13]) (./planet_detection_model.tex
+[12]) [13] (./planet_detection_model.tex
 
 LaTeX Warning: Marginpar on page 14 moved.
 
@@ -1707,6 +1724,9 @@ LaTeX Warning: Marginpar on page 28 moved.
 
 [28 <./figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf>]) [29]
 (./planet_yield_from_example_extended_mission_nhemi.tex
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 1.
+
 <figures/skymap_dropped_fields.pdf, id=628, 1084.05pt x 650.43pt>
 File: figures/skymap_dropped_fields.pdf Graphic file (type pdf)
 
@@ -1738,7 +1758,7 @@ sed on new
  []
 
 [33]
-<tables/160729_t50_with_earth_moon_Deming_corr.pdf, id=987, 497.21759pt x 607.7
+<tables/160729_t50_with_earth_moon_Deming_corr.pdf, id=986, 497.21759pt x 607.7
 9073pt>
 File: tables/160729_t50_with_earth_moon_Deming_corr.pdf Graphic file (type pdf)
 
@@ -1747,7 +1767,7 @@ Package pdftex.def Info: tables/160729_t50_with_earth_moon_Deming_corr.pdf used
  on input line 18.
 (pdftex.def)             Requested size: 994.43274pt x 1215.57849pt.
  [34 <./tables/160729_t50_with_earth_moon_Deming_corr.pdf>]
-<figures/snrf_histogram_with_ps.pdf, id=1005, 433.62pt x 289.08pt>
+<figures/snrf_histogram_with_ps.pdf, id=1004, 433.62pt x 289.08pt>
 File: figures/snrf_histogram_with_ps.pdf Graphic file (type pdf)
 
 <use figures/snrf_histogram_with_ps.pdf>
@@ -1755,14 +1775,14 @@ Package pdftex.def Info: figures/snrf_histogram_with_ps.pdf used on input line
 69.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
  [35]
-<figures/Ntra_histogram.pdf, id=1015, 604.09062pt x 245.78242pt>
+<figures/Ntra_histogram.pdf, id=1014, 604.09062pt x 245.78242pt>
 File: figures/Ntra_histogram.pdf Graphic file (type pdf)
 
 <use figures/Ntra_histogram.pdf>
 Package pdftex.def Info: figures/Ntra_histogram.pdf used on input line 89.
 (pdftex.def)             Requested size: 604.08914pt x 245.78181pt.
  [36 <./figures/snrf_histogram_with_ps.pdf>]
-<figures/Ntra_histogram_primary.pdf, id=1034, 505.89pt x 252.945pt>
+<figures/Ntra_histogram_primary.pdf, id=1032, 505.89pt x 252.945pt>
 File: figures/Ntra_histogram_primary.pdf Graphic file (type pdf)
 
 <use figures/Ntra_histogram_primary.pdf>
@@ -1779,10 +1799,10 @@ LaTeX Warning: Marginpar on page 37 moved.
 
 [37 <./figures/Ntra_histogram.pdf> <./figures/Ntra_histogram_primary.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/Ntra_histogram_primary.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/Ntra_histogram_primary.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
 >]
-<figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf, id=1101, 867.24pt x 650.
+<figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf, id=1100, 867.24pt x 650.
 43pt>
 File: figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf Graphic file (type p
 df)
@@ -1791,11 +1811,7 @@ Package pdftex.def Info: figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf u
 sed on input line 123.
 (pdftex.def)             Requested size: 867.2379pt x 650.4284pt.
 
-
-LaTeX Warning: Marginpar on page 38 moved.
-
-
-<figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf, id=1106, 867.2
+<figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf, id=1105, 867.2
 4pt x 650.43pt>
 File: figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf Graphic fi
 le (type pdf)
@@ -1811,13 +1827,13 @@ LaTeX Warning: Marginpar on page 38 moved.
 [38 <./figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf> <./figures/hz_plan
 et_detections_rp_lt_4re_kopparapu_2013_incl.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/hz_planet_detections_rp_lt_4r
-e_kopparapu_2013_incl.pdf): PDF inclusion: multiple pdfs with page group includ
-ed in a single page
+pdfTeX warning: pdflatex (file ./figures/hz_planet_detections_rp_lt_4re_koppara
+pu_2013_incl.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
 >]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 164.
- <figures/SNR_in_transmission.pdf, id=1146, 433.62pt x 289.08pt>
+ <figures/SNR_in_transmission.pdf, id=1145, 433.62pt x 289.08pt>
 File: figures/SNR_in_transmission.pdf Graphic file (type pdf)
 
 <use figures/SNR_in_transmission.pdf>
@@ -1837,7 +1853,7 @@ LaTeX Warning: Reference `sec:discussion' on page 40 undefined on input line 20
 LaTeX Warning: Marginpar on page 41 moved.
 
 ) (./on_brightness_of_new_stars.tex
-<figures/160729_icmag_t50_all.pdf, id=1187, 664.88402pt x 737.15402pt>
+<figures/160729_icmag_t50_all.pdf, id=1186, 664.88402pt x 737.15402pt>
 File: figures/160729_icmag_t50_all.pdf Graphic file (type pdf)
 
 <use figures/160729_icmag_t50_all.pdf>
@@ -1845,9 +1861,37 @@ Package pdftex.def Info: figures/160729_icmag_t50_all.pdf used on input line 4.
 
 (pdftex.def)             Requested size: 311.99841pt x 345.91129pt.
  [41]))
-(./metrics_beyond_planet_detection_stats.tex [42 <./figures/160729_icmag_t50_al
-l.pdf>] (./broader_exoplanet_science.tex [43]
-<figures/mid_transit_time_vs_cadence.pdf, id=1231, 520.34402pt x 390.25798pt>
+(./discussion_risks_opportunities.tex [42 <./figures/160729_icmag_t50_all.pdf>]
+[43] <figures/kepler_diminishing.pdf, id=1219, 433.62pt x 162.6075pt>
+File: figures/kepler_diminishing.pdf Graphic file (type pdf)
+
+<use figures/kepler_diminishing.pdf>
+Package pdftex.def Info: figures/kepler_diminishing.pdf used on input line 58.
+(pdftex.def)             Requested size: 433.61894pt x 162.6071pt.
+ [44 <./figures/kepler_diminishing.pdf>]
+[45] (./tables/jwst_tables.tex) [46] [47] [48]
+
+LaTeX Warning: Marginpar on page 49 moved.
+
+[49] [50]
+
+LaTeX Warning: Marginpar on page 51 moved.
+
+[51]
+
+LaTeX Warning: Marginpar on page 52 moved.
+
+[52] [53] [54] [55]) (./conclusion_recommendations.tex [56]
+
+LaTeX Warning: Marginpar on page 57 moved.
+
+) [57] (./acknowledgements.tex) (./appendix.tex [58]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 2.
+
+(./metrics_beyond_planet_detection_stats.tex (./broader_exoplanet_science.tex
+[59] [60]
+<figures/mid_transit_time_vs_cadence.pdf, id=1525, 520.34402pt x 390.25798pt>
 File: figures/mid_transit_time_vs_cadence.pdf Graphic file (type pdf)
 
 <use figures/mid_transit_time_vs_cadence.pdf>
@@ -1855,7 +1899,7 @@ Package pdftex.def Info: figures/mid_transit_time_vs_cadence.pdf used on input
 line 57.
 (pdftex.def)             Requested size: 520.34274pt x 390.25702pt.
 
-<figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf, id=1233, 520.3
+<figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf, id=1527, 520.3
 4402pt x 390.25798pt>
 File: figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf Graphic fi
 le (type pdf)
@@ -1864,131 +1908,101 @@ le (type pdf)
 Package pdftex.def Info: figures/lowering_uncertainty_on_midtransit_via_extra_p
 oint.pdf used on input line 65.
 (pdftex.def)             Requested size: 520.34274pt x 390.25702pt.
- [44]
-[45 <./figures/mid_transit_time_vs_cadence.pdf> <./figures/lowering_uncertainty
-_on_midtransit_via_extra_point.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/lowering_uncertainty_on_midtr
-ansit_via_extra_point.pdf): PDF inclusion: multiple pdfs with page group includ
-ed in a single page
->]
-<figures/confidence_interval_gets_better.pdf, id=1269, 1040.68805pt x 780.51598
+<figures/confidence_interval_gets_better.pdf, id=1529, 1040.68805pt x 780.51598
 pt>
 File: figures/confidence_interval_gets_better.pdf Graphic file (type pdf)
  <use figures/confidence_interval_gets_better.pdf>
 Package pdftex.def Info: figures/confidence_interval_gets_better.pdf used on in
 put line 84.
 (pdftex.def)             Requested size: 1040.68552pt x 780.51407pt.
- [46 <./figures/confidence_interval_gets_better.pdf>] [47]
+ [61 <./figures/mid_transit_time_vs_cadence.pdf>] [62 <./figures/lowering_uncer
+tainty_on_midtransit_via_extra_point.pdf>] [63 <./figures/confidence_interval_g
+ets_better.pdf>]
 Underfull \hbox (badness 1694) in paragraph at lines 148--148
 \T1/pplj/m/n/8 or Keivan Stas-sun at 
  []
 
 
-LaTeX Warning: Marginpar on page 48 moved.
+LaTeX Warning: Marginpar on page 64 moved.
 
-[48] [49]
+[64] [65]
 Overfull \hbox (6.48735pt too wide) in paragraph at lines 185--191
 []\T1/pplj/m/n/10 For pur-poses of de-tect-ing CBPs from $\OMS/zplm/m/n/10 ^^T 
 \OT1/pplx/m/n/10 2$ \T1/pplj/m/n/10 tran-sits, single-conjunction 
  []
 
-[50]) (./broader_nonexo_science.tex [51]
+[66] [67]) (./broader_nonexo_science.tex
 
-LaTeX Warning: Marginpar on page 52 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
-[52] [53] [54])) (./discussion_risks_opportunities.tex [55]
-<figures/kepler_diminishing.pdf, id=1458, 433.62pt x 162.6075pt>
-File: figures/kepler_diminishing.pdf Graphic file (type pdf)
-
-<use figures/kepler_diminishing.pdf>
-Package pdftex.def Info: figures/kepler_diminishing.pdf used on input line 58.
-(pdftex.def)             Requested size: 433.61894pt x 162.6071pt.
- [56] [57 <./figures/kepler_diminishing.pdf>] [58] (./tables/jwst_tables.tex) [
-59] [60]
-
-LaTeX Warning: Marginpar on page 61 moved.
-
-[61] [62]
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-[63]
-
-LaTeX Warning: Marginpar on page 64 moved.
-
-[64] [65] [66] [67]) (./conclusion_recommendations.tex [68]
-
-LaTeX Warning: Marginpar on page 69 moved.
-
-) [69] (./acknowledgements.tex) (./appendix.tex [70]
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 2.
-
-<figures/lens_hood_suppression.pdf, id=1732, 650.43pt x 433.62pt>
+[68] [69] [70])) [71] (./models_relevant_to_earth_moon_crossings.tex
+<figures/lens_hood_suppression.pdf, id=1736, 650.43pt x 433.62pt>
 File: figures/lens_hood_suppression.pdf Graphic file (type pdf)
 
 <use figures/lens_hood_suppression.pdf>
-Package pdftex.def Info: figures/lens_hood_suppression.pdf used on input line 1
-2.
+Package pdftex.def Info: figures/lens_hood_suppression.pdf used on input line 8
+.
 (pdftex.def)             Requested size: 480.01051pt x 320.00702pt.
- [71 <./figures/lens_hood_suppression.pdf>] <figures/outage_vs_background.pdf, 
-id=1745, 722.7pt x 650.43pt>
+ [72
+
+ <./figures/lens_hood_suppression.pdf>] <figures/outage_vs_background.pdf, id=1
+749, 722.7pt x 650.43pt>
 File: figures/outage_vs_background.pdf Graphic file (type pdf)
 
 <use figures/outage_vs_background.pdf>
-Package pdftex.def Info: figures/outage_vs_background.pdf used on input line 20
+Package pdftex.def Info: figures/outage_vs_background.pdf used on input line 16
 .
 (pdftex.def)             Requested size: 480.005pt x 432.0045pt.
- [72 <./figures/outage_vs_background.pdf>]
+) [73 <./figures/outage_vs_background.pdf>] (./changes_since_s15.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 71.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 71.
+(hyperref)                removing `\begingroup' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 71.
+(hyperref)                removing `\let' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 71.
+(hyperref)                removing `\<let>-command' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 71.
+(hyperref)                removing `\NAT@ctype' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 71.
+(hyperref)                removing `\z@' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 71.
+(hyperref)                removing `\let' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 71.
+(hyperref)                removing `\new@ifnextchar' on input line 1.
 
-) [73
 
-] (./main.bbl [74] [75] [76] [77] [78] [79]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+)) [74
+
+] (./main.bbl [75] [76] [77] [78] [79] [80]
 Underfull \hbox (badness 1097) in paragraph at lines 482--487
 []\T1/pplj/m/n/10 D. Hu-ber.  As-ter-o-seis-mol-ogy of Ex-o-planet Host Stars. 
 
  []
 
-[80] [81] [82] [83] [84] [85] [86]) [87]
+[81] [82] [83] [84] [85] [86] [87]) [88]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 10E58AFC06CC33D97F3CFA87D59A0BA0;2072.
+(rerunfilecheck)             Checksum: 5C2F5C7350CC6C3AD3DFC2C0FDA1C8F4;2123.
 
 
 LaTeX Warning: There were undefined references.
@@ -1996,37 +2010,35 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
  ) 
 Here is how much of TeX's memory you used:
- 27691 strings out of 495020
- 484967 string characters out of 6181324
- 602565 words of memory out of 5000000
- 29913 multiletter control sequences out of 15000+600000
- 100458 words of font info for 185 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 64i,12n,80p,1816b,820s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/luke/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/lu
-ke/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/luke/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk>{/usr/share/texlive/texmf-dist/fon
-ts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplr
-ij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-wasy/wasy8.pfb>
-Output written on main.pdf (87 pages, 10192912 bytes).
+ 27709 strings out of 493105
+ 485171 string characters out of 6137072
+ 607506 words of memory out of 5000000
+ 30173 multiletter control sequences out of 15000+600000
+ 100430 words of font info for 186 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 64i,12n,80p,1816b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fp
+lbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+o8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/wasy/wasy8.pfb>
+Output written on main.pdf (88 pages, 10180263 bytes).
 PDF statistics:
- 2169 PDF objects out of 2487 (max. 8388607)
- 1588 compressed objects within 16 object streams
- 308 named destinations out of 1000 (max. 500000)
+ 2077 PDF objects out of 2487 (max. 8388607)
+ 1583 compressed objects within 16 object streams
+ 309 named destinations out of 1000 (max. 500000)
  1255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

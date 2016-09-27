@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {3.3}Metrics by which we compare pointing strategies}{12}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Description of planet detection model}{14}{subsection.3.4}
 \contentsline {paragraph}{Background on synthetic catalogs:}{14}{paragraph*.6}
-\contentsline {paragraph}{Detection process:}{15}{paragraph*.7}
+\contentsline {paragraph}{Detection process:}{14}{paragraph*.7}
 \contentsline {paragraph}{Assumptions of SNR calculation:}{15}{paragraph*.8}
 \contentsline {subsection}{\numberline {3.5}Selecting target stars (and full frame images)}{15}{subsection.3.5}
 \contentsline {paragraph}{Alternative prioritization approaches:}{19}{paragraph*.9}
@@ -30,34 +30,34 @@
 \contentsline {subsection}{\numberline {4.3}Comparing planet yields from all extended missions based on new planet detection metrics}{33}{subsection.4.3}
 \contentsline {paragraph}{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}{41}{paragraph*.16}
 \contentsline {subsection}{\numberline {4.4}On the brightness of detected stars.}{41}{subsection.4.4}
-\contentsline {section}{\numberline {5}Broader science beyond exoplanet detection statistics}{42}{section.5}
-\contentsline {subsection}{\numberline {5.1}Broader exoplanet science}{43}{subsection.5.1}
-\contentsline {paragraph}{Ephemeris times: analytic motivation}{43}{paragraph*.17}
-\contentsline {paragraph}{Ephemeris times: numerics}{44}{paragraph*.18}
-\contentsline {paragraph}{Observe more transits over a long baseline to enable TTV measurements}{47}{paragraph*.19}
-\contentsline {paragraph}{Targets beyond bright cool dwarf stars:}{47}{paragraph*.20}
-\contentsline {subsection}{\numberline {5.2}Broader science wants}{52}{subsection.5.2}
-\contentsline {paragraph}{Observing asteroseismic targets}{52}{paragraph*.21}
-\contentsline {paragraph}{All-sky variable targets: pulsating stars, eruptive stars, cataclysmic variables, rotating variables, eclipsing binaries}{53}{paragraph*.22}
-\contentsline {paragraph}{Solar system objects (TNOs, main belt asteroids)}{54}{paragraph*.24}
-\contentsline {paragraph}{Light curves from variable AGN}{54}{paragraph*.25}
-\contentsline {section}{\numberline {6}Discussion of risks and opportunities}{55}{section.6}
-\contentsline {subsection}{\numberline {6.1}Opportunities}{55}{subsection.6.1}
-\contentsline {paragraph}{What's best on a $>1$ year horizon for planet detections?}{55}{paragraph*.26}
-\contentsline {paragraph}{Ability to upgrade cadence of targets detected in long-cadence images}{56}{paragraph*.28}
-\contentsline {paragraph}{Modify the cadence for full frame images and target stars; modify allocation of data mass between them.}{57}{paragraph*.30}
-\contentsline {paragraph}{Follow-up for {\it TESS} :}{58}{paragraph*.31}
-\contentsline {paragraph}{TESS as a follow-up mission}{61}{paragraph*.32}
-\contentsline {paragraph}{Guest Investigator program}{64}{paragraph*.33}
-\contentsline {subsection}{\numberline {6.2}Risks}{65}{subsection.6.2}
-\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{65}{paragraph*.34}
-\contentsline {paragraph}{Miscellaneous risks}{68}{paragraph*.35}
-\contentsline {section}{\numberline {7}Concluding remarks and recommendations}{68}{section.7}
-\contentsline {subsection}{\numberline {7.1}Recommendations}{68}{subsection.7.1}
-\contentsline {section}{Appendices}{71}{section*.36}
+\contentsline {section}{\numberline {5}Discussion of risks and opportunities}{42}{section.5}
+\contentsline {subsection}{\numberline {5.1}Opportunities}{43}{subsection.5.1}
+\contentsline {paragraph}{What's best on a $>1$ year horizon for planet detections?}{43}{paragraph*.17}
+\contentsline {paragraph}{Ability to upgrade cadence of targets detected in long-cadence images}{44}{paragraph*.19}
+\contentsline {paragraph}{Modify the cadence for full frame images and target stars; modify allocation of data mass between them.}{45}{paragraph*.21}
+\contentsline {paragraph}{Follow-up for {\it TESS} :}{46}{paragraph*.22}
+\contentsline {paragraph}{TESS as a follow-up mission}{49}{paragraph*.23}
+\contentsline {paragraph}{Guest Investigator program}{52}{paragraph*.24}
+\contentsline {subsection}{\numberline {5.2}Risks}{52}{subsection.5.2}
+\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{52}{paragraph*.25}
+\contentsline {paragraph}{Miscellaneous risks}{55}{paragraph*.26}
+\contentsline {section}{\numberline {6}Concluding remarks and recommendations}{56}{section.6}
+\contentsline {subsection}{\numberline {6.1}Recommendations}{56}{subsection.6.1}
+\contentsline {section}{Appendices}{59}{section*.27}
 \cftpagenumberson {section}
-\contentsline {section}{Appendix \numberline {A}Models relevant to Earth-Moon crossings}{71}{Appendix.1.A}
-\contentsline {section}{Appendix \numberline {B}Changes from~\citet {Sullivan_2015}}{73}{Appendix.1.B}
-\contentsline {paragraph}{On the angular dependence of \textit {TESS}'s pixel response function:}{73}{paragraph*.37}
-\contentsline {section}{References}{74}{paragraph*.37}
+\contentsline {section}{Appendix \numberline {A}Broader science beyond exoplanet detection statistics}{59}{Appendix.1.A}
+\contentsline {subsection}{\numberline {A.1}Broader exoplanet science}{59}{subsection.1.A.1}
+\contentsline {paragraph}{Ephemeris times: analytic motivation}{59}{paragraph*.28}
+\contentsline {paragraph}{Ephemeris times: numerics}{60}{paragraph*.29}
+\contentsline {paragraph}{Observe more transits over a long baseline to enable TTV measurements}{62}{paragraph*.30}
+\contentsline {paragraph}{Targets beyond bright cool dwarf stars:}{64}{paragraph*.31}
+\contentsline {subsection}{\numberline {A.2}Broader science wants}{68}{subsection.1.A.2}
+\contentsline {paragraph}{Observing asteroseismic targets}{68}{paragraph*.32}
+\contentsline {paragraph}{All-sky variable targets: pulsating stars, eruptive stars, cataclysmic variables, rotating variables, eclipsing binaries}{69}{paragraph*.33}
+\contentsline {paragraph}{Solar system objects (TNOs, main belt asteroids)}{70}{paragraph*.35}
+\contentsline {paragraph}{Light curves from variable AGN}{71}{paragraph*.36}
+\contentsline {section}{Appendix \numberline {B}Models relevant to Earth-Moon crossings}{72}{Appendix.1.B}
+\contentsline {section}{Appendix \numberline {C}Changes from~\citet {Sullivan_2015}}{74}{Appendix.1.C}
+\contentsline {paragraph}{On the angular dependence of \textit {TESS}'s pixel response function:}{74}{paragraph*.37}
+\contentsline {section}{References}{75}{paragraph*.37}
 \contentsfinish 

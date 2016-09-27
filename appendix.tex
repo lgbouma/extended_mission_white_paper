@@ -2,89 +2,19 @@
 \begin{appendices}
 	
 \addtocontents{toc}{\cftpagenumberson{section}}
-\section{Models relevant to Earth-Moon crossings}
-\label{sec:appendix}
-%\setcounter{page}{1}
-%\renewcommand{\thepage}{\thesection -\arabic{page}}
 
-\begin{figure*}[!h] %[!thb]
-	\centering
-	\includegraphics{figures/lens_hood_suppression.pdf}
-	%\missingfigure{foobar}	
-	\caption{Lens hood suppression plotted against the angular offset to the Earth or Moon. This suppression factor is defined as the fraction of incident flux that is blocked by the spacecraft, sunshade, lens hood, or combinations thereof.}
-	\label{fig:lens_hood_suppression}
-\end{figure*}
-\newpage
-\begin{figure*}[!t] %[!thb]
-	\centering
-	\includegraphics{figures/outage_vs_background.pdf}
-	%\missingfigure{foobar}	
-	\caption{The procedure described in Sec.~\protect\ref{sec:earth_moon_crossings} drops fields in which $\sim$90\% of the target stars (in the lower two camera fields) cannot be observed.}
-	\label{fig:outage_vs_background}
-\end{figure*}
-\begin{comment}
-\section{SNR calculation}
-The approach from~\citet{Sullivan_2015} for computing the SNR of any given star is as follows:
-\begin{itemize}
-	\item Signal is the transit depth for a planet.
-	\item Noise sources include photon-counting noise (Poisson shot noise) from the host star and any of its companion stars, zodiacal background shot noise, CCD read noise, and a systematic noise floor of $60\text{ppm}$. Noise from cosmic rays is ignored. 
-	The quadrature sum of all these components over a given aperture gives the total noise.
-	\item The aperture sizes are found by creating synthetic images of each star with a transiting planet.
-	The approach from~\citet{Sullivan_2015} for making these images was:
-	\begin{itemize}
-		\item Determine the pixel response function (PRF - tells you what fraction of light is collected by a given pixel) based on the star's color and location in the camera field.
-		\footnote{This `determination' involves a look-up to the output from a Zemax ray-tracing model of \tesss optics.
-		The Zemax model simulates rays passing through the camera optics and into the silicon of the CCD to a probabilistically-determined depth. 
-		Excited electrons then diffuse through the remaining depth of the silicon, leading to the PSF.
-		We then integrate the PSF over a grid of pixels to arrive at the PRF.}
-		\item Sum the PRFs over all wavelengths of incoming light to get a synthetic image of each target star.
-	\end{itemize} 
-\end{itemize}
-
-The PSFs used in~\citet{Sullivan_2015} were based on idealized assumptions about the camera optics. Laboratory testing of prototype cameras changed some of these assumptions, and led to an `as-built' PSF used in this work which decreases the overall planet yield by $\sim$10-20\%.
-
-Additionally, the approach outlined above has a caveat that was neglected in~\citet{Sullivan_2015}: the PSF, and thus the fraction of stellar flux that will be observed for any given measurement, depends on the position any given target star has on the CCD. 
-In other words, for different camera pointings, the quality of \tesss photometry will vary for the same star. 
-For instance, the star could land on the corners of the CCD fields, where the shoddier PSF will lead to fewer collected photons and a noiser measurement.
-~\citet{Sullivan_2015} dealt with this by taking a running average of the field angles of any given star over the \tess entire mission, and then computing a final PRF and photon flux based on that averaged position.
-This is wrong.
-
-We simplified this procedure by saying that `everything lands at the very center of the CCD field, where the PSF is best'.
-This \textit{increases} the overall planet yield by $\sim$10-20\%.
-\todo{what impact did this have on planet yield? make this discussion better}
-\end{comment}
-
-\begin{comment}
-
-\subsection{Population parameters from \nhemi}
-\begin{figure*}[t]
-	\centering
-	\includegraphics[]{figures/temp_pair_plots_nhemi.pdf}
-	\caption{Properties of detected $R<4R_\oplus$ planets from one Monte Carlo realization of the \nhemi\ scenario. Legend is the same as in Fig.~\protect\ref{fig:imag_vs_teff_nhemi} -- orange: detected in primary mission; blue: newly detected from extended mission; squares (solid lines): postage stamps; dots (dashed lines): full frame images. We note that $\gg 2\times10^3$ giants ($R > 4R_\oplus$, not shown) should be recoverable from full frame images, but they are not the focus of this work.}
-	\label{fig:pair_plots_nhemi}
-\end{figure*}
-\end{comment}
+\input{metrics_beyond_planet_detection_stats}
 
 \newpage
 \clearpage
 \pagebreak
-\section{Changes from~\citet{Sullivan_2015}}
-\label{sec:changes_from_S15}
-%\setcounter{page}{1}
-%\renewcommand{\thepage}{\thesection -\arabic{page}}
-\paragraph{On the angular dependence of \tesss pixel response function:} 
-In our SNR calculation, we do not keep track of individual times for every transit. 
-How then do we assign PSFs to different transits from the same object that fall on different regions of the CCDs, and thus should have slightly better or degraded PSFs? (Largest cumulative flux fraction at the CCD's center, smallest at the corners). 
+\input{models_relevant_to_earth_moon_crossings}
 
-~\citetalias{Sullivan_2015} dealt with this by computing the mean of all the field angles (distance from the center of the CCD axis), and then passing this mean into a look-up table for PSFs based on four PSFs that had been computed from a ray-tracing model at four different field angles.
-~\citetalias{Sullivan_2015} then `observes' each eclipsing object with a single class of PSF.
-This leads to the implausible phenomenon that extra observations can actually \textit{lower} the SNR of an eclipsing object if they are taken with an unfavorable field angle/PSF. 
-This effect is largely off-set by the extra pointing increasing the SNR, but for extended missions (coming back to the same objects at potentially very different field angles) it winds up reducing observed SNR for $\sim$3\% of detected objects.
+\newpage
+\clearpage
+\pagebreak
 
-In extended missions (as well as in the primary mission) we expect stars to land on very different regions of the CCD over the course of being observed.
-We simplify this in our work by assuming that all stars land on the center of the \tess CCDs (the green curve of~\citetalias{Sullivan_2015} Fig. 13). 
-This assumption is justified because our chief point of quantitative comparison is the ability of different pointing strategies to impact \tesss planet yield in extended missions, and there is little \textit{a priori} reason to assume that any one pointing scenario should be biased for an extra amount of stars to land on the `bad regions' of \tesss CCDs.
-%We also note that the PRF performance only decreases noticeably for $1 - \pi(12^\circ)^2 / (24^\circ)^2 \approx 21\%$ of the pixel area, and this modification has the benefit of omitting the rare ``extra-observations lead to reduced SNR'' effect described in the above paragraph.
-	
+\input{changes_since_s15}
+
 
 \end{appendices}
