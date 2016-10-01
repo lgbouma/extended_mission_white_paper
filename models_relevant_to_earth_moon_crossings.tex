@@ -37,9 +37,9 @@ The approach from~\citet{Sullivan_2015} for computing the SNR of any given star 
 	\end{itemize} 
 \end{itemize}
 
-The PSFs used in~\citet{Sullivan_2015} were based on idealized assumptions about the camera optics. Laboratory testing of prototype cameras changed some of these assumptions, and led to an `as-built' PSF used in this work which decreases the overall planet yield by $\sim$10-20\%.
+The PSFs used by~\citet{Sullivan_2015} were based on idealized assumptions about the camera optics. Laboratory testing of prototype cameras changed some of these assumptions, and led to an `as-built' PSF used in this work which decreases the overall planet yield by $\sim$10-20\%.
 
-Additionally, the approach outlined above has a caveat that was neglected in~\citet{Sullivan_2015}: the PSF, and thus the fraction of stellar flux that will be observed for any given measurement, depends on the position any given target star has on the CCD. 
+Additionally, the approach outlined above has a caveat that was neglected by~\citet{Sullivan_2015}: the PSF, and thus the fraction of stellar flux that will be observed for any given measurement, depends on the position any given target star has on the CCD. 
 In other words, for different camera pointings, the quality of \tesss photometry will vary for the same star. 
 For instance, the star could land on the corners of the CCD fields, where the shoddier PSF will lead to fewer collected photons and a noiser measurement.
 ~\citet{Sullivan_2015} dealt with this by taking a running average of the field angles of any given star over the \tess entire mission, and then computing a final PRF and photon flux based on that averaged position.

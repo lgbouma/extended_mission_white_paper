@@ -8,7 +8,7 @@ With this in mind, for each extended mission scenario we ask the following quest
 	\item $N_\mathrm{new}$: How many new planets do we detect?
 	\item $N_\mathrm{new,P>20d}$: How many of these new planets are at long orbital periods, for instance $P>20$ days?
 	\item $N_\mathrm{new,HZ}$: How many are in the habitable zone?
-	\item $N_\mathrm{sys,extra\ planets}$: In how many systems do we find extra planets?
+	\item $N_\mathrm{sys,extra\ planets}$: In how many systems in which at least one planet was detected during the primary mission do we find extra planets in the extended mission?
 	\item $N_\mathrm{new,atm}$: How many new planets do we find that are amenable to atmospheric characterization (defined below by Eq.~\ref{eq:atmosphere_Deming})?
 	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from stars that were not observed in the primary mission, vs. 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$ stars that were observed, but either did not have enough transits or a high enough SNR to result in a detection.
@@ -59,8 +59,8 @@ We now discuss each metric in more depth:
 	\item $N_\mathrm{new}$: we detect about as many new planets in Year 3 as we detect planets in either Years 1 or 2: roughly $1250$.
 	The worst and the best scenarios (\elong\ and \hemis, respectively) differ only by a factor of 1.2.
 	The fact that there are so many new planets to be detected from extended observations, particularly from full frame images, and that the absolute number of new planets is roughly invariant to the spacecraft's pointing, can be understood from Fig.~\ref{fig:snrf_histogram}.
-	This figure shows what was originally noted in~\citetalias{Sullivan_2015}: \tesss original survey is incomplete. 
-	There are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (cf. Fig.~\ref{fig:primary_planet_yield}).
+	This figure shows what was originally noted by~\citetalias{Sullivan_2015}: \tesss original survey is incomplete: for stars dimmer than $I_c=9$, there are at least an order of magnitude more $R_p<4R_\oplus$ transiting planets that \tess does not detect (Fig 22 of~\citetalias{Sullivan_2015}).
+	Our findings agree: there are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (Fig.~\ref{fig:primary_planet_yield}).
 	An extended mission will enable their detection, irrespective of where on the sky we observe!
 	This result should hold equally well for realistic detection efficiency thresholds, and it is demonstrates that extended observations will be valuable, because \tess will not yet be at the point of diminishing returns for longer observations (which will happen when more observations only allow pushing out to longer orbital periods). 
 	There will still be small, short-period candidates to discover after \tesss primary mission.
@@ -133,13 +133,13 @@ We now discuss each metric in more depth:
 	
 	\item $N_\mathrm{sys,extra\ planets}$: for how many systems do we detect extra planets?
 	Our assumptions about multiple planet system distributions are coarse -- we assume independent probability draws from single planet occurrence distributions.
-	Thus our simulated planet population does not have systems of tightly packed inner planets.
+	Thus our simulated planet population does not have systems of tightly packed inner planets in realistic numbers.
 	That said, we expect this statistic to be some indication of the information that we are not explicitly modeling, but which can be obtained from extended observations of planetary systems post-planet detection. 
 	This additional information includes improved precision on physical and dynamical parameters of the system.
 	It also includes transit timing variations, which could be used to discover non-transiting planets as well as transiting outer companions.
 	TTVs can also give dynamical hints for the formation history of planetary systems, for instance, discriminating between \textit{in situ} formation and inward migration as~\citet{mills_resonant_2016} argued for the Kepler 223 system.
 	
-	With our somewhat nebulous hopes for this metric stated, the most prominent feature in its results is that \elong\ detects the fewest systems with extra planets (44, which is $39\%$ worse than the next-best). 
+	The most prominent feature in the results for this metric is that \elong\ detects the fewest systems with extra planets (44, which is $39\%$ worse than the next-best). 
 	This is reasonable because \elong\ spends the most time looking at new sky, and in the process observes fewer systems that were detected in the primary mission.
 	\nhemi, \shemiAvoid, \npole, and \eshort\ all perform similarly, detecting $\sim65$ such planets.
 	\hemis\ detects the most, at 92. While this is still subject to the assumption of two-transit recoverability, in this case the requirement is not too strong: only 10 of \hemis's systems with newly detected planets come from the case where the extra detected planet comes from two transits.
@@ -161,9 +161,9 @@ We now discuss each metric in more depth:
 	\label{eq:atmosphere_Deming}
 	\end{align*}
 	for $V$ the host star's apparent $V$-band magnitude (calibrated for $3>V>22$), $R_p$ the planet radius, $M_p$ the planet mass, $R_\star$ the star radius, and $a$ the planet's semi-major axis.
-	\todo[inline]{Is this NIRISS SOSS mode? Why would you use V band and not like... I, or something redder like K?}
 	The coefficients are physically sensible: the 2.98 coefficient of $R_p$ minus the 1.019 coefficient of $M_p$ implies that the SNR depends inversely as bulk density, with puffier planets giving higher SNR for transit spectroscopy.
-	Focusing our analysis to a \jwst-measured SNR is sensible given \tesss role as a `\jwst finder scope'~\citep{deming_jwst_tess_2009}.
+	Although this formula uses a $V$ band magnitude ($\sim 0.5-0.6\mu\mathrm{m}$), while NIRISS's SOSS mode covers $0.6-2.8\mu\mathrm{m}$, the only difference using $J$ band magnitudes is in the coefficients preceding the stellar radius and the semi-major axis terms (and thus implicitly, in the stellar mass).
+	Focusing our analysis to a SNR measured by \jwst is sensible given \tesss role as a `\jwst finder scope'~\citep{deming_jwst_tess_2009}.
 	We focus specifically on NIRISS given that it will likely be the workhorse \jwst instrument for transmission spectroscopy~\citep{beichman_observations_2014}.
 	\begin{figure*}[!th]
 		\centering
@@ -187,7 +187,7 @@ We now discuss each metric in more depth:
 	We note that all of these planets are assumed to have identical mean molecular weights and cloud properties.
 	%\todo[inline]{what cloud model/opacity does this use?}
 
-	More importantly, Fig.~\ref{fig:yield_results} shows that most of the planets with `good' atmospheres have already been discovered after two years.
+	More importantly, Fig.~\ref{fig:yield_results} shows that most of the planets with atmospheres that are best for transmission spectroscopy are already discovered after two years.
 	The best extended missions (\shemiAvoid, \elong, \eshort\ and \hemis) boost the yield of such planets from $\sim\!100$ to $\sim\!125$.
 	The worst, \npole, finds roughly 10.
 	This best-case boost of $1.25\times$ more `good' planets for atmospheric characterization is less than the relative boost of $1.6\times$ more newly detected long period planets.
@@ -199,7 +199,7 @@ We now discuss each metric in more depth:
 	The \elong\ scenario dedicates 7 of a single year's 13 observing sectors to the ecliptic (where the other 5 are spent centered at the North Ecliptic Pole due to excessive Earth/Moon crossings).
 	It consequently detects twice as many new planets about newly observed stars as the next-best scenarios: \eshort\ and \shemiAvoid\ (366 vs 171 and 161, respectively).
 	These latter two options also spend time observing the ecliptic, but with only one camera, rather than with all four cameras simultaneously.
-	We note that even though \elong\ is the scenario most prone to detecting planets about new stars, only $\sim 30\%$ of its newly detected planets are actually from `never-observed' hosts.~\footnote{Dubbing these planets and hosts `never-observed' neglects the question of overlapping fields with K2's observations (see discussion in Sec.~\ref{sec:discussion})}
+	We note that even though \elong\ is the scenario most successful in to detecting planets about new stars, only $\sim 30\%$ of its newly detected planets are actually from `never-observed' hosts.~\footnote{Dubbing these planets and hosts `never-observed' neglects the question of overlapping fields with K2's observations (see discussion in Sec.~\ref{sec:discussion})}
 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$:
 	This statistic is the number of newly detected planets that are detected either (a) due to their final SNR clearing our threshold (logical) or (b) their number of observed transits being greater than or equal to 2.

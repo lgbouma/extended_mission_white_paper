@@ -1,4 +1,4 @@
-\begin{thebibliography}{98}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -56,28 +56,6 @@ V.~S. Aguirre, L.~Casagrande, S.~Basu, T.~L. Campante, W.~J. Chaplin, D.~Huber,
 \newblock \doi{10.1088/0004-637X/757/1/99}.
 \newblock URL \url{http://stacks.iop.org/0004-637X/757/i=1/a=99}.
 
-\bibitem[Alonso et~al.(2004)Alonso, Brown, Torres, Latham, Sozzetti, {Georgi
-  Mandushev}, Belmonte, Charbonneau, Deeg, Dunham, O’Donovan, and
-  Stefanik]{alonso_tres1_2004}
-R.~Alonso, T.~M. Brown, G.~Torres, D.~W. Latham, A.~Sozzetti, {Georgi
-  Mandushev}, J.~A. Belmonte, D.~Charbonneau, H.~J. Deeg, E.~W. Dunham, F.~T.
-  O’Donovan, and R.~P. Stefanik.
-\newblock {TrES}-1: {The} {Transiting} {Planet} of a {Bright} {K}0 {V} {Star}.
-\newblock \emph{The Astrophysical Journal Letters}, 613\penalty0 (2):\penalty0
-  L153, 2004.
-\newblock ISSN 1538-4357.
-\newblock \doi{10.1086/425256}.
-\newblock URL \url{http://stacks.iop.org/1538-4357/613/i=2/a=L153}.
-
-\bibitem[Alsubai et~al.(2014)Alsubai, Parley, Bramich, Horne, Cameron, West,
-  Sorensen, Pollacco, Smith, and Fors]{alsubai_qatar_2014}
-K.~A. Alsubai, N.~R. Parley, D.~M. Bramich, K.~Horne, A.~C. Cameron, R.~G.
-  West, P.~M. Sorensen, D.~Pollacco, J.~C. Smith, and O.~Fors.
-\newblock The {Qatar} {Exoplanet} {Survey}.
-\newblock \emph{arXiv:1401.1984 [astro-ph]}, Jan. 2014.
-\newblock URL \url{http://arxiv.org/abs/1401.1984}.
-\newblock arXiv: 1401.1984.
-
 \bibitem[Armstrong et~al.(2014)Armstrong, Osborn, Brown, Faedi, Gomez
   Maqueo~Chew, Martin, Pollacco, and Udry]{armstrong_abundance_2014}
 D.~J. Armstrong, H.~P. Osborn, D.~J.~A. Brown, F.~Faedi, Y.~Gomez Maqueo~Chew,
@@ -90,24 +68,6 @@ D.~J. Armstrong, H.~P. Osborn, D.~J.~A. Brown, F.~Faedi, Y.~Gomez Maqueo~Chew,
 \newblock URL
   \url{http://mnras.oxfordjournals.org/cgi/doi/10.1093/mnras/stu1570}.
 
-\bibitem[Auvergne et~al.(2009)]{auvergne_corot_2009}
-M.~Auvergne et~al.
-\newblock The {CoRoT} satellite in flight: description and performance.
-\newblock \emph{Astronomy and Astrophysics}, 506:\penalty0 411--424, Oct. 2009.
-\newblock ISSN 0004-6361.
-\newblock \doi{10.1051/0004-6361/200810860}.
-
-\bibitem[Bakos et~al.(2004)Bakos, Noyes, Kovács, Stanek, Sasselov, and
-  Domsa]{bakos_HAT_2004}
-G.~Bakos, R.~W. Noyes, G.~Kovács, K.~Z. Stanek, D.~D. Sasselov, and I.~Domsa.
-\newblock Wide-{Field} {Millimagnitude} {Photometry} with the {HAT}: {A} {Tool}
-  for {Extrasolar} {Planet} {Detection}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  116\penalty0 (817):\penalty0 266, 2004.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/382735}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/116/i=817/a=266}.
-
 \bibitem[Baraffe and Chabrier(1996)]{baraffe_massspectral_1996}
 I.~Baraffe and G.~Chabrier.
 \newblock Mass–{Spectral} {Class} {Relationship} for {M} {Dwarfs}.
@@ -115,17 +75,6 @@ I.~Baraffe and G.~Chabrier.
 \newblock ISSN 0004637X.
 \newblock \doi{10.1086/309988}.
 \newblock URL \url{http://stacks.iop.org/1538-4357/461/i=1/a=L51}.
-
-\bibitem[Barstow and Irwin(2016)]{barstow_trappist_2016}
-J.~K. Barstow and P.~G.~J. Irwin.
-\newblock Habitable worlds with {JWST}: transit spectroscopy of the
-  {TRAPPIST}-1 system?
-\newblock \emph{Monthly Notices of the Royal Astronomical Society: Letters},
-  page slw109, May 2016.
-\newblock ISSN 1745-3925, 1745-3933.
-\newblock \doi{10.1093/mnrasl/slw109}.
-\newblock URL \url{http://arxiv.org/abs/1605.07352}.
-\newblock arXiv: 1605.07352.
 
 \bibitem[Basri et~al.(2013)Basri, Walkowicz, and
   Reiners]{basri_comparison_2013}
@@ -137,15 +86,6 @@ G.~Basri, L.~M. Walkowicz, and A.~Reiners.
 \newblock ISSN 0004-637X.
 \newblock \doi{10.1088/0004-637X/769/1/37}.
 \newblock URL \url{http://stacks.iop.org/0004-637X/769/i=1/a=37}.
-
-\bibitem[Becker et~al.(2015)Becker, Vanderburg, Adams, Rappaport, and
-  Schwengeler]{becker_wasp47_2015}
-J.~C. Becker, A.~Vanderburg, F.~C. Adams, S.~A. Rappaport, and H.~M.
-  Schwengeler.
-\newblock {WASP}-47: {A} {Hot} {Jupiter} {System} with {Two} {Additional}
-  {Planets} {Discovered} by {K}2.
-\newblock \emph{arXiv preprint arXiv:1508.02411}, 2015.
-\newblock URL \url{http://arxiv.org/abs/1508.02411}.
 
 \bibitem[Beichman et~al.(2014)Beichman, Benneke, Knutson, Smith, Lagage,
   Dressing, Latham, Lunine, Birkmann, Ferruit, Giardino, Kempton, Carey, Krick,
@@ -253,54 +193,6 @@ D.~Charbonneau, Z.~K. Berta, J.~Irwin, C.~J. Burke, P.~Nutzman, L.~A. Buchhave,
 \newblock ISSN 0028-0836, 1476-4687.
 \newblock \doi{10.1038/nature08679}.
 
-\bibitem[Crossfield et~al.(2016)Crossfield, Ciardi, Petigura, Sinukoff,
-  Schlieder, Howard, Beichman, Isaacson, Dressing, Christiansen, Fulton,
-  Lépine, Weiss, Hirsch, Livingston, Baranec, Law, Riddle, Ziegler, Howell,
-  Horch, Everett, Teske, Martinez, Obermeier, Benneke, Scott, Deacon, Aller,
-  Hansen, Mancini, Ciceri, Brahm, Jordán, Knutson, Henning, Bonnefoy, Liu,
-  Crepp, Lothringer, Hinz, Bailey, Skemer, and Defrere]{crossfield_197_2016}
-I.~J.~M. Crossfield, D.~R. Ciardi, E.~A. Petigura, E.~Sinukoff, J.~E.
-  Schlieder, A.~W. Howard, C.~A. Beichman, H.~Isaacson, C.~D. Dressing, J.~L.
-  Christiansen, B.~J. Fulton, S.~Lépine, L.~Weiss, L.~Hirsch, J.~Livingston,
-  C.~Baranec, N.~M. Law, R.~Riddle, C.~Ziegler, S.~B. Howell, E.~Horch,
-  M.~Everett, J.~Teske, A.~O. Martinez, C.~Obermeier, B.~Benneke, N.~Scott,
-  N.~Deacon, K.~M. Aller, B.~M.~S. Hansen, L.~Mancini, S.~Ciceri, R.~Brahm,
-  A.~Jordán, H.~A. Knutson, T.~Henning, M.~Bonnefoy, M.~C. Liu, J.~R. Crepp,
-  J.~Lothringer, P.~Hinz, V.~Bailey, A.~Skemer, and D.~Defrere.
-\newblock 197 {Candidates} and 104 {Validated} {Planets} in {K}2's {First}
-  {Five} {Fields}.
-\newblock \emph{arXiv:1607.05263 [astro-ph]}, July 2016.
-\newblock URL \url{http://arxiv.org/abs/1607.05263}.
-\newblock arXiv: 1607.05263.
-
-\bibitem[Dai et~al.(2015)Dai, Winn, Arriagada, Butler, Crane, Johnson,
-  Shectman, Teske, Thompson, Vanderburg, and Wittenmyer]{dai_doppler_2015}
-F.~Dai, J.~N. Winn, P.~Arriagada, R.~P. Butler, J.~D. Crane, J.~A. Johnson,
-  S.~A. Shectman, J.~K. Teske, I.~B. Thompson, A.~Vanderburg, and R.~A.
-  Wittenmyer.
-\newblock Doppler {Monitoring} of the {WASP}-47 {Multiplanet} {System}.
-\newblock \emph{The Astrophysical Journal}, 813\penalty0 (1):\penalty0 L9, Oct.
-  2015.
-\newblock ISSN 2041-8213.
-\newblock \doi{10.1088/2041-8205/813/1/L9}.
-\newblock URL \url{http://arxiv.org/abs/1510.03811}.
-\newblock arXiv: 1510.03811.
-
-\bibitem[Deleuil et~al.(2009)Deleuil, Meunier, Moutou, Surace, Deeg, Barbieri,
-  Debosscher, Almenara, Agneray, Granet, Guterman, and
-  Hodgkin]{deleuil_exo-dat_2009}
-M.~Deleuil, J.~C. Meunier, C.~Moutou, C.~Surace, H.~J. Deeg, M.~Barbieri,
-  J.~Debosscher, J.~M. Almenara, F.~Agneray, Y.~Granet, P.~Guterman, and
-  S.~Hodgkin.
-\newblock \textit{{EXO}-{DAT}} : {AN} {INFORMATION} {SYSTEM} {IN} {SUPPORT}
-  {OF} {THE} \textit{{CoRoT}} /{EXOPLANET} {SCIENCE}.
-\newblock \emph{The Astronomical Journal}, 138\penalty0 (2):\penalty0 649--663,
-  Aug. 2009.
-\newblock ISSN 0004-6256, 1538-3881.
-\newblock \doi{10.1088/0004-6256/138/2/649}.
-\newblock URL
-  \url{http://stacks.iop.org/1538-3881/138/i=2/a=649?key=crossref.840f61ed35675d7e4c8eb26b751115fb}.
-
 \bibitem[Deming et~al.(2009)Deming, Seager, Winn, Miller-Ricci, Clampin,
   Lindler, Greene, Charbonneau, {G. Laughlin}, Ricker, Latham, and
   Ennico]{deming_jwst_tess_2009}
@@ -352,22 +244,14 @@ D.~C. Fabrycky, E.~B. Ford, M.~J. Payne, J.~Steffen, D.~Ragozzine, T.~Mazeh,
 \newblock URL \url{http://arxiv.org/abs/1309.1177}.
 \newblock arXiv: 1309.1177.
 
-\bibitem[Foreman-Mackey et~al.(2015)Foreman-Mackey, Montet, Hogg, Morton, Wang,
-  and Schölkopf]{foreman-mackey_k2_2015}
-D.~Foreman-Mackey, B.~T. Montet, D.~W. Hogg, T.~D. Morton, D.~Wang, and
-  B.~Schölkopf.
-\newblock A systematic search for transiting planets in the {K}2 data.
-\newblock \emph{arXiv:1502.04715 [astro-ph]}, Feb. 2015.
-\newblock URL \url{http://arxiv.org/abs/1502.04715}.
-\newblock arXiv: 1502.04715.
-
-\bibitem[Foreman-Mackey et~al.(2016)Foreman-Mackey, Morton, Hogg, Agol, and
-  Schölkopf]{foreman_mackey_longP_2016}
-D.~Foreman-Mackey, T.~D. Morton, D.~W. Hogg, E.~Agol, and B.~Schölkopf.
-\newblock The population of long-period transiting exoplanets.
-\newblock \emph{arXiv:1607.08237 [astro-ph]}, July 2016.
-\newblock URL \url{http://arxiv.org/abs/1607.08237}.
-\newblock arXiv: 1607.08237.
+\bibitem[Fischer and Valenti(2005)]{fischer_planet-metallicity_2005}
+D.~A. Fischer and J.~Valenti.
+\newblock The {Planet}-{Metallicity} {Correlation}.
+\newblock \emph{The Astrophysical Journal}, 622:\penalty0 1102--1117, Apr.
+  2005.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/428383}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2005ApJ...622.1102F}.
 
 \bibitem[Fressin et~al.(2013)Fressin, Torres, Charbonneau, Bryson,
   Christiansen, Dressing, Jenkins, Walkowicz, and Batalha]{fressin_false_2013}
@@ -388,37 +272,6 @@ J.~W. Gangestad, G.~A. Henning, R.~R. Persinger, and G.~R. Ricker.
 \newblock \emph{arXiv preprint arXiv:1306.5333}, 2013.
 \newblock URL \url{http://arxiv.org/abs/1306.5333}.
 
-\bibitem[Gaudi and Winn(2007)]{gaudi_prospects_2007}
-B.~S. Gaudi and J.~N. Winn.
-\newblock Prospects for the {Characterization} and {Confirmation} of
-  {Transiting} {Exoplanets} via the {Rossiter}-{McLaughlin} {Effect}.
-\newblock \emph{The Astrophysical Journal}, 655\penalty0 (1):\penalty0 550,
-  2007.
-\newblock ISSN 0004-637X.
-\newblock \doi{10.1086/509910}.
-\newblock URL \url{http://stacks.iop.org/0004-637X/655/i=1/a=550}.
-
-\bibitem[Gillon et~al.(2013)Gillon, Jehin, Delrez, Magain, Opitom, and
-  Sohy]{gillon_speculoos_2013}
-M.~Gillon, E.~Jehin, L.~Delrez, P.~Magain, C.~Opitom, and S.~Sohy.
-\newblock {SPECULOOS}: {Search} for habitable {Planets} {EClipsing}
-  {ULtra}-{cOOl} {Stars}.
-\newblock July 2013.
-\newblock URL \url{http://orbi.ulg.ac.be/handle/2268/159868}.
-
-\bibitem[Gillon et~al.(2016)Gillon, Jehin, Lederer, Delrez, de~Wit, Burdanov,
-  Van~Grootel, Burgasser, Triaud, Opitom, Demory, Sahu, Bardalez~Gagliuffi,
-  Magain, and Queloz]{gillon_trappist1_2016}
-M.~Gillon, E.~Jehin, S.~M. Lederer, L.~Delrez, J.~de~Wit, A.~Burdanov,
-  V.~Van~Grootel, A.~J. Burgasser, A.~H. M.~J. Triaud, C.~Opitom, B.-O. Demory,
-  D.~K. Sahu, D.~Bardalez~Gagliuffi, P.~Magain, and D.~Queloz.
-\newblock Temperate {Earth}-sized planets transiting a nearby ultracool dwarf
-  star.
-\newblock \emph{Nature}, 533\penalty0 (7602):\penalty0 221--224, May 2016.
-\newblock ISSN 0028-0836, 1476-4687.
-\newblock \doi{10.1038/nature17448}.
-\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature17448}.
-
 \bibitem[Girardi et~al.(2005)Girardi, Groenewegen, Hatziminaoglou, and
   da~Costa]{girardi_star_2005}
 L.~Girardi, M.~A.~T. Groenewegen, E.~Hatziminaoglou, and L.~da~Costa.
@@ -437,22 +290,6 @@ G.~M. H.~J. Habets and J.~R.~W. Heintze.
   193--237, Nov. 1981.
 \newblock ISSN 0365-0138.
 
-\bibitem[Hellier et~al.(2012)Hellier, Anderson, Cameron, Doyle, Fumel, Gillon,
-  Jehin, Lendl, Maxted, Pepe, Pollacco, Queloz, Ségransan, Smalley, Smith,
-  Southworth, Triaud, Udry, and West]{hellier_wasp47_2012}
-C.~Hellier, D.~R. Anderson, A.~C. Cameron, A.~P. Doyle, A.~Fumel, M.~Gillon,
-  E.~Jehin, M.~Lendl, P.~F.~L. Maxted, F.~Pepe, D.~Pollacco, D.~Queloz,
-  D.~Ségransan, B.~Smalley, A.~M.~S. Smith, J.~Southworth, A.~H. M.~J. Triaud,
-  S.~Udry, and R.~G. West.
-\newblock Seven transiting hot {Jupiters} from {WASP}-{South}, {Euler} and
-  {TRAPPIST}: {WASP}-47b, {WASP}-55b, {WASP}-61b, {WASP}-62b, {WASP}-63b,
-  {WASP}-66b and {WASP}-67b.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  426\penalty0 (1):\penalty0 739--750, Oct. 2012.
-\newblock ISSN 0035-8711, 1365-2966.
-\newblock \doi{10.1111/j.1365-2966.2012.21780.x}.
-\newblock URL \url{http://mnras.oxfordjournals.org/content/426/1/739}.
-
 \bibitem[Henry et~al.(2006)Henry, Jao, Subasavage, Beaulieu, Ianna, Costa, and
   Méndez]{henry_solar_2006}
 T.~J. Henry, W.-C. Jao, J.~P. Subasavage, T.~D. Beaulieu, P.~A. Ianna,
@@ -464,40 +301,12 @@ T.~J. Henry, W.-C. Jao, J.~P. Subasavage, T.~D. Beaulieu, P.~A. Ianna,
 \newblock URL
   \url{http://iopscience.iop.org/1538-3881/132/6/2360/205485.web.ps.gz}.
 
-\bibitem[Howell et~al.(2014)Howell, Sobeck, Haas, Still, Barclay, Mullally,
-  {John Troeltzsch}, Aigrain, Bryson, Caldwell, Chaplin, Cochran, Huber, Marcy,
-  Miglio, Najita, Smith, Twicken, and Fortney]{howell_k2_2014}
-S.~B. Howell, C.~Sobeck, M.~Haas, M.~Still, T.~Barclay, F.~Mullally, {John
-  Troeltzsch}, S.~Aigrain, S.~T. Bryson, D.~Caldwell, W.~J. Chaplin, W.~D.
-  Cochran, D.~Huber, G.~W. Marcy, A.~Miglio, J.~R. Najita, M.~Smith, J.~D.
-  Twicken, and J.~J. Fortney.
-\newblock The {K}2 {Mission}: {Characterization} and {Early} {Results}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  126\penalty0 (938):\penalty0 398, 2014.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/676406}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/126/i=938/a=398}.
-
 \bibitem[Huber(2015)]{huber_asteroseismology_2015}
 D.~Huber.
 \newblock Asteroseismology of {Exoplanet} {Host} {Stars}.
 \newblock \emph{arXiv:1511.07441 [astro-ph]}, Nov. 2015.
 \newblock URL \url{http://arxiv.org/abs/1511.07441}.
 \newblock arXiv: 1511.07441.
-
-\bibitem[Huber et~al.(2016)Huber, Bryson, Haas, Barclay, Barentsen, Howell,
-  Sharma, Stello, and Thompson]{huber_epic_2016}
-D.~Huber, S.~T. Bryson, M.~R. Haas, T.~Barclay, G.~Barentsen, S.~B. Howell,
-  S.~Sharma, D.~Stello, and S.~E. Thompson.
-\newblock {THE} \textit{{K}2} {ECLIPTIC} {PLANE} {INPUT} {CATALOG} ({EPIC})
-  {AND} {STELLAR} {CLASSIFICATIONS} {OF} 138,600 {TARGETS} {IN} {CAMPAIGNS}
-  1–8.
-\newblock \emph{The Astrophysical Journal Supplement Series}, 224\penalty0
-  (1):\penalty0 2, May 2016.
-\newblock ISSN 1538-4365.
-\newblock \doi{10.3847/0067-0049/224/1/2}.
-\newblock URL
-  \url{http://stacks.iop.org/0067-0049/224/i=1/a=2?key=crossref.5ad035712fa408a531ce851b0b7783f0}.
 
 \bibitem[Hunter(2007)]{hunter_matplotlib_2007}
 J.~D. Hunter.
@@ -508,26 +317,6 @@ J.~D. Hunter.
 \newblock \doi{10.1109/MCSE.2007.55}.
 \newblock URL
   \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160265}.
-
-\bibitem[Irwin et~al.(2008)Irwin, Charbonneau, Nutzman, and
-  Falco]{irwin_mearth_2008}
-J.~Irwin, D.~Charbonneau, P.~Nutzman, and E.~Falco.
-\newblock The {MEarth} project: searching for transiting habitable
-  super-{Earths} around nearby {M} dwarfs.
-\newblock In \emph{Transiting {Planets}}, volume~4 of \emph{Proceedings of the
-  {International} {Astronomical} {Union}}, pages 37--43, May 2008.
-\newblock \doi{10.1017/S1743921308026215}.
-\newblock URL \url{http://journals.cambridge.org/article_S1743921308026215}.
-
-\bibitem[Jehin et~al.(2011)Jehin, Gillon, Queloz, Magain, Manfroid, Chantry,
-  Lendl, Hutsemékers, and Udry]{jehin_trappist_2011}
-E.~Jehin, M.~Gillon, D.~Queloz, P.~Magain, J.~Manfroid, V.~Chantry, M.~Lendl,
-  D.~Hutsemékers, and S.~Udry.
-\newblock {TRAPPIST}: {TRAnsiting} {Planets} and {PlanetesImals} {Small}
-  {Telescope}.
-\newblock \emph{The Messenger}, 145:\penalty0 2--6, Sept. 2011.
-\newblock ISSN 0722-6691.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2011Msngr.145....2J}.
 
 \bibitem[Jenkins et~al.(2016)Jenkins, Twicken, McCauliff, Campbell, Sanderfer,
   Lung, Mansouri-Samani, Girouard, Tenenbaum, Klaus, Smith, Caldwell, Chacon,
@@ -541,6 +330,17 @@ J.~M. Jenkins, J.~D. Twicken, S.~McCauliff, J.~Campbell, D.~Sanderfer, D.~Lung,
 \newblock volume 9913, pages 99133E--99133E--20, 2016.
 \newblock \doi{10.1117/12.2233418}.
 \newblock URL \url{http://dx.doi.org/10.1117/12.2233418}.
+
+\bibitem[Johnson et~al.(2010)Johnson, Aller, Howard, and
+  Crepp]{johnson_giant_2010}
+J.~A. Johnson, K.~M. Aller, A.~W. Howard, and J.~R. Crepp.
+\newblock Giant {Planet} {Occurrence} in the {Stellar} {Mass}-{Metallicity}
+  {Plane}.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  122\penalty0 (894):\penalty0 905, 2010.
+\newblock ISSN 1538-3873.
+\newblock \doi{10.1086/655775}.
+\newblock URL \url{http://stacks.iop.org/1538-3873/122/i=894/a=905}.
 
 \bibitem[Jones et~al.(2001)Jones, Oliphant, Peterson, et~al.]{jones_scipy_2001}
 E.~Jones, T.~Oliphant, P.~Peterson, et~al.
@@ -673,17 +473,10 @@ T.~Mazeh, T.~Holczer, and S.~Faigler.
 \newblock URL \url{http://arxiv.org/abs/1602.07843}.
 \newblock arXiv: 1602.07843.
 
-\bibitem[McCullough et~al.(2005)McCullough, Stys, Valenti, Fleming, Janes, and
-  Heasley]{mccullough_xo_2005}
-P.~R. McCullough, J.~E. Stys, J.~A. Valenti, S.~W. Fleming, K.~A. Janes, and
-  J.~N. Heasley.
-\newblock The {XO} {Project}: {Searching} for {Transiting} {Extrasolar}
-  {Planet} {Candidates}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  117\penalty0 (834):\penalty0 783, 2005.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/432024}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/117/i=834/a=783}.
+\bibitem[McKinney()]{mckinneypandas}
+W.~McKinney.
+\newblock pandas: a foundational python library for data analysis and
+  statistics.
 
 \bibitem[Meibom et~al.(2013)Meibom, Torres, Fressin, Latham, Rowe, Ciardi,
   Bryson, Rogers, Henze, Janes, Barnes, Marcy, Isaacson, Fischer, Howell,
@@ -699,17 +492,6 @@ S.~Meibom, G.~Torres, F.~Fressin, D.~W. Latham, J.~F. Rowe, D.~R. Ciardi, S.~T.
 \newblock \doi{10.1038/nature12279}.
 \newblock URL \url{http://www.nature.com/doifinder/10.1038/nature12279}.
 
-\bibitem[Millholland et~al.(2016)Millholland, Wang, and
-  Laughlin]{millholland_detection_2016}
-S.~Millholland, S.~Wang, and G.~Laughlin.
-\newblock On the {Detection} of {Non}-{Transiting} {Hot} {Jupiters} in
-  {Multiple}-{Planet} {Systems}.
-\newblock \emph{The Astrophysical Journal}, 823\penalty0 (1):\penalty0 L7, May
-  2016.
-\newblock ISSN 2041-8213.
-\newblock \doi{10.3847/2041-8205/823/1/L7}.
-\newblock arXiv: 1602.05674.
-
 \bibitem[Mills et~al.(2016)Mills, Fabrycky, Migaszewski, Ford, Petigura, and
   Isaacson]{mills_resonant_2016}
 S.~M. Mills, D.~C. Fabrycky, C.~Migaszewski, E.~B. Ford, E.~Petigura, and
@@ -720,20 +502,6 @@ S.~M. Mills, D.~C. Fabrycky, C.~Migaszewski, E.~B. Ford, E.~Petigura, and
 \newblock \doi{10.1038/nature17445}.
 \newblock URL
   \url{http://www.nature.com/nature/journal/v533/n7604/full/nature17445.html}.
-
-\bibitem[Neveu-VanMalle et~al.(2016)Neveu-VanMalle, Queloz, Anderson, Brown,
-  Collier~Cameron, Delrez, Díaz, Gillon, Hellier, Jehin, Lister, Pepe, Rojo,
-  Ségransan, Triaud, Turner, and Udry]{neveu-vanmalle_HJrelatives_2016}
-M.~Neveu-VanMalle, D.~Queloz, D.~R. Anderson, D.~J.~A. Brown,
-  A.~Collier~Cameron, L.~Delrez, R.~F. Díaz, M.~Gillon, C.~Hellier, E.~Jehin,
-  T.~Lister, F.~Pepe, P.~Rojo, D.~Ségransan, A.~H. M.~J. Triaud, O.~D. Turner,
-  and S.~Udry.
-\newblock Hot {Jupiters} with relatives: discovery of additional planets in
-  orbit around {WASP}-41 and {WASP}-47.
-\newblock \emph{Astronomy \& Astrophysics}, 586:\penalty0 A93, Feb. 2016.
-\newblock ISSN 0004-6361, 1432-0746.
-\newblock \doi{10.1051/0004-6361/201526965}.
-\newblock URL \url{http://www.aanda.org/10.1051/0004-6361/201526965}.
 
 \bibitem[Ngo et~al.(2016)Ngo, Knutson, Hinkley, Bryan, Crepp, Batygin,
   Crossfield, Hansen, Howard, Johnson, Mawet, Morton, Muirhead, and
@@ -759,33 +527,6 @@ R.~P. Olling, R.~Mushotzky, E.~J. Shaya, A.~Rest, P.~M. Garnavich, B.~E.
 \newblock URL
   \url{http://www.nature.com/nature/journal/v521/n7552/full/nature14455.html}.
 
-\bibitem[Osborn et~al.(2016)Osborn, Armstrong, Brown, McCormac, Doyle, Louden,
-  Kirk, Spake, Lam, Walker, Faedi, and Pollacco]{osborn_single_2016}
-H.~P. Osborn, D.~J. Armstrong, D.~J.~A. Brown, J.~McCormac, A.~P. Doyle, T.~M.
-  Louden, J.~Kirk, J.~J. Spake, K.~W.~F. Lam, S.~R. Walker, F.~Faedi, and D.~L.
-  Pollacco.
-\newblock Single transit candidates from {K}2: detection and period estimation.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  457\penalty0 (3):\penalty0 2273--2286, Apr. 2016.
-\newblock ISSN 0035-8711, 1365-2966.
-\newblock \doi{10.1093/mnras/stw137}.
-\newblock URL
-  \url{http://mnras.oxfordjournals.org/lookup/doi/10.1093/mnras/stw137}.
-
-\bibitem[Pepper et~al.(2007)Pepper, Pogge, DePoy, Marshall, Stanek, Stutz,
-  {Shawn Poindexter}, Siverd, O’Brien, Trueblood, and
-  Trueblood]{pepper_KELT_2007}
-J.~Pepper, R.~W. Pogge, D.~L. DePoy, J.~L. Marshall, K.~Z. Stanek, A.~M. Stutz,
-  {Shawn Poindexter}, R.~Siverd, T.~P. O’Brien, M.~Trueblood, and
-  P.~Trueblood.
-\newblock The {Kilodegree} {Extremely} {Little} {Telescope} ({KELT}): {A}
-  {Small} {Robotic} {Telescope} for {Large}-{Area} {Synoptic} {Surveys}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  119\penalty0 (858):\penalty0 923, 2007.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/521836}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/119/i=858/a=923}.
-
 \bibitem[Perryman(2002)]{perryman_gaia_2002}
 M.~a.~C. Perryman.
 \newblock {GAIA}: {An} {Astrometric} and {Photometric} {Survey} of our
@@ -809,23 +550,6 @@ M.~A.~C. Perryman, L.~Lindegren, J.~Kovalevsky, E.~Hoeg, U.~Bastian, P.~L.
 \newblock The {HIPPARCOS} {Catalogue}.
 \newblock \emph{Astronomy and Astrophysics}, 323, July 1997.
 \newblock ISSN 0004-6361.
-
-\bibitem[Pollacco et~al.(2006)Pollacco, Skillen, Cameron, Christian, Hellier,
-  Irwin, Lister, Street, West, Anderson, Clarkson, Deeg, Enoch, Evans,
-  Fitzsimmons, Haswell, Hodgkin, Horne, Kane, Keenan, Maxted, Norton, Osborne,
-  Parley, Ryans, Smalley, Wheatley, and Wilson]{pollacco_wasp_2006}
-D.~L. Pollacco, I.~Skillen, A.~C. Cameron, D.~J. Christian, C.~Hellier,
-  J.~Irwin, T.~A. Lister, R.~A. Street, R.~G. West, D.~Anderson, W.~I.
-  Clarkson, H.~Deeg, B.~Enoch, A.~Evans, A.~Fitzsimmons, C.~A. Haswell,
-  S.~Hodgkin, K.~Horne, S.~R. Kane, F.~P. Keenan, P.~F.~L. Maxted, A.~J.
-  Norton, J.~Osborne, N.~R. Parley, R.~S.~I. Ryans, B.~Smalley, P.~J. Wheatley,
-  and D.~M. Wilson.
-\newblock The {WASP} {Project} and the {SuperWASP} {Cameras}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  118\penalty0 (848):\penalty0 1407, 2006.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/508556}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/118/i=848/a=1407}.
 
 \bibitem[Price and Rogers(2014)]{price_transit_2014}
 E.~M. Price and L.~A. Rogers.
@@ -902,28 +626,6 @@ I.~Soszynski, W.~A. Dziembowski, A.~Udalski, R.~Poleski, M.~K. Szymanski,
 \newblock URL \url{http://arxiv.org/abs/1105.6126}.
 \newblock arXiv: 1105.6126.
 
-\bibitem[Sozzetti et~al.(2013)Sozzetti, Bernagozzi, Bertolini, Calcidese,
-  Carbognani, Cenadelli, Christille, Damasso, Giacobbe, Lanteri, Lattanzi, and
-  Smart]{sozzetti_apache_2013}
-A.~Sozzetti, A.~Bernagozzi, E.~Bertolini, P.~Calcidese, A.~Carbognani,
-  D.~Cenadelli, J.-M. Christille, M.~Damasso, P.~Giacobbe, L.~Lanteri,
-  M.~Lattanzi, and R.~Smart.
-\newblock The {APACHE} {Project}.
-\newblock \emph{EPJ Web of Conferences}, 47:\penalty0 03006, 2013.
-\newblock ISSN 2100-014X.
-\newblock \doi{10.1051/epjconf/20134703006}.
-\newblock URL \url{http://www.epj-conferences.org/10.1051/epjconf/20134703006}.
-
-\bibitem[Stevenson et~al.(2016)]{stevenson_communityJWST_2016}
-K.~B. Stevenson et~al.
-\newblock Transiting {Exoplanet} {Studies} and {Community} {Targets} for
-  {JWST}'s {Early} {Release} {Science} {Program}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  128\penalty0 (967):\penalty0 094401, Sept. 2016.
-\newblock ISSN 0004-6280, 1538-3873.
-\newblock \doi{10.1088/1538-3873/128/967/094401}.
-\newblock arXiv: 1602.08389.
-
 \bibitem[{STScI Science Definition
   Team}(2016)]{science_definition_team_report_big_2016}
 {STScI Science Definition Team}.
@@ -971,37 +673,6 @@ R.~Szabó, K.~Sárneczky, G.~M. Szabó, A.~Pál, C.~P. Kiss, B.~Csák,
 \newblock URL \url{http://arxiv.org/abs/1501.05967}.
 \newblock arXiv: 1501.05967.
 
-\bibitem[Udalski et~al.(2003{\natexlab{a}})Udalski, Pietrzynski, Szymanski,
-  Kubiak, Zebrun, Soszynski, Szewczyk, and Wyrzykowski]{udalski_ogle1_2003}
-A.~Udalski, G.~Pietrzynski, M.~Szymanski, M.~Kubiak, K.~Zebrun, I.~Soszynski,
-  O.~Szewczyk, and L.~Wyrzykowski.
-\newblock The {Optical} {Gravitational} {Lensing} {Experiment}. {Additional}
-  {Planetary} and {Low}-{Luminosity} {Object} {Transits} from the {OGLE} 2001
-  and 2002 {Observational} {Campaigns}.
-\newblock \emph{arXiv:astro-ph/0306444}, June 2003{\natexlab{a}}.
-\newblock URL \url{http://arxiv.org/abs/astro-ph/0306444}.
-\newblock arXiv: astro-ph/0306444.
-
-\bibitem[Udalski et~al.(2003{\natexlab{b}})Udalski, Szewczyk, Zebrun,
-  Pietrzynski, Szymanski, Kubiak, Soszynski, and
-  Wyrzykowski]{udalski_ogle0_2003}
-A.~Udalski, O.~Szewczyk, K.~Zebrun, G.~Pietrzynski, M.~Szymanski, M.~Kubiak,
-  I.~Soszynski, and L.~Wyrzykowski.
-\newblock The {Optical} {Gravitational} {Lensing} {Experiment}. {Planetary} and
-  {Low}-{Luminosity} {Object} {Transits} in the {Carina} {Fields} of the
-  {Galactic} {Disk}.
-\newblock \emph{arXiv:astro-ph/0301210}, Jan. 2003{\natexlab{b}}.
-\newblock URL \url{http://arxiv.org/abs/astro-ph/0301210}.
-\newblock arXiv: astro-ph/0301210.
-
-\bibitem[Uehara et~al.(2016)Uehara, Kawahara, Masuda, Yamada, and
-  Aizawa]{uehara_transiting_2016}
-S.~Uehara, H.~Kawahara, K.~Masuda, S.~Yamada, and M.~Aizawa.
-\newblock Transiting {Planet} {Candidates} {Beyond} the {Snow} {Line}
-  {Detected} by {Visual} {Inspection} of 7557 {Kepler} {Objects} of {Interest}.
-\newblock \emph{arXiv preprint arXiv:1602.07848}, 2016.
-\newblock URL \url{http://arxiv.org/abs/1602.07848}.
-
 \bibitem[van Leeuwen and Leeuwen(2007)]{van_leeuwen_validation_2007}
 van Leeuwen and F.~v. Leeuwen.
 \newblock Validation of the new {Hipparcos} reduction.
@@ -1022,36 +693,11 @@ A.~Vanderburg, J.~A. Johnson, S.~Rappaport, A.~Bieryla, J.~Irwin, J.~A. Lewis,
 \newblock ISSN 0028-0836, 1476-4687.
 \newblock \doi{10.1038/nature15527}.
 
-\bibitem[Vanderburg et~al.(2016)Vanderburg, Latham, Buchhave, Bieryla, Berlind,
-  Calkins, Esquerdo, Welsh, and Johnson]{vanderburg_234_2016}
-A.~Vanderburg, D.~W. Latham, L.~A. Buchhave, A.~Bieryla, P.~Berlind, M.~L.
-  Calkins, G.~A. Esquerdo, S.~Welsh, and J.~A. Johnson.
-\newblock Planetary {Candidates} from the {First} {Year} of the {K}2 {Mission}.
-\newblock \emph{The Astrophysical Journal Supplement Series}, 222:\penalty0 14,
-  Jan. 2016.
-\newblock ISSN 0067-0049.
-\newblock \doi{10.3847/0067-0049/222/1/14}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2016ApJS..222...14V}.
-
 \bibitem[Veras(2016)]{veras_postMS_2016}
 D.~Veras.
 \newblock Post-main-sequence planetary system evolution.
 \newblock \emph{arXiv preprint arXiv:1601.05419}, 2016.
 \newblock URL \url{http://arxiv.org/abs/1601.05419}.
-
-\bibitem[Walker et~al.(2003)Walker, Matthews, Kuschnig, Johnson, Rucinski,
-  Pazder, Burley, Walker, Skaret, Zee, Grocott, Carroll, Sinclair, Sturgeon,
-  and Harron]{walker_most_2003}
-G.~Walker, J.~Matthews, R.~Kuschnig, R.~Johnson, S.~Rucinski, J.~Pazder,
-  G.~Burley, A.~Walker, K.~Skaret, R.~Zee, S.~Grocott, K.~Carroll, P.~Sinclair,
-  D.~Sturgeon, and J.~Harron.
-\newblock The \textit{{MOST}} {Asteroseismology} {Mission}: {Ultraprecise}
-  {Photometry} from {Space}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  115\penalty0 (811):\penalty0 1023--1035, Sept. 2003.
-\newblock ISSN 0004-6280, 1538-3873.
-\newblock \doi{10.1086/377358}.
-\newblock URL \url{http://iopscience.iop.org/article/10.1086/377358}.
 
 \bibitem[Walt et~al.(2011)Walt, Colbert, and Varoquaux]{walt_numpy_2011}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux.
@@ -1064,39 +710,14 @@ S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/cise/13/2/10.1109/MCSE.2011.37}.
 
-\bibitem[Wang et~al.(2015)Wang, Fischer, Barclay, Picard, Ma, Bowler, Schmitt,
-  Boyajian, Jek, LaCourse, Baranec, Riddle, Law, Lintott, Schawinski, Simister,
-  Gregoire, Babin, Poile, Jacobs, Jebson, Omohundro, Schwengeler, Sejpka,
-  Terentev, Gagliano, Paakkonen, Berge, Winarski, Green, Schmitt, Kristiansen,
-  and Hoekstra]{wang_longP_2015}
-J.~Wang, D.~A. Fischer, T.~Barclay, A.~Picard, B.~Ma, B.~P. Bowler, J.~R.
-  Schmitt, T.~S. Boyajian, K.~J. Jek, D.~LaCourse, C.~Baranec, R.~Riddle, N.~M.
-  Law, C.~Lintott, K.~Schawinski, D.~J. Simister, B.~Gregoire, S.~P. Babin,
-  T.~Poile, T.~L. Jacobs, T.~Jebson, M.~R. Omohundro, H.~M. Schwengeler,
-  J.~Sejpka, I.~A. Terentev, R.~Gagliano, J.-P. Paakkonen, H.~K.~O. Berge,
-  T.~Winarski, G.~R. Green, A.~R. Schmitt, M.~H. Kristiansen, and A.~Hoekstra.
-\newblock Planet {Hunters}. {VIII}. {Characterization} of 41 {Long}-{Period}
-  {Exoplanet} {Candidates} from {Kepler} {Archival} {Data}.
-\newblock \emph{The Astrophysical Journal}, 815\penalty0 (2):\penalty0 127,
-  Dec. 2015.
-\newblock ISSN 1538-4357.
-\newblock \doi{10.1088/0004-637X/815/2/127}.
-\newblock URL \url{http://arxiv.org/abs/1512.02559}.
-\newblock arXiv: 1512.02559.
-
-\bibitem[Wheatley et~al.(2013)Wheatley, Pollacco, Queloz, Rauer, Watson, West,
-  Chazelas, Louden, Walker, Bannister, Bento, Burleigh, Cabrera, Eigmüller,
-  Erikson, Genolet, Goad, Grange, Jordán, Lawrie, McCormac, and
-  Neveu]{wheatley_ngts_2013}
-P.~J. Wheatley, D.~L. Pollacco, D.~Queloz, H.~Rauer, C.~A. Watson, R.~G. West,
-  B.~Chazelas, T.~M. Louden, S.~Walker, N.~Bannister, J.~Bento, M.~Burleigh,
-  J.~Cabrera, P.~Eigmüller, A.~Erikson, L.~Genolet, M.~Goad, A.~Grange,
-  A.~Jordán, K.~Lawrie, J.~McCormac, and M.~Neveu.
-\newblock The {Next} {Generation} {Transit} {Survey} ({NGTS}).
-\newblock \emph{EPJ Web of Conferences}, 47:\penalty0 13002, 2013.
-\newblock ISSN 2100-014X.
-\newblock \doi{10.1051/epjconf/20134713002}.
-\newblock URL \url{http://www.epj-conferences.org/10.1051/epjconf/20134713002}.
+\bibitem[Wang and Fischer(2015)]{wang_revealing_2015}
+J.~Wang and D.~A. Fischer.
+\newblock Revealing a {Universal} {Planet}–{Metallicity} {Correlation} for
+  {Planets} of {Different} {Sizes} {Around} {Solar}-type {Stars}.
+\newblock \emph{The Astronomical Journal}, 149\penalty0 (1):\penalty0 14, 2015.
+\newblock ISSN 1538-3881.
+\newblock \doi{10.1088/0004-6256/149/1/14}.
+\newblock URL \url{http://stacks.iop.org/1538-3881/149/i=1/a=14}.
 
 \bibitem[Winn(2013)]{winn_searchable_2013}
 J.~N. Winn.

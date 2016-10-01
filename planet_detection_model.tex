@@ -1,14 +1,14 @@
 \subsection{Description of planet detection model}
 \label{sec:planet_detection_model}
 
-\citet{Sullivan_2015} (hereafter, \citetalias{Sullivan_2015}) developed a direct simulation of \tesss planet and false positive detections based on the spacecraft and payload design specified in \citet{ricker_transiting_2014}. 
+\citet{Sullivan_2015} (hereafter, \citetalias{Sullivan_2015}) developed a direct simulation of \tesss planet and false positive detections based on the spacecraft and payload design specified by \citet{ricker_transiting_2014}. 
 We adapt this simulation for extended mission planning.
 With our additions, we can change where \tess looks in additional years of observing while keeping all other mission-defining parameters constant. 
 Our approach is then to run our planet detection simulation for each plausible pointing strategy, and to compare the relative yields of detected planets.
 This lets us contrast extended mission planet yields with those of the primary survey, and also lets us compare extended missions in bulk.
 
 \paragraph{Background on synthetic catalogs:}
-\tess is sensitive to sub-Neptune sized transiting planets orbiting M dwarfs out to $\sim200\text{pc}$ and KFG dwarfs out to $\sim1\text{kpc}$. 
+\tess is sensitive to sub-Neptune sized transiting planets orbiting M dwarfs out to $\lesssim200\text{pc}$ and G dwarfs out to $\lesssim1\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3). 
 It is sensitive to giant planets and eclipsing binaries across a significant fraction of the galactic disk.
 With this sensitivity in mind, the stellar catalog we `observe' in our planet detection simulation is drawn from the output of TRILEGAL, a population synthesis code for the Milky Way~\citep{girardi_star_2005}.
 ~\citetalias{Sullivan_2015} made select modifications to the catalog, notably in the M dwarf radius-luminosity relation, to better approximate interferometric stellar radii measurements.
@@ -23,7 +23,7 @@ Assuming the transit depth and number of transits are known, we
 use a model of \tesss point spread function (PSF) to determine optimal photometric aperture sizes for each postage stamp star (\textit{i.e.,} we compute the noise for all plausible aperture sizes, and find the number of pixels that minimizes this noise).
 With the aperture sizes and noise corresponding to a given integration time known, we compute a signal to noise ratio for each transiting object.
 Our model for planet detectability is a simple step function in SNR: if we have two or more transits and $\text{SNR} > 7.3$, we rule it as `detected', otherwise it is not detected\footnote{The value of this threshold is chosen to ensure that no more than 1 statistical false positive is present in the `detections' from $2\times10^5$ target stars. Observing a greater number of stars, for instance in full frame images, should require a higher threshold value to maintain the same condition. We discuss this in Sec.~\protect\ref{sec:risks}.}. 
-Our model for \tesss photometric precision is described in~\citetalias{Sullivan_2015} and shown in Fig.~\ref{fig:noise_with_moon}.
+Our model for \tesss photometric precision is described by~\citetalias{Sullivan_2015} and shown in Fig.~\ref{fig:noise_with_moon}.
 
 \paragraph{Assumptions of SNR calculation:}
 Our approach to computing SNRs for each transiting object is not time-resolved. 

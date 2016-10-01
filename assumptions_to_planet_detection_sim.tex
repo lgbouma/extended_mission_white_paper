@@ -2,22 +2,24 @@
 \label{sec:input_assumptions}
 %Garbage in, garbage out. Better to be clear about what's going in.
 \begin{itemize}
-	\item The TRILEGAL catalog (modified to match interferometric radii, as described in~\citetalias{Sullivan_2015}) is an accurate representation of the stellar neighborhood to $\lesssim2\text{kpc}$.
-	\item \tesss large pixel size ($21\times21''$) combined with crowding near the galactic disk will cause substantial source confusion and a large astrophysical false positive rate. We thus omit the 5\% of the sky closest to the galactic disk (see Fig.~\ref{fig:positions_pointings}), and focus on planet detection statistics for $R_p < 4R_\oplus$.
+	\item The TRILEGAL catalog (modified to match interferometric radii, as described by~\citetalias{Sullivan_2015}) is an accurate representation of the stellar neighborhood to $\lesssim2\text{kpc}$.
+	\item \tesss large pixel size ($21\times21''$) combined with crowding near the galactic disk will cause substantial source confusion and a large astrophysical false positive rate. 
+	More practically, TRILEGAL cannot be queried within its run-time limit for some of these fields (cf.~\citetalias{Sullivan_2015} Sec 3.1).
+	We thus omit the 5\% of the sky closest to the galactic disk (see Fig.~\ref{fig:positions_pointings}), and focus on planet detection statistics for $R_p < 4R_\oplus$.
 	\item We know the radii and apparent magnitudes of TRILEGAL's synthetic stars, so we can prescribe a simple prioritization statistic (Eq.~\ref{eq:merit}) that we expect (but have not verified) maximizes the number of small planets we discover about bright stars\footnote{Although it is difficult to determine accurate photometric radii, we expect that by the time \tess launches \gaia will  provide accurate proper motions for the majority of \tess targets, allowing \tess to discriminate between red dwarfs and red giants for purposes of target prioritization.}.
-	\item The only `imperfection' in our (simulated) knowledge of a given host star's parameters is its apparent magnitude, which in reality could be dimmer than the value we use for prioritization owing to dilution from companion and background stars (whose presence will not be known a priori, but which we account for when computing `observed' SNRs).
-	\item Planet distributions derived from the \textit{Kepler} mission in \citet{fressin_false_2013} and~\citet{dressing_occurrence_2015} are accurate for the $P \lesssim 180\ \text{day}$ planets to which \tess is sensitive.
-	\item Multiple planet system distributions can approximated as repeated draws from the above distributions (with independent probability) with added impositions of co-planarity and orbital stability.
+	\item In evaluating a star's \texttt{Merit} (Eq.~\ref{eq:merit}), we assume an observed magnitude for each star that comes from the sum of the flux from the star itself in addition to any companion and background stars (whose presence will not be known by the mission a priori, but which we then account for when computing `observed' SNRs).
+	\item Planet distributions derived from the \textit{Kepler} mission by \citet{fressin_false_2013} and~\citet{dressing_occurrence_2015} are accurate for the $P \lesssim 180\ \text{day}$ planets to which \tess is sensitive.
+	\item Multiple planet system distributions can approximated as repeated draws from the single-planet distributions (with independent probability). The orbits of planets in multiple planet systems are coplanar and stable (periods of adjacent planetary orbits have ratios of at least 1.2).
 	\item For our instrument and noise models, we assume:
 	\begin{itemize}
-		\item A point-spread function (PSF) derived from ray-tracing simulations, similar to that described in~\citetalias{Sullivan_2015}, Sec 6.1.
+		\item A point-spread function (PSF) derived from ray-tracing simulations, slightly degraded from that described by~\citetalias{Sullivan_2015}, Sec 6.1 based on laboratory measurements.
 		\item All stars are observed at the \textit{center} of the \tess CCDs. This ignores off-axis and chromatic aberrations within the \tess optics, and consequently ignores the angular dependence of the pixel response function (the fraction of light from a star that is collected by a given pixel). 
-		While~\citetalias{Sullivan_2015} took a different approach to this, we argue that the methodology used in that work was inconsistent (see appendix Sec.~\ref{sec:changes_from_S15}). Keeping a PSF that does not depend on observed stellar field angles is better suited to our goal of comparing extended mission pointings.
+		While~\citetalias{Sullivan_2015} took a different approach to this, we argue that the methodology used in that work was inconsistent (see appendix Sec.~\ref{sec:changes_from_S15}). Keeping a PSF that does not depend on observed stellar field angles is adequate for our goal of comparing extended mission pointings.
 		\item The time/frequency structure of all noise (except for stellar variability, see below) is `white'. 
 		This means that we ignore time-correlated instrumental effects such as spacecraft jitter, thermal fluctuations, and mechanical flexure, which will be addressed by the mission's data reduction pipeline.
 		\item The instruments work equally well in year 3 as in years 1 and 2.
 		\item Contributors to white noise include: CCD read noise, shot noise from stars, a systematic noise floor of 60 $\mathrm{ppm}\cdot\mathrm{hr}^{1/2}$, and zodiacal background. See Fig.~\ref{fig:noise_with_moon} for the relative contributions of these terms as a function of apparent magnitude.
-		\item Noise contributions from stellar intrinsic variability are identical to those described in~\citetalias{Sullivan_2015} Sec3.5, which uses variability statistics from the \textit{Kepler} data computed by~\citet{basri_comparison_2013}. 
+		\item Noise contributions from stellar intrinsic variability are identical to those described by~\citetalias{Sullivan_2015} Sec3.5, which uses variability statistics from the \textit{Kepler} data computed by~\citet{basri_comparison_2013}. 
 		Unlike all previously mentioned noise sources, we do not scale noise from stellar variability as $t_\mathrm{obs}^{-1/2}$, since the photon flux from stars may vary over time-scales similar to typical transit durations.
 		Instead, we assume the noise contribution from stellar variability is independent across transits, and thus scales as $N_\mathrm{tra}^{-1/2}$, for $N_\mathrm{tra}$ the number of observed transits.
 	\end{itemize}
@@ -43,4 +45,6 @@
 	This $16\times16$ pixel image is of the number of photoelectrons \tess sees from the star and its companions/background stars at each pixel of each CCD. 
 	We produce it through our PRF model, which in turn requires the host star's $T_\mathrm{eff}$ and apparent $I_c$.
 	Over each image, the noise is computed for a range of possible aperture sizes about the brightest pixel (see~\citetalias{Sullivan_2015} Secs. 6.2 and 6.3), and then finally a single `noise' for each transit is selected by choosing the aperture size that minimizes the noise.
+	%!WINN! Given this summary, should we shorten preceding text about the simulation?
+	%!BOUMA! I'd rather not. In my mind the only people (perhaps person) reading it will be trying to replicate it, in which case the full logic would be more helpful than this kind of condensed summary... maybe.
 \end{itemize}

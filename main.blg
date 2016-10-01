@@ -8,50 +8,52 @@ Repeated entry---line 621 of file bibliography/biblio.bib.bib
  :                             ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in edelson_agn_2013
-Warning--empty journal in gillon_speculoos_2013
 Warning--empty booktitle in jenkins_SPOC_2016
 Warning--empty journal in kepner_rational_1965
 Warning--empty booktitle in landsman_idl_1995
+Warning--empty journal in mckinneypandas
+Warning--empty year in mckinneypandas
+Warning--empty year in mckinneypandas
 Warning--empty institution in science_definition_team_report_big_2016
-You've used 98 entries,
+You've used 68 entries,
             2773 wiz_defined-function locations,
-            1293 strings with 42009 characters,
-and the built_in function-call counts, 82147 in all, are:
-= -- 6535
-> -- 9111
-< -- 33
-+ -- 3046
-- -- 2946
-* -- 8437
-:= -- 13863
-add.period$ -- 510
-call.type$ -- 98
-change.case$ -- 1274
-chr.to.int$ -- 96
-cite$ -- 202
-duplicate$ -- 2033
-empty$ -- 3499
-format.name$ -- 3070
-if$ -- 16032
-int.to.chr$ -- 3
+            1069 strings with 28591 characters,
+and the built_in function-call counts, 52649 in all, are:
+= -- 4239
+> -- 5601
+< -- 29
++ -- 1875
+- -- 1806
+* -- 5305
+:= -- 8853
+add.period$ -- 338
+call.type$ -- 68
+change.case$ -- 806
+chr.to.int$ -- 67
+cite$ -- 144
+duplicate$ -- 1388
+empty$ -- 2398
+format.name$ -- 1898
+if$ -- 10311
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 93
-newline$ -- 713
-num.names$ -- 394
-pop$ -- 2230
+missing$ -- 63
+newline$ -- 481
+num.names$ -- 274
+pop$ -- 1415
 preamble$ -- 1
-purify$ -- 1174
+purify$ -- 736
 quote$ -- 0
-skip$ -- 2172
+skip$ -- 1425
 stack$ -- 0
-substring$ -- 1214
-swap$ -- 211
-text.length$ -- 9
+substring$ -- 833
+swap$ -- 134
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1073
-warning$ -- 6
-while$ -- 388
+type$ -- 743
+warning$ -- 8
+while$ -- 268
 width$ -- 0
-write$ -- 1680
+write$ -- 1133
 (There was 1 error message)
