@@ -1,42 +1,101 @@
 \subsection{Description of planet detection model}
 \label{sec:planet_detection_model}
 
-\citet{Sullivan_2015} (hereafter, \citetalias{Sullivan_2015}) developed a direct simulation of \tesss planet and false positive detections based on the spacecraft and payload design specified by \citet{ricker_transiting_2014}. 
-We adapt this simulation for extended mission planning.
-With our additions, we can change where \tess looks in additional years of observing while keeping all other mission-defining parameters constant. 
-Our approach is then to run our planet detection simulation for each plausible pointing strategy, and to compare the relative yields of detected planets.
-This lets us contrast extended mission planet yields with those of the primary survey, and also lets us compare extended missions in bulk.
+\citet{Sullivan_2015} (hereafter, \citetalias{Sullivan_2015})
+developed a simulation of \tesss planet and false positive detections
+based on the spacecraft and payload design specified by
+\citet{ricker_transiting_2014}.  We adapt this simulation for extended
+mission planning.  With our additions, we can change where \tess looks
+in additional years of observing while holding fixed all other
+mission-defining parameters.  Our approach is then to run our planet
+detection simulation for each plausible pointing strategy, and to
+compare the relative yields of detected planets.  This lets us compare
+Extended Mission scenarios with one another and with the Primary
+Mission.
 
 \paragraph{Background on synthetic catalogs:}
-\tess is sensitive to sub-Neptune sized transiting planets orbiting M dwarfs out to $\lesssim200\text{pc}$ and G dwarfs out to $\lesssim1\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3). 
-It is sensitive to giant planets and eclipsing binaries across a significant fraction of the galactic disk.
-With this sensitivity in mind, the stellar catalog we `observe' in our planet detection simulation is drawn from the output of TRILEGAL, a population synthesis code for the Milky Way~\citep{girardi_star_2005}.
-~\citetalias{Sullivan_2015} made select modifications to the catalog, notably in the M dwarf radius-luminosity relation, to better approximate interferometric stellar radii measurements.
-We keep these modifications; the modified TRILEGAL stellar catalog shows acceptable agreement with observations\footnote{Looking closely at the radius-luminosity relations, we do see non-physical interpolation artifacts. These outliers are visible in Figs.~\ref{fig:fig17_replica} and~\ref{fig:fig17_radius_on_x} below, but are a small enough subset of the population that we ignore them for this work.}, specifically the Hipparcos sample~\citep{perryman_hipparcos_1997,van_leeuwen_validation_2007} and the $10\text{pc}$ RECONS sample~\citep{henry_solar_2006}.
 
-With a stellar catalog defined, we populate the stars in the catalog with planets based on occurrence rates derived from the \textit{Kepler} sample. 
-We use rates~\citet{fressin_false_2013} found for planets orbiting stars with $T_\text{eff} > 4000\text{K}$ and those that~\citet{dressing_occurrence_2015} found for the remaining M and late K dwarfs.
+\tess is sensitive to sub-Neptune sized transiting planets orbiting M
+dwarfs out to $\lesssim200\text{pc}$ and G dwarfs out to
+$\lesssim1\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3).  It is
+sensitive to giant planets and eclipsing binaries across a significant
+fraction of the galactic disk.  With this sensitivity in mind, the
+stellar catalog we `observe' in our planet detection simulation is
+drawn from the output of TRILEGAL, a population synthesis code for the
+Milky Way~\citep{girardi_star_2005}.  ~\citetalias{Sullivan_2015} made
+some modifications to the catalog, notably in the M dwarf
+radius-luminosity relation, to better approximate interferometric
+stellar radii measurements.  We retain these modifications; the modified
+TRILEGAL stellar catalog shows acceptable agreement with
+observations\footnote{Looking closely at the radius-luminosity
+  relations, we do see non-physical interpolation artifacts. These
+  outliers are visible in Figs.~\ref{fig:fig17_replica}
+  and~\ref{fig:fig17_radius_on_x} below, but are a small enough subset
+  of the population that we ignore them for this work.}, specifically
+the Hipparcos
+sample~\citep{perryman_hipparcos_1997,van_leeuwen_validation_2007} and
+the $10\text{pc}$ RECONS sample~\citep{henry_solar_2006}.
+
+With a stellar catalog defined, we populate the stars in the catalog
+with planets based on occurrence rates derived from the
+\textit{Kepler} sample.  We use rates~\citet{fressin_false_2013} found
+for planets orbiting stars with $T_\text{eff} > 4000\text{K}$ and
+those that~\citet{dressing_occurrence_2015} found for the remaining M
+and late K dwarfs.
 
 \paragraph{Detection process:}
-We then simulate transits of these planets.
-Assuming the transit depth and number of transits are known, we
-use a model of \tesss point spread function (PSF) to determine optimal photometric aperture sizes for each postage stamp star (\textit{i.e.,} we compute the noise for all plausible aperture sizes, and find the number of pixels that minimizes this noise).
-With the aperture sizes and noise corresponding to a given integration time known, we compute a signal to noise ratio for each transiting object.
-Our model for planet detectability is a simple step function in SNR: if we have two or more transits and $\text{SNR} > 7.3$, we rule it as `detected', otherwise it is not detected\footnote{The value of this threshold is chosen to ensure that no more than 1 statistical false positive is present in the `detections' from $2\times10^5$ target stars. Observing a greater number of stars, for instance in full frame images, should require a higher threshold value to maintain the same condition. We discuss this in Sec.~\protect\ref{sec:risks}.}. 
-Our model for \tesss photometric precision is described by~\citetalias{Sullivan_2015} and shown in Fig.~\ref{fig:noise_with_moon}.
+We then simulate transits of these planets.  Assuming the transit
+depth and number of transits are known, we use a model of \tesss point
+spread function (PSF) to determine optimal photometric aperture sizes
+for each postage stamp star (\textit{i.e.,} we compute the noise for
+all plausible aperture sizes, and find the number of pixels that
+minimizes this noise.  With the aperture sizes and noise
+corresponding to a given integration time known, we compute a signal
+to noise ratio for each transiting object.  Our model for planet
+detectability is a simple step function in SNR: if we have two or more
+transits and $\text{SNR} > 7.3$, we rule it as `detected', otherwise
+it is not detected\footnote{The value of this threshold is chosen to
+  ensure that no more than 1 statistical false positive is present in
+  the `detections' from $2\times10^5$ target stars. Observing a
+  greater number of stars, for instance in full frame images, should
+  require a higher threshold value to maintain the same condition. We
+  discuss this in Sec.~\protect\ref{sec:risks}.}.  Our model for
+\tesss photometric precision is described
+by~\citetalias{Sullivan_2015} and shown in
+Fig.~\ref{fig:noise_with_moon}.
 
 \paragraph{Assumptions of SNR calculation:}
-Our approach to computing SNRs for each transiting object is not time-resolved. 
-In other words, we are not simulating every 2 second CCD readout, stacking those hypothetical readouts into 2 minute cadence postage stamps and 30 minute full frames, and then reducing simulated light curves.
+Our approach to computing SNRs for each transiting object is not
+time-resolved.  In other words, we are not simulating every 2 second
+CCD readout, stacking those hypothetical readouts into 2 minute
+cadence postage stamps and 30 minute full frames, and then reducing
+simulated light curves.
 
-Our calculation is simpler. 
-We assume perfect period-recovery, phase folding, and identical conditions between transits. % (\textit{i.e.}, no red noise).
-We also assume that we observe a constant transit depth, which is diluted by binary companions and background stars in the same manner between transits.
-Our approach is then to simply tally the number of \tess fields a given host star falls within, which corresponds to a known total observing baseline.
-Assuming random orbital phasing, we then compute the number of transits \tess observes for planets of any given host.
-% (which is where "synthetic images" given the PSF come in)
-With a model PSF, we determine ideal aperture sizes (see two paragraphs above), and then obtain an accurate noise per transit (since the transit durations are known, and we assume our noise, computed first over a single hour, then bins like white-noise, \textit{i.e.,} proportionate to the inverse square root of the time in-transit).
+Our calculation is simpler.  We assume perfect period-recovery, phase
+folding, and identical conditions between transits.  We also assume
+that we observe a constant transit depth, which is diluted by binary
+companions and background stars in the same manner between transits.
+Our approach is then to simply tally the number of \tess fields a
+given host star falls within, which corresponds to a known total
+observing baseline.  Assuming random orbital phasing, we then compute
+the number of transits \tess observes for planets of any given host.
 
-Coupled with the known transit signal, this gives us the SNR per transit, and then to `phase-fold our light-curves' (light-curves which are never explicitly computed point-by-point) we just\footnote{We actually take a quadrature sum of both transit and occultation signals, but this is negligible for planets. It only matters for the case of eclipsing binaries, which we ignore in this work.} multiply the SNR per transit by the square root of the number of transits observed.
+With a model PSF, we determine ideal aperture sizes (see two
+paragraphs above), and then obtain an accurate noise per transit
+(since the transit durations are known, and we assume our noise,
+computed first over a single hour, then bins like white-noise,
+\textit{i.e.,} proportionate to the inverse square root of the time
+in-transit).
+
+Coupled with the known transit signal, this gives us the SNR per
+transit, and then to `phase-fold our light-curves' (light-curves which
+are never explicitly computed point-by-point) we just\footnote{We
+  actually take a quadrature sum of both transit and occultation
+  signals, but this is negligible for planets. It only matters for the
+  case of eclipsing binaries, which we ignore in this work.} multiply
+the SNR per transit by the square root of the number of transits
+observed.
  
-We have changed other aspects of this simulation since~\citetalias{Sullivan_2015} was published, and describe these changes in Sec.~\ref{sec:changes_from_S15} of the appendix.
+We have changed other aspects of this simulation
+since~\citetalias{Sullivan_2015} was published, and describe these
+changes in Sec.~\ref{sec:changes_from_S15} of the appendix.

@@ -1,6 +1,12 @@
 \subsection{Our proposed pointing strategies}
 \label{sec:proposed_pointings}
-Given the constraints outlined in Sec.~\ref{sec:constraints_on_pointings} and the additional (non-physical) constraint of a single year's observing time, we select the following options for further study:
+
+For simplicity we chose to study one-year plans for an Extended
+Mission, i.e., plans for Year 3 of the TESS mission. (Later in this
+report we remark on some possible implications of our study for
+additional years of an Extended Mission.)  Given the constraints
+outlined in Sec.~\ref{sec:constraints_on_pointings}, we selected the
+following options for detailed study:
 
 \begin{figure*}[ht]
 	\includegraphics{figures/proposed_pointings_texttt.pdf}
@@ -9,32 +15,79 @@ Given the constraints outlined in Sec.~\ref{sec:constraints_on_pointings} and th
 \end{figure*}
 
 \begin{description}
-	\item[Option 1.] Focus on the North Ecliptic Pole (hereafter, \npole). Note that the geometry of \tesss lens hood still suppresses incoming sunlight in this scenario. 
-	\textit{Justification:} maximizes average observing baseline per star; longest period coverage.
-	\item[Option 2.] Repeat observations of the northern hemisphere (\nhemi).
-	\textit{Justification:} same strategy used for primary mission -- long baseline at the North Ecliptic Pole, with modest baseline near the ecliptic; also gets fresh ephemerides at low ecliptic latitudes. Can phase slightly in longitude, remaining close to antisolar, to cover gaps in coverage between $6^\circ < \beta < 30^\circ$ fields from primary.
-	\item[Option 3.] Repeat year 1 in the southern hemisphere, but with all fields 6 degrees further north in ecliptic latitude (\shemiAvoid).
-	\textit{Justification:} covers most of sky missed in primary survey, freshens ephemerides \& avoids Earth-Moon crossings that would happen with this same strategy inverted in the North (cf. Table~\ref{tab:dropped_fields} in Sec.~\ref{sec:earth_moon_crossings}).
-	\item[Option 4.] 7 sectors (14 orbits) with \tesss long axis along the ecliptic, 6 sectors focused at the North Ecliptic Pole (\elong).
-	\textit{Justification:} covers sky missed in primary survey with $\sim3$ orbits of observing time per star on the ecliptic, opportunity of K2 follow-up, can be extended for longer period coverage, avoids Earth-Moon crossings.
-	\item[Option 5.] 7 sectors with \tesss short axis along the ecliptic, 6 sectors focused at the North Ecliptic Pole (\eshort). 
-	\textit{Justification:} similar to \elong, with slightly better ability to follow-up on \tess objects of interest (TOIs).
-	\item[Option 6.] Cover both northern and southern ecliptic hemispheres in a year, by switching between northern and southern hemisphere sectors every $\sim13.7\ \text{day}$ orbit (\hemis).
-	\textit{Justification:} freshen ephemeris times for most TOIs, faster than any other scenario.
+
+\item[Option 1.] \npole: Focus on one of the ecliptic poles,
+  arbitrarily chosen to be the north ecliptic pole for
+  concreteness. Note that the geometry of \tesss lens hood still
+  suppresses incoming sunlight in this scenario.
+  \textit{Justification:} maximizes the average duration of
+  observations per star; intuitively we expected this to provide
+  greatest sensitivity to long-period planets.
+
+\item[Option 2.] \nhemi: Repeat observations of one of the two
+  ecliptic hemispheres in a manner similar to the Primary Mission,
+  arbitrarily chosen to be the northern ecliptic hemisphere for
+  concreteness. We also take the opportunity to shift the longitudes
+  of all sectors by an amount that will enable TESS to cover the gaps
+  that were left during the Primary Mission (the ``slits'' in the sky
+  coverage between ecliptic latitudes of 6--30$^\circ$).
+  \textit{Justification:} similar motivation as the Primary Mission.
+  Nice long time baseline at the North Ecliptic Pole, and broad sky
+  coverage. Also remeasures transit times (and sharpens ephemerides)
+  of previously detected TESS planets over most of the entire
+  hemisphere.
+
+\item[Option 3.] \shemiAvoid: Repeat observations of one of the two
+  ecliptic hemispheres, but in this case shifting all fields $6^\circ$
+  toward the ecliptic, such that the combined fields-of-view reach all
+  the way from the ecliptic to the ecliptic pole.
+  \textit{Justification:} trades the long continuous viewing zone near
+  the pole for greater sky coverage, and in particular, coverage of
+  the ecliptic zone which was missed in the Primary Mission.  We chose
+  to simulated the southern ecliptic hemisphere, since the northern
+  version of this plan would suffer more from Earth-Moon interference
+  (cf. Table~\ref{tab:dropped_fields} in
+  Sec.~\ref{sec:earth_moon_crossings}).
+  
+\item[Option 4.] \elong: Survey the ecliptic with 7 sectors (14
+  orbits) in which the long axis of the fields-of-view are oriented
+  along the ecliptic.  For the other 6 sectors, during the interval
+  when ecliptic observations would be interrupted by Earth-Moon
+  crossings, we focus on one of the ecliptic poles.
+  \textit{Justification:} covers the ecliptic, which was not surveyed
+  at all in the Primary Mission.  Offers opportunities for follow-up
+  of K2 discoveries.
+  
+\item[Option 5.] \eshort: Survey the ecliptic and also cover a large
+  fraction of the rest of the ecliptic hemisphere. For 7 sectors we
+  observe the ecliptic but with the {\it short} axis oriented along
+  the ecliptic, and the long axis reaching up to higher latitudes.
+  The remaining 6 sectors are focused on the ecliptic pole, as in
+  \elong.  \textit{Justification:} similar to \elong, but with more
+  overlap between this year and the Primary Mission to allow for
+  improved transit ephemerides and better ability to follow-up on
+  previous discoveries.
+  
+\item[Option 6.] \hemis: Cover both northern and southern ecliptic
+  hemispheres in a single year, by alternating between the hemispheres
+  every 13.7 days.  \textit{Justification:} rapid coverage of the
+  entire sky, allows follow-up of almost all previously detected TESS
+  objects and refined ephemerides.
+
 \end{description}
 
-In selecting these options for further study, we omitted other possible scenarios that will remain of interest, for instance in a fourth year of observing. We comment on these options and justify their omission from detailed calculations below:
-
+Although these 6 seemed like good options for further study and direct
+comparison, there are many other possibilities that may be of interest
+that were not studied in detail, in order to keep the scope of this
+report manageable.  Among these other possibilities that were considered but not studied are
 \begin{itemize}
-	\item Focus on the South Ecliptic Pole: omitted for simplicity (complement of \npole).
-	\item Repeat observations of the southern hemisphere: omitted for simplicity (complement of \nhemi).
-	\item Repeat year 2 in the northern hemisphere, but 6 degrees further south in ecliptic latitude: omitted for simplicity (complement of \shemiAvoid), and also due to Earth/Moon crossings (see Sec.~\ref{sec:earth_moon_crossings}).
-	\item 1 year with \tesss long axis along the ecliptic. Omitted due to Earth/Moon crossings, which prevent detailed photometry for $\sim\!6\ \text{months/year}$.
+	\item The \npole\, strategy applied to the south ecliptic pole rather than the north (we do not expect major differences).
+	\item The \nhemi\, strategy applied to the southern ecliptic hemipshere rather than the northern (we do not expect major differences).
+	\item The north/south inversion of \shemiAvoid, which is more strongly affected by Earth/Moon crossings (see Sec.~\ref{sec:earth_moon_crossings}).
+	\item A full year spent observing the ecliptic.  It became clear that such a plan would suffer from Earth/Moon crossings for a substantial fraction of the year.
 	We show the outage as a function of time in Fig.~\ref{fig:earth_moon_elong}.
-	\item 1 year with \tesss short axis along the ecliptic. Omitted due to Earth/Moon crossings, which prevent detailed photometry for $\sim 6\ \text{months/year}$.
-	\item Cover both northern and southern ecliptic poles over a year, by switching between hemispheres every spacecraft orbit. Omitted because an important justification for this scenario -- refined ephemeris times, described in Sec.~\ref{sec:ephemeris_timing_analytic} -- suffers compared to \hemis.
-	\item Monthly-specific scenarios. For instance, in the \nhemi\ scenario, during a month when the Earth or Moon crosses through the field of a camera pointed close to the ecliptic, tilt all the cameras away from the ecliptic as in the \npole\ scenario. Omitted for simplicity.
+        \item Alternate between northern and southern ecliptic poles every 13.7 days.
+        This would be similar to \hemis\, but would focus on the poles rather than the entire sky.
+        It would sacrifice sky coverage (and ability to refresh ephemerides over the whole sky) in return for longer-duration observations for a typical star.
+        \item Hybrid strategies that change from month to month.  For instance, in the \nhemi\, scenario, during a month when the Earth or Moon crosses through the field of a camera pointed close to the ecliptic, we could tilt all the cameras away from the ecliptic as in the \npole\, scenario.        
 \end{itemize}
-
-
-All of these potential spacecraft pointings, both selected and omitted, meet the constraint of having \tesss cameras point anti-Sun throughout the year, while also allowing the solar panels to collect sunlight.

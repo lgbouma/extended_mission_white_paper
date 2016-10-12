@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,58 +15,6 @@ C.~H. Acton.
 \newblock \doi{10.1016/0032-0633(95)00107-7}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/0032063395001077}.
-
-\bibitem[Aerts et~al.(2013)Aerts, Zwintz, Marcos-Arenal, Moravveji, Degroote,
-  Pápics, Tkachenko, De~Ridder, Briquet, Thoul, and
-  {others}]{aerts_ensemble_2013}
-C.~Aerts, K.~Zwintz, P.~Marcos-Arenal, E.~Moravveji, P.~Degroote, P.~Pápics,
-  A.~Tkachenko, J.~De~Ridder, M.~Briquet, A.~Thoul, and {others}.
-\newblock Ensemble {Asteroseismology} of the {Young} {Open} {Cluster} {NGC}
-  2244.
-\newblock \emph{arXiv preprint arXiv:1309.3042}, 2013.
-\newblock URL \url{http://arxiv.org/abs/1309.3042}.
-
-\bibitem[Agol et~al.(2005)Agol, Steffen, Sari, and
-  Clarkson]{agol_detecting_2005}
-E.~Agol, J.~Steffen, R.~Sari, and W.~Clarkson.
-\newblock On detecting terrestrial planets with timing of giant planet
-  transits.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  359\penalty0 (2):\penalty0 567--579, May 2005.
-\newblock ISSN 0035-8711, 1365-2966.
-\newblock \doi{10.1111/j.1365-2966.2005.08922.x}.
-
-\bibitem[Aguirre et~al.(2012)Aguirre, Casagrande, Basu, Campante, Chaplin,
-  Huber, Miglio, Serenelli, Ballot, Bedding, Christensen-Dalsgaard, Creevey,
-  Elsworth, García, Gilliland, Hekker, Kjeldsen, Mathur, Metcalfe, Monteiro,
-  Mosser, Pinsonneault, Stello, Weiss, Tenenbaum, Twicken, and
-  Uddin]{aguirre_verifying_2012}
-V.~S. Aguirre, L.~Casagrande, S.~Basu, T.~L. Campante, W.~J. Chaplin, D.~Huber,
-  A.~Miglio, A.~M. Serenelli, J.~Ballot, T.~R. Bedding,
-  J.~Christensen-Dalsgaard, O.~L. Creevey, Y.~Elsworth, R.~A. García, R.~L.
-  Gilliland, S.~Hekker, H.~Kjeldsen, S.~Mathur, T.~S. Metcalfe, M.~J. P. F.~G.
-  Monteiro, B.~Mosser, M.~H. Pinsonneault, D.~Stello, A.~Weiss, P.~Tenenbaum,
-  J.~D. Twicken, and K.~Uddin.
-\newblock Verifying {Asteroseismically} {Determined} {Parameters} of {Kepler}
-  {Stars} {Using} {Hipparcos} {Parallaxes}: {Self}-consistent {Stellar}
-  {Properties} and {Distances}.
-\newblock \emph{The Astrophysical Journal}, 757\penalty0 (1):\penalty0 99,
-  2012.
-\newblock ISSN 0004-637X.
-\newblock \doi{10.1088/0004-637X/757/1/99}.
-\newblock URL \url{http://stacks.iop.org/0004-637X/757/i=1/a=99}.
-
-\bibitem[Armstrong et~al.(2014)Armstrong, Osborn, Brown, Faedi, Gomez
-  Maqueo~Chew, Martin, Pollacco, and Udry]{armstrong_abundance_2014}
-D.~J. Armstrong, H.~P. Osborn, D.~J.~A. Brown, F.~Faedi, Y.~Gomez Maqueo~Chew,
-  D.~V. Martin, D.~Pollacco, and S.~Udry.
-\newblock On the abundance of circumbinary planets.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  444\penalty0 (2):\penalty0 1873--1883, Sept. 2014.
-\newblock ISSN 0035-8711, 1365-2966.
-\newblock \doi{10.1093/mnras/stu1570}.
-\newblock URL
-  \url{http://mnras.oxfordjournals.org/cgi/doi/10.1093/mnras/stu1570}.
 
 \bibitem[Baraffe and Chabrier(1996)]{baraffe_massspectral_1996}
 I.~Baraffe and G.~Chabrier.
@@ -137,33 +85,6 @@ C.~J. Burke, S.~T. Bryson, F.~Mullally, J.~F. Rowe, J.~L. Christiansen, S.~E.
 \newblock \doi{10.1088/0067-0049/210/2/19}.
 \newblock URL \url{http://stacks.iop.org/0067-0049/210/i=2/a=19}.
 
-\bibitem[Campante et~al.(2016)Campante, Schofield, Kuszlewicz, Bouma, Chaplin,
-  Huber, Christensen-Dalsgaard, Kjeldsen, Bossini, North, Appourchaux, Latham,
-  Pepper, Ricker, Stassun, Vanderspek, and Winn]{campante_asteroseismic_2016}
-T.~L. Campante, M.~Schofield, J.~S. Kuszlewicz, L.~Bouma, W.~J. Chaplin,
-  D.~Huber, J.~Christensen-Dalsgaard, H.~Kjeldsen, D.~Bossini, T.~S.~H. North,
-  T.~Appourchaux, D.~W. Latham, J.~Pepper, G.~R. Ricker, K.~G. Stassun,
-  R.~Vanderspek, and J.~N. Winn.
-\newblock The asteroseismic potential of {TESS}: exoplanet-host stars.
-\newblock \emph{arXiv:1608.01138 [astro-ph]}, Aug. 2016.
-\newblock URL \url{http://arxiv.org/abs/1608.01138}.
-\newblock arXiv: 1608.01138.
-
-\bibitem[Cao et~al.(2015)Cao, Kulkarni, Howell, Gal-Yam, Kasliwal, Valenti,
-  Johansson, Amanullah, Goobar, Sollerman, Taddia, Horesh, Sagiv, Cenko,
-  Nugent, Arcavi, Surace, Woźniak, Moody, Rebbapragada, Bue, and
-  Gehrels]{cao_swift_Ia_2015}
-Y.~Cao, S.~R. Kulkarni, D.~A. Howell, A.~Gal-Yam, M.~M. Kasliwal, S.~Valenti,
-  J.~Johansson, R.~Amanullah, A.~Goobar, J.~Sollerman, F.~Taddia, A.~Horesh,
-  I.~Sagiv, S.~B. Cenko, P.~E. Nugent, I.~Arcavi, J.~Surace, P.~R. Woźniak,
-  D.~I. Moody, U.~D. Rebbapragada, B.~D. Bue, and N.~Gehrels.
-\newblock A strong ultraviolet pulse from a newborn type {Ia} supernova.
-\newblock \emph{Nature}, 521\penalty0 (7552):\penalty0 328--331, May 2015.
-\newblock ISSN 0028-0836.
-\newblock \doi{10.1038/nature14440}.
-\newblock URL
-  \url{http://www.nature.com/nature/journal/v521/n7552/full/nature14440.html}.
-
 \bibitem[Carter et~al.(2008)Carter, Yee, Eastman, Gaudi, and
   Winn]{carter_analytic_2008}
 J.~A. Carter, J.~C. Yee, J.~Eastman, B.~S. Gaudi, and J.~N. Winn.
@@ -172,14 +93,6 @@ J.~A. Carter, J.~C. Yee, J.~Eastman, B.~S. Gaudi, and J.~N. Winn.
 \newblock \emph{The Astrophysical Journal}, 689\penalty0 (1):\penalty0 499,
   2008.
 \newblock URL \url{http://iopscience.iop.org/0004-637X/689/1/499}.
-
-\bibitem[Chaplin and Miglio(2013)]{chaplin_asteroseismology_2013}
-W.~J. Chaplin and A.~Miglio.
-\newblock Asteroseismology of {Solar}-{Type} and {Red}-{Giant} {Stars}.
-\newblock \emph{Annual Review of Astronomy and Astrophysics}, 51\penalty0
-  (1):\penalty0 353--392, 2013.
-\newblock \doi{10.1146/annurev-astro-082812-140938}.
-\newblock URL \url{http://dx.doi.org/10.1146/annurev-astro-082812-140938}.
 
 \bibitem[Charbonneau et~al.(2009)Charbonneau, Berta, Irwin, Burke, Nutzman,
   Buchhave, Lovis, Bonfils, Latham, Udry, Murray-Clay, Holman, Falco, Winn,
@@ -225,24 +138,6 @@ C.~D. Dressing and D.~Charbonneau.
   {Empirical} {Measurement} of the {Detection} {Sensitivity}.
 \newblock \emph{arXiv preprint arXiv:1501.01623}, 2015.
 \newblock URL \url{http://arxiv.org/abs/1501.01623}.
-
-\bibitem[Edelson et~al.(2013)Edelson, Mushotzky, Malkan, Vaughan, and
-  Horne]{edelson_agn_2013}
-R.~Edelson, R.~Mushotzky, M.~Malkan, S.~Vaughan, and K.~Horne.
-\newblock {AGN} variability studies with the repurposed {Kepler} mission.
-\newblock 2013.
-\newblock URL
-  \url{http://keplerscience.arc.nasa.gov/K2/docs/WhitePapers/edelson\%20white\%20paper.pdf}.
-
-\bibitem[Fabrycky et~al.(2013)Fabrycky, Ford, Payne, Steffen, Ragozzine, Mazeh,
-  Lissauer, and Welsh]{fabrycky_whitepaper_2013}
-D.~C. Fabrycky, E.~B. Ford, M.~J. Payne, J.~Steffen, D.~Ragozzine, T.~Mazeh,
-  J.~J. Lissauer, and W.~Welsh.
-\newblock A {Habitable} {Zone} {Census} via {Transit} {Timing} and the
-  {Imperative} for {Continuing} to {Observe} the {Kepler} {Field}.
-\newblock \emph{arXiv:1309.1177 [astro-ph]}, Sept. 2013.
-\newblock URL \url{http://arxiv.org/abs/1309.1177}.
-\newblock arXiv: 1309.1177.
 
 \bibitem[Fischer and Valenti(2005)]{fischer_planet-metallicity_2005}
 D.~A. Fischer and J.~Valenti.
@@ -301,13 +196,6 @@ T.~J. Henry, W.-C. Jao, J.~P. Subasavage, T.~D. Beaulieu, P.~A. Ianna,
 \newblock URL
   \url{http://iopscience.iop.org/1538-3881/132/6/2360/205485.web.ps.gz}.
 
-\bibitem[Huber(2015)]{huber_asteroseismology_2015}
-D.~Huber.
-\newblock Asteroseismology of {Exoplanet} {Host} {Stars}.
-\newblock \emph{arXiv:1511.07441 [astro-ph]}, Nov. 2015.
-\newblock URL \url{http://arxiv.org/abs/1511.07441}.
-\newblock arXiv: 1511.07441.
-
 \bibitem[Hunter(2007)]{hunter_matplotlib_2007}
 J.~D. Hunter.
 \newblock Matplotlib: {A} 2d {Graphics} {Environment}.
@@ -317,19 +205,6 @@ J.~D. Hunter.
 \newblock \doi{10.1109/MCSE.2007.55}.
 \newblock URL
   \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160265}.
-
-\bibitem[Jenkins et~al.(2016)Jenkins, Twicken, McCauliff, Campbell, Sanderfer,
-  Lung, Mansouri-Samani, Girouard, Tenenbaum, Klaus, Smith, Caldwell, Chacon,
-  Henze, Heiges, Latham, Morgan, Swade, Rinehart, and
-  Vanderspek]{jenkins_SPOC_2016}
-J.~M. Jenkins, J.~D. Twicken, S.~McCauliff, J.~Campbell, D.~Sanderfer, D.~Lung,
-  M.~Mansouri-Samani, F.~Girouard, P.~Tenenbaum, T.~Klaus, J.~C. Smith, D.~A.
-  Caldwell, A.~D. Chacon, C.~Henze, C.~Heiges, D.~W. Latham, E.~Morgan,
-  D.~Swade, S.~Rinehart, and R.~Vanderspek.
-\newblock The {TESS} science processing operations center.
-\newblock volume 9913, pages 99133E--99133E--20, 2016.
-\newblock \doi{10.1117/12.2233418}.
-\newblock URL \url{http://dx.doi.org/10.1117/12.2233418}.
 
 \bibitem[Johnson et~al.(2010)Johnson, Aller, Howard, and
   Crepp]{johnson_giant_2010}
@@ -359,40 +234,6 @@ D.~M. Kipping and C.~Lam.
   neural networks.
 \newblock Private communication, June 2016.
 
-\bibitem[Kirk et~al.(2016)Kirk, Conroy, Prša, Abdul-Masih, Kochoska,
-  Matijevič, Hambleton, Barclay, Bloemen, Boyajian, Doyle, Fulton, Hoekstra,
-  Jek, Kane, Kostov, Latham, Mazeh, Orosz, Pepper, Quarles, Ragozzine, Shporer,
-  Southworth, Stassun, Thompson, Welsh, Agol, Derekas, Devor, Fischer, Green,
-  Gropp, Jacobs, Johnston, LaCourse, Saetre, Schwengeler, Toczyski, Werner,
-  Garrett, Gore, Martinez, Spitzer, Stevick, Thomadis, Vrijmoet, Yenawine,
-  Batalha, and Borucki]{kirk_keplerEB_2016}
-B.~Kirk, K.~Conroy, A.~Prša, M.~Abdul-Masih, A.~Kochoska, G.~Matijevič,
-  K.~Hambleton, T.~Barclay, S.~Bloemen, T.~Boyajian, L.~R. Doyle, B.~J. Fulton,
-  A.~J. Hoekstra, K.~Jek, S.~R. Kane, V.~Kostov, D.~Latham, T.~Mazeh, J.~A.
-  Orosz, J.~Pepper, B.~Quarles, D.~Ragozzine, A.~Shporer, J.~Southworth,
-  K.~Stassun, S.~E. Thompson, W.~F. Welsh, E.~Agol, A.~Derekas, J.~Devor,
-  D.~Fischer, G.~Green, J.~Gropp, T.~Jacobs, C.~Johnston, D.~M. LaCourse,
-  K.~Saetre, H.~Schwengeler, J.~Toczyski, G.~Werner, M.~Garrett, J.~Gore, A.~O.
-  Martinez, I.~Spitzer, J.~Stevick, P.~C. Thomadis, E.~H. Vrijmoet,
-  M.~Yenawine, N.~Batalha, and W.~Borucki.
-\newblock Kepler {Eclipsing} {Binary} {Stars}. {VII}. {The} {Catalog} of
-  {Eclipsing} {Binaries} {Found} in the {Entire} {Kepler} {Data} {Set}.
-\newblock \emph{The Astronomical Journal}, 151, Mar. 2016.
-\newblock ISSN 0004-6256.
-\newblock \doi{10.3847/0004-6256/151/3/68}.
-
-\bibitem[Kiss et~al.(2016)Kiss, Pál, Farkas-Takács, Szabó, Szabó, Kiss,
-  Molnár, Sárneczky, Müller, Mommert, and Stansberry]{kiss_nereid_2016}
-C.~Kiss, A.~Pál, A.~I. Farkas-Takács, G.~M. Szabó, R.~Szabó, L.~L. Kiss,
-  L.~Molnár, K.~Sárneczky, T.~G. Müller, M.~Mommert, and J.~Stansberry.
-\newblock Nereid from space: rotation, size and shape analysis from {K}2,
-  {Herschel} and {Spitzer} observations.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  457\penalty0 (3):\penalty0 2908--2917, Apr. 2016.
-\newblock ISSN 0035-8711, 1365-2966.
-\newblock \doi{10.1093/mnras/stw081}.
-\newblock URL \url{http://mnras.oxfordjournals.org/content/457/3/2908}.
-
 \bibitem[Kopparapu et~al.(2013)Kopparapu, Ramirez, Kasting, Eymet, Robinson,
   Mahadevan, Terrien, Domagal-Goldman, Meadows, and
   Deshpande]{kopparapu_habitable_2013}
@@ -407,23 +248,6 @@ R.~k. Kopparapu, R.~Ramirez, J.~F. Kasting, V.~Eymet, T.~D. Robinson,
 \newblock \doi{10.1088/0004-637X/765/2/131}.
 \newblock arXiv: 1301.6674.
 
-\bibitem[Kostov et~al.(2015)Kostov, Orosz, Welsh, Doyle, Fabrycky,
-  Haghighipour, Quarles, Short, Cochran, Endl, Ford, Gregorio, Hinse, Isaacson,
-  Jenkins, Jensen, Kane, Kull, Latham, Lissauer, Marcy, Mazeh, Muller, Pepper,
-  Quinn, Ragozzine, Shporer, Steffen, Torres, Windmiller, and
-  Borucki]{kostov_kep1647b_2015}
-V.~B. Kostov, J.~A. Orosz, W.~F. Welsh, L.~R. Doyle, D.~C. Fabrycky,
-  N.~Haghighipour, B.~Quarles, D.~R. Short, W.~D. Cochran, M.~Endl, E.~B. Ford,
-  J.~Gregorio, T.~C. Hinse, H.~Isaacson, J.~M. Jenkins, E.~L.~N. Jensen,
-  S.~Kane, I.~Kull, D.~W. Latham, J.~J. Lissauer, G.~W. Marcy, T.~Mazeh,
-  T.~W.~A. Muller, J.~Pepper, S.~N. Quinn, D.~Ragozzine, A.~Shporer, J.~H.
-  Steffen, G.~Torres, G.~Windmiller, and W.~J. Borucki.
-\newblock Kepler-1647b: the largest and longest-period {Kepler} transiting
-  circumbinary planet.
-\newblock \emph{arXiv:1512.00189 [astro-ph]}, Dec. 2015.
-\newblock URL \url{http://arxiv.org/abs/1512.00189}.
-\newblock arXiv: 1512.00189.
-
 \bibitem[Landsman(1995)]{landsman_idl_1995}
 W.~B. Landsman.
 \newblock The {IDL} {Astronomy} {User}'s {Library}.
@@ -437,31 +261,6 @@ L.~Lyons.
 \newblock Cambridge University Press, Nov. 1991.
 \newblock ISBN 978-0-521-42463-9.
 \newblock 1996 paperback reprinting.
-
-\bibitem[Martin and Triaud(2014{\natexlab{a}})]{martin_nontransiting_2014}
-D.~V. Martin and A.~H. M.~J. Triaud.
-\newblock Planets transiting non-eclipsing binaries.
-\newblock \emph{Astronomy \& Astrophysics}, 570:\penalty0 A91, Oct.
-  2014{\natexlab{a}}.
-\newblock ISSN 0004-6361, 1432-0746.
-\newblock \doi{10.1051/0004-6361/201323112}.
-\newblock URL \url{http://www.aanda.org/10.1051/0004-6361/201323112}.
-
-\bibitem[Martin and Triaud(2014{\natexlab{b}})]{martin_planets_2014}
-D.~V. Martin and A.~H. M.~J. Triaud.
-\newblock Planets transiting non-eclipsing binaries.
-\newblock \emph{Astronomy \& Astrophysics}, 570:\penalty0 A91, Oct.
-  2014{\natexlab{b}}.
-\newblock ISSN 0004-6361, 1432-0746.
-\newblock \doi{10.1051/0004-6361/201323112}.
-\newblock URL \url{http://www.aanda.org/10.1051/0004-6361/201323112}.
-
-\bibitem[Martin et~al.(2015)Martin, Mazeh, and Fabrycky]{martin_no_2015}
-D.~V. Martin, T.~Mazeh, and D.~C. Fabrycky.
-\newblock No circumbinary planets transiting the tightest {Kepler} binaries-a
-  fingerprint of a third star.
-\newblock \emph{arXiv preprint arXiv:1505.05749}, 2015.
-\newblock URL \url{http://arxiv.org/abs/1505.05749}.
 
 \bibitem[Mazeh et~al.(2016)Mazeh, Holczer, and Faigler]{mazeh_dearth_2016}
 T.~Mazeh, T.~Holczer, and S.~Faigler.
@@ -478,20 +277,6 @@ W.~McKinney.
 \newblock pandas: a foundational python library for data analysis and
   statistics.
 
-\bibitem[Meibom et~al.(2013)Meibom, Torres, Fressin, Latham, Rowe, Ciardi,
-  Bryson, Rogers, Henze, Janes, Barnes, Marcy, Isaacson, Fischer, Howell,
-  Horch, Jenkins, Schuler, and Crepp]{meibom_same_2013}
-S.~Meibom, G.~Torres, F.~Fressin, D.~W. Latham, J.~F. Rowe, D.~R. Ciardi, S.~T.
-  Bryson, L.~A. Rogers, C.~E. Henze, K.~Janes, S.~A. Barnes, G.~W. Marcy,
-  H.~Isaacson, D.~A. Fischer, S.~B. Howell, E.~P. Horch, J.~M. Jenkins, S.~C.
-  Schuler, and J.~Crepp.
-\newblock The same frequency of planets inside and outside open clusters of
-  stars.
-\newblock \emph{Nature}, 499\penalty0 (7456):\penalty0 55--58, June 2013.
-\newblock ISSN 0028-0836, 1476-4687.
-\newblock \doi{10.1038/nature12279}.
-\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature12279}.
-
 \bibitem[Mills et~al.(2016)Mills, Fabrycky, Migaszewski, Ford, Petigura, and
   Isaacson]{mills_resonant_2016}
 S.~M. Mills, D.~C. Fabrycky, C.~Migaszewski, E.~B. Ford, E.~Petigura, and
@@ -502,42 +287,6 @@ S.~M. Mills, D.~C. Fabrycky, C.~Migaszewski, E.~B. Ford, E.~Petigura, and
 \newblock \doi{10.1038/nature17445}.
 \newblock URL
   \url{http://www.nature.com/nature/journal/v533/n7604/full/nature17445.html}.
-
-\bibitem[Ngo et~al.(2016)Ngo, Knutson, Hinkley, Bryan, Crepp, Batygin,
-  Crossfield, Hansen, Howard, Johnson, Mawet, Morton, Muirhead, and
-  Wang]{ngo_friends_2016}
-H.~Ngo, H.~A. Knutson, S.~Hinkley, M.~Bryan, J.~R. Crepp, K.~Batygin,
-  I.~Crossfield, B.~Hansen, A.~W. Howard, J.~A. Johnson, D.~Mawet, T.~D.
-  Morton, P.~S. Muirhead, and J.~Wang.
-\newblock Friends of {Hot} {Jupiters}. {IV}. {Stellar} companions beyond 50
-  {AU} might facilitate giant planet formation, but most are unlikely to cause
-  {Kozai}-{Lidov} migration.
-\newblock \emph{arXiv:1606.07102 [astro-ph]}, June 2016.
-\newblock URL \url{http://arxiv.org/abs/1606.07102}.
-
-\bibitem[Olling et~al.(2015)Olling, Mushotzky, Shaya, Rest, Garnavich, Tucker,
-  Kasen, Margheim, and Filippenko]{olling_kepler_Ia_2015}
-R.~P. Olling, R.~Mushotzky, E.~J. Shaya, A.~Rest, P.~M. Garnavich, B.~E.
-  Tucker, D.~Kasen, S.~Margheim, and A.~V. Filippenko.
-\newblock No signature of ejecta interaction with a stellar companion in three
-  type {Ia} supernovae.
-\newblock \emph{Nature}, 521\penalty0 (7552):\penalty0 332--335, May 2015.
-\newblock ISSN 0028-0836.
-\newblock \doi{10.1038/nature14455}.
-\newblock URL
-  \url{http://www.nature.com/nature/journal/v521/n7552/full/nature14455.html}.
-
-\bibitem[Perryman(2002)]{perryman_gaia_2002}
-M.~a.~C. Perryman.
-\newblock {GAIA}: {An} {Astrometric} and {Photometric} {Survey} of our
-  {Galaxy}.
-\newblock In V.~Vansevicius, A.~Kucinskas, and J.~Sudzius, editors,
-  \emph{Census of the {Galaxy}: {Challenges} for {Photometry} and
-  {Spectrometry} with {GAIA}}, pages 1--10. Springer Netherlands, 2002.
-\newblock ISBN 978-94-010-3911-6 978-94-010-0361-2.
-\newblock URL
-  \url{http://link.springer.com/chapter/10.1007/978-94-010-0361-2_1}.
-\newblock DOI: 10.1007/978-94-010-0361-2\_1.
 
 \bibitem[Perryman et~al.(1997)Perryman, Lindegren, Kovalevsky, Hoeg, Bastian,
   Bernacca, Crézé, Donati, Grenon, Grewing, van Leeuwen, van~der Marel,
@@ -591,50 +340,6 @@ S.~Sharma, J.~Bland-Hawthorn, K.~V. Johnston, and J.~Binney.
 \newblock URL \url{http://arxiv.org/abs/1101.3561}.
 \newblock arXiv: 1101.3561.
 
-\bibitem[Soszynski et~al.(2009)Soszynski, Udalski, Szymanski, Kubiak,
-  Pietrzynski, Wyrzykowski, Szewczyk, Ulaczyk, and Poleski]{soszynski_LMC_2009}
-I.~Soszynski, A.~Udalski, M.~K. Szymanski, M.~Kubiak, G.~Pietrzynski,
-  L.~Wyrzykowski, O.~Szewczyk, K.~Ulaczyk, and R.~Poleski.
-\newblock The {Optical} {Gravitational} {Lensing} {Experiment}. {The}
-  {OGLE}-{III} {Catalog} of {Variable} {Stars}. {III}. {RR} {Lyrae} {Stars} in
-  the {Large} {Magellanic} {Cloud}.
-\newblock \emph{arXiv:0903.2482 [astro-ph]}, Mar. 2009.
-\newblock URL \url{http://arxiv.org/abs/0903.2482}.
-\newblock arXiv: 0903.2482.
-
-\bibitem[Soszynski et~al.(2010)Soszynski, Udalski, Szymanski, Kubiak,
-  Pietrzynski, Wyrzykowski, Ulaczyk, and Poleski]{soszynski_SMC_2010}
-I.~Soszynski, A.~Udalski, M.~K. Szymanski, M.~Kubiak, G.~Pietrzynski,
-  L.~Wyrzykowski, K.~Ulaczyk, and R.~Poleski.
-\newblock The {Optical} {Gravitational} {Lensing} {Experiment}. {The}
-  {OGLE}-{III} {Catalog} of {Variable} {Stars}. {IX}. {RR} {Lyrae} {Stars} in
-  the {Small} {Magellanic} {Cloud}.
-\newblock \emph{arXiv:1009.0528 [astro-ph]}, Sept. 2010.
-\newblock URL \url{http://arxiv.org/abs/1009.0528}.
-\newblock arXiv: 1009.0528.
-
-\bibitem[Soszynski et~al.(2011)Soszynski, Dziembowski, Udalski, Poleski,
-  Szymanski, Kubiak, Pietrzynski, Wyrzykowski, Ulaczyk, Kozlowski, and
-  Pietrukowicz]{soszynski_bulge_2011}
-I.~Soszynski, W.~A. Dziembowski, A.~Udalski, R.~Poleski, M.~K. Szymanski,
-  M.~Kubiak, G.~Pietrzynski, L.~Wyrzykowski, K.~Ulaczyk, S.~Kozlowski, and
-  P.~Pietrukowicz.
-\newblock The {Optical} {Gravitational} {Lensing} {Experiment}. {The}
-  {OGLE}-{III} {Catalog} of {Variable} {Stars}. {XI}. {RR} {Lyrae} {Stars} in
-  the {Galactic} {Bulge}.
-\newblock \emph{arXiv:1105.6126 [astro-ph]}, May 2011.
-\newblock URL \url{http://arxiv.org/abs/1105.6126}.
-\newblock arXiv: 1105.6126.
-
-\bibitem[{STScI Science Definition
-  Team}(2016)]{science_definition_team_report_big_2016}
-{STScI Science Definition Team}.
-\newblock Big {Data} at {STScI}: {Enhancing} {STScI}'s {Astronomical} {Data}
-  {Science} {Capabilities} over the {Next} {Five} {Years}.
-\newblock Technical report, Mar. 2016.
-\newblock URL
-  \url{http://archive.stsci.edu/reports/BigDataSDTReport_Final.pdf}.
-
 \bibitem[Sullivan(2013)]{sullivan_KOIs_2013}
 P.~Sullivan.
 \newblock {TESS}'s {Performance} on the {Kepler} {Objects} of {Interest}.
@@ -652,52 +357,12 @@ P.~W. Sullivan, J.~N. Winn, Z.~K. Berta-Thompson, D.~Charbonneau, D.~Deming,
 \newblock \doi{10.1088/0004-637x/809/1/77}.
 \newblock URL \url{http://dx.doi.org/10.1088/0004-637X/809/1/77}.
 
-\bibitem[Szabo et~al.(2013)Szabo, Molnar, Kolaczkowski, Moskalik, Ivezic,
-  Udalski, Szabados, Kuehn, Smolec, Pigulski, and {others}]{szabo_k2SEPWP_2013}
-R.~Szabo, L.~Molnar, Z.~Kolaczkowski, P.~Moskalik, Z.~Ivezic, A.~Udalski,
-  L.~Szabados, C.~Kuehn, R.~Smolec, A.~Pigulski, and {others}.
-\newblock The {Kepler}-{SEP} {Mission}: {Harvesting} the {South} {Ecliptic}
-  {Pole} large-amplitude variables with {Kepler}.
-\newblock \emph{arXiv preprint arXiv:1309.0741}, 2013.
-\newblock URL \url{http://arxiv.org/abs/1309.0741}.
-
-\bibitem[Szabó et~al.(2015)Szabó, Sárneczky, Szabó, Pál, Kiss, Csák,
-  Illés, Rácz, and Kiss]{szabo_mainbelt_2015}
-R.~Szabó, K.~Sárneczky, G.~M. Szabó, A.~Pál, C.~P. Kiss, B.~Csák,
-  L.~Illés, G.~Rácz, and L.~L. Kiss.
-\newblock Main-{Belt} {Asteroids} in the {K}2 {Engineering} {Field} of {View}.
-\newblock \emph{The Astronomical Journal}, 149\penalty0 (3):\penalty0 112, Feb.
-  2015.
-\newblock ISSN 1538-3881.
-\newblock \doi{10.1088/0004-6256/149/3/112}.
-\newblock URL \url{http://arxiv.org/abs/1501.05967}.
-\newblock arXiv: 1501.05967.
-
 \bibitem[van Leeuwen and Leeuwen(2007)]{van_leeuwen_validation_2007}
 van Leeuwen and F.~v. Leeuwen.
 \newblock Validation of the new {Hipparcos} reduction.
 \newblock \emph{Astronomy \& Astrophysics}, 474\penalty0 (2):\penalty0 12,
   2007.
 \newblock \doi{10.1051/0004-6361:20078357}.
-
-\bibitem[Vanderburg et~al.(2015)Vanderburg, Johnson, Rappaport, Bieryla, Irwin,
-  Lewis, Kipping, Brown, Dufour, Ciardi, Angus, Schaefer, Latham, Charbonneau,
-  Beichman, Eastman, McCrady, Wittenmyer, and
-  Wright]{vanderburg_disintegrating_2015}
-A.~Vanderburg, J.~A. Johnson, S.~Rappaport, A.~Bieryla, J.~Irwin, J.~A. Lewis,
-  D.~Kipping, W.~R. Brown, P.~Dufour, D.~R. Ciardi, R.~Angus, L.~Schaefer,
-  D.~W. Latham, D.~Charbonneau, C.~Beichman, J.~Eastman, N.~McCrady, R.~A.
-  Wittenmyer, and J.~T. Wright.
-\newblock A disintegrating minor planet transiting a white dwarf.
-\newblock \emph{Nature}, 526\penalty0 (7574):\penalty0 546--549, Oct. 2015.
-\newblock ISSN 0028-0836, 1476-4687.
-\newblock \doi{10.1038/nature15527}.
-
-\bibitem[Veras(2016)]{veras_postMS_2016}
-D.~Veras.
-\newblock Post-main-sequence planetary system evolution.
-\newblock \emph{arXiv preprint arXiv:1601.05419}, 2016.
-\newblock URL \url{http://arxiv.org/abs/1601.05419}.
 
 \bibitem[Walt et~al.(2011)Walt, Colbert, and Varoquaux]{walt_numpy_2011}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux.

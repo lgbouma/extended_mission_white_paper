@@ -9,15 +9,29 @@
 	\label{fig:noise_with_moon}
 \end{figure*}
 
-When the Earth or Moon passes through \tesss camera fields they can flood the CCD pixels to their full well capacity ($\sim2\times10^5$ photoelectrons).
-Precision differential photometry becomes impossible in any pixels that are directly hit during these crossings.
-Even when the body (the Earth or Moon) is not directly in the camera's field of view, its light scatters off the interior of spacecraft's lens hood and acts as a background source of contaminating flux across many of the cameras\footnote{A detailed model for this process does not yet exist, but will be developed in commissioning.}.
-The Poissonian scatter in the number of photons arriving from the Earth or the Moon in such a scenario degrades \tesss photometric performance.
-This can be important for field-center to body angles of $\theta \lesssim34^{\circ}$ (see Fig.~\ref{fig:lens_hood_suppression} in Sec.~\ref{sec:appendix} of the appendix).
-We show a few representative background fluxes in Fig.~\ref{fig:noise_with_moon}.
-The point of this figure is that for even modest background-counts the effect of scattered light could severely reduce \tesss photometric performance.
-For instance when the moon is $30^\circ$ from the camera boresights, corresponding (Fig.~\ref{fig:lens_hood_suppression}) to a suppression of $10^{-5}$ from the lens hood on $1.5\times10^6\mathrm{ct/s/px}$ from the moon, $15\mathrm{ct/s/px}$ reach the cameras.
-This would correspond to a $2-3\times$ reduction in photometric performance for $I_c < 11$. 
+When the Earth or Moon passes through \tesss camera fields they can
+flood the CCD pixels to their full well capacity ($\sim2\times10^5$
+photoelectrons).  Precision differential photometry becomes impossible
+in any pixels that are directly hit during these crossings.  Even when
+the body (the Earth or Moon) is not directly in the camera's field of
+view, its light scatters off the interior of spacecraft's lens hood
+and acts as a background source of contaminating flux across many of
+the cameras\footnote{A detailed model for this process does not yet
+  exist. It is intended that such a model will be developed during
+  commissioning.}.  The Poisson noise in the number of photons
+arriving from the Earth or the Moon in such a scenario degrades \tesss
+photometric performance.  This can be important for field angles
+$\theta \lesssim34^{\circ}$ (see Fig.~\ref{fig:lens_hood_suppression}
+in Sec.~\ref{sec:appendix} of the appendix).  We show a few
+representative background fluxes in Fig.~\ref{fig:noise_with_moon}.
+The point of this figure is that for even modest background-counts the
+effect of scattered light could severely reduce \tesss photometric
+performance.  For instance when the moon is $30^\circ$ from the camera
+boresights, corresponding (Fig.~\ref{fig:lens_hood_suppression}) to a
+suppression of $10^{-5}$ from the lens hood on
+$1.5\times10^6\mathrm{ct/s/px}$ from the moon, $15\mathrm{ct/s/px}$
+reach the cameras.  This would correspond to a $2-3\times$ reduction
+in photometric performance for $I_c < 11$.
 
 \begin{figure}[!t]
 	\centering

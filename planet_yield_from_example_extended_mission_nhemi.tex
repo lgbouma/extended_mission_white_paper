@@ -32,12 +32,14 @@ A sky map showing the positions of detected planets for this mission is drawn in
 Commenting on this map, we note that:
 \begin{itemize}
 	\item Any planet detected in this scenario's primary mission is also detected in its extended mission.
-	We consequently color the detected planets depending on if they are discovered in the primary mission, or whether they are detected thanks to extra observations in the extended.
+	We consequently color the detected planets depending on if they are discovered in the primary mission, or whether they are detected only by virtue of the extra data collected in the Extended Mission.
 	In our simulation, these extra observations will lead to new detections (a) because of an increased number of observed transits leading to a higher phase-folded SNR, which causes the transiting object's SNR to clear our threshold of 7.3, and/or (b) because raising the number of observed transits clears the minimum number of transits we require for detections ($N_\mathrm{tra} \geq 2$).
 	\item The `dropped' fields described in Sec.~\ref{sec:earth_moon_crossings} owing to Earth/Moon crossings are visible for both the primary and extended missions in the $\lambda=(30^\circ, 0^\circ, 330^\circ, 300^\circ)$ fields.
 \end{itemize}
 
-Beyond the positions of the detected planets, we select and plot some of their properties, notably planet radius $R_p$, orbital period $P$, apparent magnitude $I_c$, and effective temperature $T_\mathrm{eff}$ in Figs.~\ref{fig:radius_vs_period_nhemi} and~\ref{fig:imag_vs_teff_nhemi}.
+In addition to examining the positions of the detected planets, we select and plot some of their key properties:
+planet radius $R_p$, orbital period $P$, apparent magnitude $I_c$, and effective temperature $T_\mathrm{eff}$.
+See Figs.~\ref{fig:radius_vs_period_nhemi} and~\ref{fig:imag_vs_teff_nhemi}.
 Both of these figures are visualizations from a single Monte Carlo realization of the \nhemi\ scenario, and only show planets with $R_p < 4R_\oplus$.
 These plots clarify a few points:
 \begin{itemize}

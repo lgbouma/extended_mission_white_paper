@@ -1,51 +1,66 @@
 \subsection{Metrics by which we compare pointing strategies}
 \label{sec:comparing_pointing_strategies}
 
-We assess extended missions based on the risks and opportunities they present, as well as through their performance on select technical and science-based criteria.
-These criteria are organized following an approach originally outlined by~\citet{kepner_rational_1965}.
-Summarizing them in list-form:
+We assess extended missions based on the risks and opportunities they
+present, as well as through their performance on select technical and
+science-based criteria.  These criteria are organized following an
+approach originally outlined by~\citet{kepner_rational_1965}.
+Summarizing them in list form:
 \begin{description}
-	\item[Technical musts:] Cameras anti-sun? Solar panels collecting sunlight?
-	\item[Technical wants:] Duration of each sector $<28$ days? Earth/Moon crossings? Zodiacal background? Scattered sunlight off lens hood?
-	\item[Metrics in exoplanet science:]\
+\item[Technical musts:] Cameras anti-sun? Solar panels collecting sunlight?
+\item[Technical wants:] Duration of each sector $<28$ days? Earth/Moon crossings? Zodiacal background? Scattered sunlight off lens hood?
+\item[Metrics in exoplanet science:]\
 	\begin{itemize}
-		\item \textit{New planet detection statistics:} 
-		number of newly detected planets (from 2-minute cadence fixed-aperture target stars, colloquially `postage stamps', as well as 30-minute full frame images -- both independently and combined); 
-		number of new long-period planets (which may be detected through long period coverage, or by follow-up on single-transit events); 
-		number of new habitable zone planets; 
-		number of new planets with characterizable atmospheres; 
-		number of newly detected planets with bright host stars; 
-		number of systems with extra detectable planets (usually long-$P$ companions to short-$P$ transiting planets);
-		number of newly detected planets with bright host stars.
-		\item \textit{Broader points in exoplanet science:}
-		better ephemeris times on known TOIs;
-		observe more transits over a long baseline to enable TTV searches; 
-		ability to alter target allocation weights between \{white dwarfs, known planet-hosts, candidate planet-hosts, circumbinary \& circumprimary planets, open clusters, evolved stars (notably to detect asteroseismic oscillations), dwarf stars later than M7, stars with well-measured properties, $\ldots$\}.
-	\end{itemize}
-	\item[Metrics in broader science:]
-	Make observations relevant to stellar astrophysics, many of which may overlap with `exoplanet science wants'. For instance, observe many stars to measure stellar rotation periods, or allocate a larger fraction of the data mass for short-cadence asteroseismic targets.
-	May also wish to observe optical/near-IR variable targets across the sky, in particular 
+	\item number of newly detected planets (from 2-minute cadence fixed-aperture target stars, colloquially `postage stamps', as well as 30-minute full frame images -- both independently and combined); 
+	\item number of new long-period planets (which may be detected through long period coverage, or by follow-up on single-transit events); 
+	\item number of new habitable-zone planets; 
+	\item number of new planets with ``characterizable'' atmospheres; 
+	\item number of newly detected planets with bright host stars; 
+	\item number of stars with transiting planets detected in the Primary Mission for which the Extended Mission reveals an additional
+          transiting planet (usually long-$P$ companions to short-$P$ transiting planets);
+        \item ability to improve transit ephemerides for previously detected transiting planets;
+	\item ability to observe more transits over a longer baseline to enable searches for transit-timing variations.
+        \end{itemize}
+\end{description}
+
+These metrics were chosen for their apparent importance as well as our
+ability to quantify them with simulations. Of course there are other considerations
+that may be very important but are more difficult to quantify:
+\begin{itemize}
+\item Prospects for altering target allocation weights between \{white
+  dwarfs, known planet-hosts, candidate planet-hosts, circumbinary \&
+  circumprimary planets, open clusters, evolved stars (notably to
+  detect asteroseismic oscillations), dwarf stars later than M7, stars
+  with well-measured properties, $\ldots$\}.
+\item Prospects for observations relevant to stellar astrophysics, many of which may overlap with exoplanetary science.
+    For instance, we may wish to try and measure a large sample of stellar rotation periods, or allocate a larger fraction of the data mass for short-cadence asteroseismic targets.
+    We may also wish to observe optical/near-IR variable targets across the sky, in particular 
 	pulsating stars (Cepheids, RR Lyrae, Delta Scuti, slowly pulsating B stars),
 	eruptive stars (protostars, giants, eruptive binaries, flare stars), 
 	cataclysmic variables (dwarf novae, novae, supernovae), 
 	rotating variable stars (deformed by ellipsoidal variations, showing variability from stellar spots or magnetic fields),
 	and eclipsing binaries.
-	In particular, star spots can be used as indicators for magnetic activity to characterize long timescale stellar activity.
-	In solar system science, may wish to observe main belt asteroids and the brightest near Earth asteroids.
-	In galactic astronomy and high energy astrophysics, may wish to gather light curves for variable active galactic nuclei.
-	%!WINN! What if any implications would there be for pointing strategy
-	%!BOUMA! It's kind of case-by-case. Open clusters are better in the south. For variable stars it's probably good to have characterized fields, also near the SEP by the OGLE survey. Generally wide-field probably has greatest benefit for rare optical AGN. Solar system science is best on the ecliptic. I don't think this discussion belongs here though?
+	Long-term observations of starspot modulation can be used to characterize long timescale stellar activity cycles.
+	In solar system science, we may wish to 
+      \item Prospects for solar-system science, such as observeations of main belt asteroids and the brightest near Earth asteroids.
+      \item Prospects for extragalactic astronomy and high energy astrophysics; for instance, gathering light curves of variable active galactic nuclei.
+\end{itemize}
 
+Regarding opportunities and risks, the following need to be considered:
+\begin{description}
 	\item[Opportunities:]\ 
 	\begin{itemize}
-		\item What's best on a $>1$ year horizon for planet detections? For instance, if \tess were to continue for 5, or even 10 years, would any strategy be optimal?
+	\item What's best on a $>1$ year horizon for planet detections? For instance, if it were known in advance
+          that \tess would continue operations for several additional years (or even 10 years), would such knowledge
+          affect the optimal choice of the immediate one-year plan?
 		\item Ability to move targets detected in FFIs to PSs in extended mission
 		\item Shorten the cadence of FFIs \& lengthen the cadence of `target' stars.
-		\item \textit{\tess as follow-up mission:} 
-		ability to observe \corot objects; 
-		ability to observe \kepler field (key benefits in broader science wants above); 
-		ability to observe \ktwo fields (follow-up \ktwo few-transit objects);
-		ability to observe targets previously monitored by ground-based surveys.
+		\item \textit{\tess as follow-up mission:} ability to
+                  observe \corot objects; ability to observe \kepler
+                  field (key benefits in broader science wants above);
+                  ability to observe \ktwo fields (follow-up \ktwo
+                  few-transit objects); ability to observe targets
+                  previously monitored by ground-based surveys.
 		\item \textit{Follow-up for \tess:} 
 		potential for \jwst follow-up? 
 		Potential for \cheops follow-up? 
@@ -53,8 +68,6 @@ Summarizing them in list-form:
 		Ability to observe from both North and South hemispheres on Earth?
 		\item Impact on Guest Investigator program?
 	\end{itemize}
-	%!WINN! Why is this stuff here? Belongs up front in 'broader considerations'
-	%!BOUMA! I don't follow your confusion. The point of this section is "here are all the criteria we though of in a big ~1 page list." These broader opportunities are just part of the list...
 	
 	\item[Risks:] 
 	Risk of spacecraft damage? 
@@ -64,7 +77,3 @@ Summarizing them in list-form:
 	Would reduced precision (from aged CCDs, worse pointing accuracy, or other mechanical sources) invalidate this scenario? 
 	Risk of planet detection simulation over or under-estimating planet yield?
 \end{description}
-
-In the process of defining an extended mission it will be necessary for the \tess Science Team as well as the broader astronomical community to prioritize between the above desires as well as any not listed.
-We structure this report to address technical musts and wants in Sec.~\ref{sec:approach}, new exoplanet detection statistics in Sec.~\ref{sec:newly_detected_planet_metrics}, and some of the broader points salient to exoplanet science in Sec.~\ref{sec:discussion}.
-We direct the important discussion of using \tess for science beyond exoplanets, as well as its less-easily quantified synergies with space and ground-based resources, to LINK!.

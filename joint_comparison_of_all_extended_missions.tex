@@ -36,14 +36,18 @@ With this in mind, for each extended mission scenario we ask the following quest
 	\label{fig:yield_results}
 \end{figure}
 
-For each extended mission, we compare these numbers to their counterparts from the primary mission as well as to all the other extended missions.
-We compare them to their primary mission counterparts in order to assess the overall value of a given metric: suppose that the primary mission detects 2000 planets, Extended Mission A detects 200 new planets, and Extended Mission B detects 100. 
-Although case A gives twice as many new planets as case B, the more notable fact is that both are paltry compared to the primary mission. 
-In that case, it would likely be sensible for \tess to focus on something other than detecting new planets in bulk.
-
-We show the results of our simulations in Fig.~\ref{fig:yield_results}.
-The first point to notice is that for all but one of the new planet detection metrics ($N_\mathrm{new}$, $N_\mathrm{new,P>20d}$, $N_\mathrm{new,HZ}$, $N_\mathrm{sys,extra\ planets}$, $N_\mathrm{new,atm}$, $N_\mathrm{new,SNR\lor N_{tra}}$) the yields between extended missions vary by less than a factor of two.
-The exception is in $N_\mathrm{new,new\ stars}$, in which \elong\ detects roughly twice as many planets orbiting never-before-observed stars as any other proposed mission.
+For each Year-3 scenario, we compare these numbers to the
+corresponding numbers from the Primary Mission as well as to the other
+5 scenarios for Year 3. We show the results of our simulations in
+Fig.~\ref{fig:yield_results}.  The first point to notice is that for
+all but one of the new planet detection metrics ($N_\mathrm{new}$,
+$N_\mathrm{new,P>20d}$, $N_\mathrm{new,HZ}$,
+$N_\mathrm{sys,extra\ planets}$, $N_\mathrm{new,atm}$,
+$N_\mathrm{new,SNR\lor N_{tra}}$) the yields between extended missions
+vary by less than a factor of two.  The exception is in
+$N_\mathrm{new,new\ stars}$, in which \elong\ detects roughly twice as
+many planets orbiting never-before-observed stars as any other
+proposed mission.
 
 The second point is on the absolute yields of new planets: postage stamp observations find $\mathcal{O}(500)$ new planets, relative to the primary mission's $\mathcal{O}(1500)$.
 Full frame image observations find $\mathcal{O}(800)$ new planets, relative to the primary mission's $\mathcal{O}(900)$.
@@ -59,9 +63,12 @@ We now discuss each metric in more depth:
 	\item $N_\mathrm{new}$: we detect about as many new planets in Year 3 as we detect planets in either Years 1 or 2: roughly $1250$.
 	The worst and the best scenarios (\elong\ and \hemis, respectively) differ only by a factor of 1.2.
 	The fact that there are so many new planets to be detected from extended observations, particularly from full frame images, and that the absolute number of new planets is roughly invariant to the spacecraft's pointing, can be understood from Fig.~\ref{fig:snrf_histogram}.
-	This figure shows what was originally noted by~\citetalias{Sullivan_2015}: \tesss original survey is incomplete: for stars dimmer than $I_c=9$, there are at least an order of magnitude more $R_p<4R_\oplus$ transiting planets that \tess does not detect (Fig 22 of~\citetalias{Sullivan_2015}).
+	This figure illustrates a point that was originally noted by~\citetalias{Sullivan_2015}.
+        The \tesss Primary Mission will miss many short-period planets around bright stars, and is therefore
+        incomplete even its intended hunting ground.
+        For stars with $I_c>9$, there are at least an order of magnitude more $R_p<4R_\oplus$ transiting planets that \tess does not detect (Fig 22 of~\citetalias{Sullivan_2015}).
 	Our findings agree: there are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (Fig.~\ref{fig:primary_planet_yield}).
-	An extended mission will enable their detection, irrespective of where on the sky we observe!
+	An extended mission will probe and detect this population, irrespective of where on the sky we observe.
 	This result should hold equally well for realistic detection efficiency thresholds, and it is demonstrates that extended observations will be valuable, because \tess will not yet be at the point of diminishing returns for longer observations (which will happen when more observations only allow pushing out to longer orbital periods). 
 	There will still be small, short-period candidates to discover after \tesss primary mission.
 \begin{figure}[!t]
@@ -82,7 +89,9 @@ We now discuss each metric in more depth:
 	About half of the long period planets that \hemis\ finds are detected with only two transits.
 	By way of comparison, \npole\ detects most of its long-period planets with $\ge 4$ transits.
 	This means that the \npole\ detections are more secure.
-	Two-transit detections, especially those separated by a gap of a year or more in the \tess data, will be tenuous; \kepler searches showed that requiring 3 or more self-consistent transits substantially lowers the fraction of false signals~\citep{burke_Q1Q8_2014}.
+	For two-transit detections, especially those separated by a gap of a year or more in the \tess data, it will be
+        difficult to be very confident in the detection, and in the derived orbital period.
+        Experience from the \kepler mission showed that requiring 3 or more self-consistent transits substantially lowers the fraction of false signals~\citep{burke_Q1Q8_2014}.
 	In cases with a relatively high SNR per transit it is possible to confirm candidates, but with less certainty than if we had more transits in the first place.
 	\begin{figure*}[!t]
 		\centering
@@ -105,7 +114,7 @@ We now discuss each metric in more depth:
 		}
 		\label{fig:Ntra_hist_primary}
 	\end{marginfigure}
-	\item $N_\mathrm{new,HZ}$: we approximate the habitable zone as the geometric shell around a host star in which a planet's insolation satisfies $0.2>S/S_\oplus>2.0$
+	\item $N_\mathrm{new,HZ}$: we approximate the habitable zone as the geometric shell around a host star in which a planet's insolation satisfies $0.2>S/S_\oplus>2.0$.
 	With this approximation, the \hemis\ scenario finds the most new habitable zone planets: 146 (which is subject to the same caveats discussed above for long period planet detections). 
 	The next-best scenarios, \npole, \nhemi\ and \shemiAvoid, all detect around 120.
 	Relative to the primary mission's 210 detections, this means extended missions boost the number of detected habitable zone planets by a factor of $\sim1.6$.
@@ -132,7 +141,7 @@ We now discuss each metric in more depth:
 	\end{marginfigure}	
 	
 	\item $N_\mathrm{sys,extra\ planets}$: for how many systems do we detect extra planets?
-	Our assumptions about multiple planet system distributions are coarse -- we assume independent probability draws from single planet occurrence distributions.
+	Our assumptions about multiple planet system distributions are crude -- we assume independent probability draws from single planet occurrence distributions.
 	Thus our simulated planet population does not have systems of tightly packed inner planets in realistic numbers.
 	That said, we expect this statistic to be some indication of the information that we are not explicitly modeling, but which can be obtained from extended observations of planetary systems post-planet detection. 
 	This additional information includes improved precision on physical and dynamical parameters of the system.

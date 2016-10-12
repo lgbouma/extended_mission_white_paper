@@ -7,53 +7,50 @@ Repeated entry---line 621 of file bibliography/biblio.bib.bib
  : @article{gangestad_high_2013
  :                             ,
 I'm skipping whatever remains of this entry
-Warning--empty journal in edelson_agn_2013
-Warning--empty booktitle in jenkins_SPOC_2016
 Warning--empty journal in kepner_rational_1965
 Warning--empty booktitle in landsman_idl_1995
 Warning--empty journal in mckinneypandas
 Warning--empty year in mckinneypandas
 Warning--empty year in mckinneypandas
-Warning--empty institution in science_definition_team_report_big_2016
-You've used 68 entries,
+You've used 39 entries,
             2773 wiz_defined-function locations,
-            1069 strings with 28591 characters,
-and the built_in function-call counts, 52649 in all, are:
-= -- 4239
-> -- 5601
-< -- 29
-+ -- 1875
-- -- 1806
-* -- 5305
-:= -- 8853
-add.period$ -- 338
-call.type$ -- 68
-change.case$ -- 806
-chr.to.int$ -- 67
-cite$ -- 144
-duplicate$ -- 1388
-empty$ -- 2398
-format.name$ -- 1898
-if$ -- 10311
-int.to.chr$ -- 2
+            881 strings with 16566 characters,
+and the built_in function-call counts, 25949 in all, are:
+= -- 2154
+> -- 2487
+< -- 19
++ -- 834
+- -- 795
+* -- 2544
+:= -- 4334
+add.period$ -- 188
+call.type$ -- 39
+change.case$ -- 382
+chr.to.int$ -- 39
+cite$ -- 83
+duplicate$ -- 779
+empty$ -- 1358
+format.name$ -- 852
+if$ -- 5131
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 63
-newline$ -- 481
-num.names$ -- 274
-pop$ -- 1415
+missing$ -- 35
+newline$ -- 274
+num.names$ -- 156
+pop$ -- 647
 preamble$ -- 1
-purify$ -- 736
+purify$ -- 342
 quote$ -- 0
-skip$ -- 1425
+skip$ -- 731
 stack$ -- 0
-substring$ -- 833
-swap$ -- 134
-text.length$ -- 6
+substring$ -- 448
+swap$ -- 64
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 743
-warning$ -- 8
-while$ -- 268
+type$ -- 424
+warning$ -- 5
+while$ -- 153
 width$ -- 0
-write$ -- 1133
+write$ -- 646
 (There was 1 error message)
