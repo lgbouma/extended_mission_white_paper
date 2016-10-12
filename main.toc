@@ -10,36 +10,36 @@
 \contentsline {section}{\numberline {3}Approach}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}Constraints on possible pointing strategies}{12}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Our proposed pointing strategies}{13}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Metrics by which we compare pointing strategies}{15}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Metrics by which we compare pointing strategies}{16}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Description of planet detection model}{18}{subsection.3.4}
 \contentsline {paragraph}{Background on synthetic catalogs:}{18}{paragraph*.6}
 \contentsline {paragraph}{Detection process:}{18}{paragraph*.7}
 \contentsline {paragraph}{Assumptions of SNR calculation:}{19}{paragraph*.8}
-\contentsline {subsection}{\numberline {3.5}Selecting target stars (and full frame images)}{19}{subsection.3.5}
-\contentsline {paragraph}{Alternative prioritization approaches:}{23}{paragraph*.9}
-\contentsline {paragraph}{Alternative prioritization approaches in extended missions:}{24}{paragraph*.10}
+\contentsline {subsection}{\numberline {3.5}Selecting target stars (and full frame images)}{20}{subsection.3.5}
+\contentsline {paragraph}{Alternative prioritization approaches:}{21}{paragraph*.9}
+\contentsline {paragraph}{Alternative prioritization approaches in extended missions:}{23}{paragraph*.10}
 \contentsline {paragraph}{Approach to full-frame images:}{24}{paragraph*.11}
-\contentsline {subsection}{\numberline {3.6}Earth/Moon crossings}{25}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Summary of key assumptions and attrributes of the planet detection simulations}{30}{subsection.3.7}
-\contentsline {section}{\numberline {4}Planet detection statistics}{33}{section.4}
-\contentsline {subsection}{\numberline {4.1}Planet yield from the primary mission}{33}{subsection.4.1}
+\contentsline {subsection}{\numberline {3.6}Earth/Moon crossings}{24}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Summary of key assumptions and attrributes of the planet detection simulations}{29}{subsection.3.7}
+\contentsline {section}{\numberline {4}Planet detection statistics}{32}{section.4}
+\contentsline {subsection}{\numberline {4.1}Planet yield from the primary mission}{32}{subsection.4.1}
 \contentsline {paragraph}{Detected planet yield}{33}{paragraph*.12}
-\contentsline {paragraph}{Properties of planets detected in primary mission}{34}{paragraph*.13}
+\contentsline {paragraph}{Properties of planets detected in primary mission}{33}{paragraph*.13}
 \contentsline {paragraph}{Impact of earth and moon crossings on primary mission's detected planet yield}{34}{paragraph*.14}
-\contentsline {subsection}{\numberline {4.2}Planet yield from an example extended mission (\rm {\texttt {HEMI}}) }{35}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Comparing planet yields from all extended missions based on new planet detection metrics}{38}{subsection.4.3}
-\contentsline {paragraph}{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}{46}{paragraph*.15}
+\contentsline {subsection}{\numberline {4.2}Planet yield from an example extended mission (\rm {\texttt {HEMI}}) }{34}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Comparing planet yields from all extended missions based on new planet detection metrics}{37}{subsection.4.3}
+\contentsline {paragraph}{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}{45}{paragraph*.15}
 \contentsline {subsection}{\numberline {4.4}On the brightness of stars with detected planets}{46}{subsection.4.4}
 \contentsline {section}{\numberline {5}Discussion}{47}{section.5}
 \contentsline {subsection}{\numberline {5.1}What's best on a $>1$ year horizon for planet detections?}{47}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}The ephemeris problem}{49}{subsection.5.2}
-\contentsline {paragraph}{Analytic motivation}{49}{paragraph*.16}
-\contentsline {paragraph}{Numerical analysis}{50}{paragraph*.17}
-\contentsline {subsection}{\numberline {5.3}Risks and caveats}{53}{subsection.5.3}
-\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{53}{paragraph*.18}
+\contentsline {subsection}{\numberline {5.2}The ephemeris problem}{48}{subsection.5.2}
+\contentsline {paragraph}{Analytic motivation}{48}{paragraph*.16}
+\contentsline {paragraph}{Numerical analysis}{49}{paragraph*.17}
+\contentsline {subsection}{\numberline {5.3}Risks and caveats}{51}{subsection.5.3}
+\contentsline {paragraph}{Risk that planet detection simulation gets yield wrong:}{51}{paragraph*.18}
 \contentsline {paragraph}{Miscellaneous risks}{55}{paragraph*.19}
-\contentsline {section}{\numberline {6}Concluding remarks and recommendations}{56}{section.6}
-\contentsline {subsection}{\numberline {6.1}Recommendations}{56}{subsection.6.1}
+\contentsline {section}{\numberline {6}Concluding remarks and recommendations}{55}{section.6}
+\contentsline {subsection}{\numberline {6.1}Recommendations}{55}{subsection.6.1}
 \contentsline {section}{Appendices}{59}{section*.20}
 \cftpagenumberson {section}
 \contentsline {section}{Appendix \numberline {A}Models relevant to Earth-Moon crossings}{59}{Appendix.1.A}

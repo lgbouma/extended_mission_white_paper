@@ -189,8 +189,8 @@ even if they are not correct in absolute terms to better than $\sim$50\%.
 
 Highlighting a few of these assumptions, in order of what we feel is decreasing
 concern:
-\begin{description}
-\item 1.)[We assume no knowledge of the outcomes of prior transit searches.]
+\begin{itemize}
+\item [1.) We assume no knowledge of the outcomes of prior transit searches.]
   	As indicated in the text, this assumption is worst for the
         \elong\ and \eshort\ scenarios, for which \ktwo and \tesss
         overlap will be important.  Estimating the magnitude of our
@@ -209,7 +209,7 @@ concern:
         \elong\ or \eshort\ and thus demands detailed study, which we
         recommend below.
 	
-	\item 2.) [The difference in $1.25R_\oplus<R_p<2R_\oplus$
+	\item [2.) The difference in $1.25R_\oplus<R_p<2R_\oplus$
           planet yield from~\protect\citetalias{Sullivan_2015}.]  We
           discussed this point in
           Sec.~\ref{sec:results_from_primary_missions}.
@@ -267,7 +267,7 @@ concern:
 	%and \textit{(e)} our actual updated calculations that update~\citetalias{Sullivan_2015}'s code in ways that are superficial with regard to this issue, 
 	we think that the current simulations give a more accurate picture.
 	
-	\item 3.) [We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one false positive per $2\times10^5$ light curves.
+	\item [3.) We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one false positive per $2\times10^5$ light curves.
 	This criterion is a self-consistent ad-hoc choice that we made for target stars.
 	Applying the same criterion to full frame images would lead to more than one false positive, since full frame images come from a much larger sample of stars.
 	Any pipeline that is written to work with \tess data will confront this problem:
@@ -277,7 +277,7 @@ concern:
 	Considering our Fig.~\ref{fig:snrf_histogram} (and noting the black line is for the sum of postage stamp and full frame image detections), adopting a SNR threshold of 7.7 for FFIs would mean a loss of $\sim30\times4=120$ planets over two years, or 60 of what we claim are `detected planets' from full frame images in 1 year's extended mission.	
 	
 	
-	\item 4.) [We use synthetic stars from a single galactic model (TRILEGAL).]
+	\item [4.) We use synthetic stars from a single galactic model (TRILEGAL).]
 	One check on the robustness of this model would be to compare with other galactic models like GALAXIA~\citep{sharma_galaxia_2011} or a Besa\c con model~\citep{robin2003synthetic}.
 	We have already done this using a simple analytic model by~\citet{winn_searchable_2013}, which agrees with our work to factors of a few.
 	We might eventually use the real star catalog that \tesss Target Selection Working Group is assembling, but this would come with large uncertainties on stellar radii, effective temperatures, and companion fractions.
@@ -288,14 +288,14 @@ concern:
 	%!WINN! #3, 4, 5, 7 not specific to extended missions, right?
 	%!BOUMA! right. But they should still be here?
 	
-	\item 5.) [At least 2 transits for detection:] recall Figs.~\ref{fig:Ntra_hist} and~\ref{fig:Ntra_hist_primary}.
+	\item [5.) At least 2 transits for detection:] recall Figs.~\ref{fig:Ntra_hist} and~\ref{fig:Ntra_hist_primary}.
 	If we were to use a more stringent criteria, for instance at least 3 transits for detection as the \kepler pipeline currently does, we would lose $\mathcal{O}(200)$ of the planets detected in the primary mission, and $\mathcal{O}(100)$ from the extended missions.
 	This assumption disproportionately affects long-period planets.
 	
 %	\item[6.) Multiple planet system distributions:] we assumed that we could approximate the occurrence rates for transiting multiple planet systems as repeated draws from the single-planet occurrence distributions (with independent probability) with added impositions of co-planarity and orbital stability.
 	
 	
-	\item 6.) [We neglect instrument aging, spacecraft systematics, etc.]
+	\item [6.) We neglect instrument aging, spacecraft systematics, etc.]
 	To our best knowledge detailed models do not currently exist for how \tesss optics and CCDs will degrade with time.
 %	\todo[inline]{talk with Goddard people about this}
 	We are also assuming that, as with \ktwo, time-correlated spacecraft level systematics can be removed in post-processing.
@@ -303,14 +303,14 @@ concern:
 	If we were to assume a gradual decline in photometric performance, for instance from an increased number of dead or `hot' pixels, the relative extended-mission-to-extended-mission comparisons would remain identical.
 	The absolute extended-mission-to-primary-mission yields would decrease.
 	
-	\item 7.) [We do not consider the efficacy of processing pipeline.]
+	\item [7.) We do not consider the efficacy of processing pipeline.]
 	For instance, \hemis\ will come with period ambiguities and aliasing problems imposed by its 14 day sampling at the `continuous' viewing zones.
 	Similar issues are generic across extended missions for which we detect a small number of transits in the primary mission, and then a small number of transits in the extended mission.
 	
 	A robust way to approach this problem would be to generate a synthetic simulated \tess dataset, \textit{i.e.}, at the image-level, rather than at the idealized phase-folded SNR level from this work, for each extended mission's observations.
 	Then actually perform astrometry on injected stars, extract light curves, de-trend them, and find their transits.
 	This exercise would likely also be a useful way to prepare the SPOC and broader community for what we expect the era of \tess photometry to entail in terms of data quality.	
-\end{description}
+\end{itemize}
 
 %Given these assumptions in which we are most-wrong, we ask: are we fooling ourselves? How accurate can we hope our $R_p<4R_\oplus$ yield calculations to be?
 %Assuming that our most important assumption -- the in-flight photometric performance -- holds, and qualifying our global uncertainty as greater for ecliptic vs. non-ecliptic focused scenarios because of \ktwo\!, we hope to be no more wrong than a factor of two.

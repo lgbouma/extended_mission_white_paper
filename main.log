@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.25)  12 OCT 2016 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.25)  12 OCT 2016 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1522,7 +1522,7 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 92.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1625,7 +1625,7 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 LaTeX Warning: Marginpar on page 11 moved.
 
 ) (./approach.tex [11] (./constraints_on_pointings.tex
-<figures/spacecraft_angles.pdf, id=298, 1755.43831pt x 1052.25114pt>
+<figures/spacecraft_angles.pdf, id=301, 1755.43831pt x 1052.25114pt>
 File: figures/spacecraft_angles.pdf Graphic file (type pdf)
 
 <use figures/spacecraft_angles.pdf>
@@ -1659,52 +1659,51 @@ LaTeX Warning: Marginpar on page 19 moved.
 
 LaTeX Warning: Marginpar on page 19 moved.
 
-) (./selection_criteria.tex [19]
-<figures/positions_pointings_kepler.pdf, id=403, 1433.11693pt x 775.09729pt>
+[19]) (./selection_criteria.tex
+<figures/positions_pointings_kepler.pdf, id=407, 1433.11693pt x 775.09729pt>
 File: figures/positions_pointings_kepler.pdf Graphic file (type pdf)
 
 <use figures/positions_pointings_kepler.pdf>
 Package pdftex.def Info: figures/positions_pointings_kepler.pdf used on input l
-ine 50.
+ine 27.
 (pdftex.def)             Requested size: 479.99329pt x 259.60301pt.
 
-<figures/fig17_replica.pdf, id=404, 578.16pt x 650.43pt>
+<figures/fig17_replica.pdf, id=408, 578.16pt x 650.43pt>
 File: figures/fig17_replica.pdf Graphic file (type pdf)
 
 <use figures/fig17_replica.pdf>
-Package pdftex.def Info: figures/fig17_replica.pdf used on input line 56.
+Package pdftex.def Info: figures/fig17_replica.pdf used on input line 33.
 (pdftex.def)             Requested size: 311.99884pt x 350.99869pt.
- [20] [21 <./figures/positions_pointings_kepler.pdf>] [22 <./figures/fig17_repl
-ica.pdf>]
-<figures/fig17_radius_on_x.pdf, id=436, 578.16pt x 650.43pt>
+
+<figures/fig17_radius_on_x.pdf, id=412, 578.16pt x 650.43pt>
 File: figures/fig17_radius_on_x.pdf Graphic file (type pdf)
 
 <use figures/fig17_radius_on_x.pdf>
-Package pdftex.def Info: figures/fig17_radius_on_x.pdf used on input line 87.
-(pdftex.def)             Requested size: 143.99268pt x 161.99176pt.
+Package pdftex.def Info: figures/fig17_radius_on_x.pdf used on input line 64.
+(pdftex.def)             Requested size: 311.99884pt x 350.99869pt.
 
-Overfull \hbox (2.32068pt too wide) in paragraph at lines 86--90
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+[][]
  []
 
 
-LaTeX Warning: Marginpar on page 23 moved.
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
-[23
+ []
 
- <./figures/fig17_radius_on_x.pdf>]) [24] (./earth_moon_crossings.tex
-<figures/precision_memo.pdf, id=487, 650.43pt x 433.62pt>
+[20] [21 <./figures/positions_pointings_kepler.pdf>] [22 <./figures/fig17_repli
+ca.pdf>] [23 <./figures/fig17_radius_on_x.pdf>]) (./earth_moon_crossings.tex
+<figures/precision_memo.pdf, id=489, 650.43pt x 433.62pt>
 File: figures/precision_memo.pdf Graphic file (type pdf)
 
 <use figures/precision_memo.pdf>
 Package pdftex.def Info: figures/precision_memo.pdf used on input line 6.
-(pdftex.def)             Requested size: 480.01051pt x 320.00702pt.
-
+(pdftex.def)             Requested size: 312.00435pt x 208.0029pt.
+ [24]
 
 LaTeX Warning: Marginpar on page 25 moved.
 
-[25 <./figures/precision_memo.pdf>]
-<figures/outage_earth_moon_primary.pdf, id=508, 1011.78pt x 578.16pt>
+<figures/outage_earth_moon_primary.pdf, id=502, 1011.78pt x 578.16pt>
 File: figures/outage_earth_moon_primary.pdf Graphic file (type pdf)
 
 <use figures/outage_earth_moon_primary.pdf>
@@ -1712,30 +1711,31 @@ Package pdftex.def Info: figures/outage_earth_moon_primary.pdf used on input li
 ne 38.
 (pdftex.def)             Requested size: 311.99664pt x 178.28378pt.
 
-<figures/outage_earth_moon_ecl_narrow_1yr.pdf, id=509, 1011.78pt x 578.16pt>
+<figures/outage_earth_moon_ecl_narrow_1yr.pdf, id=503, 1011.78pt x 578.16pt>
 File: figures/outage_earth_moon_ecl_narrow_1yr.pdf Graphic file (type pdf)
 
 <use figures/outage_earth_moon_ecl_narrow_1yr.pdf>
 Package pdftex.def Info: figures/outage_earth_moon_ecl_narrow_1yr.pdf used on i
 nput line 47.
 (pdftex.def)             Requested size: 311.99664pt x 178.28378pt.
-
+ [25 <./figures/precision_memo.pdf>]
 
 LaTeX Warning: Marginpar on page 26 moved.
 
-[26] [27 <./figures/outage_earth_moon_primary.pdf>] [28 <./figures/outage_earth
-_moon_ecl_narrow_1yr.pdf>] [29]) (./assumptions_to_planet_detection_sim.tex
+[26 <./figures/outage_earth_moon_primary.pdf>] [27 <./figures/outage_earth_moon
+_ecl_narrow_1yr.pdf>] [28]) (./assumptions_to_planet_detection_sim.tex
 Overfull \hbox (13.57559pt too wide) in paragraph at lines 1--1
  |[]\T1/pplj/m/it/10.95 Summary of key as-sump-tions and at-tr-ributes of the p
 lanet de-tec-tion
  []
 
+[29]
 
 LaTeX Warning: Marginpar on page 30 moved.
 
-[30] [31])) (./newly_detected_planet_metrics.tex [32]
+[30] [31])) (./newly_detected_planet_metrics.tex
 (./planet_yield_from_primary_mission.tex
-<figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf, id=620, 578.16pt x 650
+<figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf, id=623, 578.16pt x 650
 .43pt>
 File: figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf Graphic file (type
  pdf)
@@ -1743,13 +1743,9 @@ File: figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf Graphic file (type
 Package pdftex.def Info: figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf
  used on input line 5.
 (pdftex.def)             Requested size: 143.99268pt x 161.99176pt.
-
-
-LaTeX Warning: Marginpar on page 33 moved.
-
-[33 <./figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf>]) [34]
+ [32 <./figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf>] [33])
 (./planet_yield_from_example_extended_mission_nhemi.tex
-<figures/skymap_dropped_fields.pdf, id=674, 1084.05pt x 650.43pt>
+<figures/skymap_dropped_fields.pdf, id=673, 1084.05pt x 650.43pt>
 File: figures/skymap_dropped_fields.pdf Graphic file (type pdf)
 
 <use figures/skymap_dropped_fields.pdf>
@@ -1757,30 +1753,30 @@ Package pdftex.def Info: figures/skymap_dropped_fields.pdf used on input line 6
 .
 (pdftex.def)             Requested size: 479.99399pt x 287.99638pt.
 
-<figures/logR_vs_logP.pdf, id=676, 1011.78pt x 722.7pt>
+<figures/logR_vs_logP.pdf, id=675, 1011.78pt x 722.7pt>
 File: figures/logR_vs_logP.pdf Graphic file (type pdf)
 
 <use figures/logR_vs_logP.pdf>
 Package pdftex.def Info: figures/logR_vs_logP.pdf used on input line 12.
 (pdftex.def)             Requested size: 479.9984pt x 342.85599pt.
 
-<figures/temp_imag_vs_teff_nhemi.pdf, id=678, 1011.78pt x 722.7pt>
+<figures/temp_imag_vs_teff_nhemi.pdf, id=677, 1011.78pt x 722.7pt>
 File: figures/temp_imag_vs_teff_nhemi.pdf Graphic file (type pdf)
 
 <use figures/temp_imag_vs_teff_nhemi.pdf>
 Package pdftex.def Info: figures/temp_imag_vs_teff_nhemi.pdf used on input line
  20.
 (pdftex.def)             Requested size: 479.9984pt x 342.85599pt.
- [35 <./figures/skymap_dropped_fields.pdf>] [36 <./figures/logR_vs_logP.pdf>] [
-37 <./figures/temp_imag_vs_teff_nhemi.pdf>]) (./joint_comparison_of_all_extende
-d_missions.tex
+ [34] [35 <./figures/skymap_dropped_fields.pdf>] [36 <./figures/logR_vs_logP.pd
+f>])
+(./joint_comparison_of_all_extended_missions.tex
 Overfull \hbox (4.69511pt too wide) in paragraph at lines 1--1
  |[]\T1/pplj/m/it/10.95 Comparing planet yields from all ex-tended mis-sions ba
 sed on new
  []
 
-
-<tables/160729_t50_with_earth_moon_Deming_corr.pdf, id=1021, 497.21759pt x 607.
+[37 <./figures/temp_imag_vs_teff_nhemi.pdf>]
+<tables/160729_t50_with_earth_moon_Deming_corr.pdf, id=1029, 497.21759pt x 607.
 79073pt>
 File: tables/160729_t50_with_earth_moon_Deming_corr.pdf Graphic file (type pdf)
 
@@ -1788,23 +1784,24 @@ File: tables/160729_t50_with_earth_moon_Deming_corr.pdf Graphic file (type pdf)
 Package pdftex.def Info: tables/160729_t50_with_earth_moon_Deming_corr.pdf used
  on input line 18.
 (pdftex.def)             Requested size: 994.43274pt x 1215.57849pt.
- [38] [39 <./tables/160729_t50_with_earth_moon_Deming_corr.pdf>]
-<figures/snrf_histogram_with_ps.pdf, id=1050, 433.62pt x 289.08pt>
+ [38]
+<figures/snrf_histogram_with_ps.pdf, id=1047, 433.62pt x 289.08pt>
 File: figures/snrf_histogram_with_ps.pdf Graphic file (type pdf)
 
 <use figures/snrf_histogram_with_ps.pdf>
 Package pdftex.def Info: figures/snrf_histogram_with_ps.pdf used on input line 
 76.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [40]
-<figures/Ntra_histogram.pdf, id=1061, 604.09062pt x 245.78242pt>
+ [39 <./tables/160729_t50_with_earth_moon_Deming_corr.pdf>] [40 <./figures/snrf
+_histogram_with_ps.pdf>]
+<figures/Ntra_histogram.pdf, id=1081, 604.09062pt x 245.78242pt>
 File: figures/Ntra_histogram.pdf Graphic file (type pdf)
 
 <use figures/Ntra_histogram.pdf>
 Package pdftex.def Info: figures/Ntra_histogram.pdf used on input line 98.
 (pdftex.def)             Requested size: 604.08914pt x 245.78181pt.
- [41 <./figures/snrf_histogram_with_ps.pdf>]
-<figures/Ntra_histogram_primary.pdf, id=1080, 505.89pt x 252.945pt>
+
+<figures/Ntra_histogram_primary.pdf, id=1083, 505.89pt x 252.945pt>
 File: figures/Ntra_histogram_primary.pdf Graphic file (type pdf)
 
 <use figures/Ntra_histogram_primary.pdf>
@@ -1816,15 +1813,12 @@ Overfull \hbox (2.3306pt too wide) in paragraph at lines 107--114
   [] 
  []
 
-
-LaTeX Warning: Marginpar on page 42 moved.
-
-[42 <./figures/Ntra_histogram.pdf> <./figures/Ntra_histogram_primary.pdf
+[41 <./figures/Ntra_histogram.pdf> <./figures/Ntra_histogram_primary.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/Ntra_histogram_primary.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf, id=1145, 867.24pt x 650.
+<figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf, id=1148, 867.24pt x 650.
 43pt>
 File: figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf Graphic file (type p
 df)
@@ -1833,11 +1827,7 @@ Package pdftex.def Info: figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf u
 sed on input line 132.
 (pdftex.def)             Requested size: 867.2379pt x 650.4284pt.
 
-
-LaTeX Warning: Marginpar on page 43 moved.
-
-
-<figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf, id=1150, 867.2
+<figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf, id=1153, 867.2
 4pt x 650.43pt>
 File: figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf Graphic fi
 le (type pdf)
@@ -1848,41 +1838,41 @@ incl.pdf used on input line 138.
 (pdftex.def)             Requested size: 867.2379pt x 650.4284pt.
 
 
-LaTeX Warning: Marginpar on page 43 moved.
+LaTeX Warning: Marginpar on page 42 moved.
 
-[43 <./figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf> <./figures/hz_plan
+[42 <./figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf> <./figures/hz_plan
 et_detections_rp_lt_4re_kopparapu_2013_incl.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/hz_planet_detections_rp_lt_4r
 e_kopparapu_2013_incl.pdf): PDF inclusion: multiple pdfs with page group includ
 ed in a single page
->] <figures/SNR_in_transmission.pdf, id=1191, 433.62pt x 289.08pt>
+>] <figures/SNR_in_transmission.pdf, id=1194, 433.62pt x 289.08pt>
 File: figures/SNR_in_transmission.pdf Graphic file (type pdf)
 
 <use figures/SNR_in_transmission.pdf>
 Package pdftex.def Info: figures/SNR_in_transmission.pdf used on input line 179
 .
 (pdftex.def)             Requested size: 480.02707pt x 320.01804pt.
- [44] [45 <./figures/SNR_in_transmission.pdf>]
+ [43] [44 <./figures/SNR_in_transmission.pdf>]
 
-LaTeX Warning: Marginpar on page 46 moved.
+LaTeX Warning: Marginpar on page 45 moved.
 
-) (./on_brightness_of_new_stars.tex
-<figures/160729_icmag_t50_all.pdf, id=1232, 664.88402pt x 737.15402pt>
+) [45] (./on_brightness_of_new_stars.tex
+<figures/160729_icmag_t50_all.pdf, id=1241, 664.88402pt x 737.15402pt>
 File: figures/160729_icmag_t50_all.pdf Graphic file (type pdf)
 
 <use figures/160729_icmag_t50_all.pdf>
 Package pdftex.def Info: figures/160729_icmag_t50_all.pdf used on input line 4.
 
 (pdftex.def)             Requested size: 311.99841pt x 345.91129pt.
- [46]))
-(./discussion_risks_opportunities.tex
+ [46 <./figures/160729_icmag_t50_all.pdf>])) (./discussion_risks_opportunities.
+tex
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 11.40997pt on input line 4.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 11.40997pt on input line 4.
- [47 <./figures/160729_icmag_t50_all.pdf>] [48] [49]
-<figures/mid_transit_time_vs_cadence.pdf, id=1282, 520.34402pt x 390.25798pt>
+ [47] [48] [49]
+<figures/mid_transit_time_vs_cadence.pdf, id=1291, 520.34402pt x 390.25798pt>
 File: figures/mid_transit_time_vs_cadence.pdf Graphic file (type pdf)
 
 <use figures/mid_transit_time_vs_cadence.pdf>
@@ -1890,7 +1880,7 @@ Package pdftex.def Info: figures/mid_transit_time_vs_cadence.pdf used on input
 line 133.
 (pdftex.def)             Requested size: 520.34274pt x 390.25702pt.
 
-<figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf, id=1284, 520.3
+<figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf, id=1293, 520.3
 4402pt x 390.25798pt>
 File: figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf Graphic fi
 le (type pdf)
@@ -1899,22 +1889,22 @@ le (type pdf)
 Package pdftex.def Info: figures/lowering_uncertainty_on_midtransit_via_extra_p
 oint.pdf used on input line 141.
 (pdftex.def)             Requested size: 520.34274pt x 390.25702pt.
- [50]
-<figures/confidence_interval_gets_better.pdf, id=1296, 1040.68805pt x 780.51598
+
+<figures/confidence_interval_gets_better.pdf, id=1295, 1040.68805pt x 780.51598
 pt>
 File: figures/confidence_interval_gets_better.pdf Graphic file (type pdf)
  <use figures/confidence_interval_gets_better.pdf>
 Package pdftex.def Info: figures/confidence_interval_gets_better.pdf used on in
 put line 160.
 (pdftex.def)             Requested size: 1040.68552pt x 780.51407pt.
- [51 <./figures/mid_transit_time_vs_cadence.pdf> <./figures/lowering_uncertaint
-y_on_midtransit_via_extra_point.pdf
+ [50 <./figures/mid_transit_time_vs_cadence.pdf>] [51 <./figures/lowering_uncer
+tainty_on_midtransit_via_extra_point.pdf>]
+Overfull \hbox (9.23975pt too wide) in paragraph at lines 194--211
+[] 
+ []
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/lowering_uncertainty_on_midtr
-ansit_via_extra_point.pdf): PDF inclusion: multiple pdfs with page group includ
-ed in a single page
->] [52 <./figures/confidence_interval_gets_better.pdf>] [53] [54] [55])
-(./conclusion_recommendations.tex [56]
+[52 <./figures/confidence_interval_gets_better.pdf>] [53] [54])
+(./conclusion_recommendations.tex [55] [56]
 
 LaTeX Warning: Marginpar on page 57 moved.
 
@@ -1923,7 +1913,7 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 2.
 
 (./models_relevant_to_earth_moon_crossings.tex
-<figures/lens_hood_suppression.pdf, id=1418, 650.43pt x 433.62pt>
+<figures/lens_hood_suppression.pdf, id=1426, 650.43pt x 433.62pt>
 File: figures/lens_hood_suppression.pdf Graphic file (type pdf)
 
 <use figures/lens_hood_suppression.pdf>
@@ -1931,7 +1921,7 @@ Package pdftex.def Info: figures/lens_hood_suppression.pdf used on input line 8
 .
 (pdftex.def)             Requested size: 480.01051pt x 320.00702pt.
  [59 <./figures/lens_hood_suppression.pdf>] <figures/outage_vs_background.pdf, 
-id=1432, 722.7pt x 650.43pt>
+id=1440, 722.7pt x 650.43pt>
 File: figures/outage_vs_background.pdf Graphic file (type pdf)
 
 <use figures/outage_vs_background.pdf>
@@ -1991,10 +1981,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
  ) 
 Here is how much of TeX's memory you used:
- 27311 strings out of 495020
- 475164 string characters out of 6181324
- 573558 words of memory out of 5000000
- 29627 multiletter control sequences out of 15000+600000
+ 27315 strings out of 495020
+ 475203 string characters out of 6181324
+ 575558 words of memory out of 5000000
+ 29630 multiletter control sequences out of 15000+600000
  107049 words of font info for 201 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  64i,12n,56p,1816b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2018,10 +2008,10 @@ texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy/
 wasy8.pfb>
-Output written on main.pdf (66 pages, 10033944 bytes).
+Output written on main.pdf (66 pages, 10034166 bytes).
 PDF statistics:
- 1749 PDF objects out of 2073 (max. 8388607)
- 1170 compressed objects within 12 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 1757 PDF objects out of 2073 (max. 8388607)
+ 1178 compressed objects within 12 object streams
+ 216 named destinations out of 1000 (max. 500000)
  1242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
