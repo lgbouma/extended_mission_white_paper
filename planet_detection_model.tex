@@ -49,7 +49,7 @@ depth and number of transits are known, we use a model of \tesss point
 spread function (PSF) to determine optimal photometric aperture sizes
 for each postage stamp star (\textit{i.e.,} we compute the noise for
 all plausible aperture sizes, and find the number of pixels that
-minimizes this noise.  With the aperture sizes and noise
+minimizes this noise).  With the aperture sizes and noise
 corresponding to a given integration time known, we compute a signal
 to noise ratio for each transiting object.  Our model for planet
 detectability is a simple step function in SNR: if we have two or more
@@ -87,15 +87,33 @@ computed first over a single hour, then bins like white-noise,
 \textit{i.e.,} proportionate to the inverse square root of the time
 in-transit).
 
-Coupled with the known transit signal, this gives us the SNR per
-transit, and then to `phase-fold our light-curves' (light-curves which
-are never explicitly computed point-by-point) we just\footnote{We
+Coupled with the known transit signal, this gives us 
+the SNR per transit, and then to `phase-fold our light-curves' (light-curves 
+which are never explicitly computed point-by-point) we just\footnote{We
   actually take a quadrature sum of both transit and occultation
   signals, but this is negligible for planets. It only matters for the
   case of eclipsing binaries, which we ignore in this work.} multiply
 the SNR per transit by the square root of the number of transits
 observed.
- 
+
+Summarizing the relevant terms in an equation,
+\begin{align}
+\label{eq:snr} \mathrm{SNR}_\mathrm{phase-folded} &\approx
+\sqrt{N_\mathrm{tra}} \times \mathrm{SNR}_\mathrm{per-transit}\nonumber \\
+\mathrm{SNR}_\mathrm{phase-folded} &= \sqrt{N_\mathrm{tra}} \times 
+\frac{\delta \cdot D}{\left(\frac{\sigma_\mathrm{1hr}^2}{T_\mathrm{dur}} 
+	+ \sigma_v^2 \right)^{1/2}}, 
+\end{align}
+for $\delta$ the undiluted transit depth; $D$ the dilution factor
+computed from background and binary contamination (Eq.~\ref{eq:dilution});
+$\sigma_\mathrm{1hr}$ the summed noise contribution from CCD read noise, 
+photon-counting noise from the star, a systematic 
+$60\,\mathrm{ppm\cdot hr^{1/2}}$ noise floor, and zodiacal noise;
+$T_\mathrm{dur}$ the transit duration, and $\sigma_v$ the intrinsic
+stellar variability (cf.~\citetalias{Sullivan_2015} Sec 3.5).
+The first equation is approximate because we neglect the
+small contribution from occultation signals.
+
 We have changed other aspects of this simulation
 since~\citetalias{Sullivan_2015} was published, and describe these
 changes in Sec.~\ref{sec:changes_from_S15} of the appendix.

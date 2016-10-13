@@ -1,13 +1,13 @@
 \subsection{Earth/Moon crossings}
 \label{sec:earth_moon_crossings}
-\begin{figure*}[t]
+\begin{figure}[!th]
 	%	\includegraphics{}
 	\centering
 	\includegraphics{figures/precision_memo.pdf}
 	\caption{Relative precision in measured flux over a one hour integration time (scatter from contaminating background stars and PRF centroid offsets ignored). The noise sources described by~\citet{Sullivan_2015} are solid thin lines. The dashed lines exemplify noise from contaminating background flux, for instance from the Moon or Earth outside the \tess field, but still scattering light off  the \tess lens hood. A dynamical 3-body simulation lets us estimate the impact  lunar and Earth backgrounds have on \tesss photometry.
 	The photometric precision with which we simulate observations has additional scatter about the thick black line owing to randomly-assigned contaminating stars.}
 	\label{fig:noise_with_moon}
-\end{figure*}
+\end{figure}
 
 When the Earth or Moon passes through \tesss camera fields they can
 flood the CCD pixels to their full well capacity ($\sim2\times10^5$
@@ -97,7 +97,7 @@ We proceed by computing the mean of this fractional outage across all 13 sectors
 		\texttt{shemi (year 1)} & 2 & 1 & 0 & 0 \\ \hline
 		\texttt{nhemi (year 2)} & 4 & 2 & 0 & 0 \\ \hline
 	\end{tabular}
-	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and Moon crossings in both selected and omitted pointings, with those of the primary mission for reference. The method of `dropping' fields (which omits the temporal nature of the crossings, discussed in the text) gives a representative sense of the cumulative impact of Earth/Moon crossings. \texttt{elong1yr} corresponds to a full year with the \tess field's long axis along the ecliptic, and \texttt{eshort1yr} corresponds to the same, but with the long axis perpendicular to the ecliptic. These scenarios are neglected because their outages are time-correlated. (see Fig.~\protect\ref{fig:earth_moon_elong})}
+	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and Moon crossings in both selected and omitted pointings, with those of the Primary Mission for reference. The method of `dropping' fields (which omits the temporal nature of the crossings, discussed in the text) gives a representative sense of the cumulative impact of Earth/Moon crossings. \texttt{elong1yr} corresponds to a full year with the \tess field's long axis along the ecliptic, and \texttt{eshort1yr} corresponds to the same, but with the long axis perpendicular to the ecliptic. These scenarios are neglected because their outages are time-correlated. (see Fig.~\protect\ref{fig:earth_moon_elong})}
 	\label{tab:dropped_fields}
 \end{table}
 As we mentioned in Sec.~\ref{sec:planet_detection_model}, our planet detection simulation is not explicitly time-resolved; it takes the ecliptic coordinates of camera fields for each orbit to compute the number of observations a given star receives over a specified mission.
@@ -105,7 +105,7 @@ We decide to approximate the effect of Earth and Moon crossings by selectively o
 For instance, if the `mean camera outage' was 17\% of \tesss observing time over a given year, we would omit the 2 (of 13) observing sectors that suffer the greatest number of lost hours, for that given camera.
 The relevant number of omitted sectors is shown in Table~\ref{tab:dropped_fields}.
 While this procedure ignores the temporal nature of the `outages' (which is shown resolved over time-steps of 1/20$^\mathrm{th}$ of an orbit in Figs.~\ref{fig:earth_moon_primary} and~\ref{fig:earth_moon_elong}), it gives a representative sense of the cumulative impact of Earth and Moon crossings over the course of a year.
-We discuss the impact of this approximation for the primary mission in Sec.~\ref{sec:results_from_primary_missions}, and for extended missions in~\ref{sec:results_from_all_extended_missions}.
+We discuss the impact of this approximation for the Primary Mission in Sec.~\ref{sec:results_from_primary_missions}, and for Extended Missions in~\ref{sec:results_from_all_extended_missions}.
 The summarized version is that modeling Earth/Moon crossings in this manner causes a drop of $<10\%$ of $R_p < 4R_\oplus$ planet detections compared to the case of not accounting for the crossings at all.
 Given that Earth/Moon crossings typically last for a small fraction of an orbit (Fig.~\ref{fig:earth_moon_primary}), if the timescales required for the cameras to `re-settle' after the crossings are small compared to orbital timescales, then our approach may in fact over-estimate the effect's importance.
 % I think this might be a bit better than it sounds because of how the earth/moon crossings are phased in the orbits. They're only happening for at worst ~1/2 of an orbit (see https://drive.google.com/folderview?id=0B2941jxrlPq0Z0tQZnRpd3pVOHc&usp=drive_web), but at roughly the same half across adjacent sectors. I.e. it's the same patches of sky, roughly, that aren't being observed across adjacent sectors, so just dropping the entire sector isn't as bad as you might think on first guess. It's admittedly somewhat sketch.

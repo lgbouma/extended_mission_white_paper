@@ -1,15 +1,15 @@
-\subsection{Planet yield from the primary mission}
+\subsection{Planet yield from the Primary Mission}
 \label{sec:results_from_primary_missions}
 \begin{marginfigure} %[t]
 	\centering
 	\includegraphics[width=\textwidth]{figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf}
-	\caption{Mean numbers of planets detected in \tesss primary mission (error bars are from Poisson fluctuations and do not account for systematic uncertainty). 
+	\caption{Mean numbers of planets detected in \tesss Primary Mission (error bars are from Poisson fluctuations and do not account for systematic uncertainty). 
 		In postage stamp detections, the number of Earths ($R_p < 1.25R_\oplus$), super-Earths ($1.25R_\oplus \le R_p < 2R_\oplus$), sub-Neptunes ($2R_\oplus \le R_p < 4R_\oplus$) and giants ($R_p > 4R_\oplus$) is comparable to those quoted in \protect\citet{Sullivan_2015}, despite modifications to our target selection procedure (Sec.~\protect\ref{sec:selection_criteria}).
 		Our full frame images detections in are complete for $R < 4R_\oplus$, and incomplete for giant planets. 
 		Here we disagree, by for instance two orders of magnitude in the super-Earth bin, with~\protect\citet{Sullivan_2015} (see text). }
 	\label{fig:primary_planet_yield}
 \end{marginfigure}
-We first examine our results for just the first two years of \tesss observing, before presenting an analysis of our detected planet populations from a single extended mission (Sec.~\ref{sec:results_from_nhemi_extended_mission}) and all six of our proposed extended missions (Sec.~\ref{sec:results_from_all_extended_missions}).
+We first examine our results for just the first two years of \tesss observing, before presenting an analysis of our detected planet populations from a single Extended Mission (Sec.~\ref{sec:results_from_nhemi_extended_mission}) and all six of our proposed Extended Missions (Sec.~\ref{sec:results_from_all_extended_missions}).
 Here we highlight commonalities and differences between~\citetalias{Sullivan_2015} and this work.
 
 \paragraph{Detected planet yield}
@@ -63,10 +63,10 @@ results that the ratio is closer to 5-to-1 which seems more realistic.
 
 % Also, Peter's data from plat10r.fits, May 4 2015, agree with my results. I never was able to find the data with his FFI numbers...
 
-\paragraph{Properties of planets detected in primary mission} 
+\paragraph{Properties of planets detected in Primary Mission} 
 
 We show the population properties of planets detected in postage
-stamps and full frame images during the primary mission in
+stamps and full frame images during the Primary Mission in
 Figs.~\ref{fig:radius_vs_period_nhemi}
 and~\ref{fig:imag_vs_teff_nhemi}.  In terms of the apparent planet
 radii $R_p$, orbital periods $P$, host star brightness, and host star
@@ -83,12 +83,12 @@ The differences between planets detected in postage stamps vs. in full frame ima
 Namely, Fig.~\ref{fig:imag_vs_teff_nhemi} shows that at a fixed brightness, full frame image detections tend to occur at larger stellar effective temperature (and thus stellar radius).
 At a fixed host star radius, postage stamp detections occur around brighter stars.
 
-\paragraph{Impact of earth and moon crossings on primary mission's detected planet yield}
-During the primary mission, of the four cameras Camera 1 (closest to the ecliptic) suffers the most from earth and moon crossings.
+\paragraph{Impact of earth and moon crossings on Primary Mission's detected planet yield}
+During the Primary Mission, of the four cameras Camera 1 (closest to the ecliptic) suffers the most from earth and moon crossings.
 We remove 4 of its 13 `observing sectors', as noted in Table~\ref{tab:dropped_fields}.
 This reduces the number of planet detections near the ecliptic, and is visible in the orange points of Fig.~\ref{fig:skymap_nhemi}.
-In the primary mission \tess detects $\sim20$ planets with $R_p<4R_\oplus$ from both 2 minute and 30 minute data in each $24^\circ\times24^\circ$ camera field nearest to the ecliptic (where each field is observed for 2 \tess orbits).
+In the Primary Mission \tess detects $\sim20$ planets with $R_p<4R_\oplus$ from both 2 minute and 30 minute data in each $24^\circ\times24^\circ$ camera field nearest to the ecliptic (where each field is observed for 2 \tess orbits).
 As implemented in our simulation, Earth and Moon crossings result in fields simply not being observed, so in these cases planets orbiting stars in these fields are never detected.
-Considering only the primary mission, we would naively expect that dropping a total of 9 fields over the two years (again, see Table~\ref{tab:dropped_fields}) would result in a loss of $\sim9\times20=180$ planets.
+Considering only the Primary Mission, we would naively expect that dropping a total of 9 fields over the two years (again, see Table~\ref{tab:dropped_fields}) would result in a loss of $\sim9\times20=180$ planets.
 This agrees with what our simulations actually give: running them without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives a mean of 2482 such planets (a loss of 196 planets, or $7\%$ of the sub-Neptune yield).
 % data from 160708-t50 and 160729-t20. Slightly apples to oranges because of number of trials difference, but makes the point. 
