@@ -2,16 +2,16 @@
 \section{Executive Summary}
 
 \tess is scheduled to launch in December of 2017.
-The Primary Mission will run for two years, and the \tess Science
-Office will submit a proposal for an Extended Mission to NASA's senior
+The primary mission will run for two years, and the \tess Science
+Office will submit a proposal for an extended mission to NASA's senior
 review of operating missions in early 2020.  In this report we lay out
 technical requirements, science goals, opportunities, and risks that
 will impact the decision of how \tess should observe after completing
-its Primary Mission.
+its primary mission.
 
 \begin{figure*}[!b]
 	\includegraphics{figures/proposed_pointings_texttt.pdf}
-	\caption{Six proposed pointing strategies for a \tess Extended Mission, visualized in ecliptic coordinates.
+	\caption{Six proposed pointing strategies for a \tess extended mission, visualized in ecliptic coordinates.
 	Earth and moon crossings make looking at the ecliptic for an entire year impractical (see Fig.~\protect\ref{fig:earth_moon_elong}).}
 	\label{fig:strategies}
 \end{figure*}
@@ -23,27 +23,27 @@ We circumvent this issue by proposing \elong\ and \eshort.
 We also note in passing that \hemis\ spends a single spacecraft orbit ($\sim$14 days) per field, `zig-zagging' across the sky.
 
 
-The most notable result from these simulations is that a third year's Extended Mission will yield as many new sub-Neptune radius planets as either Years 1 or 2 -- roughly $1250$.
-The means that Extended Missions will be valuable because they will detect a large number of small planets.
+The most notable result from these simulations is that a third year's extended mission will yield as many new sub-Neptune radius planets as either Years 1 or 2 -- roughly $1250$.
+The means that extended missions will be valuable because they will detect a large number of small planets.
 This holds regardless of where on the sky observe, with the newly detected planet yields varying by $\lesssim 30\%$ between our six proposed scenarios.
 
-Another notable result is that it will be possible to detect about as many new $P>20$ day planets in one year of \tesss Extended Mission are in both years of the Primary Mission.
+Another notable result is that it will be possible to detect about as many new $P>20$ day planets in one year of \tesss extended mission are in both years of the primary mission.
 This result derives both from turning high-SNR single-transit events from the primary into double and triple-transit events (giving more transits over which to phase-fold and lower the in-transit noise), as well as by turning low-SNR multiple-transit events into threshold-crossing\footnote{Following \citet{Sullivan_2015}, we rule a planet detected if $\mathrm{SNR} > 7.3$ and $N_\mathrm{tra}\geq 2$.} events.
 
-An additional result, relevant to both the primary and Extended Missions, is that our simulations approximate the effect of the Earth and Moon crossing through \tesss field of view (Sec.~\ref{sec:earth_moon_crossings}).
-Running the Primary Mission without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives 2482 such planets on average.
+An additional result, relevant to both the primary and extended missions, is that our simulations approximate the effect of the Earth and Moon crossing through \tesss field of view (Sec.~\ref{sec:earth_moon_crossings}).
+Running the primary mission without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives 2482 such planets on average.
 This is a loss of 196 planets, or $7\%$ of the sub-Neptune yield.
 
 
 \paragraph{Assessing pointing strategies based on yield statistics} 
-Different Extended Mission pointings perform better and worse by different metrics.
+Different extended mission pointings perform better and worse by different metrics.
 We focus only on detected planets with $R_p<4R_\oplus$ (Fig.~\ref{fig:yield_results}).
-In terms of absolute sub-Neptune radius planet yield, \hemis, \npole, and \shemiAvoid\ offer the most new planets (1300-1400, compared to the Primary Mission's 2500).
-\hemis, \npole, and \nhemi\ offer the most new long period planets (250-300, compared to the Primary Mission's 290).
+In terms of absolute sub-Neptune radius planet yield, \hemis, \npole, and \shemiAvoid\ offer the most new planets (1300-1400, compared to the primary mission's 2500).
+\hemis, \npole, and \nhemi\ offer the most new long period planets (250-300, compared to the primary mission's 290).
 \hemis, \shemiAvoid, and \eshort\ offer the most new planets orbiting $I_c<10$ hosts ($\sim$190, compared to the primary's 385; see Table~\ref{tab:icmag_meta}).
 %cf bright_star_comparison_Ic_lt_10.ipynb
 They all offer similar numbers of new habitable zone planets (about 120, to the primary's 210)\footnote{We let `habitable zone' mean that the planet insolation $S$ is within $0.2S_\oplus-2S_\oplus$. The physically-motivated~\protect\citet{kopparapu_habitable_2013} HZ gives roughly a third of our quoted numbers (Fig.~\protect\ref{fig:scatter_habitable_zone}).}.
-\npole\ is the worst at detecting new planets with atmospheres that are amenable for atmospheric follow-up, but Extended Missions only yield $10-25$ such planets, compared to the Primary Mission's $\sim$110.\footnote{We let `amenable for atmospheric follow-up' mean $\mathrm{SNR}_\mathrm{atm} > \mathrm{SNR}_\mathrm{GJ\ 1214b}/4 $, where $\mathrm{SNR}_\mathrm{atm}$ refers to the signal-to-noise of the planet in transmission over 4 transits observed by \jwsts NIRISS instrument, and the normalization is $\mathrm{SNR}_\mathrm{atm}$ for GJ 1214b. Dividing by a factor of four helps avoid small-number fluctuations. Note for \textit{JWST} follow-up the ecliptic latitude of the detections also matters (see following footnote).}
+\npole\ is the worst at detecting new planets with atmospheres that are amenable for atmospheric follow-up, but extended missions only yield $10-25$ such planets, compared to the primary mission's $\sim$110.\footnote{We let `amenable for atmospheric follow-up' mean $\mathrm{SNR}_\mathrm{atm} > \mathrm{SNR}_\mathrm{GJ\ 1214b}/4 $, where $\mathrm{SNR}_\mathrm{atm}$ refers to the signal-to-noise of the planet in transmission over 4 transits observed by \jwsts NIRISS instrument, and the normalization is $\mathrm{SNR}_\mathrm{atm}$ for GJ 1214b. Dividing by a factor of four helps avoid small-number fluctuations. Note for \textit{JWST} follow-up the ecliptic latitude of the detections also matters (see following footnote).}
 %!WINN! explain why, in brief
 %!BOUMA! at what level of detail? "this is why, order of magnitude, for all?" I'm not sure what explanation is needed except that strategies are optimizing for different criteria... between total sky area, amount of overlap between sectors, ...
 
@@ -54,7 +54,7 @@ By way of comparison, \npole\ detects most of its long-period planets with $\ge 
 
 
 \paragraph{Desires in exoplanet science:}
-Planet yield statistics are useful, but they are blind to other important considerations. For an extensive discussion of the broad science that can be accomplished with extra \tess observations, see LINK!; for a discussion of which opportunities we think affect Extended Mission planning, see LINK!. Summarizing,
+Planet yield statistics are useful, but they are blind to other important considerations. For an extensive discussion of the broad science that can be accomplished with extra \tess observations, see LINK!; for a discussion of which opportunities we think affect extended mission planning, see LINK!. Summarizing,
 
 \textit{1.) Ephemeris times:}
 The \tess mission must provide accurate predictions for when its objects transit to enable successful follow-up efforts.
@@ -63,12 +63,12 @@ Following a derivation shown in Sec.~\ref{sec:ephemeris_times},
 the uncertainty on the mid-transit times for \tess objects of interest, $\sigma_{t_c}$, propagates to be roughly
 $$\sigma_{t_c}\ \mathrm{[hr]} \approx 2\times\left(\mathrm{number\ of\ years\ after\ detection}\right). $$
 This problem is reduced by an order of magnitude if we capture just one transit with a year's baseline after the initial detection (Figs.~\ref{fig:lowering_uncertainty_tc},~\ref{fig:conf_interval_gets_better}).
-This argues strongly for an Extended Mission which, whether over 1 or 2 years, re-observes many of the targets that \tess detects in its Primary Mission. 
+This argues strongly for an extended mission which, whether over 1 or 2 years, re-observes many of the targets that \tess detects in its primary mission. 
 The smallest-radius Earths and super-Earths may otherwise be difficult to recover.
 
 \textit{2.) Follow-up of \tess objects}\newline
 \textit{2.1) JWST:} \tess should detect the most promising planets for \jwst follow-up\footnote{We let `promising planets for \jwst follow-up' mean those that have $R_p<4R_\oplus$, $\mathrm{SNR_{atm}} > \mathrm{SNR_{GJ\ 1214b}}/5$, and absolute ecliptic latitude $|\beta|>80^\circ$ so that they can be observed for more than two-thirds of the year by \jwst\!.} after only a year's observation (see table \& discussion at LINK!).
-This means that \tess is not `bound' to the ecliptic poles in an Extended Mission to support \jwsts target selection.
+This means that \tess is not `bound' to the ecliptic poles in an extended mission to support \jwsts target selection.
 More important for ensuring \jwst\!--\tess overlap will be the efficient spectroscopic and photometric follow-up of \tesss planets from the ground; by \jwsts launch in October 2018, only a few verified \tess planets will be known.
 
 \textit{2.2) CHEOPSs'} visibility is best near the ecliptic, and non-existent near the ecliptic poles.
@@ -76,17 +76,17 @@ Extended missions that focus exclusively on the ecliptic poles neglect \tess and
 Those that focus on the ecliptic, including \elong\ and \eshort, provide the largest amount of overlapping coverage, with \nhemi\ providing a middle-ground.
 
 \textit{2.3)} 
-The Primary Mission will clarify whether the availability of \textit{ground-based follow-up resources} will need to constrain \tesss extended observing.
+The primary mission will clarify whether the availability of \textit{ground-based follow-up resources} will need to constrain \tesss extended observing.
 Ideally, it will not.
 %!WINN! ?
 %!BOUMA! for instance if there were more telescopes in the north, TESS should maybe observe in the north to make sure its planets get followed up.
 
 \textit{3.) \tess as a follow-up mission:}
-\tesss target list in the Primary Mission will include known planet-hosts from transit and RV surveys.
-Summarizing those that are most strategically important for an Extended Mission:
+\tesss target list in the primary mission will include known planet-hosts from transit and RV surveys.
+Summarizing those that are most strategically important for an extended mission:
 
 \textit{3.1) The Kepler field.} \tess observes the \kepler field for $\sim$52 days in 2019 (Fig.~\ref{fig:positions_pointings}).
-An Extended Mission like \npole\ could observe the field for 104 days per year -- twice as long as repeating \nhemi.
+An extended mission like \npole\ could observe the field for 104 days per year -- twice as long as repeating \nhemi.
 The main reasons to allocate extra importance to \keplers field include:
 \textit{(a)} measuring transit timing variations over a long baseline;
 \textit{(b)} confirming few-transit KOI candidates, 
@@ -95,12 +95,12 @@ The main reasons to allocate extra importance to \keplers field include:
 \citet{sullivan_KOIs_2013} studied \tesss performance on the field in detail.
 Scaling his absolute results by a factor of $1.5$ (about twice as many KOIs are now known, but they are systematically fainter), we can expect \tess to detect $\sim$45 $R_p<4R_\oplus$ KOIs at $\geq3\sigma$ per transit.
 
-\textit{3.2) K2's fields} will have covered $\gtrsim\!60\%$ of the area in the $|\beta|<6^\circ$ band about the ecliptic by the beginning of \tesss Extended Mission %\footnote{18 campaigns, with a 115 square degree field of view. 17 fields do not overlap (much).}.
-\tesss Primary Mission does not observe in the $|\beta|<6^\circ$ band. 
+\textit{3.2) K2's fields} will have covered $\gtrsim\!60\%$ of the area in the $|\beta|<6^\circ$ band about the ecliptic by the beginning of \tesss extended mission %\footnote{18 campaigns, with a 115 square degree field of view. 17 fields do not overlap (much).}.
+\tesss primary mission does not observe in the $|\beta|<6^\circ$ band. 
 Our simulated planet populations for both \elong\ and \eshort\ assumed no knowledge from \ktwo\!.
 This is unrealistic.
 A large fraction of the planets that \tess will be capable of detecting near the ecliptic will already either exist as candidates in \ktwos data or have been discovered\footnote{Our coarse estimate is that $\sim$175 of \tesss 500 new $|\beta<12^\circ|$, $R_p<4R_\oplus$ detections from \elong\ would already be detected by \ktwo (see Sec.~\protect\ref{sec:risks_opps})}.
-%For a scenario like \elong, the average \tess coverage per star over the Extended Mission in the $\pm12^\circ$ band would be $\sim$7 spacecraft orbits, or $\sim$91 days of near-continuous observing (to \ktwos $\sim$80).	
+%For a scenario like \elong, the average \tess coverage per star over the extended mission in the $\pm12^\circ$ band would be $\sim$7 spacecraft orbits, or $\sim$91 days of near-continuous observing (to \ktwos $\sim$80).	
 Summarizing then what we find to be the most compelling reasons to observe the ecliptic in an extended \tess mission:
 \textit{(a)} combine \tess and \ktwo data, doubling the \ktwo observing baseline for most targets. In turn, confirm low-SNR candidates, and detect extra transits for a relatively large number of $20<P<40$ day planets;
 \textit{(b)} catch `holes' in the $|\beta| < 12^\circ$ band that \ktwo missed, completing the all-sky search for small planets transiting the brightest stars;
@@ -112,16 +112,16 @@ Given the central role that combining \tess and \ktwo data would play if \tess w
 
 \textit{3.3) \tess following up ground-based surveys:}
 %\tesss photometric precision provides the greatest relative benefit for planets that have never been observed from space.
-The north and south skies have similar numbers of known ground-detected transiting and RV planets, so the desire to follow up ground-based surveys probably will not impact \tesss Extended Mission on a 1-year timescale.
-Over 2-year timescales, if an Extended Mission were to focus on a single hemisphere it would neglect half of the known transiting/RV planets, no longer \textit{(a)} discovering additional small transiting companions %(\`a la WASP 47) 
+The north and south skies have similar numbers of known ground-detected transiting and RV planets, so the desire to follow up ground-based surveys probably will not impact \tesss extended mission on a 1-year timescale.
+Over 2-year timescales, if an extended mission were to focus on a single hemisphere it would neglect half of the known transiting/RV planets, no longer \textit{(a)} discovering additional small transiting companions %(\`a la WASP 47) 
 or \textit{(b)} improving uncertainties in the physical and orbital parameters of known planets.
 
 
 \paragraph{Desires outside of exoplanet science:}
 We motivate cases for using \tess data in asteroseismology, variable-star astronomy (pulsating stars, eruptive stars, supernovae), and solar system astronomy (main belt asteroids) at LINK!.
-To our understanding an Extended Mission can observe anywhere on the sky without neglecting these sub-fields.
+To our understanding an extended mission can observe anywhere on the sky without neglecting these sub-fields.
 %!WINN! ? (about the above sentence)
-%!BOUMA! I'm trying to tie all of this to Extended Missions. If any of the broader science restricts where we can observe in an Extended Mission, this is where I would say it. I don't think it does though. Hence the above sentence.
+%!BOUMA! I'm trying to tie all of this to extended missions. If any of the broader science restricts where we can observe in an extended mission, this is where I would say it. I don't think it does though. Hence the above sentence.
 Observational cadence is a more important free-parameter -- asteroseismology in particular benefits greatly from short cadence data.
 
 
@@ -161,13 +161,13 @@ Observational cadence is a more important free-parameter -- asteroseismology in 
 	if there is a likely transiting planet in full frame image data, upgrading the planet to short cadence in future observing sectors improves the probability and quality of detection.
 	
 	\item[Guest Investigator Office / \tess Science Office: solicit advice]
-	from experts in asteroseismology and variable-sky astronomy to understand how Extended Missions affect their science cases (\textit{e.g.}, data throughput rates are particularly important for time-sensitive supernovae observations).
-	More broadly, solicit community feedback during the process of defining the Extended Mission.
+	from experts in asteroseismology and variable-sky astronomy to understand how extended missions affect their science cases (\textit{e.g.}, data throughput rates are particularly important for time-sensitive supernovae observations).
+	More broadly, solicit community feedback during the process of defining the extended mission.
 	This may entail a call for white papers, comments on this report, or direct proposals to the GI office. 
 	%As exemplified in NASA’s 2016 Astrophysics Senior Review, everyone benefits from the discussions generated by such community feedback~\citep{donahue_senior_2016}.
 	
 	\item[Decide (explicitly or implicitly) on weights between our proposed metrics.]
-	Sec.~\ref{sec:comparing_pointing_strategies} gives a list of considerations that will matter in deciding \tesss Extended Mission: should we prioritize new planet detection statistics? Broader astronomy, as \ktwo did?
+	Sec.~\ref{sec:comparing_pointing_strategies} gives a list of considerations that will matter in deciding \tesss extended mission: should we prioritize new planet detection statistics? Broader astronomy, as \ktwo did?
 	Are the $\lesssim30\%$ variations in absolute new planet yields more valuable than other desires or opportunities?
 	
 	\item[Simulate combining \tess and \ktwo data for \rm{\elong\ } \textit{and} \rm{\eshort}.] 
@@ -183,7 +183,7 @@ Observational cadence is a more important free-parameter -- asteroseismology in 
 	%Would the planets tend to be smaller?
 	%Would there be fewer of them?
 	%\textit{2.)}
-	%Study the limiting case of \hemis\ for 2 years, vs Primary Mission repeat for 2 years, vs \npole$\times$2 for 2 years. The most interesting aspect here is the continuous viewing zones: 2 CVZs at 14-day sampling, vs. 2 CVZs at continuous sampling for one-year each, vs. 1 CVZ for full sampling over two years.\footnote{Our simplified perfect period extraction would miss challenges from the data processing.}
+	%Study the limiting case of \hemis\ for 2 years, vs primary mission repeat for 2 years, vs \npole$\times$2 for 2 years. The most interesting aspect here is the continuous viewing zones: 2 CVZs at 14-day sampling, vs. 2 CVZs at continuous sampling for one-year each, vs. 1 CVZ for full sampling over two years.\footnote{Our simplified perfect period extraction would miss challenges from the data processing.}
 \end{description}
 
 \newpage
@@ -204,7 +204,7 @@ Observational cadence is a more important free-parameter -- asteroseismology in 
 \textit{Targets beyond cool bright dwarfs:} there are many classes of targets we may wish to observe with \tess, possibly for exoplanet science, and possibly for other astronomy/astrophysics (\textbf{see K2 page for list. Solar system, extragalactic, exoplanets, ...}).
 
 In exoplanets, following up on the \kepler field promises a substantial scientific return, though mainly for science beyond planet discovery (measuring transit timing variations, refining ephemerides, building SNR on few-transit candidates).
-There are numerous non-\kepler transiting planets that should be considered: these will be observed during the Primary Mission, and will have a relatively larger `value-added' than the KOIs in terms of improved photometric precision and detection of smaller companions.
+There are numerous non-\kepler transiting planets that should be considered: these will be observed during the primary mission, and will have a relatively larger `value-added' than the KOIs in terms of improved photometric precision and detection of smaller companions.
 On the ecliptic, observing the \ktwo field would let us do \textit{this, that and the other}, but would mean losing long-term coverage at an ecliptic pole, a noiser field (Earth/Moon crossings, zodicial background, main-belt asteroids).
 
 Other subfields of astronomy would argue it in different ways. 
@@ -221,13 +221,13 @@ This lowered the yield of $R_p<4R_\oplus$ planets by $\sim\!10\%$.
 Given that Earth/Moon crossings typically last for a small fraction of an orbit (Fig.~\ref{fig:earth_moon_primary}), if the timescales required for the cameras to `re-settle' after the crossings are small compared to orbital timescales, then our approach over-estimates the effect.
 
 \textbf{What's best for two years of extended observing?}
-The fact that \tess can detect many small planets orbiting bright stars across the sky strong argues towards continuing observing `all-sky', rather than focusing observations on a single ecliptic hemisphere after the Primary Mission's completion.
+The fact that \tess can detect many small planets orbiting bright stars across the sky strong argues towards continuing observing `all-sky', rather than focusing observations on a single ecliptic hemisphere after the primary mission's completion.
 
 Reasons to do all-sky two years: ephemerides for \tess planets; detect just as many new planets as from Year 3; 
 Reasons to do one-hemisphere for eternity: long period planets
 
-that none of our Extended Mission pointing scenarios produce yields that are that different:
-for a single year's Extended Mission, \textbf{none of the Extended Missions proposed here are exceptional stand-outs}.
+that none of our extended mission pointing scenarios produce yields that are that different:
+for a single year's extended mission, \textbf{none of the extended missions proposed here are exceptional stand-outs}.
 In terms of raw planet detection statistics (what gives the most new planets? at the longest periods? \&c.) \hemis, \npole, 
 
 An important follow-up: \textbf{but they are slightly different}.

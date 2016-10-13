@@ -22,52 +22,6 @@ the course of the mission.  For multiple systems, we use the radius of
 the planet host for $R_\star$, and the combined flux from all
 companion stars to compute the system's $I_c$ magnitude.
 
-\begin{figure*}[!th] %[!thb]
-	\centering
-	\includegraphics{figures/positions_pointings_kepler.pdf}
-	\caption{Selected target stars in the Primary Mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
-	\label{fig:positions_pointings}
-\end{figure*}
-\begin{figure}[!th] %[!thb]
-	\centering
-	\includegraphics{figures/fig17_replica.pdf}
-	\label{fig:fig17_replica}
-	\caption{Replica of Figure 17 from~\protect\citetalias{Sullivan_2015}. Target stars are selected as the best $2\times10^5$ stars according to $\texttt{Merit}\equiv \sqrt{N_\text{obs}}(1/R_\star^2)/\sigma_\text{1-hr}(I_c)$. 
-		The top subplot shows 1 in 10 stars. This simple model could inform the target selection to be performed on the \tic. 
-		The lower histogram is bimodal, selecting heavily for M
-		dwarfs, and selecting more F and G dwarfs than K dwarfs. This
-		shape arises from the combined $1/R_\star^2$ and
-		$1/\sigma_\text{1-hr}(I_c)$ weights: the fact that the minimum
-		falls around K dwarfs occurs because of both a Malmquist bias
-		(there are more F than K stars of comparable brightness in our
-		catalog from which to select) as well as a corresponding dip
-		in the TRILEGAL (\& observed) $V$-band luminosity functions
-		(see~\citetalias{Sullivan_2015} Figure 5).
-		% N.b. Winn showed this bias ANALYTICALLY in the searchable stars memo (he showed there are ~4* more stars e.g. in 0.75<R/Rsun<0.85 than 0.5<R/Rsun<0.6)
-		
-		Outliers visible in the upper scatterplot are non-physical,
-		possibly artifacts from~\citetalias{Sullivan_2015}'s
-		Padova-to-Dartmouth interpolation as they tend to have greater
-		masses than all other stars on the main sequence. They are
-		less than $1\%$ of the target stars; we ignore them in order
-		to proceed.
-		%Outliers in the upper scatterplot are almost certainly non-physical, but are less than 1\% of the catalog. Call it `sloppy' but I can show you a bunch of plots that make me think this is~\citet{Sullivan_2015}'s Padova-Dartmouth replacement scheme gone awry. Maybe it was bad interpolation.
-		%\todo[inline]{reword snarky paragraph}
-		% Q: could these just be in the CVZs? A: no. A much larger proportion are actually close to the ecliptic, which suggests a bias that I don't understand. An above-average fraction are in binary systems, but I don't have easy access to the binary companions.
-		% Well, what are they? I think it might have something to do with the weird, likely non-physical (perhaps imposed by Peter's mass/radius fiddling) split you see in the Fig16 replica that you're not showing here.
-		% Why? See our replica of Fig4, showing the nasty things that happen with EB radii + different radius / luminosity tracks being all mixed together!!
-		% This would be important to address if it were the main focus.
-		% Even though it looks ugly it's only ~700 stars. This means it's a ~1 % effect. Consequently, I'm fine with ignoring it.
-	}
-\end{figure}
-\begin{figure}[!th]
-	\includegraphics{figures/fig17_radius_on_x.pdf}
-	\label{fig:fig17_radius_on_x}
-	\caption{Same as Fig.~\protect\ref{fig:fig17_replica}, but as a function of stellar radius. $1/R_\star^2$ selection weight clearly visible, along with the same outliers.
-	}
-\end{figure}
-
-
 We evaluate \texttt{Merit} for all the star systems in our modified
 TRILEGAL catalog, and then choose the best $2\times10^5$ as target
 stars to be observed at 2 minute cadence.  Target stars selected in
@@ -80,23 +34,67 @@ population of target stars (shown in Fig~\ref{fig:fig17_replica}).
 Our approach for full frame image simulation is different from that
 of~\citetalias{Sullivan_2015}, and we justify it further below.
 
-We generalize this statistic to Extended Missions as follows: over an
+We generalize this statistic to extended missions as follows: over an
 entire mission, the total number of observations a star receives is
-the sum of its observations in the primary and Extended Missions:
+the sum of its observations in the primary and extended missions:
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  If
 $N_\text{extended}=0$ for a given star, then do not select that star as a
-target star in the Extended Mission.  Else, compute its \texttt{Merit}
+target star in the extended mission.  Else, compute its \texttt{Merit}
 (Eq.~\ref{eq:merit}) weighted by
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  In this manner
-stars that are observed more during the Primary Mission are more
-likely to be selected during the Extended Mission.
+stars that are observed more during the primary mission are more
+likely to be selected during the extended mission.
  
+\begin{figure*}[!t] %[!thb]
+	\centering
+	\includegraphics{figures/positions_pointings_kepler.pdf}
+	\caption{Selected target stars in the primary mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
+	\label{fig:positions_pointings}
+\end{figure*}
+\begin{figure}[!th] %[!thb]
+	\centering
+	\includegraphics{figures/fig17_replica.pdf}
+	\label{fig:fig17_replica}
+	\caption{Replica of Figure 17 from~\protect\citetalias{Sullivan_2015}. Target stars are selected as the best $2\times10^5$ stars according to $\texttt{Merit}\equiv \sqrt{N_\text{obs}}(1/R_\star^2)/\sigma_\text{1-hr}(I_c)$. 
+	The top subplot shows 1 in 10 stars. This simple model could inform the target selection to be performed on the \tic. 
+	The lower histogram is bimodal, selecting heavily for M
+        dwarfs, and selecting more F and G dwarfs than K dwarfs. This
+        shape arises from the combined $1/R_\star^2$ and
+        $1/\sigma_\text{1-hr}(I_c)$ weights: the fact that the minimum
+        falls around K dwarfs occurs because of both a Malmquist bias
+        (there are more F than K stars of comparable brightness in our
+        catalog from which to select) as well as a corresponding dip
+        in the TRILEGAL (\& observed) $V$-band luminosity functions
+        (see~\citetalias{Sullivan_2015} Figure 5).
+	% N.b. Winn showed this bias ANALYTICALLY in the searchable stars memo (he showed there are ~4* more stars e.g. in 0.75<R/Rsun<0.85 than 0.5<R/Rsun<0.6)
+	
+	Outliers visible in the upper scatterplot are non-physical,
+        possibly artifacts from~\citetalias{Sullivan_2015}'s
+        Padova-to-Dartmouth interpolation as they tend to have greater
+        masses than all other stars on the main sequence. They are
+        less than $1\%$ of the target stars; we ignore them in order
+        to proceed.
+	%Outliers in the upper scatterplot are almost certainly non-physical, but are less than 1\% of the catalog. Call it `sloppy' but I can show you a bunch of plots that make me think this is~\citet{Sullivan_2015}'s Padova-Dartmouth replacement scheme gone awry. Maybe it was bad interpolation.
+	%\todo[inline]{reword snarky paragraph}
+	% Q: could these just be in the CVZs? A: no. A much larger proportion are actually close to the ecliptic, which suggests a bias that I don't understand. An above-average fraction are in binary systems, but I don't have easy access to the binary companions.
+	% Well, what are they? I think it might have something to do with the weird, likely non-physical (perhaps imposed by Peter's mass/radius fiddling) split you see in the Fig16 replica that you're not showing here.
+	% Why? See our replica of Fig4, showing the nasty things that happen with EB radii + different radius / luminosity tracks being all mixed together!!
+	% This would be important to address if it were the main focus.
+	% Even though it looks ugly it's only ~700 stars. This means it's a ~1 % effect. Consequently, I'm fine with ignoring it.
+	}
+\end{figure}
+\begin{marginfigure}[0in]
+	\includegraphics{figures/fig17_radius_on_x.pdf}
+	\label{fig:fig17_radius_on_x}
+	\caption{Same as Fig.~\protect\ref{fig:fig17_replica}, but as a function of stellar radius. $1/R_\star^2$ selection weight clearly visible, along with the same outliers.
+	}
+\end{marginfigure}
 
 \paragraph{Alternative prioritization approaches:}
 
 It is worth emphasizing that our scheme for selecting target stars for
-an Extended Mission does not make use of any information on whether
-candidate transit events were observed during the Primary Mission.  If
+an extended mission does not make use of any information on whether
+candidate transit events were observed during the primary mission.  If
 a star were observed at short cadence for an entire year, and no
 candidate events were found, it may be more sensible to disregard that
 star in the Extended Mission in favor of stars that have never been
@@ -151,7 +149,7 @@ networks (ANNs) trained to select for features that improve the
 probability of detecting transiting outer companions.  \tess might
 benefit from a similar approach in target selection.
 
-\paragraph{Alternative prioritization approaches in Extended Missions:}
+\paragraph{Alternative prioritization approaches in extended missions:}
 Our \texttt{Merit} statistic also neglects the option of an extended
 mission which only observes stars with known planets or planet
 candidates (\tesss objects of interest, or those from other transit
@@ -188,7 +186,7 @@ identical to that for postage stamps, except with 30 minute instead of
 the apparent depths for transits with durations of $\lesssim$1 hour.
 To ensure that $3.8\times10^6$ stars is sufficient to include all
 stars about which \tess might detect sub-Neptune radius planets, we
-repeated this process for the Primary Mission using $5.8\times10^6$,
+repeated this process for the primary mission using $5.8\times10^6$,
 $9.8\times10^6$ and $19.8\times10^6$ `full frame image' stars, and
 confirmed that there was no significant difference in the planet
 yields at $R_p\le4R_\oplus$ between any of the cases.

@@ -9,32 +9,32 @@ However, if we want to discover new small planets around the brightest possible 
 % Could add a paragraph here about relevant timeline. Launch 20 Dec 2017, commisioning for 2 months, begin sky survey early March 2018. Senior review is ~Feb/March 2020.
 % We might have extra funding for a third year -- we'll see. We'll need to know what we're going to do by early 2020 though.
 
-This memo is a trade study of a non-exhaustive set of plausible Extended Mission scenarios. 
+This memo is a trade study of a non-exhaustive set of plausible extended mission scenarios. 
 Our main aim is to quantify how different spacecraft-pointings will affect \tesss planet yield.
 We also briefly discuss the opportunities and risks each observing strategy may present, and give a more detailed discussion at LINK!.
 
-Some important free parameters that will define \tesss Extended Mission include:
+Some important free parameters that will define \tesss extended mission include:
 \begin{itemize}
 	\item Where to point the cameras on the sky.
 	\item The duration of proposed observations.
 	\item With a fixed data mass, the relative allocations between short (2 minute) and long (30 minute) cadence images\footnote{Respectively referred to as `postage stamps' because the aperture centered on any given star resembles a small-area postage-stamp, and as `full frame images' since they are the entire CCD readout. The `postage stamp' target stars are a subset, nominally $2\times 10^5$ stars, of the \tess Input Catalog.}. 
 	\item The cadence of full frame images; for instance keeping full-frames at 15 minute cadence at the cost of observing fewer short-cadence targets.
 	\item The cadence of postage stamps; for instance stacking them at 4 minute cadence instead of 2 minute cadence, and observing twice as many target stars.
-	\item The target allocation strategy. This includes how to prioritize target stars from the \tess Input Catalog. It also involves the question of how to use knowledge obtained from full frame images in the Primary Mission when re-observing the same fields in an Extended Mission.
+	\item The target allocation strategy. This includes how to prioritize target stars from the \tess Input Catalog. It also involves the question of how to use knowledge obtained from full frame images in the primary mission when re-observing the same fields in an extended mission.
 \end{itemize}
 
-In this report, we evaluate how well a set of Extended Mission spacecraft pointings (for 1 year of extra observing) satisfies different technical requirements and science goals. 
+In this report, we evaluate how well a set of extended mission spacecraft pointings (for 1 year of extra observing) satisfies different technical requirements and science goals. 
 We also discuss unique opportunities that may be available through each option.
-The other parameters outlined above, notably the relative allocations between different data products at a fixed data mass, will also impact the primary and Extended Missions. We recommend that they be studied separately.
+The other parameters outlined above, notably the relative allocations between different data products at a fixed data mass, will also impact the primary and extended missions. We recommend that they be studied separately.
 
 
 \subsection{Outline of report}
 We begin in Sec.~\ref{sec:approach} by discussing how we select and compare different pointing strategies, as well as how we model \tesss observations and planet detections.
 This includes a summarized list of our assumptions in Sec.~\ref{sec:input_assumptions}.
-We then compare the newly detected planet populations from some plausible one-year Extended Missions in Sec.~\ref{sec:newly_detected_planet_metrics}. 
-Newly detected planets are not the only valuable outcome of an Extended Mission.
+We then compare the newly detected planet populations from some plausible one-year extended missions in Sec.~\ref{sec:newly_detected_planet_metrics}. 
+Newly detected planets are not the only valuable outcome of an extended mission.
 What that in mind, extrapolating from our single-year simulation, we discuss what may best on a $>1$ year horizon for planet detections (Sec.~\ref{sec:gtr_1yr_horizon}).
 This long-term future hinges crucially upon how the uncertainty on the mid-transit times for \tess planets scales with time (Sec.~\ref{sec:ephemeris_times}).
 Discussion of the broader science that \tess could and perhaps should perform, as well as opportunities for ground and space-based follow-up, are available at LINK!.
-We conclude by evaluating the reliability of our methods (Sec.~\ref{sec:risks_caveats}), and in Sec.~\ref{sec:conclusions} present recommendations for what comes next in defining \tesss Extended Mission.
+We conclude by evaluating the reliability of our methods (Sec.~\ref{sec:risks_caveats}), and in Sec.~\ref{sec:conclusions} present recommendations for what comes next in defining \tesss extended mission.
 %The appendix (Sec.~\ref{sec:appendix}) covers methods behind our planet detection simulation, and summarizes the most important results and metrics in a color-coded spreadsheet.

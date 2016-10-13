@@ -1,38 +1,38 @@
-\subsection{Comparing planet yields from all Extended Missions based on new planet detection metrics}
+\subsection{Comparing planet yields from all extended missions based on new planet detection metrics}
 \label{sec:results_from_all_extended_missions}
-To compare Extended Missions in terms of planet detection statistics, we focus on the subset of all detected planets that are \textit{newly} detected from each Extended Mission.
-These may come from stars that were not observed at all in the Primary Mission (notably for scenarios such as \elong), or they may also come from transiting planets that were observed in the Primary Mission with $\mathrm{SNR}<7.3$, or from planets that were single-transiters in the Primary Mission (we require $N_\mathrm{tra}\geq2$) for detection.
-With this in mind, for each Extended Mission scenario we ask the following questions:
+To compare extended missions in terms of planet detection statistics, we focus on the subset of all detected planets that are \textit{newly} detected from each extended mission.
+These may come from stars that were not observed at all in the primary mission (notably for scenarios such as \elong), or they may also come from transiting planets that were observed in the primary mission with $\mathrm{SNR}<7.3$, or from planets that were single-transiters in the primary mission (we require $N_\mathrm{tra}\geq2$) for detection.
+With this in mind, for each extended mission scenario we ask the following questions:
 
 \begin{enumerate}
 	\item $N_\mathrm{new}$: How many new planets do we detect?
 	\item $N_\mathrm{new,P>20d}$: How many of these new planets are at long orbital periods, for instance $P>20$ days?
 	\item $N_\mathrm{new,HZ}$: How many are in the habitable zone?
-	\item $N_\mathrm{sys,extra\ planets}$: In how many systems in which at least one planet was detected during the Primary Mission do we find extra planets in the Extended Mission?
+	\item $N_\mathrm{sys,extra\ planets}$: In how many systems in which at least one planet was detected during the primary mission do we find extra planets in the extended mission?
 	\item $N_\mathrm{new,atm}$: How many new planets do we find that are amenable to atmospheric characterization (defined below by Eq.~\ref{eq:atmosphere_Deming})?
-	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from stars that were not observed in the Primary Mission, vs. 
+	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from stars that were not observed in the primary mission, vs. 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$ stars that were observed, but either did not have enough transits or a high enough SNR to result in a detection.
 \end{enumerate}
 \begin{figure}[!t]
 	\centering
 	\includegraphics[scale=2.]{tables/160729_t50_with_earth_moon_Deming_corr.pdf}
 	%from 160729 data.
-	\caption{Detected planet metrics for six possible Extended Missions (values are means of 50 Monte Carlo realizations of our calculation, all for $R_p<4R_\oplus$).
+	\caption{Detected planet metrics for six possible extended missions (values are means of 50 Monte Carlo realizations of our calculation, all for $R_p<4R_\oplus$).
 	\textit{Top:} postage stamp detections, \textit{Middle:} full frame image only detections, \textit{Bottom:} sum of both.
 	The best two scenarios for select statistics are highlighted in green.
 	\newline
 	$N_\mathrm{uniq}$: number of unique planets detected over all 3 years.
 	$N_\mathrm{new}$: number of planets detected in year 3 that were not detected in years 1\&2 (newly detected planets).
-	$N_\mathrm{pri}$: number of planets detected in the Primary Mission (years 1\&2).
+	$N_\mathrm{pri}$: number of planets detected in the primary mission (years 1\&2).
 	$N_\mathrm{new,P>20d}$: number of newly detected planets with orbital periods greater than 20 days.
-	$N_\mathrm{pri,P>20d}$: same as previous, but from the Primary Mission.
+	$N_\mathrm{pri,P>20d}$: same as previous, but from the primary mission.
 	$N_\mathrm{new,HZ}$: number of newly detected planets satisfying $0.2<S/S_\oplus<2.0$ (approximate habitable zone).
-	$N_\mathrm{pri,HZ}$: same as previous, from the Primary Mission.
+	$N_\mathrm{pri,HZ}$: same as previous, from the primary mission.
 	$N_\mathrm{sys,extra\ planets}$: number of systems in which extra planets are detected.
 	$N_\mathrm{new,atm}$: number of newly detected planets with SNR in transmission greater than (that of GJ 1214b)/2, as measured by \jwst\ -- see text.
-	$N_\mathrm{pri,atm}$: same as previous, from Primary Mission.
-	$N_\mathrm{new,new\ stars}$: number of newly detected planets that orbit stars that were not observed during the Primary Mission.
-	$N_\mathrm{new,SNR\lor N_{tra}}$: number of newly detected planets that were observed during the Primary Mission, but either (a) which had $\mathrm{SNR}<7.3$, a non-detection and/or (b) had $N_\mathrm{tra}<2$, and so would not be `detected'.}
+	$N_\mathrm{pri,atm}$: same as previous, from primary mission.
+	$N_\mathrm{new,new\ stars}$: number of newly detected planets that orbit stars that were not observed during the primary mission.
+	$N_\mathrm{new,SNR\lor N_{tra}}$: number of newly detected planets that were observed during the primary mission, but either (a) which had $\mathrm{SNR}<7.3$, a non-detection and/or (b) had $N_\mathrm{tra}<2$, and so would not be `detected'.}
 	\label{fig:yield_results}
 \end{figure}
 
@@ -43,15 +43,15 @@ Fig.~\ref{fig:yield_results}.  The first point to notice is that for
 all but one of the new planet detection metrics ($N_\mathrm{new}$,
 $N_\mathrm{new,P>20d}$, $N_\mathrm{new,HZ}$,
 $N_\mathrm{sys,extra\ planets}$, $N_\mathrm{new,atm}$,
-$N_\mathrm{new,SNR\lor N_{tra}}$) the yields between Extended Missions
+$N_\mathrm{new,SNR\lor N_{tra}}$) the yields between extended missions
 vary by less than a factor of two.  The exception is in
 $N_\mathrm{new,new\ stars}$, in which \elong\ detects roughly twice as
 many planets orbiting never-before-observed stars as any other
 proposed mission.
 
-The second point is on the absolute yields of new planets: postage stamp observations find $\mathcal{O}(500)$ new planets, relative to the Primary Mission's $\mathcal{O}(1500)$.
-Full frame image observations find $\mathcal{O}(800)$ new planets, relative to the Primary Mission's $\mathcal{O}(900)$.
-All Extended Missions find $\mathcal{O}(1300)$ new planets, relative to the Primary Mission's $\mathcal{O}(2500)$.
+The second point is on the absolute yields of new planets: postage stamp observations find $\mathcal{O}(500)$ new planets, relative to the primary mission's $\mathcal{O}(1500)$.
+Full frame image observations find $\mathcal{O}(800)$ new planets, relative to the primary mission's $\mathcal{O}(900)$.
+All extended missions find $\mathcal{O}(1300)$ new planets, relative to the primary mission's $\mathcal{O}(2500)$.
 We discuss these results -- the rough invariance of the number of new planets to different pointing scenarios, and the essential contribution of FFIs -- further in point \#1 below.
 
 Skimming the bottom panel for which missions are highlighted in green when accounting for both PSs and FFIs, we see that \npole\ and \hemis\ are the `superlative-winning' missions in terms of detected planet statistics: considering both PSs and FFIs, \npole\ places top-2 in 5 of 8 relevant categories, and \hemis\ does the same in 6 of 8.
@@ -68,19 +68,19 @@ We now discuss each metric in more depth:
         incomplete even its intended hunting ground.
         For stars with $I_c>9$, there are at least an order of magnitude more $R_p<4R_\oplus$ transiting planets that \tess does not detect (Fig 22 of~\citetalias{Sullivan_2015}).
 	Our findings agree: there are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (Fig.~\ref{fig:primary_planet_yield}).
-	An Extended Mission will probe and detect this population, irrespective of where on the sky we observe.
+	An extended mission will probe and detect this population, irrespective of where on the sky we observe.
 	This result should hold equally well for realistic detection efficiency thresholds, and it is demonstrates that extended observations will be valuable, because \tess will not yet be at the point of diminishing returns for longer observations (which will happen when more observations only allow pushing out to longer orbital periods). 
-	There will still be small, short-period candidates to discover after \tesss Primary Mission.
+	There will still be small, short-period candidates to discover after \tesss primary mission.
 \begin{figure}[!t]
 	\centering
 	\includegraphics[scale=1.]{figures/snrf_histogram_with_ps.pdf}
-	\caption{Histogram of phase-folded SNRs for candidate $R_p<4R_\oplus$ planets following the Primary Mission (from both PS and FFI observations; values are means of 20 Monte Carlo trials).
-	If an Extended Mission observes half of the sky, it roughly doubles the number of observed transits for half of the planets observed in the Primary Mission, enabling detection of $\approx 2316/2 = 1158$ planets (half of the blue integrated area in the plot). This coarse estimate is a similar result to our detailed calculations, and shows the value of continuing \tesss observations \textit{irrespective of where we observe}.}
+	\caption{Histogram of phase-folded SNRs for candidate $R_p<4R_\oplus$ planets following the primary mission (from both PS and FFI observations; values are means of 20 Monte Carlo trials).
+	If an extended mission observes half of the sky, it roughly doubles the number of observed transits for half of the planets observed in the primary mission, enabling detection of $\approx 2316/2 = 1158$ planets (half of the blue integrated area in the plot). This coarse estimate is a similar result to our detailed calculations, and shows the value of continuing \tesss observations \textit{irrespective of where we observe}.}
 	\label{fig:snrf_histogram}
 \end{figure}
 
-	\item $N_\mathrm{new,P>20d}$: it will be possible to detect as many new $P>20$ day planets in one year of \tesss Extended Mission as in both years of the Primary Mission.
-	The Primary Mission detects about 295 such planets; \hemis\ and \npole\ scenarios detect similar amounts.
+	\item $N_\mathrm{new,P>20d}$: it will be possible to detect as many new $P>20$ day planets in one year of \tesss extended mission as in both years of the primary mission.
+	The primary mission detects about 295 such planets; \hemis\ and \npole\ scenarios detect similar amounts.
 	These two scenarios are achieving the goal of long-period planet detection in slightly different ways: % (see discussion in Sec.~\ref{sec:discussion}):
 	\npole\ maximizes the average observing baseline per star, while \hemis\ observes the greatest possible number of stars for longer than 40 days.
 	The latter approach could succeed at detecting many planets (our result is that \hemis\ detects the most $P>20$day planets), but it relies heavily upon the assumption that we can detect planets from only two transits over the course of the entire mission, even if this means only one transit in the primary, and one transit in the extended.
@@ -97,7 +97,7 @@ We now discuss each metric in more depth:
 		\centering
 		\includegraphics[scale=1.]{figures/Ntra_histogram.pdf}
 		%this figure uses 160802 data, which should be the same as 160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes from ext_sim_notes on this -- something's a bit off with the normalization. That said, rather than redo the previous figures with a code that might have a minor bug, my point here -- which is the hemis14d has this issue with few-transit detections -- isn't really any different.
-		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet candidates from each Extended Mission as a function of the number of observed transits.
+		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet candidates from each extended mission as a function of the number of observed transits.
 		Candidates are `detected' in Fig.~\protect\ref{fig:yield_results} if $N_\mathrm{tra}\geq2$.
 		\textit{Right:} Same as left, restricted to $P>20$ day planets.
 		If any given scenario has a `bump' at 2 observed transits, then that scenario depends more heavily on our assumption of being able to make detections based on only two transits.
@@ -107,30 +107,30 @@ We now discuss each metric in more depth:
 	\begin{marginfigure}[3in]
 		\centering
 		\includegraphics[scale=1.]{figures/Ntra_histogram_primary.pdf}
-		%\missingfigure{histogram of Primary Mission number of transits for detected planets}
+		%\missingfigure{histogram of primary mission number of transits for detected planets}
 		% this figure uses BLAH data
 		\caption{ 
-			Similar to Fig.~\protect\ref{fig:Ntra_hist}, but for the Primary Mission.
+			Similar to Fig.~\protect\ref{fig:Ntra_hist}, but for the primary mission.
 		}
 		\label{fig:Ntra_hist_primary}
 	\end{marginfigure}
 	\item $N_\mathrm{new,HZ}$: we approximate the habitable zone as the geometric shell around a host star in which a planet's insolation satisfies $0.2>S/S_\oplus>2.0$.
 	With this approximation, the \hemis\ scenario finds the most new habitable zone planets: 146 (which is subject to the same caveats discussed above for long period planet detections). 
 	The next-best scenarios, \npole, \nhemi\ and \shemiAvoid, all detect around 120.
-	Relative to the Primary Mission's 210 detections, this means Extended Missions boost the number of detected habitable zone planets by a factor of $\sim1.6$.
+	Relative to the primary mission's 210 detections, this means extended missions boost the number of detected habitable zone planets by a factor of $\sim1.6$.
 	For purposes of weighing the value of habitable-zone detections in deciding between missions, the result that these scenarios all detect a similar number of planets indicates that this metric will likely not `tip the scales' in any direction.
 	
 	We note in passing that $\sim 80\%$ of the habitable zone planets that \tess detects orbit M dwarfs with spectral classes ranging from M4 - M0, and $\sim 15\%$ of them orbit M dwarfs later than M4.
 	We show this quantitatively in Fig.~\ref{fig:CDF_habitable_zone}.
 	% see hz_primary_george/CDF_most_HZ_planets_orbit_early_M_dwarfs.png
-	Additionally, our values for the number of $0.2<S/S_\oplus<2$ planets from the Primary Mission are slightly revised from those of~\citetalias{Sullivan_2015}: while~\citetalias{Sullivan_2015} quote $48\pm7$  $0.2<S/S_\oplus<2$ and $R_p<2R_\oplus$ planets, we find $34 \pm 5$.
+	Additionally, our values for the number of $0.2<S/S_\oplus<2$ planets from the primary mission are slightly revised from those of~\citetalias{Sullivan_2015}: while~\citetalias{Sullivan_2015} quote $48\pm7$  $0.2<S/S_\oplus<2$ and $R_p<2R_\oplus$ planets, we find $34 \pm 5$.
 	Adopting the habitable zone of~\citet{kopparapu_habitable_2013},~\citetalias{Sullivan_2015} quoted $14\pm4$  $R_p<2R_\oplus$ planets. We find $11 \pm 3$.
-	The rule of thumb that Extended Missions give roughly $1.6\times$ the number of new $0.2<S/S_\oplus<2$ habitable zone planets applies to the~\citet{kopparapu_habitable_2013} habitable zone as well as $0.2<S/S_\oplus<2.0$.
+	The rule of thumb that extended missions give roughly $1.6\times$ the number of new $0.2<S/S_\oplus<2$ habitable zone planets applies to the~\citet{kopparapu_habitable_2013} habitable zone as well as $0.2<S/S_\oplus<2.0$.
 	Another result shown in Fig.~\ref{fig:scatter_habitable_zone} is that the~\citet{kopparapu_habitable_2013} habitable zone, which is physically motivated by 1-D radiative-convective cloud-free climate models with accurate absorption coefficients, results in roughly 3 times fewer `habitable zone' planet detections than our ad-hoc criteria of $0.2<S/S_\oplus<2$.
 	\begin{marginfigure}
 		\centering
 		\includegraphics[scale=1.]{figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf}
-		\caption{Cumulative distribution of $R_p<4R_\oplus$ and $0.2<S/S_\oplus<2$ planet candidates from the Primary Mission (a proxy for the habitable zone). Boundaries of spectral classes are highly approximate, and taken from from~\protect\citet{habets_empirical_1981} and~\protect\citet{baraffe_massspectral_1996}.}
+		\caption{Cumulative distribution of $R_p<4R_\oplus$ and $0.2<S/S_\oplus<2$ planet candidates from the primary mission (a proxy for the habitable zone). Boundaries of spectral classes are highly approximate, and taken from from~\protect\citet{habets_empirical_1981} and~\protect\citet{baraffe_massspectral_1996}.}
 		\label{fig:CDF_habitable_zone}
 	\end{marginfigure}
 	\begin{marginfigure}
@@ -149,7 +149,7 @@ We now discuss each metric in more depth:
 	TTVs can also give dynamical hints for the formation history of planetary systems, for instance, discriminating between \textit{in situ} formation and inward migration as~\citet{mills_resonant_2016} argued for the Kepler 223 system.
 	
 	The most prominent feature in the results for this metric is that \elong\ detects the fewest systems with extra planets (44, which is $39\%$ worse than the next-best). 
-	This is reasonable because \elong\ spends the most time looking at new sky, and in the process observes fewer systems that were detected in the Primary Mission.
+	This is reasonable because \elong\ spends the most time looking at new sky, and in the process observes fewer systems that were detected in the primary mission.
 	\nhemi, \shemiAvoid, \npole, and \eshort\ all perform similarly, detecting $\sim65$ such planets.
 	\hemis\ detects the most, at 92. While this is still subject to the assumption of two-transit recoverability, in this case the requirement is not too strong: only 10 of \hemis's systems with newly detected planets come from the case where the extra detected planet comes from two transits.
 	% makeReport: search for "ntrahemis14d". same for commit.
@@ -187,7 +187,7 @@ We now discuss each metric in more depth:
 	\end{figure*}
 
 	Reference parameters for GJ 1214b are taken from~\citet{charbonneau_gj1214b_2009}: $R_p = 2.678R_\oplus$, $M_p = 6.55M_\oplus$, $R_\star = 0.211R_\odot$, $a = 0.0144\mathrm{AU}$, $V = 15.1$.
-	Using Eq.~\ref{eq:atmosphere_Deming}, we compute the SNR in transmission for all detected planets, for all Extended Mission scenarios.
+	Using Eq.~\ref{eq:atmosphere_Deming}, we compute the SNR in transmission for all detected planets, for all extended mission scenarios.
 	Fig.~\ref{fig:atmosphere_scatter} shows one realization of the resulting distribution for planets detected in all three years of the \nhemi\ scenario.
 
 	\tess mostly detects strongly irradiated planets (most points on Fig.~\ref{fig:atmosphere_scatter} are yellow).
@@ -197,10 +197,10 @@ We now discuss each metric in more depth:
 	%\todo[inline]{what cloud model/opacity does this use?}
 
 	More importantly, Fig.~\ref{fig:yield_results} shows that most of the planets with atmospheres that are best for transmission spectroscopy are already discovered after two years.
-	The best Extended Missions (\shemiAvoid, \elong, \eshort\ and \hemis) boost the yield of such planets from $\sim\!100$ to $\sim\!125$.
+	The best extended missions (\shemiAvoid, \elong, \eshort\ and \hemis) boost the yield of such planets from $\sim\!100$ to $\sim\!125$.
 	The worst, \npole, finds roughly 10.
 	This best-case boost of $1.25\times$ more `good' planets for atmospheric characterization is less than the relative boost of $1.6\times$ more newly detected long period planets.
-	This latter point simply means that if we were to assign equal weights to both relative metrics, then $N_\mathrm{new,atm}$ would impact the decision of which Extended Mission to perform less than $N_\mathrm{new,P<20d}$.
+	This latter point simply means that if we were to assign equal weights to both relative metrics, then $N_\mathrm{new,atm}$ would impact the decision of which extended mission to perform less than $N_\mathrm{new,P<20d}$.
 	
 	
 	\item $N_\mathrm{new,new\ stars}$:
@@ -219,8 +219,8 @@ We now discuss each metric in more depth:
 \paragraph{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}
 The invested reader may inquire ``what about the cross-over case of planets that are observed as PSs during the primary (extended) mission, but as FFIs in the extended (primary) mission? These are not explicitly listed in Fig.~\ref{fig:yield_results}''.
 %This is what is done in Fig.~\ref{fig:yield_results}.
-When describing the entire unique planet population detected from Years 1-3, for simplicity of language we use `postage stamp detections' to refer to planets that are observed at any time (primary or Extended Missions) at 2 minute cadence.
+When describing the entire unique planet population detected from Years 1-3, for simplicity of language we use `postage stamp detections' to refer to planets that are observed at any time (primary or extended missions) at 2 minute cadence.
 In these cases, the dominant contribution to the final signal to noise ratio tends to come from the PS observations.
-When describing new planet detections, we use `postage stamp detections' to mean planets that were newly detected due to being observed as postage stamps in the Extended Mission.
+When describing new planet detections, we use `postage stamp detections' to mean planets that were newly detected due to being observed as postage stamps in the extended mission.
 In other words, this `cross-over' point only matters in discussions of the unique planet population from an entire mission, Years 1-3.
-Considering just the newly detected planet population, we can unambiguously specify whether the new detections came from full frame images or postage stamps, irrespective of their observations from the Primary Mission.
+Considering just the newly detected planet population, we can unambiguously specify whether the new detections came from full frame images or postage stamps, irrespective of their observations from the primary mission.
