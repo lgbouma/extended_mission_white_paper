@@ -8,23 +8,23 @@ a two-year, nearly all-sky survey for transiting exoplanets.  There do
 not appear to be any fundamental obstacles to continuing science
 operations for at least several years after this Primary Mission.  Any
 Extended Mission will likely need to be organized while the Primary
-Mission is occupying most of the \tess team's full attention.  The
-purpose of this Memo, and the accompanying Wiki document\footnote{\url{https://spacebook.mit.edu/display/TESS/Extended+Missions}}, is to
-provide a head start to those who are planning and proposing for an
+Mission is occupying most of the \tess team's attention.  The
+purpose of this Memo, and the accompanying Wiki document\footnote{\url{https://spacebook.mit.edu/display/TESS/Extended+Missions}},
+is to provide a head start to those who are planning and proposing for an
 Extended Mission.
 
 The choice of an Extended Mission is likely to be influenced by many
 factors besides the prospects for planet detection.  We have created
-an editable document on the \tess wiki to raise and discuss those broad
-issues.  This Memo is narrowly focused on planet detection.  We try to
-anticipate the quantities and types of planets that would be detected
-during several plausible scenarios for a one-year Extended Mission
+a freely editable document on the \tess wiki to raise and discuss those 
+broad issues.  This Memo is narrowly focused on planet detection. 
+We try to anticipate the quantities and types of planets that would be 
+detected during several plausible scenarios for a one-year Extended Mission
 following the two-year Primary Mission. We use Monte Carlo simulations
 to compare different strategies for scanning the sky during one year
 of operations, and try to interpret the results and their implications
 for future years.  For simplicity we do not compare different choices
-for the cadence of photometric measurements or in the metrics for
-target selection, although different choices might prove to be
+for the cadence of photometric measurements or for the target stars to be
+selected, although different choices might prove to be
 advantageous and should be studied in future work.
 
 Throughout this report we consider six different scenarios for Year 3
@@ -67,7 +67,8 @@ of the \tess mission, illustrated in Figure~\ref{fig:strategies}:
  
 \end{enumerate}
 
-We simulate the results based on the methodology of~\citet{Sullivan_2015}, after bug fixes and enhancements by Luke Bouma in
+We numerically compute the results based on the methodology
+of~\citet{Sullivan_2015}, after bug fixes and enhancements by Luke Bouma in
 consultation with Josh Winn. Additional inputs were provided by Jacobi
 Kosiarek and Peter McCullough, as described in the text.
 
@@ -92,7 +93,7 @@ Some of the most important findings are:
   \shemiAvoid\,strategies offer the greatest number (1300-1400, as
   compared to the 1250 during each year of the Primary Mission).
  
-\item Regarding planets with orbital periods $\gsim$20 days, the
+\item Regarding planets with orbital periods >20 days, the
   \hemis, \npole, and \nhemi\:strategies would discover twice as many
   such planets as will be discovered in each year of the Primary
   Mission. This would help to overcome one of the main limitations of
@@ -100,11 +101,11 @@ Some of the most important findings are:
 
 \item Regarding new planets with very bright host stars ($I_c<10$),
   the \hemis, \shemiAvoid, and \eshort\:strategies offer the greatest
-  numbers ($\sim$190, about the same as are found in each year of the
+  numbers ($\sim\!$190, about the same as are found in each year of the
   Primary Mission; see Table~\ref{tab:icmag_meta}).
 
-\item Regarding planets with near-terrestrial insolation ($0.2 <
-  S/S_\odot < 2$), all the strategies considered here offer similar
+\item Regarding planets with near-terrestrial insolation ($0.2 
+  <S/S_\odot< 2$), all the strategies considered here offer similar
   numbers (about 120, as compared to 105 in each year of the Primary
   Mission).
     

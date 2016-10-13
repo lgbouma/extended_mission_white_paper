@@ -36,8 +36,9 @@ in photometric performance for $I_c < 11$.
 \begin{figure}[!tb]
 	\centering
 	\includegraphics[angle=90,width=\textwidth]{figures/outage_earth_moon_primary.pdf}
-	\caption{Fractional outage caused by Earth and Moon light either falling directly onto \tesss cameras or scattering off of their lens hoods and into the lenses, as a function of time in the orbit. The first year of observations are in the southern ecliptic hemisphere. The black dividing line indicates the beginning of `Year 2' of northern hemisphere observations. Note that the worst fractional outage per orbit is in Camera 1 (which points towards the ecliptic) over the first $\sim 5$ orbits of the second year.
-	By `fractional outage' in these plots, we mean the fraction of target stars that could be observed with $\sigma_\mathrm{1hr} < 10^3\mathrm{ppm}$ precision that no longer can because of Earth or Moon light. 
+	\caption{`Fractional outage' caused by Earth and Moon light either falling directly onto \tesss cameras or scattering off of their lens hoods and into the lenses, as a function of time in the orbit.
+	This fraction equals the percentage of target stars that could be observed at $<10^3\,\mathrm{ppm\cdot hr^{1/2}}$ within a given timestep but cannot with the extra scattered flux.
+	The first year of observations are in the southern ecliptic hemisphere. The black dividing line indicates the beginning of `Year 2' of northern hemisphere observations. Note that the worst fractional outage per orbit is in Camera 1 (which points towards the ecliptic) over the first $\sim 5$ orbits of the second year.
 	The time-step is 1/20th$^\mathrm{th}$ of an orbit.
 	The plot has `spikes' because outage typically only occurs over a small fraction of the orbit.}
 	\label{fig:earth_moon_primary}
@@ -97,7 +98,7 @@ We proceed by computing the mean of this fractional outage across all 13 sectors
 		\texttt{hemi\,(south year 1)} & 2 & 1 & 0 & 0 \\ \hline
 		\texttt{hemi\,(north year 2)} & 4 & 2 & 0 & 0 \\ \hline
 	\end{tabular}
-	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and Moon crossings in both selected and omitted Extended Missions, with those of the Primary Mission for reference. The method of `dropping' fields (which omits the temporal nature of the crossings, discussed in the text) gives a representative sense of the cumulative impact of Earth/Moon crossings. 
+	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and Moon crossings in both selected and omitted Extended Missions, with those of the Primary Mission for reference. The method of `dropping' fields (which neglects the temporal nature of the crossings, discussed in the text) gives a representative sense of the cumulative impact of Earth/Moon crossings. 
 	Scenarios with \texttt{(south)} appended refer to their counterparts in the southern ecliptic hemisphere.
 	\texttt{ecl\_long\,(1yr)} corresponds to a full year with the \tess field's long axis along the ecliptic, and \texttt{ecl\_short\,(1yr)} corresponds to the same, but with the long axis perpendicular to the ecliptic. These scenarios are neglected because their outages are time-correlated (see Fig.~\protect\ref{fig:earth_moon_elong}).
 	\texttt{allsky\,(poles)} would be a scenario that observes in the manner of \hemis, but only on the ecliptic poles as in \npole.}
