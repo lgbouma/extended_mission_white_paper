@@ -36,6 +36,6 @@
 \cftpagenumberson {section}
 \contentsline {section}{Appendix \numberline {A}Models relevant to Earth-Moon crossings}{51}{Appendix.1.A}
 \contentsline {section}{Appendix \numberline {B}Changes from~\citet {Sullivan_2015}}{53}{Appendix.1.B}
-\contentsline {paragraph}{On the angular dependence of \textit {TESS}'s pixel response function:}{53}{paragraph*.16}
+\contentsline {paragraph}{On the angular dependence of \textit {TESS}'s\tmspace +\medmuskip {.2222em}pixel response function:}{53}{paragraph*.16}
 \contentsline {section}{References}{54}{paragraph*.16}
 \contentsfinish 
