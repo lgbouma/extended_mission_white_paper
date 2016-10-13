@@ -25,7 +25,7 @@ companion stars to compute the system's $I_c$ magnitude.
 \begin{figure*}[!th] %[!thb]
 	\centering
 	\includegraphics{figures/positions_pointings_kepler.pdf}
-	\caption{Selected target stars in the primary mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
+	\caption{Selected target stars in the Primary Mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
 	\label{fig:positions_pointings}
 \end{figure*}
 \begin{figure}[!th] %[!thb]
@@ -80,23 +80,23 @@ population of target stars (shown in Fig~\ref{fig:fig17_replica}).
 Our approach for full frame image simulation is different from that
 of~\citetalias{Sullivan_2015}, and we justify it further below.
 
-We generalize this statistic to extended missions as follows: over an
+We generalize this statistic to Extended Missions as follows: over an
 entire mission, the total number of observations a star receives is
-the sum of its observations in the primary and extended missions:
+the sum of its observations in the primary and Extended Missions:
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  If
 $N_\text{extended}=0$ for a given star, then do not select that star as a
-target star in the extended mission.  Else, compute its \texttt{Merit}
+target star in the Extended Mission.  Else, compute its \texttt{Merit}
 (Eq.~\ref{eq:merit}) weighted by
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  In this manner
-stars that are observed more during the primary mission are more
-likely to be selected during the extended mission.
+stars that are observed more during the Primary Mission are more
+likely to be selected during the Extended Mission.
  
 
 \paragraph{Alternative prioritization approaches:}
 
 It is worth emphasizing that our scheme for selecting target stars for
-an extended mission does not make use of any information on whether
-candidate transit events were observed during the primary mission.  If
+an Extended Mission does not make use of any information on whether
+candidate transit events were observed during the Primary Mission.  If
 a star were observed at short cadence for an entire year, and no
 candidate events were found, it may be more sensible to disregard that
 star in the Extended Mission in favor of stars that have never been
@@ -151,7 +151,7 @@ networks (ANNs) trained to select for features that improve the
 probability of detecting transiting outer companions.  \tess might
 benefit from a similar approach in target selection.
 
-\paragraph{Alternative prioritization approaches in extended missions:}
+\paragraph{Alternative prioritization approaches in Extended Missions:}
 Our \texttt{Merit} statistic also neglects the option of an extended
 mission which only observes stars with known planets or planet
 candidates (\tesss objects of interest, or those from other transit
@@ -188,7 +188,7 @@ identical to that for postage stamps, except with 30 minute instead of
 the apparent depths for transits with durations of $\lesssim$1 hour.
 To ensure that $3.8\times10^6$ stars is sufficient to include all
 stars about which \tess might detect sub-Neptune radius planets, we
-repeated this process for the primary mission using $5.8\times10^6$,
+repeated this process for the Primary Mission using $5.8\times10^6$,
 $9.8\times10^6$ and $19.8\times10^6$ `full frame image' stars, and
 confirmed that there was no significant difference in the planet
 yields at $R_p\le4R_\oplus$ between any of the cases.
