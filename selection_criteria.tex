@@ -3,7 +3,7 @@
 For the Primary Mission, \tesss short cadence (2 min) targets will be drawn from a subset of the \tic. 
 The prioritization statistic that the mission will use in this selection has yet to be explicitly defined.
 
-Regardless, we know that for \tess to detect small transiting planets
+We know that for \tess to detect small transiting planets
 it should observe stars that are small and bright.  For this work, we
 define a simple statistic, \texttt{Merit}, proportional to the SNR we
 should expect from an arbitrarily sized planet orbiting any star:
@@ -73,18 +73,17 @@ companion stars to compute the system's $I_c$ magnitude.
 We evaluate \texttt{Merit} for all the star systems in our modified
 TRILEGAL catalog, and then choose the best $2\times10^5$ as target
 stars to be observed at 2 minute cadence.  Target stars selected in
-this manner are shown in Fig.~\ref{fig:positions_pointings}.  We take
-the next-best $3.8\times10^6$ stars and observe them at 30 minute
-cadence to simulate full frame image detections.  This statistic is
-simpler than the procedure outlined in Section 6.7
+this manner are shown in Fig.~\ref{fig:positions_pointings}. 
+This statistic is simpler than the procedure outlined in Section 6.7
 of~\citetalias{Sullivan_2015} and it produces a nearly identical
 population of target stars (shown in Fig~\ref{fig:fig17_replica}).
 Our approach for full frame image simulation is different from that
-of~\citetalias{Sullivan_2015}, and we justify it further below.
+of~\citetalias{Sullivan_2015}, and we describe it below.
 
-We generalize this statistic to Extended Missions as follows: over an
+We generalize our \texttt{Merit} statistic to Extended Missions as 
+follows: over an
 entire mission, the total number of observations a star receives is
-the sum of its observations in the primary and Extended Missions:
+the sum of its observations in the Primary and Extended Missions:
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  If
 $N_\text{extended}=0$ for a given star, then do not select that star as a
 target star in the Extended Mission.  Else, compute its \texttt{Merit}
@@ -110,11 +109,12 @@ document\footnote{\url{https://spacebook.mit.edu/display/TESS/Extended+Missions}
 More abstractly, the procedure of simply applying Eq.~\ref{eq:merit}
 attempts to select a stellar sample that will yield the most small
 transiting planets around the brightest stars.  An alternative
-approach would be to select stars that will give the most relative
-benefit in 2 minute postage stamps over 30 minute cadence
-observations.  This `relative benefit' could be a function of improved
-transit detectability, or perhaps improved capacity to resolve
-ingresses and egresses.
+approach would be to select stars that will give the most 
+\textit{relative benefit} in 2 minute postage stamps over 30 
+minute cadence observations since all stars will be present in the
+30 minute images.  This `relative benefit' could be a 
+function of improved transit detectability, or perhaps improved 
+capacity to resolve ingresses and egresses.
 
 For purposes of transit detection, the difference between 2 and 30
 minute cadence matters most when transits have short durations -- in
@@ -122,7 +122,7 @@ other words for small stars, and for close-in planets.  Switching to
 this alternative approach would consequently bias us even more
 strongly towards selecting M dwarfs.  We already select almost every M
 dwarf with $I_c < 14$.  The limiting $I_c$ magnitude for detecting
-$R_p > 4R_\oplus$ planets with \tess is $\sim 16$, which is where we
+$R_p > 4R_\oplus$ planets with \tess is $\sim\!16$, which is where we
 see the dimmest stars in Fig.~\ref{fig:fig17_replica}.
 
 Additionally, the procedure of applying Eq.~\ref{eq:merit} and
@@ -130,7 +130,7 @@ assuming that it will maximize the number of small planets that \tess
 will detect about bright stars ignores the functional dependence of
 planet occurrence rates on stellar properties.  For instance, should
 we prioritize target stars that are metal-rich?  Metal-rich stars
-demonstrably have more giant planets within \tesss period sensitivity
+demonstrably host more giant planets within \tesss period sensitivity
 than metal-poor
 stars~\citep{fischer_planet-metallicity_2005,johnson_giant_2010}.  The
 question of whether this correlation extends to sub-Neptune radius
@@ -138,10 +138,10 @@ planets is somewhat contested, but for
 instance~\citet{wang_revealing_2015} used a sample of KOIs and found
 that the planet occurrence rates of (gas dwarf) planets are
 $1.72^{+0.19}_{-0.17}$ ($2.03^{+0.29}_{-0.26}$) higher around
-metal-rich than metal-poor stars.  Note that in this usage,
-`terrestrial' means $R_p<1.7R_\oplus$, $1.7R_\oplus < R_p <
-3.9R_\oplus$ -- and a caution is that they only studied solar-type
-stars ($4800\ \mathrm{K}<T_\mathrm{eff}<6500\ \mathrm{K}$).
+metal-rich than metal-poor stars.  Note that in this study,
+`terrestrial' means $R_p<1.7R_\oplus$, `gas dwarf' 
+$1.7R_\oplus < R_p < 3.9R_\oplus$, and the authors focused only on
+solar-type stars ($4800\ \mathrm{K}<T_\mathrm{eff}<6500\ \mathrm{K}$).
 
 A more robust approach for \tesss target selection might take these
 kinds of results into account probabilistically.  For
@@ -155,8 +155,8 @@ probability of detecting transiting outer companions.  \tess might
 benefit from a similar approach in target selection.
 
 \paragraph{Alternative prioritization approaches in Extended Missions:}
-Our \texttt{Merit} statistic also neglects the option of an extended
-mission which only observes stars with known planets or planet
+Our \texttt{Merit} statistic also neglects the option of an Extended
+Mission which only observes stars with known planets or planet
 candidates (\tesss objects of interest, or those from other transit
 and RV surveys) at short cadence.  This approach would free up a
 considerable portion of \tesss data mass for full frame images at
@@ -167,7 +167,7 @@ considerable portion of \tesss data mass for full frame images at
 We want to simulate the full frame image detections in a
 computationally tractable manner.  While~\citetalias{Sullivan_2015}
 evaluated the phase-folded SNR for every potentially transiting object
-about each of the $\sim 1.6\times10^8$ stars in our synthetic catalog,
+about each of the $\sim\!1.6\times10^8$ stars in our synthetic catalog,
 we focus only on the stars for which \tess could plausibly detect a
 sub-Neptune planet over the 3-year mission.  Most stars that
 \tess sees are too dim or too large to detect $R_p<4R_\oplus$ planets
@@ -188,7 +188,7 @@ able to detect sub-Neptune radius
 planets~\citep{winn_searchable_2013}.  The detection process is then
 identical to that for postage stamps, except with 30 minute instead of
 2 minute exposures, which increases the apparent durations and shrinks
-the apparent depths for transits with durations of $\lesssim$1 hour.
+the apparent depths for transits with durations of $\lesssim 1$ hour.
 To ensure that $3.8\times10^6$ stars is sufficient to include all
 stars about which \tess might detect sub-Neptune radius planets, we
 repeated this process for the Primary Mission using $5.8\times10^6$,

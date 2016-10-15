@@ -28,9 +28,9 @@ The means that Extended Missions will be valuable because they will detect a lar
 This holds regardless of where on the sky observe, with the newly detected planet yields varying by $\lesssim 30\%$ between our six proposed scenarios.
 
 Another notable result is that it will be possible to detect about as many new $P>20$ day planets in one year of \tesss Extended Mission are in both years of the Primary Mission.
-This result derives both from turning high-SNR single-transit events from the primary into double and triple-transit events (giving more transits over which to phase-fold and lower the in-transit noise), as well as by turning low-SNR multiple-transit events into threshold-crossing\footnote{Following \citet{Sullivan_2015}, we rule a planet detected if $\mathrm{SNR} > 7.3$ and $N_\mathrm{tra}\geq 2$.} events.
+This result derives both from turning high-SNR single-transit events from the Primary into double and triple-transit events (giving more transits over which to phase-fold and lower the in-transit noise), as well as by turning low-SNR multiple-transit events into threshold-crossing\footnote{Following \citet{Sullivan_2015}, we rule a planet detected if $\mathrm{SNR} > 7.3$ and $N_\mathrm{tra}\geq 2$.} events.
 
-An additional result, relevant to both the primary and Extended Missions, is that our simulations approximate the effect of the Earth and Moon crossing through \tesss field of view (Sec.~\ref{sec:earth_moon_crossings}).
+An additional result, relevant to both the Primary and Extended Missions, is that our simulations approximate the effect of the Earth and Moon crossing through \tesss field of view (Sec.~\ref{sec:earth_moon_crossings}).
 Running the Primary Mission without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives 2482 such planets on average.
 This is a loss of 196 planets, or $7\%$ of the sub-Neptune yield.
 
@@ -40,9 +40,9 @@ Different Extended Mission pointings perform better and worse by different metri
 We focus only on detected planets with $R_p<4R_\oplus$ (Fig.~\ref{fig:yield_results}).
 In terms of absolute sub-Neptune radius planet yield, \hemis, \npole, and \shemiAvoid\:offer the most new planets (1300-1400, compared to the Primary Mission's 2500).
 \hemis, \npole, and \npole\:offer the most new long period planets (250-300, compared to the Primary Mission's 290).
-\hemis, \shemiAvoid, and \eshort\:offer the most new planets orbiting $I_c<10$ hosts ($\sim$190, compared to the primary's 385; see Table~\ref{tab:icmag_meta}).
+\hemis, \shemiAvoid, and \eshort\:offer the most new planets orbiting $I_c<10$ hosts ($\sim$190, compared to the Primary's 385; see Table~\ref{tab:icmag_meta}).
 %cf bright_star_comparison_Ic_lt_10.ipynb
-They all offer similar numbers of new habitable zone planets (about 120, to the primary's 210)\footnote{We let `habitable zone' mean that the planet insolation $S$ is within $0.2S_\oplus-2S_\oplus$. The physically-motivated~\protect\citet{kopparapu_habitable_2013} HZ gives roughly a third of our quoted numbers (Fig.~\protect\ref{fig:scatter_habitable_zone}).}.
+They all offer similar numbers of new habitable zone planets (about 120, to the Primary's 210)\footnote{We let `habitable zone' mean that the planet insolation $S$ is within $0.2S_\oplus-2S_\oplus$. The physically-motivated~\protect\citet{kopparapu_habitable_2013} HZ gives roughly a third of our quoted numbers (Fig.~\protect\ref{fig:scatter_habitable_zone}).}.
 \npole\:is the worst at detecting new planets with atmospheres that are amenable for atmospheric follow-up, but Extended Missions only yield $10-25$ such planets, compared to the Primary Mission's $\sim$110.\footnote{We let `amenable for atmospheric follow-up' mean $\mathrm{SNR}_\mathrm{atm} > \mathrm{SNR}_\mathrm{GJ\ 1214b}/4 $, where $\mathrm{SNR}_\mathrm{atm}$ refers to the signal-to-noise of the planet in transmission over 4 transits observed by \jwsts NIRISS instrument, and the normalization is $\mathrm{SNR}_\mathrm{atm}$ for GJ 1214b. Dividing by a factor of four helps avoid small-number fluctuations. Note for \textit{JWST} follow-up the ecliptic latitude of the detections also matters (see following footnote).}
 %!WINN! explain why, in brief
 %!BOUMA! at what level of detail? "this is why, order of magnitude, for all?" I'm not sure what explanation is needed except that strategies are optimizing for different criteria... between total sky area, amount of overlap between sectors, ...
@@ -72,7 +72,7 @@ This means that \tess is not `bound' to the ecliptic poles in an Extended Missio
 More important for ensuring \jwst\!--\tess overlap will be the efficient spectroscopic and photometric follow-up of \tesss planets from the ground; by \jwsts launch in October 2018, only a few verified \tess planets will be known.
 
 \textit{2.2) CHEOPSs'} visibility is best near the ecliptic, and non-existent near the ecliptic poles.
-Extended missions that focus exclusively on the ecliptic poles neglect \tess and \cheopss complementarity~\citep{berta_cheops_2016}.
+Extended Missions that focus exclusively on the ecliptic poles neglect \tess and \cheopss complementarity~\citep{berta_cheops_2016}.
 Those that focus on the ecliptic, including \elong\:and \eshort, provide the largest amount of overlapping coverage, with \npole\:providing a middle-ground.
 
 \textit{2.3)} 
@@ -101,7 +101,7 @@ Our simulated planet populations for both \elong\:and \eshort\:assumed no knowle
 This is unrealistic.
 A large fraction of the planets that \tess will be capable of detecting near the ecliptic will already either exist as candidates in \ktwos data or have been discovered\footnote{Our coarse estimate is that $\sim$175 of \tesss 500 new $|\beta<12^\circ|$, $R_p<4R_\oplus$ detections from \elong\:would already be detected by \ktwo (see Sec.~\protect\ref{sec:risks_opps})}.
 %For a scenario like \elong, the average \tess coverage per star over the Extended Mission in the $\pm12^\circ$ band would be $\sim$7 spacecraft orbits, or $\sim$91 days of near-continuous observing (to \ktwos $\sim$80).	
-Summarizing then what we find to be the most compelling reasons to observe the ecliptic in an extended \tess mission:
+Summarizing then what we find to be the most compelling reasons to observe the ecliptic in an Extended \tess mission:
 \textit{(a)} combine \tess and \ktwo data, doubling the \ktwo observing baseline for most targets. In turn, confirm low-SNR candidates, and detect extra transits for a relatively large number of $20<P<40$ day planets;
 \textit{(b)} catch `holes' in the $|\beta| < 12^\circ$ band that \ktwo missed, completing the all-sky search for small planets transiting the brightest stars;
 \textit{(c)} observe targets in \ktwo fields that simply were not selected in \ktwos $\sim\!2\times10^4$ per campaign. For instance, \tesss bandpass allows probing down to cooler M dwarfs;

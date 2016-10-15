@@ -23,11 +23,14 @@ Of course, this would need to happen during intervals in which the Moon and Eart
 %Continuous observations have serious value. 
 
 % Move on to very-long term comments.
-Any of our proposed scenarios could simply be repeated indefinitely
-(as could their two-year `all-sky' versions).  This presents a
-trade-off that becomes apparent when comparing a pair of two-year
-missions: (1) two years of \hemis; (2) repeating the two-year Primary
-Mission.  If we repeat the Primary Mission over 2 years, the northern
+Any of our proposed scenarios could simply be repeated indefinitely,
+as could possible two-year Extended Missions in which our scenarios 
+would be followed by their respective complement hemispheres.
+Slightly different trade-offs may arise when comparing two-year
+Extended Missions.
+For instance, consider: (1) two years of \hemis; (2) repeating the 
+Primary Mission for two years.
+If we repeat the Primary Mission over 2 years, the northern
 and southern CVZs each get 1 year of continuous observation.  If we
 execute \hemis\:for 2 years, the northern and southern `long viewing
 zones' each get 2 years of 14-day windowed observations.  The latter
@@ -36,7 +39,7 @@ $2\%$ of the sky.  The former allows 2-transit detections of
 $P\lesssim6$ month planets over $1\%$ of the sky.  This simple
 consideration of course misses that point that data obtained from
 repeating the Primary Mission would be less subject to aliasing
-problems and would have fewer period ambiguities.  That said,
+problems and would have fewer period ambiguities.  However
 repeating \hemis\:for two years might be a middle ground between the
 two extreme strategies ``repeat \npole\:indefinitely'' and ``repeat
 the Primary Mission indefinitely''.
@@ -81,7 +84,7 @@ analytically: assume that the planet has $N_\mathrm{tra}=2$ observed
 transits, spaced an orbital period $P=14$ days apart. Because that
 period is one half the nominal \tess dwell time of a given pointing,
 it represents the shortest period for which typically
-$N_\mathrm{tra}=2$, and as such the worst-case scenario for predicting
+$N_\mathrm{tra}=2$, and as such is the worst-case scenario for predicting
 the times of future transits, amongst cases with $N_\mathrm{tra}>1$.
 Given two mid-transit times, each measured with the time's uncertainty
 $\sigma_0$, separated by $P$, the uncertainty of a future mid-transit
@@ -140,8 +143,10 @@ Indeed, our suggested $\sigma_0$ of about 4 minutes for postage stamps and 16 mi
 	\centering
 	\includegraphics[scale=1.]{figures/lowering_uncertainty_on_midtransit_via_extra_point.pdf}
 	\caption{	Observed mid-transit times (dots) and best fits to a linear ephemeris (lines).
-		The dotted lines fit 4 data points from a nominal planet.
-		`SE' is the standard error on the slope which multiplied by 1.96 (rounded to 2 in the legend) gives a 95\% confidence interval by subtracting blue and orange lines.
+		The dashed lines fit 4 data points from a nominal planet.
+		The solid lines do the same, but with an additional transit observed one year
+		later.
+		`SE' is the standard error on the slope which multiplied by 1.96 (rounded to 2 in the legend) gives a 95\% confidence interval between the blue and orange lines.
 	}
 	\label{fig:lowering_uncertainty_tc}
 \end{figure}
@@ -161,7 +166,7 @@ This produces a cartoon-plot, Fig.~\ref{fig:lowering_uncertainty_tc}, which conf
 	\caption{\textit{Top row}: histogram of 95\% confidence intervals 2 (\textit{left}) and 4 (\textit{right}) years following the first detected transit in the Primary Mission.
 		20 minute bins.
 		\textit{Bottom row}: histogram of 95\% confidence intervals 2 (\textit{left}) and 4 (\textit{right}) years following the first detected transit in the Primary Mission, but with an additional data point added to the analog of Fig.~\protect\ref{fig:lowering_uncertainty_tc} one year after the transit in the initial time series (5 minute bins).
-		Note that the top row's timescale is an order of magnitude more than the bottom row.
+		Note that the top row's timescale is an order of magnitude greater than the bottom row.
 		Solid lines are medians, dashed lines are 25$^\mathrm{th}$ and 75$^\mathrm{th}$ percentiles.
 	} %all in ephemeris_uncertainties.ipynb
 	\label{fig:conf_interval_gets_better}
@@ -271,7 +276,7 @@ concern:
 	This criterion is a self-consistent ad-hoc choice that we made for target stars.
 	Applying the same criterion to full frame images would lead to more than one false positive, since full frame images come from a much larger sample of stars.
 	Any pipeline that is written to work with \tess data will confront this problem:
-	processing $10^8$ vs. $4\times10^6$ vs. $2\times10^5$ stars requires different false positive thresholds.
+	processing $10^8$ vs. $4\times10^6$ vs. $2\times10^5$ stars all require different false positive thresholds.
 	Extrapolating from~\citetalias{Sullivan_2015}'s Fig 15, a threshold sufficient to give 0.05 false positives per $2\times10^5$ light curves, or 1 false positive per $4\times10^6$ light curves (as from our full frame images), is roughly 7.5.
 	Making the same ad-hoc estimate that~\citetalias{Sullivan_2015} did and multiplying by 1.03 for the expected drop in SNR from cosmic ray noise gives a SNR threshold of 7.7 for full frame images.
 	Considering our Fig.~\ref{fig:snrf_histogram} (and noting the black line is for the sum of postage stamp and full frame image detections), adopting a SNR threshold of 7.7 for FFIs would mean a loss of $\sim30\times4=120$ planets over two years, or 60 of what we claim are `detected planets' from full frame images in 1 year's Extended Mission.	
@@ -279,12 +284,13 @@ concern:
 	
 	\item [4.) We use synthetic stars from a single galactic model (TRILEGAL).]
 	One check on the robustness of this model would be to compare with other galactic models like GALAXIA~\citep{sharma_galaxia_2011} or a Besa\c con model~\citep{robin2003synthetic}.
-	We have already done this using a simple analytic model by~\citet{winn_searchable_2013}, which agrees with our work to factors of a few.
+	We have already done this using a simple analytic model by~\citet{winn_searchable_2013}, which agrees with our work to within a factor
+	of two.
 	We might eventually use the real star catalog that \tesss Target Selection Working Group is assembling, but this would come with large uncertainties on stellar radii, effective temperatures, and companion fractions.
 	
 	While we recommend that these broader checks be performed in future \tess yield calculations, they are excessive for the purposes of this report given that we only used the nearest, brightest, stars ($d\lesssim\mathrm{1kpc}, I_c\lesssim16$) with a simple prescription for background contamination in evaluating \tesss $R_p<4R_\oplus$ detections.
 	The relative uncertainties become much greater if we try to estimate detections of giant planets and false positives throughout the galactic disk.
-	That said, we take~\citetalias{Sullivan_2015}'s cross-checks (cf Fig. 5 of that paper) against actual surveys of the local stellar population as indicative that we probably have the number of nearby stars, as well as their properties, correct to our desired factor of 2.
+	That said, we take~\citetalias{Sullivan_2015}'s cross-checks (cf Fig. 5 of that paper) against actual surveys of the local stellar population as indicative that we probably have the number of nearby stars, as well as their properties, correct  to the absolute precision required for this work.
 	%!WINN! #3, 4, 5, 7 not specific to Extended Missions, right?
 	%!BOUMA! right. But they should still be here?
 	
@@ -298,10 +304,10 @@ concern:
 	\item [6.) We neglect instrument aging, spacecraft systematics, etc.]
 	To our best knowledge detailed models do not currently exist for how \tesss optics and CCDs will degrade with time.
 %	\todo[inline]{talk with Goddard people about this}
-	We are also assuming that, as with \ktwo, time-correlated spacecraft level systematics can be removed in post-processing.
+	We are also assuming that, as with \ktwo\!, time-correlated spacecraft level systematics can be removed in post-processing.
 	These assumptions are reasonable at our current state of pre-flight knowledge, and will need to be changed accordingly as the mission progresses.
-	If we were to assume a gradual decline in photometric performance, for instance from an increased number of dead or `hot' pixels, the relative extended-mission-to-extended-mission comparisons would remain identical.
-	The absolute extended-mission-to-primary-mission yields would decrease.
+	If we were to assume a gradual decline in photometric performance, for instance from an increased number of dead or `hot' pixels, the relative Extended-Mission-to-Extended-Mission comparisons would remain identical.
+	The absolute Extended-Mission-to-primary-Mission yields would decrease.
 	
 	\item [7.) We do not consider the efficacy of processing pipeline.]
 	For instance, \hemis\:will come with period ambiguities and aliasing problems imposed by its 14 day sampling at the `continuous' viewing zones.

@@ -39,11 +39,12 @@
           but which we then account for when computing `observed'
           SNRs).
           
-	\item We take the occurrence rate of planets as a function of radius
-          and orbital period are from the work of \citet{fressin_false_2013}
-          and~\citet{dressing_occurrence_2015}, which are assumed to be
-          accurate for the $P \lesssim 180\ \text{day}$ planets to
-          which \tess is sensitive.
+	\item We use occurrence rates of planets as a function of radius
+          and orbital period as calculated by~\citet{fressin_false_2013}
+          and~\citet{dressing_occurrence_2015}.
+          We assume these are accurate for the 
+          $P \lesssim 180\ \text{day}$ planets to which \tess is 
+          sensitive.
           
 	\item The occurrence statistics of multiple-planet systems can
           approximated as repeated independent draws from the
@@ -56,8 +57,8 @@
             
 	  \item A point-spread function (PSF) derived from ray-tracing
             simulations, slightly degraded from that described
-            by~\citetalias{Sullivan_2015}, Sec 6.1 based on laboratory
-            measurements.
+            by~\citetalias{Sullivan_2015} Sec 6.1, and based on 
+            laboratory measurements.
             
           \item All stars are observed at the \textit{center} of the
             \tess CCDs. This ignores off-axis and chromatic
@@ -77,9 +78,9 @@
             without much loss of accuracy.
             
          \item The time/frequency structure of all noise (except for
-           stellar variability, see below) is `white'.  This means
-           that we ignore time-correlated instrumental effects such as
-           spacecraft jitter, thermal fluctuations, and mechanical
+           stellar variability, see Eq.~\ref{eq:snr}) is `white'.  
+           This means that we ignore time-correlated instrumental effects 
+           such as spacecraft jitter, thermal fluctuations, and mechanical
            flexure, which we expect will be at least partly mitigated
            by the mission's data reduction pipeline.
                   
@@ -104,8 +105,7 @@
           transit durations.  Instead, we assume the noise
           contribution from stellar variability is independent across
           transits, and thus scales as $N_\mathrm{tra}^{-1/2}$, for
-          $N_\mathrm{tra}$ the number of observed transits (see 
-          Eq.~\ref{eq:snr}).
+          $N_\mathrm{tra}$ the number of observed transits.
 	  \end{itemize}
           
 	\item For our detection model, we assume:
@@ -137,7 +137,7 @@
 	\item We do not assume any prior knowledge of previous
           observations that may have been performed on our stars.  For
           instance, observing the ecliptic, we do not simulate the
-          \tess-\ktwo overlap.
+          \tess\!-\ktwo overlap.
           
 	\item For Earth and Moon crossings, we assume we can drop a
           fixed number of orbits of observing time for the cameras
@@ -163,8 +163,8 @@
 	\end{equation}
 	where $D$ is the dilution factor of a target star with
         incident photon flux $\Gamma_T$ from the target star and
-        incident photon flux $\Gamma_N$ from neighboring stars (e.g.,
-        on the sky background, or binary companions).
+        incident photon flux $\Gamma_N$ from neighboring stars 
+        (\textit{i.e.}, background stars or binary companions).
 	
 	The noise is computed by creating a synthetic image for every
         host star with a planet that transits above a `pre-dilution'

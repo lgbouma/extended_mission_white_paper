@@ -22,13 +22,13 @@ However, our yields from full frame images differ markedly from those quoted in 
 We agree with~\citetalias{Sullivan_2015} that no Earths are detected in the full frame images.
 However, we detect only $\sim$10 super-Earths by observing the $200,001\mathrm{^{st}}$ to $4,000,000\mathrm{^{th}}$ \texttt{Merit}-ranked stars at 30 minute cadence.
 This is two orders of magnitude less than the $\sim$1000 super-Earth detections claimed from FFIs by~\citetalias{Sullivan_2015}.
-There is also a small discrepancy in FFI-detected sub-Neptunes, for which our current simulations predict that $\sim$1000 will be detected,
+There is also a discrepancy in FFI-detected sub-Neptunes, for which our current simulations predict that $\sim$1000 will be detected,
 while~\citetalias{Sullivan_2015} predicted $\sim$2000.
 
 We empirically verified that our full frame image detections are complete for $R < 4R_\oplus$ by enlarging the number of stars observed at 30-minute cadence and seeing that the number of detected planets with radii less than Neptune did not change.
 %In this context,~\citetalias{Sullivan_2015}'s claim of detecting $1000$ super-Earths in \tesss full-frame images must be false.
 We do not understand the origin of the difference between our method and~\citetalias{Sullivan_2015}'s, even after corresponding with P. Sullivan, but note that our results are in much better agreement with order-of-magnitude analytic arguments for \tesss expected planet yield.
-Assuming an exponentially distributed stellar population in the galaxy and computing limiting magnitude thresholds,~\citet{winn_searchable_2013} predicted detections of $600-6000$ Neptunes, $24-300$ super-Earths, and $1-10$ Earth-sized planets, where the lower bounds correspond to planets detected with $\mathrm{SNR}>10$, and the upper bounds for $\mathrm{SNR}>7$.
+Assuming an exponentially distributed stellar population in the galaxy and computing limiting magnitude thresholds,~\citet{winn_searchable_2013} predicted detections of $600-6000$ Neptunes, $24-300$ super-Earths, and $1-10$ Earth-sized planets, where the lower bounds correspond to planets detected with $\mathrm{SNR}>10$, and the upper bounds $\mathrm{SNR}>7$.
 ~\citetalias{Sullivan_2015}'s prediction of a total of $1500$ detected super-Earths is a factor of 5 larger than these analytic estimates, while
 ours is in much better agreement.
 
@@ -39,7 +39,7 @@ distribution of planets, we find a more reasonable detection bias
 against small planets.
 One should expect that the detection bias against small planets is a steep function of radius, given that $\delta\propto R_p^2$.
 \citetalias{Sullivan_2015} predicted the detection of roughly twice as many sub-Neptunes as super-Earths; our current
-results that the ratio is closer to 5-to-1 which seems more realistic.
+result has the ratio is closer to 5-to-1 which seems more realistic.
 \begin{comment}
   Consider the two relevant bins in the
   distribution of detected planet count \textit{vs}. planet radius.
@@ -72,9 +72,9 @@ Figs.~\ref{fig:radius_vs_period_nhemi}
 and~\ref{fig:imag_vs_teff_nhemi}.  In terms of the apparent planet
 radii $R_p$, orbital periods $P$, host star brightness, and host star
 $T_\mathrm{eff}$, we agree with the results
-of~\citetalias{Sullivan_2015} for the population of planets detected
-in postage stamps.  As discussed above, we differ in the yield from
-full frame images.  For instance, the dearth of $P<5$ day
+of~\citetalias{Sullivan_2015} for the planets detected
+in postage stamps. 
+For instance, the dearth of $P<5$ day
 Neptune-radius planets in Fig.~\ref{fig:radius_vs_period_nhemi} was
 observed by \textit{Kepler}~\citep{mazeh_dearth_2016}, and thus it is
 present in our input occurrence rates, rather than being an
@@ -86,10 +86,11 @@ At a fixed host star radius, postage stamp detections occur around brighter star
 
 \paragraph{Impact of earth and moon crossings on Primary Mission's detected planet yield}
 During the Primary Mission, of the four cameras Camera 1 (closest to the ecliptic) suffers the most from earth and moon crossings.
-We remove 4 of its 13 `observing sectors', as noted in Table~\ref{tab:dropped_fields}.
+As noted in Table~\ref{tab:dropped_fields}, we remove 4 of its 13 
+`observing sectors'.
 This reduces the number of planet detections near the ecliptic, and is visible in the orange points of Fig.~\ref{fig:skymap_nhemi}.
 In the Primary Mission \tess detects $\sim20$ planets with $R_p<4R_\oplus$ from both 2 minute and 30 minute data in each $24^\circ\times24^\circ$ camera field nearest to the ecliptic (where each field is observed for 2 \tess orbits).
 As implemented in our simulation, Earth and Moon crossings result in fields simply not being observed, so in these cases planets orbiting stars in these fields are never detected.
 Considering only the Primary Mission, we would naively expect that dropping a total of 9 fields over the two years (again, see Table~\ref{tab:dropped_fields}) would result in a loss of $\sim9\times20=180$ planets.
-This agrees with what our simulations actually give: running them without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives a mean of 2482 such planets (a loss of 196 planets, or $7\%$ of the sub-Neptune yield).
+This agrees with what our simulations actually give: running them without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives a mean of 2482 such planets (a loss of 196 planets; $7\%$ of the sub-Neptune yield).
 % data from 160708-t50 and 160729-t20. Slightly apples to oranges because of number of trials difference, but makes the point. 

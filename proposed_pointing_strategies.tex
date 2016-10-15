@@ -16,15 +16,7 @@ following options for detailed study:
 
 \begin{description}
 
-\item[Option 1.] \npole: Focus on one of the ecliptic poles,
-  arbitrarily chosen to be the north ecliptic pole for
-  concreteness. Note that the geometry of \tesss lens hood still
-  suppresses incoming sunlight in this scenario.
-  \textit{Justification:} maximizes the average duration of
-  observations per star; intuitively we expected this to provide
-  greatest sensitivity to long-period planets.
-
-\item[Option 2.] \nhemi: Repeat observations of one of the two
+\item[Option 1.] \nhemi: Repeat observations of one of the two
   ecliptic hemispheres in a manner similar to the Primary Mission,
   arbitrarily chosen to be the northern ecliptic hemisphere for
   concreteness. In this scenario we could take the opportunity to 
@@ -40,22 +32,30 @@ following options for detailed study:
   of previously detected \tess planets over most of the entire
   hemisphere.
 
+\item[Option 2.] \npole: Focus on one of the ecliptic poles,
+	arbitrarily chosen to be the north ecliptic pole for
+	concreteness. Note that the geometry of \tesss lens hood still
+	suppresses incoming sunlight in this scenario.
+	\textit{Justification:} maximizes the average duration of
+	observations per star; intuitively we expected this to provide
+	greatest sensitivity to long-period planets.
+
 \item[Option 3.] \shemiAvoid: Repeat observations of one of the two
-  ecliptic hemispheres, but in this case shifting all fields $6^\circ$
+  ecliptic hemispheres, but in this case shifting all fields $12^\circ$
   toward the ecliptic, such that the combined fields-of-view reach all
-  the way from the ecliptic to the ecliptic pole.
+  the way from $6^\circ$ below the ecliptic to the ecliptic pole.
   \textit{Justification:} trades the long continuous viewing zone near
   the pole for greater sky coverage, and in particular, coverage of
   the ecliptic zone which was missed in the Primary Mission.  We chose
   to simulate the southern ecliptic hemisphere, since the northern
-  version of this plan would suffer more from Earth-Moon interference
+  version of this plan would suffer more from Earth and Moon interference
   (cf. Table~\ref{tab:dropped_fields} in
   Sec.~\ref{sec:earth_moon_crossings}).
   
 \item[Option 4.] \elong: Survey the ecliptic with 7 sectors (14
   orbits) in which the long axis of the fields-of-view are oriented
   along the ecliptic.  For the other 6 sectors, during the interval
-  when ecliptic observations would be interrupted by Earth-Moon
+  when ecliptic observations would be interrupted by Earth and Moon
   crossings, we focus on one of the ecliptic poles.
   \textit{Justification:} covers the ecliptic, which was not surveyed
   at all in the Primary Mission.  Offers opportunities for follow-up
@@ -70,6 +70,8 @@ following options for detailed study:
   overlap between this year and the Primary Mission to allow for
   improved transit ephemerides and better ability to follow-up on
   previous discoveries.
+  Also covers more sky than \elong, which could improve the quantity
+  of planet detections from full frame images.
   
 \item[Option 6.] \hemis: Cover both northern and southern ecliptic
   hemispheres in a single year, by alternating between the hemispheres
@@ -87,10 +89,13 @@ report manageable.  Among these other possibilities that were considered but not
 	\item The \npole\:strategy applied to the south ecliptic pole rather than the north (we do not expect major differences).
 	\item The \nhemi\:strategy applied to the southern ecliptic hemipshere rather than the northern (we do not expect major differences).
 	Similarly, the \nhemi\:strategy, but rotated about the ecliptic polar axis by
-	$12^\circ$ in ecliptic longitude.
-	\item The north/south inversion of \shemiAvoid, which is more strongly affected by Earth/Moon crossings (see Sec.~\ref{sec:earth_moon_crossings}).
-	\item A full year spent observing the ecliptic.  It became clear that such a plan would suffer from Earth/Moon crossings for a substantial fraction of the year.
+	$12^\circ$ in longitude.
+	\item The north/south inversion of \shemiAvoid, which is more strongly affected by Earth and Moon crossings (see Sec.~\ref{sec:earth_moon_crossings}).
+	\item A full year spent observing the ecliptic.  Such a plan would similarly 
+	suffer from Earth and Moon crossings for a substantial fraction of the year.
 	We show the outage as a function of time in Fig.~\ref{fig:earth_moon_elong}.
+	Solar system objects (planets, asteroids) could also be an annoyance, but
+	we do not model their effects.
         \item Alternate between northern and southern ecliptic poles every 13.7 days.
         This would be similar to \hemis\:but would focus on the poles rather than the entire sky.
         It would sacrifice sky coverage (and ability to refresh ephemerides over the whole sky) in return for longer-duration observations for a typical star.
