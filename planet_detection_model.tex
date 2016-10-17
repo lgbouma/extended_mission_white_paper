@@ -84,7 +84,7 @@ With a model PSF, we determine ideal aperture sizes and then obtain
 an accurate noise per transit
 (since the transit durations are known, and we assume our noise,
 computed first over a single hour, then bins like white-noise,
-\textit{i.e.,} proportionate to the inverse square root of the time
+\textit{i.e.,} proportional to the inverse square root of the time
 in-transit).
 
 Coupled with the known transit signal, this gives us 
@@ -109,10 +109,11 @@ computed from background and binary contamination (Eq.~\ref{eq:dilution});
 $\sigma_\mathrm{1hr}$ the summed noise contribution from CCD read noise, 
 photon-counting noise from the star, a systematic 
 $60\,\mathrm{ppm\cdot hr^{1/2}}$ noise floor, and zodiacal noise;
-$T_\mathrm{dur}$ the transit duration, and $\sigma_v$ the intrinsic
+$T_\mathrm{dur}$ the transit duration in hours, and $\sigma_v$ the intrinsic
 stellar variability (cf.~\citetalias{Sullivan_2015} Sec 3.5).
-The first equation is approximate because we do not write the
-small contribution from occultation signals.
+The first equation is approximate. In particular we do not
+take into account the
+small contribution to the SNR from occultation signals.
 
 We have changed other aspects of this simulation
 since~\citetalias{Sullivan_2015} was published, and describe these

@@ -124,10 +124,10 @@ We now discuss each metric in more depth:
 	We note in passing that $\sim\!80\%$ of the habitable zone planets that \tess detects orbit M dwarfs with spectral classes ranging from M4 - M0, and $\sim\!15\%$ of them orbit M dwarfs later than M4.
 	We show the relevant cumulative distribution in Fig.~\ref{fig:CDF_habitable_zone}.
 	% see hz_primary_george/CDF_most_HZ_planets_orbit_early_M_dwarfs.png
-	Additionally, our values for the number of $0.2<S/S_\oplus<2$ planets from the Primary Mission are slightly revised from those of~\citetalias{Sullivan_2015}: while~\citetalias{Sullivan_2015} quote $48\pm7$  $0.2<S/S_\oplus<2$ and $R_p<2R_\oplus$ planets, we find $34 \pm 5$.
-	Adopting the habitable zone of~\citet{kopparapu_habitable_2013},~\citetalias{Sullivan_2015} quoted $14\pm4$  $R_p<2R_\oplus$ planets. We find $11 \pm 3$.
+	Additionally, our values for the number of $0.2<S/S_\oplus<2$ planets from the Primary Mission are slightly revised from those of~\citetalias{Sullivan_2015}: while~\citetalias{Sullivan_2015} found $48\pm7$ planets with $0.2<S/S_\oplus<2$ and $R_p<2R_\oplus$, we find $34 \pm 5$ such planets.
+	Adopting the habitable zone of~\citet{kopparapu_habitable_2013},~\citetalias{Sullivan_2015} found $14\pm4$ planets with $R_p<2R_\oplus$. We find $11 \pm 3$ such planets.
 	The rule of thumb that Extended Missions give roughly $1.6\times$ the number of new $0.2<S/S_\oplus<2$ habitable zone planets applies to the~\citet{kopparapu_habitable_2013} habitable zone as well as $0.2<S/S_\oplus<2.0$.
-	Another point raised by Fig.~\ref{fig:scatter_habitable_zone} is that the~\citet{kopparapu_habitable_2013} habitable zone, which is physically motivated by 1-D radiative-convective cloud-free climate models with accurate absorption coefficients, results in roughly 3 times fewer `habitable zone' planet detections than our ad-hoc criteria of $0.2<S/S_\oplus<2$.
+	Another point raised by Fig.~\ref{fig:scatter_habitable_zone} is that the~\citet{kopparapu_habitable_2013} habitable zone, which is physically motivated by 1-D radiative-convective cloud-free climate models with accurate absorption coefficients, results in roughly 3 times fewer `habitable zone' planet detections than our ad-hoc criterion of $0.2<S/S_\oplus<2$.
 	\begin{marginfigure}
 		\centering
 		\includegraphics[scale=1.]{figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf}
@@ -156,7 +156,8 @@ We now discuss each metric in more depth:
 	% makeReport: search for "ntrahemis14d". same for commit.
 	
 	\item $N_\mathrm{new,atm}$:
-	We define `planets that are amenable to atmospheric characterization' to mean planets whose SNR in transmission is greater than (that of GJ 1214b divided by 2), where the latter factor of 2 is chosen to give a sufficiently large sample to prevent Poisson fluctuations from hindering our comparisons.
+	  We define `planets that are amenable to atmospheric characterization' to mean planets whose SNR in transmission is at least half as large as that of GJ~1214b. We chose ``at least half as large'' rather than
+          ``equal to'' in order to give a sufficiently large sample to prevent Poisson fluctuations from hindering our comparisons.
 	The relevant signal in transit spectroscopy is the ratio of the areas of atmosphere's annulus to the star's disk on the sky plane, $\delta_\mathrm{atm} = 2\pi R_p h_\mathrm{eff}/(\pi R_\star^2)$, where the effective scale height of the atmosphere $h_\mathrm{eff}$ is proportional to the actual scale height.
 	Assuming that the planet is in thermal equilibrium with incident radiation from the host star, and that its atmosphere has known mean molecular weight and Bond albedo, we can compute a representative signal.
 	The noise performance depends on the observing instrument, and could be complex if not simply dominated by shot-noise from IR photons.
@@ -203,15 +204,19 @@ We now discuss each metric in more depth:
 	The best Extended Missions (\shemiAvoid, \elong, \eshort\:and \hemis) boost the yield of such planets from $\sim\!100$ to $\sim\!125$.
 	The worst, \npole, finds roughly 10.
 	This best-case boost of $1.25\times$ more `good' planets for atmospheric characterization is less than the relative boost of $1.6\times$ more newly detected long period planets.
-	This latter point simply means that if we were to assign equal weights to both relative metrics, then $N_\mathrm{new,atm}$ would impact the decision of which Extended Mission to perform less than $N_\mathrm{new,P<20d}$.
+	Put differently, among the various possibilities for the Extended Mission,
+        there is more variation in $N_\mathrm{new,atm}$ than in $N_\mathrm{new,P<20d}$.
 	
 	
 	\item $N_\mathrm{new,new\ stars}$:
-	The observing strategy that collects the most photons from new stars should detect the most new planets about new stars.
-	The \elong\:scenario dedicates 7 of a single year's 13 observing sectors to the ecliptic (where the other 5 are spent centered at the North Ecliptic Pole due to excessive Earth and Moon crossings).
+	  Intuitively we expect that to maximize the number of planets detected around ``new'' stars (those which were not observed during the Primary Mission) we should collects as many photons as possible from new stars.
+         And the region on the sky with the greatest number of new stars is the ecliptic.
+	 It is not surprising, then, that the \elong\: scenario finds the largest number of planets around new stars.
+         The \elong\:scenario dedicates 7 of a single year's 13 observing sectors to the ecliptic (where the other 5 are spent centered at the North Ecliptic Pole due to excessive Earth and Moon crossings).
 	It consequently detects twice as many new planets about newly observed stars as the next-best scenarios: \eshort\:and \shemiAvoid\:(366 vs 171 and 161, respectively).
 	These latter two options also spend time observing the ecliptic, but with only one camera, rather than with all four cameras simultaneously.
-	We note that even though \elong\:is the scenario most successful in to detecting planets about new stars, only $\sim\!30\%$ of its newly detected planets are actually from `never-observed' hosts.~\footnote{Dubbing these planets and hosts `never-observed' neglects the question of overlapping fields with K2's observations (see discussion in Sec.~\ref{sec:discussion})}
+	We note that even though \elong\:is the scenario most successful in to detecting planets about new stars, the new stars represent only $\sim\!30\%$ of the total number of new detections.~\footnote{Here, we remind the reader that ``new'' refers only to \tess\, observations. Some of these stars will
+          have been observed by K2 or other projects (see discussion in Sec.~\ref{sec:discussion}).}
 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$:
 	This statistic is the number of newly detected planets that are detected either (a) due to their final SNR clearing our threshold (logical) or (b) their number of observed transits being greater than or equal to 2.
@@ -220,7 +225,7 @@ We now discuss each metric in more depth:
 \end{enumerate}
 
 \paragraph{Comment on meaning of `detected in postage stamps' vs `detected in FFIs'}
-The invested reader may inquire ``what about the cross-over case of planets that are observed as PSs during the Primary (Extended) Mission, but as FFIs in the Extended (Primary) Mission? These are not explicitly listed in Fig.~\ref{fig:yield_results}''.
+The invested reader may inquire ``what about the cross-over case of planets that are observed as PSs during the Primary (Extended) Mission, but as FFIs in the Extended (Primary) Mission? These are not explicitly listed in Fig.~\ref{fig:yield_results}.
 %This is what is done in Fig.~\ref{fig:yield_results}.
 When describing the entire unique planet population detected from Years 1-3, for simplicity of language we use `postage stamp detections' to refer to planets that are observed at any time (Primary or Extended Missions) at 2 minute cadence.
 In these cases, the dominant contribution to the final signal to noise ratio tends to come from the PS observations.
