@@ -4,8 +4,9 @@
 	%	\includegraphics{}
 	\centering
 	\includegraphics{figures/precision_memo.pdf}
-	\caption{Relative precision in measured flux over a one hour integration time (scatter from contaminating background stars and PRF centroid offsets ignored). The noise sources described by~\citet{Sullivan_2015} are solid thin lines. The dashed lines exemplify noise from contaminating background flux, for instance from the Moon or Earth outside the \tess field, but still scattering light off  the \tess lens hood. A dynamical 3-body simulation lets us estimate the impact  lunar and Earth backgrounds have on \tesss photometry.
-	The photometric precision with which we simulate observations has additional scatter about the thick black line owing to randomly-assigned contaminating stars.}
+	\caption{Relative precision in measured flux over a one hour integration time (scatter from contaminating background stars and PRF centroid offsets ignored). The noise sources described by~\protect\citet{Sullivan_2015} are solid thin lines. The dashed lines exemplify noise from contaminating background flux, for instance from the Moon or Earth outside the \tess field, but still scattering light off  the \tess lens hood. A dynamical 3-body simulation lets us estimate the impact  lunar and Earth backgrounds have on \tesss photometry.
+	The photometric precision with which we simulate observations has additional scatter about the thick black line owing to randomly-assigned contaminating stars.
+	Zodiacal background is plotted for an ecliptic latitude of $30^\circ$ following Sec. 6.4.1 of~\protect\citet{Sullivan_2015}}
 	\label{fig:noise_with_moon}
 \end{figure}
 
@@ -13,25 +14,24 @@ When the Earth or Moon passes through \tesss camera fields they can
 flood the CCD pixels to their full well capacity ($\sim2\times10^5$
 photoelectrons).  Precision differential photometry becomes impossible
 in any pixels that are directly hit during these crossings.  Even when
-the body (the Earth or Moon) is not directly in the camera's field of
+the body (Earth or Moon) is not directly in the camera's field of
 view, its light scatters off the interior of spacecraft's lens hood
 and acts as a background source of contaminating flux across many of
-the cameras\footnote{A detailed model for this process does not yet
-  exist. It is intended that such a model will be developed during
-  commissioning.}.  The Poisson noise in the number of photons
+the cameras\footnote{A detailed model for this process is not yet
+  available for the purposes of this study.}.  
+The Poisson noise in the number of photons
 arriving from the Earth or the Moon in such a scenario degrades \tesss
-photometric performance.  This can be important for field angles
-$\theta \lesssim34^{\circ}$ (see Fig.~\ref{fig:lens_hood_suppression}
-in Sec.~\ref{sec:appendix} of the appendix).  We show a few
-representative background fluxes in Fig.~\ref{fig:noise_with_moon}.
-The point of this figure is that for even modest background-counts the
-effect of scattered light could severely reduce \tesss photometric
-performance.  For instance when the moon is $30^\circ$ from the camera
-boresights, corresponding (Fig.~\ref{fig:lens_hood_suppression}) to a
-suppression of $10^{-5}$ from the lens hood on
-$1.5\times10^6\mathrm{ct/s/px}$ from the moon, $15\mathrm{ct/s/px}$
-reach the cameras.  This would correspond to a $2-3\times$ reduction
-in photometric performance for $I_c < 11$ stars.
+photometric performance.   
+
+We show a few
+example background fluxes in Fig.~\ref{fig:noise_with_moon}.
+The point of this figure is that the effect of additional scattered light could reduce \tesss photometric performance. 
+For instance when the Moon is $24^\circ$ from the camera boresights the lens hood is expected to suppress $1/100^\mathrm{th}$ of a mean $3\times10^6\,\mathrm{ct/px}$ (per 2 second image) from the Moon (Fig.~\ref{fig:lens_hood_suppression}).
+Thus a mean flux of $3\times10^4\,\mathrm{ct/px}$ reaches the cameras. 
+The RMS is then roughly $173\,\mathrm{ct/px}$ per 2 second image.
+From Fig.~\ref{fig:noise_with_moon}, this corresponds to $\gtrsim\!3\times$ reduction
+in photometric performance for $I_c < 12$ stars.
+While this effect is highly dependent on the angle between the camera boresights and the Moon or Earth, the general picture is that for field angles $\theta \lesssim25^{\circ}$, the impact is severe.
 
 \begin{figure}[!tb]
 	\centering
@@ -56,9 +56,9 @@ At every time step of the three-body orbit, we calculate the distance between \t
 The gravitational dynamics behind this calculation treat the Earth, Moon, and Sun as point masses, and the \tess spacecraft as a massless test particle.
 The spacecraft's inclination oscillates in the simulation as it will in reality.
 
-Taking the Earth and Moon's integrated disk brightnesses as fixed values\footnote{$I_\moon = -13.5$, so the full moon delivers $1.5\times10^6 \text{ct/s/px}$, and the Earth delivers approximately $80\times$ that amount.} we use a model for scattered light suppression from the \tess lens hoods (Fig.~\ref{fig:lens_hood_suppression}), to tabulate the photon flux from each of these bodies onto each of the cameras throughout the orbit.
+Taking the Earth and Moon's integrated disk brightnesses as fixed values\footnote{$I_\moon = -13.5$, so the full Moon delivers $1.5\times10^6 \text{ct/s/px}$, and the Earth delivers approximately $80\times$ that amount.} we use a model for scattered light suppression from the \tess lens hoods (Fig.~\ref{fig:lens_hood_suppression}), to tabulate the photon flux from each of these bodies onto each of the cameras throughout the orbit.
 
-To evaluate the cumulative impact of Earth and moon crossings on \tesss Primary and Extended Missions we ask: for each camera, what fraction of the total observing time is \tess unable to operate at desired photometric precision because of Earth and Moon crossings?
+To evaluate the cumulative impact of Earth and Moon crossings on \tesss Primary and Extended Missions we ask: for each camera, what fraction of the total observing time is \tess unable to operate at desired photometric precision because of Earth and Moon crossings?
 An upper limit for what we mean by `unable to operate at desired photometric precision' is when terrestrial or lunar flux make it impossible to observe any star in our selected target star catalog with photometric precision $<1 \text{mmag}$ over one hour of integration time.
 This limit, $F_\text{max}$, is roughly
 \begin{equation*}
