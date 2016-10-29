@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -56,12 +56,6 @@ C.~Beichman, B.~Benneke, H.~Knutson, R.~Smith, P.-O. Lagage, C.~Dressing,
 \newblock \emph{Publications of the Astronomical Society of the Pacific},
   126:\penalty0 1134--1173, Dec. 2014.
 \newblock \doi{10.1086/679566}.
-
-\bibitem[Berta-Thompson et~al.(2016)Berta-Thompson, Ribas, Seager, and
-  Bouma]{berta_cheops_2016}
-Z.~Berta-Thompson, I.~Ribas, S.~Seager, and L.~Bouma.
-\newblock Projects for a {TESS} and {CHEOPS} {Collaboration}.
-\newblock {TESS} {Internal} {Report}, MIT, June 2016.
 
 \bibitem[Burke et~al.(2014)Burke, Bryson, Mullally, Rowe, Christiansen,
   Thompson, Coughlin, Haas, Batalha, Caldwell, Jenkins, Still, Barclay,
@@ -340,11 +334,6 @@ S.~Sharma, J.~Bland-Hawthorn, K.~V. Johnston, and J.~Binney.
 \newblock URL \url{http://arxiv.org/abs/1101.3561}.
 \newblock arXiv: 1101.3561.
 
-\bibitem[Sullivan(2013)]{sullivan_KOIs_2013}
-P.~Sullivan.
-\newblock {TESS}'s {Performance} on the {Kepler} {Objects} of {Interest}.
-\newblock Technical Report No. 8, MIT, Oct. 2013.
-
 \bibitem[Sullivan et~al.(2015)Sullivan, Winn, Berta-Thompson, Charbonneau,
   Deming, Dressing, Latham, Levine, McCullough, Morton, Ricker, Vanderspek, and
   Woods]{Sullivan_2015}
@@ -384,10 +373,16 @@ J.~Wang and D.~A. Fischer.
 \newblock \doi{10.1088/0004-6256/149/1/14}.
 \newblock URL \url{http://stacks.iop.org/1538-3881/149/i=1/a=14}.
 
-\bibitem[Winn(2013)]{winn_searchable_2013}
+\bibitem[Winn(2013{\natexlab{a}})]{winn_photonflux_2013}
+J.~N. Winn.
+\newblock Expected photon fluxes in the {TESS} bandpass.
+\newblock \emph{TESS Science Memo No. 1, Version 2. Available upon request.},
+  2013{\natexlab{a}}.
+
+\bibitem[Winn(2013{\natexlab{b}})]{winn_searchable_2013}
 J.~N. Winn.
 \newblock Number of {Searchable} {Stars}.
 \newblock \emph{TESS Science Memo No. 5, Version 1. Available upon request.},
-  2013.
+  2013{\natexlab{b}}.
 
 \end{thebibliography}

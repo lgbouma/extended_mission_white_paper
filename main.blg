@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: bibliography/biblio.bib.bib
-Repeated entry---line 621 of file bibliography/biblio.bib.bib
+Repeated entry---line 628 of file bibliography/biblio.bib.bib
  : @article{gangestad_high_2013
  :                             ,
 I'm skipping whatever remains of this entry
@@ -12,45 +12,45 @@ Warning--empty booktitle in landsman_idl_1995
 Warning--empty journal in mckinneypandas
 Warning--empty year in mckinneypandas
 Warning--empty year in mckinneypandas
-You've used 39 entries,
+You've used 38 entries,
             2773 wiz_defined-function locations,
-            881 strings with 16566 characters,
-and the built_in function-call counts, 25949 in all, are:
-= -- 2154
-> -- 2487
-< -- 19
-+ -- 834
-- -- 795
-* -- 2544
-:= -- 4334
-add.period$ -- 188
-call.type$ -- 39
-change.case$ -- 382
-chr.to.int$ -- 39
-cite$ -- 83
-duplicate$ -- 779
-empty$ -- 1358
-format.name$ -- 852
-if$ -- 5131
-int.to.chr$ -- 1
+            874 strings with 16405 characters,
+and the built_in function-call counts, 25524 in all, are:
+= -- 2115
+> -- 2448
+< -- 18
++ -- 822
+- -- 783
+* -- 2504
+:= -- 4256
+add.period$ -- 185
+call.type$ -- 38
+change.case$ -- 374
+chr.to.int$ -- 37
+cite$ -- 81
+duplicate$ -- 766
+empty$ -- 1341
+format.name$ -- 839
+if$ -- 5051
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 35
-newline$ -- 274
-num.names$ -- 156
-pop$ -- 647
+missing$ -- 36
+newline$ -- 269
+num.names$ -- 152
+pop$ -- 639
 preamble$ -- 1
-purify$ -- 342
+purify$ -- 336
 quote$ -- 0
-skip$ -- 731
+skip$ -- 718
 stack$ -- 0
-substring$ -- 448
+substring$ -- 446
 swap$ -- 64
-text.length$ -- 3
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 424
+type$ -- 413
 warning$ -- 5
-while$ -- 153
+while$ -- 150
 width$ -- 0
-write$ -- 646
+write$ -- 632
 (There was 1 error message)
