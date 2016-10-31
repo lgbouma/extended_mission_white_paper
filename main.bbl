@@ -11,242 +11,132 @@ C.~H. Acton.
   {Navigation} and {Ancillary} {Information} {Facility}.
 \newblock \emph{Planetary and Space Science}, 44\penalty0 (1):\penalty0 65--70,
   Jan. 1996.
-\newblock ISSN 0032-0633.
-\newblock \doi{10.1016/0032-0633(95)00107-7}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/0032063395001077}.
 
 \bibitem[Baraffe and Chabrier(1996)]{baraffe_massspectral_1996}
 I.~Baraffe and G.~Chabrier.
 \newblock Mass–{Spectral} {Class} {Relationship} for {M} {Dwarfs}.
-\newblock \emph{The Astrophysical Journal}, 461\penalty0 (1), Apr. 1996.
-\newblock ISSN 0004637X.
-\newblock \doi{10.1086/309988}.
-\newblock URL \url{http://stacks.iop.org/1538-4357/461/i=1/a=L51}.
+\newblock \emph{ApJ}, 461\penalty0 (1), Apr. 1996.
 
 \bibitem[Basri et~al.(2013)Basri, Walkowicz, and
   Reiners]{basri_comparison_2013}
 G.~Basri, L.~M. Walkowicz, and A.~Reiners.
 \newblock Comparison of {Kepler} {Photometric} {Variability} with the {Sun} on
   {Different} {Timescales}.
-\newblock \emph{The Astrophysical Journal}, 769\penalty0 (1):\penalty0 37,
-  2013.
-\newblock ISSN 0004-637X.
-\newblock \doi{10.1088/0004-637X/769/1/37}.
-\newblock URL \url{http://stacks.iop.org/0004-637X/769/i=1/a=37}.
+\newblock \emph{ApJ}, 769\penalty0 (1):\penalty0 37, 2013.
 
-\bibitem[Beichman et~al.(2014)Beichman, Benneke, Knutson, Smith, Lagage,
-  Dressing, Latham, Lunine, Birkmann, Ferruit, Giardino, Kempton, Carey, Krick,
-  Deroo, Mandell, Ressler, Shporer, Swain, Vasisht, Ricker, Bouwman,
-  Crossfield, Greene, Howell, Christiansen, Ciardi, Clampin, Greenhouse,
-  Sozzetti, Goudfrooij, Hines, Keyes, Lee, McCullough, Robberto, Stansberry,
-  Valenti, Rieke, Rieke, Fortney, Bean, Kreidberg, Ehrenreich, Deming, Albert,
-  Doyon, and Sing]{beichman_observations_2014}
-C.~Beichman, B.~Benneke, H.~Knutson, R.~Smith, P.-O. Lagage, C.~Dressing,
-  D.~Latham, J.~Lunine, S.~Birkmann, P.~Ferruit, G.~Giardino, E.~Kempton,
-  S.~Carey, J.~Krick, P.~D. Deroo, A.~Mandell, M.~E. Ressler, A.~Shporer,
-  M.~Swain, G.~Vasisht, G.~Ricker, J.~Bouwman, I.~Crossfield, T.~Greene,
-  S.~Howell, J.~Christiansen, D.~Ciardi, M.~Clampin, M.~Greenhouse,
-  A.~Sozzetti, P.~Goudfrooij, D.~Hines, T.~Keyes, J.~Lee, P.~McCullough,
-  M.~Robberto, J.~Stansberry, J.~Valenti, M.~Rieke, G.~Rieke, J.~Fortney,
-  J.~Bean, L.~Kreidberg, D.~Ehrenreich, D.~Deming, L.~Albert, R.~Doyon, and
-  D.~Sing.
+\bibitem[Beichman et~al.(2014)]{beichman_observations_2014}
+C.~Beichman et~al.
 \newblock Observations of {Transiting} {Exoplanets} with the {James} {Webb}
   {Space} {Telescope} ({JWST}).
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  126:\penalty0 1134--1173, Dec. 2014.
-\newblock \doi{10.1086/679566}.
+\newblock \emph{PASP}, 126:\penalty0 1134--1173, Dec. 2014.
 
-\bibitem[Burke et~al.(2014)Burke, Bryson, Mullally, Rowe, Christiansen,
-  Thompson, Coughlin, Haas, Batalha, Caldwell, Jenkins, Still, Barclay,
-  Borucki, Chaplin, Ciardi, Clarke, Cochran, Demory, Esquerdo, Thomas
-  N.~Gautier, Gilliland, Girouard, Havel, Henze, Howell, Huber, Latham, Li,
-  Morehead, Morton, Pepper, Quintana, {Darin Ragozzine}, Seader, Shah, Shporer,
-  Tenenbaum, Twicken, and Wolfgang]{burke_Q1Q8_2014}
-C.~J. Burke, S.~T. Bryson, F.~Mullally, J.~F. Rowe, J.~L. Christiansen, S.~E.
-  Thompson, J.~L. Coughlin, M.~R. Haas, N.~M. Batalha, D.~A. Caldwell, J.~M.
-  Jenkins, M.~Still, T.~Barclay, W.~J. Borucki, W.~J. Chaplin, D.~R. Ciardi,
-  B.~D. Clarke, W.~D. Cochran, B.-O. Demory, G.~A. Esquerdo, I.~Thomas
-  N.~Gautier, R.~L. Gilliland, F.~R. Girouard, M.~Havel, C.~E. Henze, S.~B.
-  Howell, D.~Huber, D.~W. Latham, J.~Li, R.~C. Morehead, T.~D. Morton,
-  J.~Pepper, E.~Quintana, {Darin Ragozzine}, S.~E. Seader, Y.~Shah, A.~Shporer,
-  P.~Tenenbaum, J.~D. Twicken, and A.~Wolfgang.
+\bibitem[Burke et~al.(2014)]{burke_Q1Q8_2014}
+C.~J. Burke et~al.
 \newblock Planetary {Candidates} {Observed} by {Kepler} {IV}: {Planet} {Sample}
   from {Q}1-{Q}8 (22 {Months}).
-\newblock \emph{The Astrophysical Journal Supplement Series}, 210\penalty0
-  (2):\penalty0 19, 2014.
-\newblock ISSN 0067-0049.
-\newblock \doi{10.1088/0067-0049/210/2/19}.
-\newblock URL \url{http://stacks.iop.org/0067-0049/210/i=2/a=19}.
+\newblock \emph{ApJ Supplement Series}, 210\penalty0 (2):\penalty0 19, 2014.
 
-\bibitem[Carter et~al.(2008)Carter, Yee, Eastman, Gaudi, and
-  Winn]{carter_analytic_2008}
-J.~A. Carter, J.~C. Yee, J.~Eastman, B.~S. Gaudi, and J.~N. Winn.
+\bibitem[Carter et~al.(2008)]{carter_analytic_2008}
+J.~A. Carter et~al.
 \newblock Analytic approximations for transit light-curve observables,
   uncertainties, and covariances.
-\newblock \emph{The Astrophysical Journal}, 689\penalty0 (1):\penalty0 499,
-  2008.
-\newblock URL \url{http://iopscience.iop.org/0004-637X/689/1/499}.
+\newblock \emph{ApJ}, 689\penalty0 (1):\penalty0 499, 2008.
 
-\bibitem[Charbonneau et~al.(2009)Charbonneau, Berta, Irwin, Burke, Nutzman,
-  Buchhave, Lovis, Bonfils, Latham, Udry, Murray-Clay, Holman, Falco, Winn,
-  Queloz, Pepe, Mayor, Delfosse, and Forveille]{charbonneau_gj1214b_2009}
-D.~Charbonneau, Z.~K. Berta, J.~Irwin, C.~J. Burke, P.~Nutzman, L.~A. Buchhave,
-  C.~Lovis, X.~Bonfils, D.~W. Latham, S.~Udry, R.~A. Murray-Clay, M.~J. Holman,
-  E.~E. Falco, J.~N. Winn, D.~Queloz, F.~Pepe, M.~Mayor, X.~Delfosse, and
-  T.~Forveille.
+\bibitem[Charbonneau et~al.(2009)]{charbonneau_gj1214b_2009}
+D.~Charbonneau et~al.
 \newblock A super-{Earth} transiting a nearby low-mass star.
 \newblock \emph{Nature}, 462\penalty0 (7275):\penalty0 891--894, Dec. 2009.
-\newblock ISSN 0028-0836, 1476-4687.
-\newblock \doi{10.1038/nature08679}.
 
-\bibitem[Deming et~al.(2009)Deming, Seager, Winn, Miller-Ricci, Clampin,
-  Lindler, Greene, Charbonneau, {G. Laughlin}, Ricker, Latham, and
-  Ennico]{deming_jwst_tess_2009}
-D.~Deming, S.~Seager, J.~Winn, E.~Miller-Ricci, M.~Clampin, D.~Lindler,
-  T.~Greene, D.~Charbonneau, {G. Laughlin}, G.~Ricker, D.~Latham, and
-  K.~Ennico.
+\bibitem[Deming et~al.(2009)]{deming_jwst_tess_2009}
+D.~Deming et~al.
 \newblock Discovery and {Characterization} of {Transiting} {Super} {Earths}
   {Using} an {All}-{Sky} {Transit} {Survey} and {Follow}-up by the {James}
   {Webb} {Space} {Telescope}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  121\penalty0 (883):\penalty0 952, 2009.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/605913}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/121/i=883/a=952}.
+\newblock \emph{PASP}, 121\penalty0 (883):\penalty0 952, 2009.
 
-\bibitem[Donahue et~al.(2016)Donahue, Bautz, Green, Hasinger, Kaltenegger,
-  Krawczynski, MacFayden, McCammon, Oppenheimer, Szkody, and
-  Zaritsky]{donahue_senior_2016}
-M.~Donahue, M.~Bautz, R.~Green, G.~Hasinger, L.~Kaltenegger, H.~Krawczynski,
-  A.~MacFayden, D.~McCammon, R.~Oppenheimer, P.~Szkody, and D.~Zaritsky.
+\bibitem[Donahue et~al.(2016)]{donahue_senior_2016}
+M.~Donahue et~al.
 \newblock 2016 {NASA} {Astrophysics} {Senior} {Review}.
 \newblock Technical report, NASA, Feb. 2016.
-\newblock URL
-  \url{http://science.nasa.gov/media/medialibrary/2016/06/09/Main_Panel_SR2016_Report_FinalTAGGED.pdf}.
 
 \bibitem[Dressing and Charbonneau(2015)]{dressing_occurrence_2015}
 C.~D. Dressing and D.~Charbonneau.
 \newblock The {Occurrence} of {Potentially} {Habitable} {Planets} {Orbiting}
   {M} {Dwarfs} {Estimated} from the {Full} {Kepler} {Dataset} and an
   {Empirical} {Measurement} of the {Detection} {Sensitivity}.
-\newblock \emph{arXiv preprint arXiv:1501.01623}, 2015.
-\newblock URL \url{http://arxiv.org/abs/1501.01623}.
+\newblock \emph{ApJ}, 807\penalty0 (1):\penalty0 45, 2015.
 
 \bibitem[Fischer and Valenti(2005)]{fischer_planet-metallicity_2005}
 D.~A. Fischer and J.~Valenti.
 \newblock The {Planet}-{Metallicity} {Correlation}.
-\newblock \emph{The Astrophysical Journal}, 622:\penalty0 1102--1117, Apr.
-  2005.
-\newblock ISSN 0004-637X.
-\newblock \doi{10.1086/428383}.
-\newblock URL \url{http://adsabs.harvard.edu/abs/2005ApJ...622.1102F}.
+\newblock \emph{ApJ}, 622:\penalty0 1102--1117, Apr. 2005.
 
-\bibitem[Fressin et~al.(2013)Fressin, Torres, Charbonneau, Bryson,
-  Christiansen, Dressing, Jenkins, Walkowicz, and Batalha]{fressin_false_2013}
-F.~Fressin, G.~Torres, D.~Charbonneau, S.~T. Bryson, J.~Christiansen, C.~D.
-  Dressing, J.~M. Jenkins, L.~M. Walkowicz, and N.~M. Batalha.
-\newblock {THE} {FALSE} {POSITIVE} {RATE} {OF} \textit{{KEPLER}} {AND} {THE}
-  {OCCURRENCE} {OF} {PLANETS}.
-\newblock \emph{The Astrophysical Journal}, 766\penalty0 (2):\penalty0 81, Apr.
-  2013.
-\newblock ISSN 0004-637X, 1538-4357.
-\newblock \doi{10.1088/0004-637X/766/2/81}.
+\bibitem[Fressin et~al.(2013)]{fressin_false_2013}
+F.~Fressin et~al.
+\newblock {The} {False} {Positive} {Rate} {of} \textit{{Kepler}} {and} {the}
+  {Occurrence} {of} {Planets}.
+\newblock \emph{ApJ}, 766\penalty0 (2):\penalty0 81, Apr. 2013.
 
-\bibitem[Gangestad et~al.(2013)Gangestad, Henning, Persinger, and
-  Ricker]{gangestad_high_2013}
-J.~W. Gangestad, G.~A. Henning, R.~R. Persinger, and G.~R. Ricker.
+\bibitem[Gangestad et~al.(2013)]{gangestad_high_2013}
+J.~W. Gangestad et~al.
 \newblock A high {Earth}, lunar resonant orbit for lower cost space science
   missions.
-\newblock \emph{arXiv preprint arXiv:1306.5333}, 2013.
-\newblock URL \url{http://arxiv.org/abs/1306.5333}.
+\newblock \emph{arXiv preprint arXiv:1306.5333}, June 2013.
 
-\bibitem[Girardi et~al.(2005)Girardi, Groenewegen, Hatziminaoglou, and
-  da~Costa]{girardi_star_2005}
-L.~Girardi, M.~A.~T. Groenewegen, E.~Hatziminaoglou, and L.~da~Costa.
+\bibitem[Girardi et~al.(2005)]{girardi_star_2005}
+L.~Girardi et~al.
 \newblock Star counts in the {Galaxy}: {Simulating} from very deep to very
   shallow photometric surveys with the {TRILEGAL} code.
-\newblock \emph{Astronomy and Astrophysics}, 436\penalty0 (3):\penalty0
-  895--915, June 2005.
-\newblock ISSN 0004-6361, 1432-0756.
-\newblock \doi{10.1051/0004-6361:20042352}.
-\newblock URL \url{http://www.edpsciences.org/10.1051/0004-6361:20042352}.
+\newblock \emph{A \& A}, 436\penalty0 (3):\penalty0 895--915, June 2005.
 
 \bibitem[Habets and Heintze(1981)]{habets_empirical_1981}
 G.~M. H.~J. Habets and J.~R.~W. Heintze.
 \newblock Empirical bolometric corrections for the main-sequence.
-\newblock \emph{Astronomy and Astrophysics Supplement Series}, 46:\penalty0
-  193--237, Nov. 1981.
-\newblock ISSN 0365-0138.
+\newblock \emph{A \& A Supplement Series}, 46:\penalty0 193--237, Nov. 1981.
 
-\bibitem[Henry et~al.(2006)Henry, Jao, Subasavage, Beaulieu, Ianna, Costa, and
-  Méndez]{henry_solar_2006}
-T.~J. Henry, W.-C. Jao, J.~P. Subasavage, T.~D. Beaulieu, P.~A. Ianna,
-  E.~Costa, and R.~A. Méndez.
+\bibitem[Henry et~al.(2006)]{henry_solar_2006}
+T.~J. Henry et~al.
 \newblock The solar neighborhood. {XVII}. {Parallax} results from the {CTIOPI}
   0.9 m program: 20 new members of the {RECONS} 10 parsec sample.
-\newblock \emph{The Astronomical Journal}, 132\penalty0 (6):\penalty0 2360,
-  2006.
-\newblock URL
-  \url{http://iopscience.iop.org/1538-3881/132/6/2360/205485.web.ps.gz}.
+\newblock \emph{AJ}, 132\penalty0 (6):\penalty0 2360, 2006.
 
 \bibitem[Hunter(2007)]{hunter_matplotlib_2007}
 J.~D. Hunter.
 \newblock Matplotlib: {A} 2d {Graphics} {Environment}.
 \newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
   90--95, 2007.
-\newblock ISSN 1521-9615.
-\newblock \doi{10.1109/MCSE.2007.55}.
-\newblock URL
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4160265}.
 
-\bibitem[Johnson et~al.(2010)Johnson, Aller, Howard, and
-  Crepp]{johnson_giant_2010}
-J.~A. Johnson, K.~M. Aller, A.~W. Howard, and J.~R. Crepp.
+\bibitem[Johnson et~al.(2010)]{johnson_giant_2010}
+J.~A. Johnson et~al.
 \newblock Giant {Planet} {Occurrence} in the {Stellar} {Mass}-{Metallicity}
   {Plane}.
-\newblock \emph{Publications of the Astronomical Society of the Pacific},
-  122\penalty0 (894):\penalty0 905, 2010.
-\newblock ISSN 1538-3873.
-\newblock \doi{10.1086/655775}.
-\newblock URL \url{http://stacks.iop.org/1538-3873/122/i=894/a=905}.
+\newblock \emph{PASP}, 122\penalty0 (894):\penalty0 905, 2010.
 
 \bibitem[Jones et~al.(2001)Jones, Oliphant, Peterson, et~al.]{jones_scipy_2001}
 E.~Jones, T.~Oliphant, P.~Peterson, et~al.
-\newblock Open source scientific tools for python, 2001.
+\newblock Open {source} {scientific} {tools} for {Python}, 2001.
 
 \bibitem[Kepner and Tregoe(1965)]{kepner_rational_1965}
 C.~H. Kepner and B.~B. Tregoe.
-\newblock Rational {Manager}.
+\newblock \emph{Rational {Manager}}.
 \newblock 1965.
-\newblock URL
-  \url{http://agris.fao.org/agris-search/search.do?recordID=US201300461852}.
 
 \bibitem[Kipping and Lam(2016)]{kipping_transit_2016}
 D.~M. Kipping and C.~Lam.
 \newblock Transit {Clairvoyance}: {Enhancing} {TESS} follow-up using artificial
   neural networks.
-\newblock Private communication, June 2016.
+\newblock June 2016.
 
-\bibitem[Kopparapu et~al.(2013)Kopparapu, Ramirez, Kasting, Eymet, Robinson,
-  Mahadevan, Terrien, Domagal-Goldman, Meadows, and
-  Deshpande]{kopparapu_habitable_2013}
-R.~k. Kopparapu, R.~Ramirez, J.~F. Kasting, V.~Eymet, T.~D. Robinson,
-  S.~Mahadevan, R.~C. Terrien, S.~Domagal-Goldman, V.~Meadows, and
-  R.~Deshpande.
+\bibitem[Kopparapu et~al.(2013)]{kopparapu_habitable_2013}
+R.~K. Kopparapu et~al.
 \newblock Habitable {Zones} {Around} {Main}-{Sequence} {Stars}: {New}
   {Estimates}.
-\newblock \emph{The Astrophysical Journal}, 765\penalty0 (2):\penalty0 131,
-  Mar. 2013.
-\newblock ISSN 0004-637X, 1538-4357.
-\newblock \doi{10.1088/0004-637X/765/2/131}.
-\newblock arXiv: 1301.6674.
+\newblock \emph{ApJ}, 765\penalty0 (2):\penalty0 131, Mar. 2013.
 
 \bibitem[Landsman(1995)]{landsman_idl_1995}
 W.~B. Landsman.
 \newblock The {IDL} {Astronomy} {User}'s {Library}.
 \newblock volume~77, page 437, 1995.
-\newblock URL \url{http://adsabs.harvard.edu/abs/1995ASPC...77..437L}.
 
 \bibitem[Lyons(1991)]{lyons_practical_1991}
 L.~Lyons.
@@ -254,104 +144,62 @@ L.~Lyons.
   {Science} {Students}}.
 \newblock Cambridge University Press, Nov. 1991.
 \newblock ISBN 978-0-521-42463-9.
-\newblock 1996 paperback reprinting.
 
 \bibitem[Mazeh et~al.(2016)Mazeh, Holczer, and Faigler]{mazeh_dearth_2016}
 T.~Mazeh, T.~Holczer, and S.~Faigler.
 \newblock Dearth of short-period {Neptunian} exoplanets - a desert in
   period-mass and period-radius planes.
-\newblock \emph{Astronomy \& Astrophysics}, 589:\penalty0 A75, May 2016.
-\newblock ISSN 0004-6361, 1432-0746.
-\newblock \doi{10.1051/0004-6361/201528065}.
-\newblock URL \url{http://arxiv.org/abs/1602.07843}.
-\newblock arXiv: 1602.07843.
+\newblock \emph{A \& A}, 589:\penalty0 A75, May 2016.
 
 \bibitem[McKinney()]{mckinneypandas}
 W.~McKinney.
-\newblock pandas: a foundational python library for data analysis and
+\newblock \texttt{pandas}: a foundational python library for data analysis and
   statistics.
 
-\bibitem[Mills et~al.(2016)Mills, Fabrycky, Migaszewski, Ford, Petigura, and
-  Isaacson]{mills_resonant_2016}
-S.~M. Mills, D.~C. Fabrycky, C.~Migaszewski, E.~B. Ford, E.~Petigura, and
-  H.~Isaacson.
+\bibitem[Mills et~al.(2016)]{mills_resonant_2016}
+S.~M. Mills et~al.
 \newblock A resonant chain of four transiting, sub-{Neptune} planets.
 \newblock \emph{Nature}, 533\penalty0 (7604):\penalty0 509--512, May 2016.
-\newblock ISSN 0028-0836.
-\newblock \doi{10.1038/nature17445}.
-\newblock URL
-  \url{http://www.nature.com/nature/journal/v533/n7604/full/nature17445.html}.
 
-\bibitem[Perryman et~al.(1997)Perryman, Lindegren, Kovalevsky, Hoeg, Bastian,
-  Bernacca, Crézé, Donati, Grenon, Grewing, van Leeuwen, van~der Marel,
-  Mignard, Murray, Le~Poole, Schrijver, Turon, Arenou, Froeschlé, and
-  Petersen]{perryman_hipparcos_1997}
-M.~A.~C. Perryman, L.~Lindegren, J.~Kovalevsky, E.~Hoeg, U.~Bastian, P.~L.
-  Bernacca, M.~Crézé, F.~Donati, M.~Grenon, M.~Grewing, F.~van Leeuwen,
-  H.~van~der Marel, F.~Mignard, C.~A. Murray, R.~S. Le~Poole, H.~Schrijver,
-  C.~Turon, F.~Arenou, M.~Froeschlé, and C.~S. Petersen.
+\bibitem[Perryman et~al.(1997)]{perryman_hipparcos_1997}
+M.~A.~C. Perryman et~al.
 \newblock The {HIPPARCOS} {Catalogue}.
-\newblock \emph{Astronomy and Astrophysics}, 323, July 1997.
-\newblock ISSN 0004-6361.
+\newblock \emph{A \& A}, 323, July 1997.
 
 \bibitem[Price and Rogers(2014)]{price_transit_2014}
 E.~M. Price and L.~A. Rogers.
 \newblock Transit {Light} {Curves} with {Finite} {Integration} {Time}: {Fisher}
   {Information} {Analysis}.
-\newblock \emph{The Astrophysical Journal}, 794\penalty0 (1):\penalty0 92,
-  Sept. 2014.
-\newblock ISSN 1538-4357.
-\newblock \doi{10.1088/0004-637X/794/1/92}.
-\newblock URL \url{http://arxiv.org/abs/1408.4124}.
-\newblock arXiv: 1408.4124.
+\newblock \emph{ApJ}, 794\penalty0 (1):\penalty0 92, Sept. 2014.
 
-\bibitem[Ricker et~al.(2014)Ricker, Winn, and
-  Vanderspek]{ricker_transiting_2014}
-G.~R. Ricker, J.~N. Winn, and R.~Vanderspek.
+\bibitem[Ricker et~al.(2014)]{ricker_transiting_2014}
+G.~R. Ricker et~al.
 \newblock Transiting {Exoplanet} {Survey} {Satellite}.
 \newblock \emph{Journal of Astronomical Telescopes, Instruments, and Systems},
-  1\penalty0 (1):\penalty0 014003, Oct. 2014.
-\newblock ISSN 2329-4124.
-\newblock \doi{10.1117/1.JATIS.1.1.014003}.
-\newblock URL
-  \url{http://astronomicaltelescopes.spiedigitallibrary.org/article.aspx?doi=10.1117/1.JATIS.1.1.014003}.
+  1\penalty0 (1), Oct. 2014.
 
 \bibitem[Robin et~al.(2003)Robin, Reyl{\'e}, Derri{\`e}re, and
   Picaud]{robin2003synthetic}
 A.~C. Robin, C.~Reyl{\'e}, S.~Derri{\`e}re, and S.~Picaud.
 \newblock A synthetic view on structure and evolution of the milky way.
-\newblock \emph{Astronomy \& Astrophysics}, 409\penalty0 (2):\penalty0
-  523--540, 2003.
+\newblock \emph{A \& A}, 409\penalty0 (2):\penalty0 523--540, 2003.
 
 \bibitem[Sharma et~al.(2011)Sharma, Bland-Hawthorn, Johnston, and
   Binney]{sharma_galaxia_2011}
 S.~Sharma, J.~Bland-Hawthorn, K.~V. Johnston, and J.~Binney.
 \newblock Galaxia: a code to generate a synthetic survey of the {Milky} {Way}.
-\newblock \emph{The Astrophysical Journal}, 730\penalty0 (1):\penalty0 3, Mar.
-  2011.
-\newblock ISSN 0004-637X, 1538-4357.
-\newblock \doi{10.1088/0004-637X/730/1/3}.
-\newblock URL \url{http://arxiv.org/abs/1101.3561}.
-\newblock arXiv: 1101.3561.
+\newblock \emph{ApJ}, 730\penalty0 (1):\penalty0 3, Mar. 2011.
 
-\bibitem[Sullivan et~al.(2015)Sullivan, Winn, Berta-Thompson, Charbonneau,
-  Deming, Dressing, Latham, Levine, McCullough, Morton, Ricker, Vanderspek, and
-  Woods]{Sullivan_2015}
-P.~W. Sullivan, J.~N. Winn, Z.~K. Berta-Thompson, D.~Charbonneau, D.~Deming,
-  C.~D. Dressing, D.~W. Latham, A.~M. Levine, P.~R. McCullough, T.~Morton,
-  G.~R. Ricker, R.~Vanderspek, and D.~Woods.
-\newblock {{THE} {TRANSITING} {EXOPLANET} {SURVEY} {SATELLITE}: {SIMULATIONS}
-  {OF} {PLANET} {DETECTIONS} {AND} {ASTROPHYSICAL} {FALSE} {POSITIVES}}.
-\newblock \emph{{ApJ}}, 809\penalty0 (1):\penalty0 77, aug 2015.
-\newblock \doi{10.1088/0004-637x/809/1/77}.
-\newblock URL \url{http://dx.doi.org/10.1088/0004-637X/809/1/77}.
+\bibitem[Sullivan et~al.(2015)]{Sullivan_2015}
+P.~W. Sullivan et~al.
+\newblock {{The} {Transiting} {Exoplanet} {Survey} {Satellite}: {Simulations}
+  {of} {Planet} {Detections} {and} {Astrophysical} {False} {Positives}}.
+\newblock \emph{{ApJ}}, 809\penalty0 (1):\penalty0 77, Aug. 2015.
 
-\bibitem[van Leeuwen and Leeuwen(2007)]{van_leeuwen_validation_2007}
-van Leeuwen and F.~v. Leeuwen.
+\bibitem[van Leeuwen(2007)]{van_leeuwen_validation_2007}
+F.~van Leeuwen.
 \newblock Validation of the new {Hipparcos} reduction.
-\newblock \emph{Astronomy \& Astrophysics}, 474\penalty0 (2):\penalty0 12,
-  2007.
-\newblock \doi{10.1051/0004-6361:20078357}.
+\newblock \emph{A \& A}, 474\penalty0 (2):\penalty0 12, 2007.
 
 \bibitem[Walt et~al.(2011)Walt, Colbert, and Varoquaux]{walt_numpy_2011}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux.
@@ -359,19 +207,12 @@ S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux.
   {Computation}.
 \newblock \emph{Computing in Science \& Engineering}, 13\penalty0 (2):\penalty0
   22--30, Mar. 2011.
-\newblock ISSN 1521-9615.
-\newblock \doi{10.1109/MCSE.2011.37}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/cise/13/2/10.1109/MCSE.2011.37}.
 
 \bibitem[Wang and Fischer(2015)]{wang_revealing_2015}
 J.~Wang and D.~A. Fischer.
 \newblock Revealing a {Universal} {Planet}–{Metallicity} {Correlation} for
   {Planets} of {Different} {Sizes} {Around} {Solar}-type {Stars}.
-\newblock \emph{The Astronomical Journal}, 149\penalty0 (1):\penalty0 14, 2015.
-\newblock ISSN 1538-3881.
-\newblock \doi{10.1088/0004-6256/149/1/14}.
-\newblock URL \url{http://stacks.iop.org/1538-3881/149/i=1/a=14}.
+\newblock \emph{AJ}, 149\penalty0 (1):\penalty0 14, 2015.
 
 \bibitem[Winn(2013{\natexlab{a}})]{winn_photonflux_2013}
 J.~N. Winn.
