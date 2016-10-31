@@ -19,9 +19,28 @@ The first point of consideration is the detected planet yield, shown in Fig.~\re
 The number of Earths, super-Earths, and sub-Neptunes we detect agrees with the numbers quoted by~\citetalias{Sullivan_2015} to within $50\%$, despite the modifications described in Sec.~\ref{sec:selection_criteria} to the target selection procedure.
 Other changes to our simulation's assumptions, for instance using an as-built model of \tesss PSF informed by laboratory tests (courtesy Deborah Woods) rather than the idealized PSF described in Sec6.1 of~\citetalias{Sullivan_2015}, had minor only impact on this final result ($\lesssim 10\%$ change in yield).
 
-A modification that did influence our lowered expected yields was a bug-fix in~\citetalias{Sullivan_2015}'s dilution calculation. Recall our definition of the dilution parameter $D$ (Eq.~\ref{eq:dilution}): placing a binary companion with luminosity identical to the host star into a system with a transiting planet that would typically transit with depth $\delta$ leads to a transit with `effective depth' $\approx \delta/2$. A sign error\footnote{`$=$' rather than `$+=$'} led~\citetalias{Sullivan_2015} to under-account for this effect, which in our simulations brought about factors of $1.5\times, 1.3\times,\ \mathrm{and}\ 1.2\times$fewer Earths, super-Earths, and sub-Neptunes respectively. This error can be noted in the published Table 6 of~\citetalias{Sullivan_2015} by noting that nearly all the dilution parameter values are near 1.
+A modification that did influence our lowered expected yields was a bug-fix 
+in~\citetalias{Sullivan_2015}'s dilution calculation. Recall our definition of 
+the dilution parameter $D$ (Eq.~\ref{eq:dilution}): placing a binary companion 
+with luminosity identical to the host star into a system with a transiting 
+planet that would typically transit with depth $\delta$ leads to a transit with 
+`effective depth' $\delta/2$. A sign error\footnote{An $\texttt{=}$ rather than 
+a $\texttt{+=}$} led~\citetalias{Sullivan_2015} to under-account for this 
+effect, which 
+in our simulations brought about factors of $1.5\times, 1.3\times,\ 
+\mathrm{and}\ 1.2\times$ fewer Earths, super-Earths, and sub-Neptunes 
+respectively. This error can be noted in the published Table 6 
+of~\citetalias{Sullivan_2015}, in which nearly all the dilution parameter 
+values are near 1.
 
-An additional note is that in the preparation of this report, a glaring discrepancy emerged between our predicted $\approx 400$ super-Earth detections and those shown in the published version of~\citetalias{Sullivan_2015}, which claimed $\approx 1400$. The subsequent search led to the discovery of a bug in the script used to create~\citetalias{Sullivan_2015}'s Fig. 18, outside of the main simulation code. The subsequent correction of~\citetalias{Sullivan_2015}'s Fig. 18 shows $\approx 500$ expected super-Earths.
+An additional note is that in the preparation of this report, a glaring 
+discrepancy emerged between our predicted $\approx 400$ super-Earth detections 
+and those shown in the published version of~\citetalias{Sullivan_2015}, which 
+originally claimed $\approx 1400$. The subsequent search led to the discovery 
+of a bug in the script used to create~\citetalias{Sullivan_2015}'s Fig. 18, 
+outside of the main simulation code. The corrected version 
+of~\citetalias{Sullivan_2015}'s Fig. 18 shows $\approx 500$ expected 
+super-Earths, in much better agreement.
 
 
 \begin{comment}
