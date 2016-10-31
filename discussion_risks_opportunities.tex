@@ -119,9 +119,9 @@ Rather than generalize the analytic equations, we resort to numerical simulation
 
 \paragraph{Numerical analysis}
 We start with the analytic form~\citet{price_transit_2014} derive for the per-transit uncertainty on the mid-transit time $\sigma_0$:
-$$
+\begin{equation}
 \sigma_{0} = \frac{1}{Q} \sqrt{ \frac{\tau T}{2} } \left( 1 - \frac{t}{3\tau} \right)^{-1/2}
-$$
+\end{equation}
 when $\tau\geq t$ and 
 \begin{equation}
 	\sigma_{0} = \frac{1}{Q} \sqrt{\frac{t T }{2}} \left( 1 - \frac{\tau}{3t} \right)^{-1/2}
@@ -205,7 +205,7 @@ concern:
         \elong, 502 of them are within $|\beta|<12^\circ$ of the
         ecliptic.  Assuming that all of these detections are uniformly
         distributed over the $|\beta|<12^\circ$ band, this means that
-        35\% (the ratio of the annuli) of \tesss new planets will
+        35\% (ratio of annuli areas) of \tesss new planets will
         already have been detected in \ktwo data.  This simple
         estimate quantifies our global error in reporting `new'
         planets near the ecliptic, but avoids the issue of merging the
@@ -214,6 +214,7 @@ concern:
         \elong\:or \eshort\:and thus demands detailed study, which we
         recommend below.
 	
+	\begin{comment}
 	\item [2.) The difference in $1.25R_\oplus<R_p<2R_\oplus$
           planet yield from~\protect\citetalias{Sullivan_2015}.]  We
           discussed this point in
@@ -224,7 +225,7 @@ concern:
           in full frame images, and 400 in postage stamps.  This is a
           discrepancy of a factor of 4 in one of \tesss most
           significant data products.
-        
+
 	%My code is essentially an updated version of Peter's with
 	%some important parts that were refactored, but it uses the
 	%same instrument model and the basic structure inherits from
@@ -262,6 +263,8 @@ concern:
 	%plat10r.fits, May 4 2015 And finally, comparing with analytic
 	%calculations, my results are slightly above Winn 2013, and
 	%Peter's are 5x Winn 2013's.
+	
+
           
 	We do not understand the origin of the difference between our method and~\citetalias{Sullivan_2015}'s.
 	That said, based on 
@@ -271,37 +274,41 @@ concern:
 	and \textit{(d)} a plausibility argument presented in Sec.~\ref{sec:results_from_primary_missions} that showed~\citetalias{Sullivan_2015}'s results implied a detection efficiency biased sub-linearly in $R_p$, whilst ours implies a bias between linear and quadratic in $R_p$,
 	%and \textit{(e)} our actual updated calculations that update~\citetalias{Sullivan_2015}'s code in ways that are superficial with regard to this issue, 
 	we think that the current simulations give a more accurate picture.
-	
-	\item [3.) We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one false positive per $2\times10^5$ light curves.
+	    \end{comment}   
+	    
+	    
+	\item [2.) We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one false positive per $2\times10^5$ light curves.
 	This criterion is a self-consistent ad-hoc choice that we made for target stars.
 	Applying the same criterion to full frame images would lead to more than one false positive, since full frame images come from a much larger sample of stars.
 	Any pipeline that is written to work with \tess data will confront this problem:
-	processing $10^8$ vs. $4\times10^6$ vs. $2\times10^5$ stars all require different false positive thresholds.
+	processing $10^8$ vs. $10^6$ stars requires different false positive thresholds.
 	Extrapolating from~\citetalias{Sullivan_2015}'s Fig 15, a threshold sufficient to give 0.05 false positives per $2\times10^5$ light curves, or 1 false positive per $4\times10^6$ light curves (as from our full frame images), is roughly 7.5.
 	Making the same ad-hoc estimate that~\citetalias{Sullivan_2015} did and multiplying by 1.03 for the expected drop in SNR from cosmic ray noise gives a SNR threshold of 7.7 for full frame images.
 	Considering our Fig.~\ref{fig:snrf_histogram} (and noting the black line is for the sum of postage stamp and full frame image detections), adopting a SNR threshold of 7.7 for FFIs would mean a loss of $\sim30\times4=120$ planets over two years, or 60 of what we claim are `detected planets' from full frame images in 1 year's Extended Mission.	
 	
 	
-	\item [4.) We use synthetic stars from a single galactic model (TRILEGAL).]
-	One check on the robustness of this model would be to compare with other galactic models like GALAXIA~\citep{sharma_galaxia_2011} or a Besa\c con model~\citep{robin2003synthetic}.
-	We have already done this using a simple analytic model by~\citet{winn_searchable_2013}, which agrees with our work to within a factor
-	of two.
-	We might eventually use the real star catalog that \tesss Target Selection Working Group is assembling, but this would come with large uncertainties on stellar radii, effective temperatures, and companion fractions.
+	\item [3.) We use synthetic stars from a single galactic model (TRILEGAL).]
+	One check on the robustness of this model would be to compare with other galactic models like GALAXIA~\citep{sharma_galaxia_2011} or the Besa\c con model~\citep{robin2003synthetic}.
+	The simplest analytic model, applicable given that \tesss limiting distance for $R_p<4R_\oplus$ detections is $\lesssim 1\ \mathrm{kpc}$, is a distribution of stars uniform in the radial direction and with an exponential profile in the vertical direction. 
+	Independent of our numerical simulation,~\citet{winn_searchable_2013} used such a galactic profile, with occurrence rates inferred from \kepler Q1-6. Our results are in order-of-magnitude agreement, with ours being slightly higher, likely due to our incorporation of~\citet{dressing_occurrence_2015}'s M dwarf occurrence rates.
 	
-	While we recommend that these broader checks be performed in future \tess yield calculations, they are excessive for the purposes of this report given that we only used the nearest, brightest, stars ($d\lesssim\mathrm{1kpc}, I_c\lesssim16$) with a simple prescription for background contamination in evaluating \tesss $R_p<4R_\oplus$ detections.
-	The relative uncertainties become much greater if we try to estimate detections of giant planets and false positives throughout the galactic disk.
-	That said, we take~\citetalias{Sullivan_2015}'s cross-checks (cf Fig. 5 of that paper) against actual surveys of the local stellar population as indicative that we probably have the number of nearby stars, as well as their properties, correct  to the absolute precision required for this work.
+	It might eventually be best to use the real star catalog that \tesss Target Selection Working Group is assembling. However, until \gaia DR2 (Q4 2017), this will likely come with large uncertainties on stellar radii, given the difficulty of distinguishing giants and sub-giants from M dwarfs without proper motions.
+	An additional challenge is in companion fractions.
+	
+	While we recommend that these broader checks be performed in future \tess yield calculations, they are excessive for the purposes of this report given that we only used the nearest, brightest, stars ($d\lesssim\mathrm{1kpc}, I_c\lesssim16$), with a simple prescription for background contamination, in evaluating \tesss $R_p<4R_\oplus$ detections.
+	The uncertainties become much greater if we try to estimate detections of giant planets and false positives throughout the galactic disk.
+	That said, we take~\citetalias{Sullivan_2015}'s cross-checks (cf Fig. 5 of that paper) against actual surveys of the local stellar population as indicative that we probably have the number of nearby stars, as well as their properties, correct for the accuracy required in this work.
 	%!WINN! #3, 4, 5, 7 not specific to Extended Missions, right?
 	%!BOUMA! right. But they should still be here?
 	
-	\item [5.) At least 2 transits for detection:] recall Figs.~\ref{fig:Ntra_hist} and~\ref{fig:Ntra_hist_primary}.
+	\item [4.) At least 2 transits for detection:] recall Figs.~\ref{fig:Ntra_hist} and~\ref{fig:Ntra_hist_primary}.
 	If we were to use a more stringent criteria, for instance at least 3 transits for detection as the \kepler pipeline currently does, we would lose $\mathcal{O}(200)$ of the planets detected in the Primary Mission, and $\mathcal{O}(100)$ from the Extended Missions.
 	This assumption disproportionately affects long-period planets.
 	
 %	\item[6.) Multiple planet system distributions:] we assumed that we could approximate the occurrence rates for transiting multiple planet systems as repeated draws from the single-planet occurrence distributions (with independent probability) with added impositions of co-planarity and orbital stability.
 	
 	
-	\item [6.) We neglect instrument aging, spacecraft systematics, etc.]
+	\item [5.) We neglect instrument aging, spacecraft systematics, etc.]
 	To our best knowledge detailed models do not currently exist for how \tesss optics and CCDs will degrade with time.
 %	\todo[inline]{talk with Goddard people about this}
 	We are also assuming that, as with \ktwo\!, time-correlated spacecraft level systematics can be removed in post-processing.
@@ -309,7 +316,7 @@ concern:
 	If we were to assume a gradual decline in photometric performance, for instance from an increased number of dead or `hot' pixels, the relative Extended-Mission-to-Extended-Mission comparisons would remain identical.
 	The absolute Extended-Mission-to-primary-Mission yields would decrease.
 	
-	\item [7.) We do not consider the efficacy of processing pipeline.]
+	\item [6.) We do not consider the efficacy of processing pipeline.]
 	For instance, \hemis\:will come with period ambiguities and aliasing problems imposed by its 14 day sampling at the `continuous' viewing zones.
 	Similar issues are generic across Extended Missions for which we detect a small number of transits in the Primary Mission, and then a small number of transits in the Extended Mission.
 	
@@ -317,6 +324,7 @@ concern:
 	Then actually perform astrometry on injected stars, extract light curves, de-trend them, and find their transits.
 	This exercise would likely also be a useful way to prepare the SPOC and broader community for what we expect the era of \tess photometry to entail in terms of data quality.	
 \end{itemize}
+
 
 %Given these assumptions in which we are most-wrong, we ask: are we fooling ourselves? How accurate can we hope our $R_p<4R_\oplus$ yield calculations to be?
 %Assuming that our most important assumption -- the in-flight photometric performance -- holds, and qualifying our global uncertainty as greater for ecliptic vs. non-ecliptic focused scenarios because of \ktwo\!, we hope to be no more wrong than a factor of two.

@@ -3,10 +3,11 @@
 \begin{marginfigure} %[t]
 	\centering
 	\includegraphics[width=\textwidth]{figures/160729_pm0_shemi_nhemi_nhemi_t20-pri-yield.pdf}
-	\caption{Mean numbers of planets detected in \tesss Primary Mission (error bars are from Poisson fluctuations and do not account for systematic uncertainty). 
-		In postage stamp detections, the number of Earths ($R_p < 1.25R_\oplus$), super-Earths ($1.25R_\oplus \le R_p < 2R_\oplus$), sub-Neptunes ($2R_\oplus \le R_p < 4R_\oplus$) and giants ($R_p > 4R_\oplus$) is comparable to those quoted in \protect\citet{Sullivan_2015}, despite modifications to our target selection procedure (Sec.~\protect\ref{sec:selection_criteria}).
-		Our full frame images detections in are complete for $R < 4R_\oplus$, and incomplete for giant planets. 
-		Here we disagree, by for instance two orders of magnitude in the super-Earth bin, with~\protect\citet{Sullivan_2015} (see text). }
+	\caption{Mean numbers of planets detected in \tesss Primary Mission.
+	The number of Earths ($R_p < 1.25R_\oplus$), super-Earths ($1.25R_\oplus \le R_p < 2R_\oplus$), sub-Neptunes ($2R_\oplus \le R_p < 4R_\oplus$) and giants agree with the respective values quoted in \protect\citet{Sullivan_2015} to $\lesssim 50\%$. 
+	%despite modifications to our target selection procedure (Sec.~\protect\ref{sec:selection_criteria}).
+	Our full frame images detections in are complete for $R_p < 4R_\oplus$, and incomplete for giant ($R_p > 4R_\oplus$) planets, shown with a lower limit (see text for discussion). 
+	Error bars are from only Poisson fluctuations and do not account for systematic uncertainty.}
 	\label{fig:primary_planet_yield}
 \end{marginfigure}
 We first examine our results for just the Primary Mission -- the first two years of \tesss observing. 
@@ -14,10 +15,16 @@ We follow with an analysis of our detected planet populations from a single Year
 Here we highlight commonalities and differences between~\citetalias{Sullivan_2015} and this work.
 
 \paragraph{Detected planet yield}
-The first point of comparison is the detected planet yield from our simulation, shown in Fig.~\ref{fig:primary_planet_yield}.
-The number of Earths, super-Earths, sub-Neptunes and giants we detect in postage stamps agrees with the numbers quoted by~\citetalias{Sullivan_2015}, despite our modified target selection procedure.
-Other changes to our simulation's inputs, for instance using an as-built model of \tesss PSF informed by laboratory tests (courtesy Deborah Woods) rather than the idealized PSF described in Sec6.1 of~\citetalias{Sullivan_2015}, also had little impact on this final result.
+The first point of consideration is the detected planet yield, shown in Fig.~\ref{fig:primary_planet_yield}.
+The number of Earths, super-Earths, and sub-Neptunes we detect agrees with the numbers quoted by~\citetalias{Sullivan_2015} to within $50\%$, despite the modifications described in Sec.~\ref{sec:selection_criteria} to the target selection procedure.
+Other changes to our simulation's assumptions, for instance using an as-built model of \tesss PSF informed by laboratory tests (courtesy Deborah Woods) rather than the idealized PSF described in Sec6.1 of~\citetalias{Sullivan_2015}, had minor only impact on this final result ($\lesssim 10\%$ change in yield).
 
+A modification that did influence our lowered expected yields was a bug-fix in~\citetalias{Sullivan_2015}'s dilution calculation. Recall our definition of the dilution parameter $D$ (Eq.~\ref{eq:dilution}): placing a binary companion with luminosity identical to the host star into a system with a transiting planet that would typically transit with depth $\delta$ leads to a transit with `effective depth' $\approx \delta/2$. A sign error\footnote{`$=$' rather than `$+=$'} led~\citetalias{Sullivan_2015} to under-account for this effect, which in our simulations brought about factors of $1.5\times, 1.3\times,\ \mathrm{and}\ 1.2\times$fewer Earths, super-Earths, and sub-Neptunes respectively. This error can be noted in the published Table 6 of~\citetalias{Sullivan_2015} by noting that nearly all the dilution parameter values are near 1.
+
+An additional note is that in the preparation of this report, a glaring discrepancy emerged between our predicted $\approx 400$ super-Earth detections and those shown in the published version of~\citetalias{Sullivan_2015}, which claimed $\approx 1400$. The subsequent search led to the discovery of a bug in the script used to create~\citetalias{Sullivan_2015}'s Fig. 18, outside of the main simulation code. The subsequent correction of~\citetalias{Sullivan_2015}'s Fig. 18 shows $\approx 500$ expected super-Earths.
+
+
+\begin{comment}
 However, our yields from full frame images differ markedly from those quoted in Fig. 18 of~\citetalias{Sullivan_2015}.
 We agree with~\citetalias{Sullivan_2015} that no Earths are detected in the full frame images.
 However, we detect only $\sim$10 super-Earths by observing the $200,001\mathrm{^{st}}$ to $4,000,000\mathrm{^{th}}$ \texttt{Merit}-ranked stars at 30 minute cadence.
@@ -40,6 +47,9 @@ against small planets.
 One should expect that the detection bias against small planets is a steep function of radius, given that $\delta\propto R_p^2$.
 \citetalias{Sullivan_2015} predicted the detection of roughly twice as many sub-Neptunes as super-Earths; our current
 result has the ratio is closer to 5-to-1 which seems more realistic.
+\end{comment}
+
+
 \begin{comment}
   Consider the two relevant bins in the
   distribution of detected planet count \textit{vs}. planet radius.
@@ -71,7 +81,7 @@ stamps and full frame images during the Primary Mission in
 Figs.~\ref{fig:radius_vs_period_nhemi}
 and~\ref{fig:imag_vs_teff_nhemi}.  In terms of the apparent planet
 radii $R_p$, orbital periods $P$, host star brightness, and host star
-$T_\mathrm{eff}$, we agree with the results
+$T_\mathrm{eff}$, we qualitatively agree with the results
 of~\citetalias{Sullivan_2015} for the planets detected
 in postage stamps. 
 For instance, the dearth of $P<5$ day
@@ -87,10 +97,10 @@ At a fixed host star radius, postage stamp detections occur around brighter star
 \paragraph{Impact of earth and moon crossings on Primary Mission's detected planet yield}
 During the Primary Mission, of the four cameras Camera 1 (closest to the ecliptic) suffers the most from earth and moon crossings.
 As noted in Table~\ref{tab:dropped_fields}, we remove 4 of its 13 
-`observing sectors'.
+`observing sectors' from that year.
 This reduces the number of planet detections near the ecliptic, and is visible in the orange points of Fig.~\ref{fig:skymap_nhemi}.
 In the Primary Mission \tess detects $\sim20$ planets with $R_p<4R_\oplus$ from both 2 minute and 30 minute data in each $24^\circ\times24^\circ$ camera field nearest to the ecliptic (where each field is observed for 2 \tess orbits).
 As implemented in our simulation, Earth and Moon crossings result in fields simply not being observed, so in these cases planets orbiting stars in these fields are never detected.
 Considering only the Primary Mission, we would naively expect that dropping a total of 9 fields over the two years (again, see Table~\ref{tab:dropped_fields}) would result in a loss of $\sim9\times20=180$ planets.
-This agrees with what our simulations actually give: running them without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives a mean of 2482 such planets (a loss of 196 planets; $7\%$ of the sub-Neptune yield).
+This agrees with what our simulations actually give: running them without accounting for Earth and Moon losses returns a mean of 2678 detected planets with $R_p<4R_\oplus$, while running them with Earth and Moon crossings gives a mean of 2482 such planets (a loss of 196 planets; $7\%$ of the $R_p<4R_\oplus$ planet yield).
 % data from 160708-t50 and 160729-t20. Slightly apples to oranges because of number of trials difference, but makes the point. 
