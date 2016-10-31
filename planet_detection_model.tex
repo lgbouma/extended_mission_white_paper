@@ -80,29 +80,16 @@ given host star falls within, which corresponds to a known total
 observing baseline.  Assuming random orbital phasing, we then compute
 the number of transits \tess observes for planets of any given host.
 
-With a model PSF, we determine ideal aperture sizes and then obtain 
-an accurate noise per transit
-(since the transit durations are known, and we assume our noise,
-computed first over a single hour, then bins like white-noise,
-\textit{i.e.,} proportional to the inverse square root of the time
-in-transit).
-
-Coupled with the known transit signal, this gives us 
-the SNR per transit, and then to `phase-fold our light-curves' (light-curves 
-which are never explicitly computed point-by-point) we just\footnote{We
-  actually take a quadrature sum of both transit and occultation
-  signals, but this is negligible for planets. It only matters for the
-  case of eclipsing binaries, which we ignore in this work.} multiply
-the SNR per transit by the square root of the number of transits
-observed.
-
+Using a model PSF, we determine ideal aperture sizes and obtain 
+an estimated noise per transit, which we can then phase-fold. 
 Summarizing the relevant terms in an equation,
 \begin{align}
-\label{eq:snr} \mathrm{SNR}_\mathrm{phase-folded} &\approx
-\sqrt{N_\mathrm{tra}} \times \mathrm{SNR}_\mathrm{per-transit}\nonumber \\
-\mathrm{SNR}_\mathrm{phase-folded} &= \sqrt{N_\mathrm{tra}} \times 
-\frac{\delta \cdot D}{\left(\frac{\sigma_\mathrm{1hr}^2}{T_\mathrm{dur}} 
-	+ \sigma_v^2 \right)^{1/2}}, 
+    \mathrm{SNR}_\mathrm{phase-folded} &\approx
+	\sqrt{N_\mathrm{tra}} \times \mathrm{SNR}_\mathrm{per-transit}\nonumber \\
+	 &= \sqrt{N_\mathrm{tra}} \times 
+	\frac{\delta \cdot D}{\left(\frac{\sigma_\mathrm{1hr}^2}{T_\mathrm{dur}} 
+		+ \sigma_v^2 \right)^{1/2}}, 
+	\label{eq:snr} 
 \end{align}
 for $\delta$ the undiluted transit depth; $D$ the dilution factor
 computed from background and binary contamination (Eq.~\ref{eq:dilution});
@@ -111,10 +98,20 @@ photon-counting noise from the star, a systematic
 $60\,\mathrm{ppm\cdot hr^{1/2}}$ noise floor, and zodiacal noise;
 $T_\mathrm{dur}$ the transit duration in hours, and $\sigma_v$ the intrinsic
 stellar variability (cf.~\citetalias{Sullivan_2015} Sec 3.5).
-The first equation is approximate. In particular we do not
-take into account the
-small contribution to the SNR from occultation signals.
+The first equation is approximate because we do not
+show the small contribution to the SNR from occultation 
+signals\footnote{We account for this in our simulation by taking a quadrature 
+sum of both transit (shown) and occultation (not shown) signals. This matters 
+only for the case of eclipsing binaries, which we ignore 
+in this work.}.
+Note that our only ``red noise'' contribution is from stellar variability, 
+which following~\citetalias{Sullivan_2015} we assume to be independent over 
+transits and also independent of the duration of a given transit.
+Given the SNR per transit, this lets us `phase-fold our light-curves' 
+(light-curves which are never explicitly computed point-by-point) by simplying 
+multiplying the SNR per transit by the square root of the number of transits
+observed.
 
 We have changed other aspects of this simulation
 since~\citetalias{Sullivan_2015} was published, and describe these
-changes in Sec.~\ref{sec:changes_from_S15} of the appendix.
+changes in the appended Sec.~\ref{sec:changes_from_S15}.

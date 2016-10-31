@@ -1,7 +1,23 @@
-\section{Changes from~\citet{Sullivan_2015}}
+\section{Changes from~\protect\citet{Sullivan_2015}}
 \label{sec:changes_from_S15}
 %\setcounter{page}{1}
 %\renewcommand{\thepage}{\thesection -\arabic{page}}
+\paragraph{Dilution bug.}
+Described in Sec.~\ref{sec:results_from_primary_missions}.
+
+\paragraph{Correction of coordinate assignment for multiple planet systems.}
+In the code corresponding to \citetalias{Sullivan_2015}'s released catalog,
+``transiting objects'' did not correctly inherit the coordinates of their 
+parent star -- they in fact received randomized coordinates within that star's 
+HealPix tile.
+While this is not a problem for the statistical results presented in 
+\citetalias{Sullivan_2015}, it makes reverse-engineering multiple planet 
+distributions from \citetalias{Sullivan_2015}'s Table 6 nearly impossible.
+The updated catalog associated with this white paper has coordinates which are 
+unique system identifiers. An associated new column is a number 
+($\mathtt{hostID}$), unique to each Monte Carlo realization of the updated 
+code, with the same function.
+
 \paragraph{On the angular dependence of \tesss pixel response function:} 
 In our SNR calculation, we do not keep track of individual times for every transit. 
 How then do we assign PSFs to different transits from the same object that fall on different regions of the CCDs, and thus should have slightly better or degraded PSFs? (Largest cumulative flux fraction at the CCD's center, smallest at the corners). 
