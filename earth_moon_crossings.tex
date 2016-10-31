@@ -47,9 +47,13 @@ The spacecraft's inclination oscillates in the simulation as it will in
 reality.
 
 Taking the Earth and Moon's integrated disk brightnesses as fixed 
-values\footnote{The full moon's apparent magnitude is $I_\moon \approx -13.5$. Scaling from photon fluxes tabulated in~\citet{winn_photonflux_2013}, this gives $2.5\times10^{13}\ \mathrm{ct/s}$. Averaging over the focal plane array, this means a mean additional flux per image of $3\times10^6\ \mathrm{ct/px}$.
+values\footnote{The full moon's apparent magnitude is $I_\moon \approx -13.5$. 
+Scaling from photon fluxes tabulated in~\citet{winn_photonflux_2013}, this 
+gives $2.5\times10^{13}\ \mathrm{ct/s}$. Averaging over the focal plane array, 
+this gives a mean additional flux per image of $3\times10^6\ \mathrm{ct/px}$.
 The relevant variance is (roughly) the square root, $\approx 1730\ \mathrm{ct/px}$ per 2 sec image.
-The Earth is roughly $80\times$ brighter, a giving mean additional flux per image of $2.4\times10^8\ \mathrm{ct/px}$, or an RMS of $\approx 15500\ \mathrm{ct/px}$ per 2 sec image.
+The Earth is roughly $80\times$ brighter, and so will contribute an RMS 
+$\sqrt{80}$ times greater: $\approx 15500\ \mathrm{ct/px}$ per 2 sec image.
 This substantiates the claim that the Earth and Moon flood the cameras to their full well capacity. The effect on observing precision is appended in Fig.~\ref{fig:outage_vs_background}.} we use a model for scattered light suppression from 
 the \tess lens hoods (Fig.~\ref{fig:lens_hood_suppression}) to compute the 
 mean photon flux from each of these bodies onto each of the cameras throughout 
@@ -63,7 +67,9 @@ precision because of Earth and Moon crossings?
 An upper limit for what we mean by `unable to operate at desired photometric 
 precision' is when terrestrial or lunar flux make it impossible to observe a sizable portion of the stars in the \tess target star catalog with reasonable precision.
 For example, Fig.~\ref{fig:outage_vs_background} shows that $\sim$80\% of the stars that could be observed at sub-mmag precision over an hour no longer can when the Earth is $17^\circ$ from the camera boresight.
-This of course depends on the target star catalog's apparent magnitude distribution (Fig.~\ref{fig:fig17_replica}), and the cutoff of `sub-mmag precision over an hour' is somewhat arbitrary.
+This of course depends on the target star catalog's apparent magnitude 
+distribution (Fig.~\ref{fig:fig17_replica}), and the cutoff of `sub-mmag 
+precision over an hour' is arbitrarily selected.
 
 \begin{figure}[!tb]
 	\centering
@@ -105,7 +111,12 @@ This of course depends on the target star catalog's apparent magnitude distribut
 		\texttt{hemi\,(south year 1)} & 2 & 1 & 0 & 0 \\ \hline
 		\texttt{hemi\,(north year 2)} & 4 & 2 & 0 & 0 \\ \hline
 	\end{tabular}
-	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and Moon crossings in both selected and omitted Extended Missions, with those of the Primary Mission for reference. The method of `dropping' fields (which neglects the temporal nature of the crossings, discussed in the text) gives a representative sense of the cumulative impact of Earth and Moon crossings. 
+	\caption{Number of sectors (of 13 per year) `dropped' due to the Earth and 
+	Moon crossings in both selected and omitted Extended Missions, with those 
+	of the Primary Mission for reference. The method of `dropping' fields 
+	(which neglects the temporal nature of the crossings, discussed in the 
+	text) gives an approximate sense of the cumulative impact of Earth and Moon 
+	crossings. 
 		Scenarios with \texttt{(south)} appended refer to their counterparts in the southern ecliptic hemisphere.
 		\texttt{ecl\_long\,(1yr)} corresponds to a full year with the \tess field's long axis along the ecliptic, and \texttt{ecl\_short\,(1yr)} corresponds to the same, but with the short axis along to the ecliptic. These scenarios are neglected because their outages are time-correlated (see Fig.~\protect\ref{fig:earth_moon_elong}).
 		\texttt{allsky\,(poles)} would be a scenario that observes in the manner of \hemis, but only on the ecliptic poles as in \npole.}
@@ -125,18 +136,35 @@ For instance, if the `mean camera outage' was 17\% of \tesss observing time over
 The relevant number of omitted sectors is shown in Table~\ref{tab:dropped_fields}; an example of the resulting spatial distribution of detected planets is shown in Fig.~\ref{fig:skymap_nhemi}.
 
 
-As mentioned in Sec.~\ref{sec:planet_detection_model}, our planet detection simulation is not explicitly time-resolved; it uses the ecliptic coordinates of camera fields for each orbit as input to compute the observed baselines for each star in our galactic model.
-While our Earth/Moon crossing procedure ignores the temporal nature of the `outages' (which is shown resolved over time-steps of 1/20$^\mathrm{th}$ of an orbit in Figs.~\ref{fig:earth_moon_primary} and~\ref{fig:earth_moon_elong}), it gives a conservative sense of the cumulative impact of Earth and Moon crossings over the course of a year.
+As mentioned in Sec.~\ref{sec:planet_detection_model}, our planet detection 
+simulation is not explicitly time-resolved; it takes the ecliptic coordinates 
+of camera fields for each orbit as input to compute the observed baselines for 
+each star in our galactic model.
+While our procedure ignores the temporal nature of the `outages' (which is 
+shown resolved over time-steps of 1/20$^\mathrm{th}$ of an orbit in 
+Figs.~\ref{fig:earth_moon_primary} and~\ref{fig:earth_moon_elong}), it gives a 
+conservative sense of the cumulative impact of Earth and Moon crossings over 
+the course of a year.
 
-Our approximation is `conservative' in the sense that the additional background corresponding to $F_\mathrm{thresh}=300\ \mathrm{ct/px/s}$ only becomes a noticeable noise source for targets later than M0 at $I_c \lesssim 14$ (see appended Fig.~\ref{fig:precision_threshold}).
+Our approximation is `conservative' in the sense that the additional background 
+corresponding to $F_\mathrm{thresh}=300\ \mathrm{ct/px/s}$ only becomes a 
+noticeable noise source for targets later than M0 at $I_c \lesssim 14$ (see 
+appended Fig.~\ref{fig:precision_threshold} and cross-reference 
+Fig.~\ref{fig:fig17_replica}).
 This corresponds to a relatively small fraction of the input catalog (18\%), being observed with $\lesssim\! 1.5\times$ worse RMS precision.
-By counting all the relevant time as an `outage' lost across all stars (even the bright ones for which the additional scatter is subsumed by shot-noise), we are likely being more sensitive to scattered Earth and Moonlight than \tess will be.
+By counting all the relevant time as an `outage' lost across all stars (even 
+the bright ones for which the additional scatter is subsumed by shot-noise), we 
+are likely being more sensitive to scattered light than \tess will be.
 
-The impact of this approximation on the planet yield of the Primary and Extended Missions are discussed in Secs.~\ref{sec:results_from_primary_missions} and~\ref{sec:results_from_all_extended_missions} respectively.
+The impact of this approximation on the planet yields of the Primary and 
+Extended Missions are discussed in 
+Secs.~\ref{sec:results_from_primary_missions} and~\ref{sec:results_from_all_extended_missions}
+ respectively.
 The summarized result is that this model of Earth and Moon crossings leads to $\lesssim$10\% fewer $R_p<4R_\oplus$ planet detections compared to the case of not accounting for the crossings at all.
 There is thus little reason to raise our low threshold, given that the magnitude of the effect is this small.
 Moreover, the Earth and Moon crossings typically last for a small fraction of an orbit (Fig.~\ref{fig:earth_moon_primary}). If the timescales required for the cameras to `re-settle' after the crossings are small compared to orbital timescales, our approach may over-estimate the effect's importance even further.
-More detailed models of this process will be developed during the spacecraft's commissioning period.
+Detailed models of this process remain to be developed during the spacecraft's 
+commissioning period.
 
 % I think this might be a bit better than it sounds because of how the earth/moon crossings are phased in the orbits. They're only happening for at worst ~1/2 of an orbit (see https://drive.google.com/folderview?id=0B2941jxrlPq0Z0tQZnRpd3pVOHc&usp=drive_web), but at roughly the same half across adjacent sectors. I.e. it's the same patches of sky, roughly, that aren't being observed across adjacent sectors, so just dropping the entire sector isn't as bad as you might think on first guess. It's admittedly somewhat sketch.
 
