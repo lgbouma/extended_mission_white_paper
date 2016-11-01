@@ -7,7 +7,7 @@ based on the spacecraft and payload design specified by
 \citet{ricker_transiting_2014}.  We adapt this simulation for Extended
 Mission planning.  With our additions, we can change where \tess looks
 in additional years of observing while holding fixed all other
-mission-defining parameters.  Our approach is then to run our planet
+mission-defining parameters.  Our approach is to run our planet
 detection simulation for each plausible pointing strategy, and to
 compare the relative yields of detected planets.  This lets us compare
 Extended Mission scenarios with one another and with the Primary
@@ -55,10 +55,10 @@ to noise ratio for each transiting object.  Our model for planet
 detectability is a simple step function in SNR: if we have two or more
 transits and $\text{SNR} > 7.3$, the planet is `detected', otherwise
 it is not\footnote{The value of this threshold is chosen to
-  ensure that no more than 1 statistical false positive is present in
-  a pipeline search of $2\times10^5$ target stars. Observing a
-  greater number of stars, for instance in full frame images, should
-  require a higher threshold value to maintain the same condition. We
+  ensure that no more than one statistical false positive is present in
+  a pipeline search of $2\times10^5$ target stars. When observing a
+  greater number of stars, for instance in the full frame images, 
+  a higher threshold value should be imposed to maintain the same condition. We
   discuss this further in Sec.~\protect\ref{sec:risks_caveats}.}.  Our model for
 \tesss photometric precision is described
 by~\citetalias{Sullivan_2015} and shown in
