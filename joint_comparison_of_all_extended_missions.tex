@@ -1,4 +1,4 @@
-\subsection{Comparing planet yields from all Extended Missions based on new planet detection metrics}
+\subsection{Comparing Planet Yields from all Extended Missions}
 \label{sec:results_from_all_extended_missions}
 To compare Extended Missions in terms of planet detection statistics, we focus on the subset of all detected planets that are \textit{newly} detected from each Extended Mission.
 These may come from stars that were not observed at all in the Primary Mission (notably for scenarios such as \elong), or they may also come from transiting planets that were observed in the Primary Mission with $\mathrm{SNR}<7.3$, or from planets that were single-transiters in the Primary Mission (we require $N_\mathrm{tra}\geq2$) for detection.
@@ -10,16 +10,18 @@ With this in mind, for each Extended Mission scenario we ask the following quest
 	\item $N_\mathrm{new,HZ}$: How many are in the habitable zone?
 	\item $N_\mathrm{sys,extra\ planets}$: In how many systems in which at least one planet was detected during the Primary Mission do we find extra planets in the Extended Mission?
 	\item $N_\mathrm{new,atm}$: How many new planets do we find that are amenable to atmospheric characterization (defined below by Eq.~\ref{eq:atmosphere_Deming})?
-	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from stars that were not observed in the Primary Mission, vs. 
+	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from 
+	stars that were not observed in the Primary Mission? 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$ stars that were observed, but either did not have enough transits or a high enough SNR to result in a detection?
 \end{enumerate}
 \begin{figure}[!t]
 	\centering
-	\includegraphics[scale=2.]{tables/160729_t50_with_earth_moon_Deming_corr_name_corr.pdf}
+	\includegraphics[scale=2.]{tables/cropped_tables_vis.pdf}
 	%from 160729_t50 data. generate with tables_vis.tex
 	\caption{Detected planet metrics for six possible Extended Missions (values are means of 50 Monte Carlo realizations of our calculation, all for $R_p<4R_\oplus$).
 	\textit{Top:} postage stamp detections, \textit{Middle:} full frame image only detections, \textit{Bottom:} sum of both.
-	The best two scenarios for select statistics are highlighted in green.
+	The best two scenarios for select statistics are bolded and highlighted in 
+	green.
 	\newline
 	$N_\mathrm{uniq}$: number of unique planets detected over all 3 years.
 	$N_\mathrm{new}$: number of planets detected in year 3 that were not detected in years 1\&2 (newly detected planets).
@@ -209,7 +211,9 @@ We now discuss each metric in more depth:
 	
 	
 	\item $N_\mathrm{new,new\ stars}$:
-	  Intuitively we expect that to maximize the number of planets detected around ``new'' stars (those which were not observed during the Primary Mission) we should collects as many photons as possible from new stars.
+	  Intuitively we expect that to maximize the number of planets detected 
+	  around ``new'' stars (those which were not observed during the Primary 
+	  Mission) we should collect as many photons as possible from new stars.
          And the region on the sky with the greatest number of new stars is the ecliptic.
 	 It is not surprising, then, that the \elong\:scenario finds the largest number of planets around new stars.
          The \elong\:scenario dedicates 7 of a single year's 13 observing sectors to the ecliptic (where the other 6 are spent centered at the North Ecliptic Pole due to excessive Earth and Moon crossings).

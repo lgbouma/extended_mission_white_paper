@@ -1,0 +1,161 @@
+
+>> Page 4 - The subsection titles could be tightened up. Perhaps making more
+>> succinct or capitalized (e.g. "Proposed Pointing Strategies" over "Our proposed
+>> pointing strategies" )
+
+Agreed, done.
+
+>> Page 5 - I'd love to hear more discussion about fuel for maneuvers. I am
+>> skeptical that it would last 10 or more years and am curious about how it is
+>> budgeted (though this is not your task to figure out.)
+
+As am I. I've only been assured by George that it's fine to not consider this
+as a relevant constraint.
+
+>> Page 2 and 6 have the same figure (with a slightly different caption). Is this
+>> needed?
+
+IMO the Exec Summ stands almost alone from the rest of the document. The 
+decision is either a) force people to refer back many pages to a smaller version 
+with a less descriptive caption, or b) have it twice. I took (b).
+
+>> Pages 6 and 7 - The viewing Options have a mixture of fragments and complete
+>> sentences in their individual "Justification" sections. I think one or the
+>> other would be better for consistency.
+
+Agreed; done.
+
+>> Page 10 - You've used the phrase "Full Frame Image" already but didn't
+>> reference it to the acronym FFI, which is used here. You should pair the two at
+>> the first reference on the bottom of page 8.
+>> Same line: what is a PS? Postage Stamp? Again, please add the acronym on page
+>> 8.
+
+Done.
+
+>> Page 10 - CoRoT, JWST, CHEOPS, K2 are all undefined, though likely well known
+>> enough to the target audience to not need it.
+
+Yeah, I'm going to assume that anyone reading this knows (and this section,
+which is basically just a list, needs to be brief).
+
+>> Page 12 - I don't know what you mean by "red noise", and Molly (an actually
+>> astronomer) read the paragraph and wasn't sure either.
+
+This is colloquial usage that I'll cut. Meant it as "noise that's not white &
+thus doesn't decrease upon binning as T^{-1/2}". Technically means noise with a 
+power spectral density that goes ~1/f^2, so will cut.
+
+>> Page 16 - Neural Networks for target selection sounds so cool!
+
+Totally! That said it's a bit buzz-wordy. You could do the optimization with
+less fashionable minimization schemes & likely get similar results.
+
+>> Page 19 - There is so much data is this figure that it is nearly
+>> incomprehensible. I really don't know if it would be better to have this giant
+>> plot or an example of a single sector with all of the other sectors in the
+>> appendix. The colours are also hard to tell apart - two and three are giving me
+>> trouble.
+
+Trying new colors that I think help clarify. Patched up x label to clarify.
+I agree it's a dense plot, but I think it gets the point across (and the
+caption helps if not).
+
+>> Page 20 - To be clear, the "spikes" around the beginning (and middle actually)
+>> of each sector are caused by orbital mechanics. Being closer to the Earth both
+>> increased its incident light (since its an inverse square law in distance) and
+>> increases its angular size / fraction of the possible viewing sphere which is
+>> covered by the Earth.
+
+Right. I won't make any changes on this (I think the idea is reasonably clear);
+let me know if you'd like me to.
+
+>> Page 21 - That strategy is an interesting way of summarizing my work. Is this
+>> just a simplification to help your simulation run faster? I feel like the
+>> rounding is a bit excessive, and that people could handle the actual
+>> percentages. (Though maybe that's just the engineer in me who likes numbers...)
+
+Yes. Turned out resolving it into the same 1/20th of an orbit timesteps (an option 
+that I played with) was too expensive. My main defense of the rounding is that
+there's a LOT of nitty-gritty in how much this effect will actually matter. Are
+the lens hoods at or better than spec? What is TESS's orbital phasing? Initial
+simulations from the lens-hood people show that the scattered light actually
+only affects specific sections of the CCDs more than othes (it's not a uniform
+effect). This might help or hinder during near-crossings at the factor of ~a
+few.
+
+I like the approximation because it's COARSE, and I'm reasonably confident that
+it's an upper bound (since we're throwing _whole fields_ away, rather than
+weathering the crossing and doing something time-resolved, and we're doing so
+in the cases when only M dwarfs are affected). Since even as an
+upper bound it comes out small, I can post-facto rationalize that we don't need
+to be more detailed (if it was a much bigger effect on the yield, that would not 
+be the case).
+
+>> Page 22 - I really like that there is justification for conservative modeling.
+>> It felt completely arbitrary as we were working on it.
+
+Right (discussed above).
+
+>> Page 22 (second to last bullet point) - Being unable to query TRILEGAL isn't a
+>> good reason for not using the galactic disk, it is merely a practical
+>> consequence.
+
+Yes - the point of the sentence is that a good scientific reason to avoid the
+galactic disk is that we should not rely on planet detections there, since we
+will likely not be able to decontaminate them from EB false positives. The
+practical reason is that we can't query TRILEGAL there b/c there are too many
+stars.
+
+>> Page 23 (third bullet point) - The first sentence is not grammatical and is
+>> missing "be" after "can", or change "can" to "are"
+
+Fixed.
+
+>> Page 24 (first bullet point, second dash) - Should "merit" be in the same
+>> changed font as previous instances for consistency?
+
+Yes, thanks.
+
+>> Page 25 - Figure 10 caption, second sentence isn't grammatical "detections in
+>> are complete" - 
+
+Removed "in" - thanks.
+
+>> Page 29 - First sentence of the last paragraph before 2.3 is not grammatical
+>> ("that" should be "which are")
+
+Fixed.
+
+>> Page 30 - Words over Figure 13 are low fidelity and hard to read.
+
+Yeah this was some weird rendering thing. Regenerated and fixed.
+
+>> Page 31 - For number 6. what is the trailing vs for?
+
+Removed.
+
+>> Page 32 - Figure 14 is very hard to read and I can't see any green numbers.
+
+Eep - my oversight. Bolded and regenerated the figure in a way that I think
+fixes the resolution.
+
+>> Page 38 - number 6. "collects" should be "collect"
+
+Fixed.
+
+>> Page 48 - first full sentence of the page is not grammatical (missing a comma
+>> and a verb?)
+
+Fixed.
+
+>> Page 49 - "Guest Investigator..." has more italicized than it should.
+
+Intentional, but rephrased for consistent styling.
+
+>> Page 52 - Those are rough x and y axis labels. Can those be moved to the
+>> caption and replaced with something more succint?
+
+I agree that they're long, but for an appendix figure I think this is better 
+than putting some symbol there, and forcing people to read the caption to
+learn that the symbol means what is already a kind of complicated thing.
