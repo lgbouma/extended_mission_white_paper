@@ -1,0 +1,243 @@
+==============================
+Exec Summ
+
+> use foot and cite eq on p. 11 as defn of detected planet
+done.
+> add eqn on p. 11 to define detected planet
+done.
+> p2 or/each
+fixed, diff wording.
+> p3 #7 modifications
+all added
+
+==============================
+Section 1
+
+> antisolar clarification
+added
+> p.7, "Option 2: is 10^{-9} suppression + the quoted lens hood specs sufficient 
+> for blocking scattered sunlight at 90deg? (V=-26 sun to V=-3 venus-like sun,
+> uniformly spread). Do I have a source?"
+
+I see your point. My source for the claim was R Vanderspek, but he may have
+been wrong and I (embarassingly) did not do the order of magnitude check.
+
+Doing the calculation, it actually seems worse than your note makes out. 
+The spacecraft boresight (+Z in Fig 2) is 90deg from the sun in the
+pole scenario, so camera 4's boresight is only 45 deg away from solar (in
+latitude). 
+So it's more like 10^{-7} suppression, or around 18 magnitudes, which means the 
+Sun is roughly V=-8 spread "uniformly" (not actually, but for OOM calcn). 
+Winn 2013's tabulation of the photon fluxes indicates an I=0 G2V star produces
+1.6x10^6 ph/s/cm^2. Saying V=I, being 8 mags brighter than I=0 means ~1600x as 
+much flux, or 2.5x10^9 ph/s/cm^2. 
+Since each lens has an effective observing area of 69cm^2, this gives 1.7e11 
+ph/s across an entire lens. 
+
+The requirements are quoted in ct/s/px, so divide by 4096^2 px^2, gives 1.0e4
+ph/s/px. 100% QE brings 1.0e4 ct/s/px. 
+
+This is ~30x the "treshold" we set when noting "risky fields" for dropping in Sec1.6, 
+and means (multiply by 2 to get the mean ct/px per 2 sec image, then take a sqrt
+to estimate the variance) an additional ~140 ct/px RMS per 2 sec image.
+
+********* THEN LOOK AT THIS ON THE NOISE VARIANCE PLOT.
+
+> p7 "backwards?"
+nope
+
+> p8 techincal wants
+updated
+
+> p9 extragalactic astronomy
+added
+
+> p10
+added both
+
+> p11: set off as eqn
+done
+
+> p12: not clear if Ntra analytic or by Monte Carlo
+by Monte Carlo. clarified wording.
+
+> p12: K.I.S.S.
+done
+
+> p13: "I_c magnitude from combined flux from all the stars is an error is an
+> error."
+The point is that we will not a priori know the true host star magnitude in
+binary systems, b/c for most we will not know that they are binaries. So
+in target prioritization, binaries will be thought to be brighter than the
+actual brightness of the transit-hosting star. 
+So they will be contaminating the "high-priority" candidate list.
+So I think we're doing this right...
+
+Added a parenthetical to clarify.
+
+> p13: clarify caption
+done
+
+> p13: "this method doesn't explicitly include limits to number of stars on a
+> given camera's FoV, right? have we checked that it is isn't advocating for more
+> stars in the pole-looking camera than can be accomodated?"
+
+See primary_number_PSs_vs_cam_field.pdf. This scheme means ~20-25k target stars per 
+field at the pole-pointing camera, which is "high" compared to the ~16k targets
+per month that J Jenkins et al at AMES are writing their pipeline for. I talked w/ 
+Vanderspek & the TSC about this and they indicated that ~16k is lower-bound and
+should not be viewed as a constraint (other people will process the data too).
+
+The real _constraint_ here is how many bytes we can send from the spacecraft to
+earth per orbit. I don't have that number (& if I were defining this process
+again, would rather start from that). We said 200k target stars total over 2 
+years (which is a number from the proposal), then did the weighting scheme this 
+way, and it wound up producing ~30k target stars per orbit (~2x what AMES is 
+expecting). However, the ~16k is just so their pipeline runs efficiently on 
+postage stamps... there's no per-camera hard maximum # of target stars.
+
+> p14: observed-> detected
+done
+
+> p14: eq2 doesn't use R_planet.
+Right. It uses R_star and expected photometric performance to go as deep as we
+think small-planet detections will work.
+If we just wanted greatest number of _planets_, we could look near the galactic
+plane and find many giant planets (up to star confusion).
+The (not-rigorously-proven) idea is that by using something that looks like a
+SNR without any planet radius term (since we don't know the radii a priori), 
+we're selecting stars most-suited towards high-SNR planet detections.
+Part of the point of the discussion is that this isn't rigorous. An
+empirical parameter study where powers of terms were tuned would be useful.
+
+Note that Sullivan et al used a different procedure. They said "imagine
+all stars have a R_p = R_earth planet on a P=10day orbit. Count the number of
+stars for which TESS could detect that planet. If <200,000, increase the radius
+of the fiducial planet, and repeat until there are 200,000 stars for which TESS
+would detect the nominal small-planet on the 10day orbit."
+This approach produced a very similar distribution of host-star Teff and Rstar
+as the procedure I used here, which provides some level of credibility perhaps.
+
+> p16: "did Kipping & Lam 2016 include orbital inclinations in their calculation
+> of probabilities of finding transiting outer companions?"
+skimming the pre-print, no.
+
+> p16: "we're getting into alternatives, is it too early in the paper?"
+I see your point.
+I may move this discussion of alternative prioritization approaches to "risks and caveats".
+TBD.
+
+> p17: paragraph
+done
+
+> p17: something's wrong.
+
+I found the wrong thing (I think. See precision_memo.pdf attached). 
+I now compute these lines the same as I'm doing the read noise, which is much
+more clear in the code (I was previously just scaling from the read noise,
+which I think missed stray sqrts). 
+Also clarified the figure + tied it to the text, and removed the copy in the
+appendix.
+
+This also led to me regenerating Fig 26, which used values from these plots.
+I added a note on saturation per your p.18 comment in Fig 26.
+
+It also prompted a rewriting of a few of the paragraphs in Sec1.6, notably
+changing the discussion of what 300ct/s/px means given the updated plot.
+Specifically, (p22 below) I drop the discussion of how our prediction
+"underestimates the effect of Earth Moon crossings", instead pointing out
+arguments for each side.
+I could include some mention of how we at least have an _upper bound_ on how
+bad it is from the time-resolved simulations, but I doubt that would be
+particularly illuminating.
+
+> p18: footnote electron=count=photon
+done
+
+> p18: irrelevant detail
+done
+
+> p18: no variance when saturated
+thanks for the catch!
+
+> p19: alternative rendering of outage plots?
+maybe, TBD.
+
+> p21: clarify caption
+done
+
+> p21: compare to zodiacal
+done
+
+> p21: "the additional RMS is dependent on all other sources of noise's
+contributions in aggregate"
+
+Q: I see what you mean -- the thing we care about at the end of the day is the
+quadrature sum of all the noise sources. But we can still talk about the RMS of
+a given source, no? Perhaps my usage is wrong.
+If we have some flux source with a mean flux λ, and assume Poisson statistics,
+the standard deviation is roughly sqrt(λ). (Since the Poisson distribution is
+approximately the same as the Gaussian in the large λ limit).
+I am referring to the standard deviation sqrt(λ) as the "RMS".
+Is this a word that is reserved for the quadrature sum of all noise sources?
+
+> p22:
+I rewrote these paragraphs to drop any mention of whether our approximation is
+over or underestimates the effect.
+I present both sides of why we might either be over or underestimating the
+effect.
+
+> p23: minor changes
+took all 
+
+> p23: PSF better description
+added
+
+> p24: minor changes
+took all 
+
+> p25: minor changes
+took all except "paragraph or use bullets" at beginning of Section 2. This is
+minor & I think it's fine as-is.
+
+> p26: minor things
+added
+
+> p27: clarify "any planet detection in Primary is also detected in Extended"
+done
+
+> p28: minor
+added
+
+> p29: minor
+added top ones. Kept the transition paragraph (although indeed it's a bit
+redunant, I think it helps break the flow from just listing statistics).
+
+
+=====
+todo:
+* email Roland: does he know something we don't about why scattered sunlight
+  can be neglected for the pole scenario?
+* p2 "a lot of these are simply changing Ntra=1 to Ntra=2"
+  -> mention the low Ntra statistics result in exec summ?
+* p7 pole suppression: is it actually blocking the sun adequately? really not
+  obvious (see OOM calcn).
+* p16: we're getting into alternatives, is it too early?
+  -> move discussion of alternative prioritization approaches to end?
+* p19: alternative rendering of outage plots? (clearer as McCollough suggested)
+  (can also then do grayscale, & possibly grayscale __summed__ row)
+* p21: it would make more sense for us to account for scattered sunlight in the
+  same manner as zodiacal light in S+15. Compute a photon flux which varies as
+  a function of ecliptic latitude & LONGITUDE. Assuming longitude=0 (in sun
+  direction), combine with lens hood plot **analytically**
+* Sec 1.1: add discussion of OOM issue with an pole-focused mission:
+  looking at the ecliptic pole btwn 2&3 puts 4 just 45deg off from the sun.
+  This is bad.
+
+
+other:
+
+* Kipping & Lam 2016 seemed to have missed this question of the probability of 
+  detecting an outer companion as a function of the orbital inclination of the 
+  inner companion.
+  Likely be worth emailing them about.

@@ -16,8 +16,8 @@ Mission.
 \paragraph{Background on synthetic catalogs:}
 
 \tess is sensitive to sub-Neptune sized transiting planets orbiting M
-dwarfs out to $\lesssim200\text{pc}$ and G dwarfs out to
-$\lesssim1\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3).  It is
+dwarfs out to $\sim\!200\,\text{pc}$ and G dwarfs out to
+$\sim\!1\,\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3).  It is
 sensitive to giant planets and eclipsing binaries across a significant
 fraction of the galactic disk.  With this sensitivity in mind, the
 stellar catalog we `observe' in our planet detection simulation is
@@ -59,9 +59,21 @@ it is not\footnote{The value of this threshold is chosen to
   a pipeline search of $2\times10^5$ target stars. When observing a
   greater number of stars, for instance in the full frame images, 
   a higher threshold value should be imposed to maintain the same condition. We
-  discuss this further in Sec.~\protect\ref{sec:risks_caveats}.}.  Our model for
-\tesss photometric precision is described
-by~\citetalias{Sullivan_2015} and shown in
+  discuss this further in Sec.~\protect\ref{sec:risks_caveats}.}. 
+Cast as an equation,
+\begin{equation}
+\mathrm{Prob(detection)}=\begin{cases}
+1 \quad \mathrm{if\ SNR_{phase-folded}} > 7.3\ \mathrm{and} 
+	N_\mathrm{tra} \geq 2 \\
+0 \quad \mathrm{otherwise},
+\end{cases}
+\label{eq:detection_criterion}
+\end{equation}
+for $N_\mathrm{tra}$ the number of observed transits and 
+$\mathrm{SNR_{phase-folded}}$ the phase-folded signal to noise ratio, defined 
+in Eq.~\ref{eq:snr} below.
+Our model for \tesss photometric precision is described 
+by~\citetalias{Sullivan_2015} and also shown in
 Fig.~\ref{fig:noise_with_moon}.
 
 \paragraph{Assumptions of SNR calculation:}
@@ -77,8 +89,10 @@ that we observe a constant transit depth, which is diluted by binary
 companions and background stars in the same manner between transits.
 Our approach is then to simply tally the number of \tess fields a
 given host star falls within, which corresponds to a known total
-observing baseline.  Assuming random orbital phasing, we then compute
-the number of transits \tess observes for planets of any given host.
+observing baseline.  Knowing a planet's orbital period, and assuming the
+planet is randomly phased in a circular orbit when \tess begins observing, 
+we then count the number of transits \tess observes for the planet over the 
+total baseline.
 
 Using a model PSF, we determine ideal aperture sizes and obtain 
 an estimated noise per transit, which we can then phase-fold. 
@@ -98,18 +112,12 @@ photon-counting noise from the star, a systematic
 $60\,\mathrm{ppm\cdot hr^{1/2}}$ noise floor, and zodiacal noise;
 $T_\mathrm{dur}$ the transit duration in hours, and $\sigma_v$ the intrinsic
 stellar variability (cf.~\citetalias{Sullivan_2015} Sec 3.5).
-The first equation is approximate because we do not
-show the small contribution to the SNR from occultation 
-signals\footnote{We account for this in our simulation by taking a quadrature 
-sum of both transit (shown) and occultation (not shown) signals. This matters 
-only for the case of eclipsing binaries, which we ignore 
-in this work.}.
 Note that our only noise contribution which is not white comes from stellar 
 variability, 
 which following~\citetalias{Sullivan_2015} we assume to be independent over 
 transits and also independent of the duration of a given transit.
-Given the SNR per transit, this lets us `phase-fold our light-curves' 
-(light-curves which are never explicitly computed point-by-point) by simplying 
+Given the SNR per transit, we then `phase-fold our light-curves' 
+(light-curves which are never explicitly computed point-by-point) by simply
 multiplying the SNR per transit by the square root of the number of transits
 observed.
 

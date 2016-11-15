@@ -14,11 +14,24 @@
 \begin{figure*}[!th] %[!thb]
 	\centering
 	\includegraphics{figures/outage_vs_addedRMS}
-	\caption{The procedure described in Sec.~\protect\ref{sec:earth_moon_crossings} drops fields in which $<$5\% of the target stars which could be observed over 1 hour cannot be observed (only M dwarfs are affected). While this would apply to the cases with the Earth or Moon $\approx 28^\circ - 34^\circ$ from boresight, once closer, the effects become more serious. Lines between points guide the eye and are not exact.}
+	\caption{The procedure described in 
+	Sec.~\protect\ref{sec:earth_moon_crossings} flags fields to be dropped when 
+	there is a mean additional $300\,\mathrm{ct/px/s}$ from the Earth or Moon, 
+	corresponding to $\mathrm{log_{10}}(Additional\ variance) = 1.24$ on this 
+	plot.
+	This reads that $<$10\% of the target stars which could be observed at 		
+	$<$1mmag precision over 1 hour cannot when at $F_\mathrm{tresh}$. 
+	While this corresponds to the cases with the Earth or Moon 
+	$\approx 28^\circ - 34^\circ$ from boresight, once closer, the effects 
+	become more serious. 
+	Saturation is assumed to occur at a mean flux $> 
+	2\times10^{5}\,\mathrm{ct/px}$ per 
+	image. 
+	Lines between points intended to guide the eye.}
 	\label{fig:outage_vs_background}
 \end{figure*}
 \newpage
-
+\begin{comment}
 \begin{figure*}[!th] %[!thb]
 	\centering
 	\includegraphics{figures/precision_threshold}
@@ -32,6 +45,7 @@
 	\label{fig:precision_threshold}
 \end{figure*}
 \newpage
+\end{comment}
 \begin{comment}
 \section{SNR calculation}
 The approach from~\citet{Sullivan_2015} for computing the SNR of any given star is as follows:

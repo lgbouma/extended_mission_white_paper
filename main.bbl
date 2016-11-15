@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,6 +35,12 @@ C.~J. Burke et~al.
 \newblock Planetary {Candidates} {Observed} by {Kepler} {IV}: {Planet} {Sample}
   from {Q}1-{Q}8 (22 {Months}).
 \newblock \emph{ApJ Supplement Series}, 210\penalty0 (2):\penalty0 19, 2014.
+
+\bibitem[Burke et~al.(2015)]{burke_terrestrial_2015}
+C.~J. Burke et~al.
+\newblock {Terrestrial} {Planet} {Occurrence} {Rates} {for} {the}
+  \textit{{Kepler}} {GK} {Dwarf} {Sample}.
+\newblock \emph{{ApJ}}, 809\penalty0 (1), Aug. 2015.
 
 \bibitem[Carter et~al.(2008)]{carter_analytic_2008}
 J.~A. Carter et~al.

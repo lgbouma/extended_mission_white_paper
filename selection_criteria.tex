@@ -20,13 +20,19 @@ Fig~\ref{fig:noise_with_moon}, $I_c$ is the Cousins band $I$ magnitude
 $N_\text{obs}$ is the number of observations the star receives over
 the course of the mission.  For multiple star systems, $R_\star$ is
 taken to be the radius of
-the planet-hosting star, and the $I_c$ magnitude is based
-on the combined flux from all the stars.
+the planet-hosting star, and the $I_c$ magnitude is computed from the 
+combined flux of all the stars (this simulates contamination of the 
+high-priority target list by the stars that have not been identified
+as binaries).
 
 \begin{figure*}[!tb] %[!thb]
 	\centering
 	\includegraphics{figures/positions_pointings_kepler.pdf}
-	\caption{Selected target stars in the Primary Mission. Their density increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in selection. Dead space on the CCDs creates `gaps' in the continuous viewing zones.}
+	\caption{Selected target stars in the Primary Mission. Their density 
+	increases towards the poles because of the $\sqrt{N_\text{obs}}$ weight in 
+	selection. Gaps in the focal plane array between each of a given camera's 
+	four CCDs creates leads to the slight deviations from perfectly-continuous 
+	observing shown at the ecliptic pole.}
 	\label{fig:positions_pointings}
 \end{figure*}
 \begin{figure}[!tb] %[!thb]
@@ -72,7 +78,8 @@ on the combined flux from all the stars.
 
 
 We evaluate \texttt{Merit} for all the star systems in our modified
-TRILEGAL catalog, and then choose the best $2\times10^5$ as target
+TRILEGAL catalog, and then choose the highest-\texttt{Merit} 
+$2\times10^5$ as target
 stars to be observed at 2 minute cadence.  Target stars selected in
 this manner are shown in Fig.~\ref{fig:positions_pointings}. 
 This statistic is simpler than the procedure outlined in Section 6.7
@@ -88,7 +95,7 @@ the sum of its observations in the Primary and Extended Missions:
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  If
 $N_\text{extended}=0$ for a given star, then do not select that star as a
 target star in the Extended Mission.  Else, compute its \texttt{Merit}
-(Eq.~\ref{eq:merit}) weighted by
+(Eq.~\ref{eq:merit}) substituting
 $N_\text{obs}=N_\text{primary}+N_\text{extended}$.  In this manner
 stars that are observed more during the Primary Mission are more
 likely to be selected during the Extended Mission.
@@ -98,7 +105,7 @@ likely to be selected during the Extended Mission.
 
 It is worth emphasizing that our scheme for selecting target stars for
 an Extended Mission does not make use of any information on whether
-candidate transit events were observed during the Primary Mission.  If
+candidate transit events were detected during the Primary Mission.  If
 a star were observed at short cadence for an entire year, and no
 candidate events were found, it might be sensible to disregard that
 star in the Extended Mission in favor of stars that have never been
@@ -156,7 +163,7 @@ probability of detecting transiting outer companions.  \tess might
 benefit from a similar approach in target selection.
 
 \paragraph{Alternative prioritization approaches in Extended Missions:}
-Our \texttt{Merit} statistic also neglects the option of an Extended
+Our \texttt{Merit} statistic also neglects the possibility of an Extended
 Mission which only observes stars with known planets or planet
 candidates (\tesss objects of interest, or those from other transit
 and RV surveys) at short cadence.  This approach would free up a
@@ -190,9 +197,10 @@ planets~\citep{winn_searchable_2013}.  The detection process is then
 identical to that for postage stamps, except with 30 minute instead of
 2 minute exposures, which increases the apparent durations and shrinks
 the apparent depths for transits with durations of $\lesssim 1$ hour.
-To ensure that $3.8\times10^6$ stars is sufficient to include all
-stars about which \tess might detect sub-Neptune radius planets, we
-repeated this process for the Primary Mission using $5.8\times10^6$,
+
+To check that the $4\times10^6$ highest \texttt{Merit} stars includes 
+all stars about which \tess might detect sub-Neptune radius planets, 
+we repeated this process for the Primary Mission using $5.8\times10^6$,
 $9.8\times10^6$ and $19.8\times10^6$ `full frame image' stars, and
 confirmed that there was no significant difference in the planet
 yields at $R_p\le4R_\oplus$ between any of the cases.

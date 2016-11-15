@@ -32,7 +32,9 @@ As an example case, we choose the \nhemi\:scenario.
 A sky map showing the positions of detected planets for this mission is drawn in Fig.~\ref{fig:skymap_nhemi}.
 Commenting on this map, we note that:
 \begin{itemize}
-	\item Any planet detected in this scenario's Primary Mission is also detected in its Extended Mission.
+	\item Any planet detected following this scenario's Primary Mission is also 
+	detected following its Extended Mission (using the combination of Primary 
+	\& Extended datasets).
 	We consequently color the detected planets depending on if they are discovered in the Primary Mission, or whether they are detected only by virtue of the extra data collected in the Extended Mission.
 	In our simulation, these extra observations will lead to new detections (a) because of an increased number of observed transits leading to a higher phase-folded SNR, which causes the transiting object's SNR to clear our threshold of 7.3, and/or (b) because raising the number of observed transits clears the minimum number of transits we require for detections ($N_\mathrm{tra} \geq 2$).
 	\item The `dropped' fields described in Sec.~\ref{sec:earth_moon_crossings} owing to Earth and Moon crossings are visible for both the Primary and Extended Missions in the $\lambda=(30^\circ, 0^\circ, 330^\circ, 300^\circ)$ fields.
@@ -44,14 +46,28 @@ See Figs.~\ref{fig:radius_vs_period_nhemi} and~\ref{fig:imag_vs_teff_nhemi}.
 Both of these figures are visualizations from a single Monte Carlo realization of the \nhemi\:scenario, and only show planets with $R_p < 4R_\oplus$.
 These plots clarify a few points:
 \begin{itemize}
-	\item At a fixed period, Extended Missions help us detect smaller planets; at a fixed radius, they let us probe out to longer periods. This is one of the major reasons to extend \tesss observations.
-	\item Almost all $R_p<2R_\oplus$ planets are detected in postage stamps, not full frame images. This is an indication that the top $2\times10^5$ \texttt{Merit} stars are a sufficient sample to detect most of the $R_p<2R_\oplus$ planets that \tess can detect.
+	\item At a fixed period, Extended Missions help us detect smaller planets. 
+	At a fixed radius, Extended Missions let us probe out to longer periods. 
+	These are two important reasons to continue \tesss observations.
+	\item Nearly all $R_p<2R_\oplus$ planets are detected in postage stamps, 
+	not full frame images. This is an indication that the top $2\times10^5$ 
+	\texttt{Merit} stars are a sufficient sample to detect nearly all of the 
+	$R_p<2R_\oplus$ planets that \tess can detect over its first three years.
 	\item Postage stamp detections are biased towards M dwarfs. Per Fig.~\ref{fig:fig17_replica}, this is largely because our selection procedure chooses many M dwarfs.
-	\item For a given effective temperature, the stars for which planets are detected in the full frame images are systematically fainter, compared to PS stars. Projecting the FFI detections onto apparent $I_c$ magnitude (Fig.~\ref{fig:imag_vs_teff_nhemi}, right panel), the median brightness of stars with planets detected from FFIs is actually greater than the median brightness of planets detected from PSs. This is because the FFI-based detections involve stars with radii that, on average, are greater than those from postage-stamp detections.
+	\item For a given effective temperature, the stars for which planets are 
+	detected in the full frame images are systematically fainter, compared to 
+	PS stars. Projecting the FFI detections onto apparent $I_c$ magnitude 
+	(Fig.~\ref{fig:imag_vs_teff_nhemi}, right panel), the median brightness of 
+	stars with planets detected from FFIs is actually greater than the median 
+	brightness of planets detected from PSs. This is because the FFI-based 
+	detections involve stars with radii that, on average, are greater than 
+	those from postage-stamp detections. It is also tied to our selection 
+	procedure; the target star distribution ranks dim M dwarfs higher than
+	dim K, G, or F dwarfs.
 	%\item The large number of full frame image detections between $5000\mathrm{K} < T_\mathrm{eff} < 7000\mathrm{K}$ suggest that our proposed selection procedure (Sec.~\protect\ref{sec:selection_criteria}) may not be optimal, and that a robust approach towards target prioritization, for instance using expected planet occurrence rates as a function of stellar type in a Bayesian approach, could maximize \tesss expected yield. 
 \end{itemize}
 
-There are a few other statistics that help understand the value of this 
+There are a few other statistics that help quantify the value of this 
 Extended Mission -- how many new 
 planets do we detect? How many are at long orbital periods? How many 
 are in habitable zones? We respond to these questions in 

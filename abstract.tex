@@ -75,13 +75,16 @@ Kosiarek and Peter McCullough.
 Some of the most important findings are:
 \begin{enumerate}
 
-\item The overall quantity of detected planets does not depend
+\item The overall quantity of detected planets\footnote{We define `detected 
+planet' to mean one with at least two observed transits, and a phase-folded 
+$\mathrm{SNR} > 7.3$ (Eq.~\ref{eq:detection_criterion})} does not depend
   strongly on the sky-scanning schedule.  Among the six scenarios
   considered here, the number of newly-detected planets with radii
   less than $4R_\oplus$ is the same to within about 30\%.
 
-\item The number of newly-detected sub-Neptune radius planets in Year 
-  3 is approximately the same as the number detected in either Year 1 or
+\item The number of newly-detected sub-Neptune radius planets ($R_p \lesssim 
+4R_\oplus$) in Year 3 is approximately the same as the number detected in 
+either Year 1 or
   Year 2.  Thus, we do not expect a sharp fall-off in the planet
   discovery rate in Year 3.  This is because the Primary Mission will
   leave behind many short-period transiting planets with bright host
@@ -93,8 +96,8 @@ Some of the most important findings are:
   \shemiAvoid\,strategies offer the greatest number (1300-1400, as
   compared to the 1250 during each year of the Primary Mission).
  
-\item Regarding planets with orbital periods >20 days, the
-  \hemis, \npole, and \nhemi\:strategies would discover twice as many
+\item Regarding planets with orbital periods >20 days, any one of the
+  \hemis, \npole, or \nhemi\:strategies would discover twice as many
   such planets as will be discovered in each year of the Primary
   Mission. This would help to overcome one of the main limitations of
   the Primary Mission: the strong bias toward shorter orbital periods.
@@ -113,15 +116,17 @@ Some of the most important findings are:
   function of an Extended Mission would be to improve our ability to
   predict the times of future transits and occultations of 
   {\it TESS}-detected planets.  With data from the Primary Mission 
-  alone, the uncertainty in transit ephemerides will inhibit 
-  follow-up observations after only a few years.
+  alone, the uncertainty in planetary orbital periods will inhibit 
+  follow-up observations after only a few years, as the transit ephemerides
+  become stale.
   
 \end{enumerate}
 
 The rest of this report is organized as follows.
 Sec.~\ref{sec:approach} discusses how we selected and compared different pointing strategies, as well as how we modeled \tesss observations and planet detections.
 Sec.~\ref{sec:input_assumptions} gives a list of the most important assumptions we made for the simulations.
-Sec.~\ref{sec:newly_detected_planet_metrics} compares the simulated populations of newly-detected planets, for the 6 different scenarios under consideration.
+Sec.~\ref{sec:newly_detected_planet_metrics} compares the characteristics of 
+newly-detected planets, for the 6 different scenarios under consideration.
 Sec.~\ref{sec:gtr_1yr_horizon} discusses some considerations and implications for future years of the Extended Mission, beyond the one-year scenarios that were simulated
 in detail.
 Sec.~\ref{sec:ephemeris_times} discusses the critical issue of the uncertainty in transit ephemerides.
