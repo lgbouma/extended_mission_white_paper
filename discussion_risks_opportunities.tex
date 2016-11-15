@@ -26,34 +26,35 @@ Of course, this would need to happen during intervals in which the Moon and Eart
 Any of our proposed scenarios could simply be repeated indefinitely,
 as could possible two-year Extended Missions in which our scenarios 
 would be followed by their respective complement hemispheres.
-Slightly different trade-offs may arise when comparing two-year
+However, qualitatively novel trade-offs may arise when comparing two-year
 Extended Missions.
-For instance, consider: (1) two years of \hemis; (2) repeating the 
+For instance, after completing the Primary Mission, compare the 2-year
+extension scenarios of \#1) two years of \hemis\ vs. \#2) repeating the 
 Primary Mission for two years.
 If we repeat the Primary Mission over 2 years, the northern
-and southern CVZs each get 1 year of continuous observation.  If we
-execute \hemis\:for 2 years, the northern and southern `long viewing
-zones' each get 2 years of 14-day windowed observations.  The latter
-case allows 2-transit detections of $P\lesssim1$ year planets over
-$2\%$ of the sky.  The former allows 2-transit detections of
-$P\lesssim6$ month planets over $1\%$ of the sky.  This simple
-consideration of course misses that point that data obtained from
-repeating the Primary Mission would be less subject to aliasing
-problems and would have fewer period ambiguities.  However
-repeating \hemis\:for two years might be a middle ground between the
-two extreme strategies ``repeat \npole\:indefinitely'' and ``repeat
-the Primary Mission indefinitely''.
+and southern CVZs get 1 additional year each of continuous observation.  
+If we execute \hemis\:for 2 years, the northern and southern `long viewing
+zones' each get 2 years of 14-day windowed observations. 
+While each CVZ star receives the same total observing time, CVZ stars in \#1 
+have a 1-year baseline, continuously sampled, while those in \#2 have a 2-year 
+baseline, half-sampled.
+Thus \#2 allows 2-transit detections of $P\lesssim1$ year planets over
+$2\%$ of the sky.  \#1 allows 2-transit detections of
+$P\lesssim6$ month planets over $1\%$ of the sky.  
+In the competition between better time-sampling and longer baselines,
+it is not clear which strategy would win.
 
-A longer-term question is ``when will \tess hit the point of
+Another longer-term question is ``when will \tess hit the point of
 diminishing returns?''  The `low-hanging fruit' of small planets
-transiting bright stars at short orbital periods will eventually be
-found if \tess continues to observe the same sky.  The most important
+transiting bright stars at short orbital periods will become 
+``picked over'' if \tess observes the same sky indefinitely.  
+The most important
 qualitative point of this memo, made in Fig.~\ref{fig:snrf_histogram},
 is that after \tesss Primary Mission there will be many objects
 remaining for which merely doubling the number of observed transits
-will enable their detection.  Eventually though, the peak of the
-phase-folded SNR distribution shown in Fig.~\ref{fig:snrf_histogram}
-will shift past the detection threshold, and more observations will
+will enable their detection.  Eventually though, once \tess is complete
+for $R_p<4R_\oplus$ planets orbiting bright stars on $P<20\,\mathrm{day}$ 
+orbits, more observations will
 only allow us to probe out to longer orbital periods and dimmer stars.
 No detailed study has yet quantified when \tess will reach this
 regime.
@@ -65,10 +66,11 @@ regime.
 
 For follow-up observations, we will often need to predict future times
 of transits or occultations, ideally with an accuracy of an hour or
-less. After enough time has passed that the uncertainty has grown to a
-significant fraction of the orbital period, we say that the ephemeris
-has gone ``stale,'' presenting a major obstacle to many follow-up
-programs. For \tesss ground-based follow-up campaign, following up a planet
+less. After enough time has passed that the uncertainty has grown to an
+operationally significant value, we say that the ephemeris
+has gone ``stale,'' \textit{i.e.,} it presents a major obstacle to many 
+follow-up programs. For \tesss ground-based follow-up campaign, following up a 
+planet
 with a stale ephemeris would require much more observing time
 for a successful result.  Likewise, for planning
 space-based observations, for which observing time is always scarce,
@@ -94,7 +96,8 @@ of errors (\textit{e.g.}~\citet{lyons_practical_1991}, Equation 2.18):
 \begin{equation}
 	\sigma_{t_c}(T_x) = \sigma_0 \sqrt{1 + 2 T_x / P + 2 (T_x / P)^2 }
 \end{equation}
-Note that for observing future transits, $E \equiv T_x / P$ is an integer, and the above equation can be re-expressed:
+Note that for observing future transits, $E \equiv T_x / P$ is a positive 
+integer, and the above equation can be re-expressed:
 \begin{equation}
 	\sigma_{t_c}(E) = \sigma_0 \sqrt{1 + 2 E + 2 E^2 },
 \end{equation}
@@ -104,23 +107,36 @@ which is bounded by the simpler approximation:
 \end{equation}
 which is exact at $E=0$, has a maximum 8\% fractional error at $E=1$, and becomes increasingly accurate as $E$ increases. By $E=20$, the fractional error of the latter approximation is less than 1\%.
 
-For $T_x = 2$ years and $P = 2$ weeks, then $E \approx 50$, so $\sigma_{t_c}\approx 75\sigma_0$. 
-At 2-minute cadence, a typical value for the per-transit timing uncertainty is $\sigma_0 = 4$ minutes, and the predicted uncertainty on its mid-transit time is 5 hours two years later or 10 hours four years later. This leads to a simple rule of thumb: % my oom is 5 minutes. Peter's is 2 minutes. The analytics are 5 minutes. I'll take the analytics.
+At 2-minute cadence, a typical value for the per-transit timing uncertainty is 
+$\sigma_0 = 4$ minutes.
+For example, if $T_x = 2$ years and $P = 2$ weeks, then $E \approx 50$, so 
+$\sigma_{t_c}\approx 75\sigma_0$.
+Hence the predicted $1\sigma$ uncertainty on its mid-transit time 
+is 5 hours (two years later) or 10 hours (four years later).
+ 
+ This leads to a simple rule of thumb: % my oom is 5 minutes. Peter's is 2 
+ %minutes. The analytics are 5 minutes. I'll take the analytics.
 \begin{quotation}
-  For a two-transit super-Earth, the uncertainty in the predicted transit time, in hours, is numerically equal to about
+  For a two-transit super-Earth, the $1\sigma$ uncertainty in the predicted 
+  transit time, in hours, is numerically equal to about
   2$Y$, where $Y$ is the number of years after the Primary Mission.
 \end{quotation}
 If the transits are observed only at 30-minute cadence, then uncertainty will be roughly 4 times greater: $\sigma_0 \sim 16$ minutes. 
 This claim (``$4\times$ greater'') is based on Figure 9 of~\citep{price_transit_2014}, a plot of the effects of finite cadence on timing precision. % note that they're using kepler data here 
 We compared the precisions of 2-min and 30-min cadences for their specific example of $P=10$ days and a dwell time of 1 month.
 
-On the other hand, Fig.~\ref{fig:Ntra_hist_primary} shows that 7 in 8 of the planets detected by \tesss Primary Mission will have $N_\mathrm{tra}>3$ and so their ephemerides should be better than the example derived analytically above.
+On the other hand, Fig.~\ref{fig:Ntra_hist_primary} shows that 7 in 8 of the 
+planets detected by \tesss Primary Mission will have $N_\mathrm{tra}>3$ and so 
+their ephemerides should be better than the worst case example derived 
+analytically above.
 Rather than generalize the analytic equations, we resort to numerical simulations in order to predict the uncertainties of mid-transit times for planets expected to be discovered by \tesss Primary Mission.
 
 \paragraph{Numerical analysis}
 We start with the analytic form~\citet{price_transit_2014} derive for the per-transit uncertainty on the mid-transit time $\sigma_0$:
 \begin{equation}
-\sigma_{0} = \frac{1}{Q} \sqrt{ \frac{\tau T}{2} } \left( 1 - \frac{t}{3\tau} \right)^{-1/2}
+\sigma_{0} = \frac{1}{Q} \sqrt{ \frac{\tau T}{2} } \left( 1 - \frac{t}{3\tau} 
+\right)^{-1/2}
+	\label{eq:price_rogers_0}
 \end{equation}
 when $\tau\geq t$ and 
 \begin{equation}
@@ -129,8 +145,12 @@ when $\tau\geq t$ and
 \end{equation}
 when $t > \tau$,
 where $Q$ is the SNR per transit, $t$ is the cadence, $T$ is the transit duration, and $\tau$ is the ingress (or egress) time.
-We have all the later terms from our yield simulation, and show the resulting distribution of $\sigma_0$ in Fig.~\ref{fig:uncertainty_tc_hist}.
-Indeed, our suggested $\sigma_0$ of about 4 minutes for postage stamps and 16 minutes for full frame images is reasonable, which is good because we computed the former from the $t\rightarrow0$ limit of Eq.~\ref{eq:price_rogers} originally derived by~\citet{carter_analytic_2008}.
+We have all the latter terms from our yield simulation, and show the resulting 
+distribution of $\sigma_0$ in Fig.~\ref{fig:uncertainty_tc_hist}.
+Indeed, our suggested $\sigma_0$ of about 4 minutes for postage stamps and 16 
+minutes for full frame images is reasonable, which is good because we computed 
+the former from the $t\rightarrow0$ limit of Eq.~\ref{eq:price_rogers_0} 
+originally derived by~\citet{carter_analytic_2008}.
 \begin{figure}[!t]
 	\centering
 	\includegraphics[scale=1.]{figures/mid_transit_time_vs_cadence.pdf}
@@ -174,13 +194,16 @@ This produces a cartoon-plot, Fig.~\ref{fig:lowering_uncertainty_tc}, which conf
 We proceed by repeating the above procedure for every planet, and evaluate typical 95\% confidence intervals (``uncertainties'', loosely) for $t_c$, at typical times after the first transits, for all of our detected planets.
 Specifically, we take them at $T_x=2$ and $4$ years, and get Fig.~\ref{fig:conf_interval_gets_better}.
 This figure confirms (top left panel) our analytic expectation that the uncertainty of mid-transit times in hours should be somewhat less than twice the number of years after \tess first observes the planet at 2-min cadence, since most such planets have $N_\mathrm{tra}\geq4$.
-It also confirms our rough expectation that the uncertainty on FFI mid-transit times is roughly 4 times that of postage stamps, although the uncertainties on FFIs have a much more uniform tail.
+It also confirms our rough expectation that the uncertainty on FFI mid-transit 
+times is roughly 4 times that of postage stamps, although the uncertainties on 
+FFIs have a much broader tail than PSs.
 
 More importantly, Fig.~\ref{fig:conf_interval_gets_better} emphasizes the importance of refining \tesss ephemerides: if we do not, the typical \tess planet will have many hours of uncertainty on its mid-transit time a few years following its detection.
-If we do follow-up, we will know when the planet transits to $\lesssim1$ hour for many more years.
+If we do follow-up with an Extended Mission, we will be able to predict when 
+the planet transits to $\lesssim1$ hour for many more years.
 This argues strongly for an Extended Mission which, whether over 1 or 2 years, re-observes many if not all of the targets that \tess detects in its Primary Mission. 
-The smallest-radius Earths and super-Earths may otherwise be much more difficult
-to follow up, due to a stale ephemeris.
+The smallest-radius Earths and super-Earths may otherwise be much more 
+difficult to follow up.
 
 
 \subsection{Risks and Caveats}
@@ -202,13 +225,13 @@ concern:
         error, assume \ktwo will have observed $70\%$ of the sky in
         the $|\beta|<6^\circ$ band about the ecliptic by 2019.  Of the
         1169 `new' $R_p<4R_\oplus$ planets that \tess detects in
-        \elong, 502 of them are within $|\beta|<12^\circ$ of the
-        ecliptic.  Assuming that all of these detections are uniformly
-        distributed over the $|\beta|<12^\circ$ band, this means that
-        35\% (ratio of annuli areas) of \tesss new planets will
-        already have been detected in \ktwo data.  This simple
-        estimate quantifies our global error in reporting `new'
-        planets near the ecliptic, but avoids the issue of merging the
+        \elong, 239 of them are within $|\beta|<6^\circ$ of the
+        ecliptic, and thus roughly 167 will already have been observed by
+        \ktwo (assuming the same stars were selected in \ktwo 
+        observations).  
+        This simple estimate quantifies our global error in reporting `new'
+        planets near the ecliptic ($\sim 15\%$ will not be truly `new'), but 
+        neglects the issue of merging the
         two datasets to discover long period planets.  This latter
         opportunity could be an important reason to actually do
         \elong\:or \eshort\:and thus demands detailed study, which we
@@ -309,7 +332,8 @@ concern:
 	
 	
 	\item [5.) We neglect instrument aging, spacecraft systematics, etc.]
-	To our best knowledge detailed models do not currently exist for how \tesss optics and CCDs will degrade with time.
+	To our knowledge detailed models do not currently exist for how \tesss 
+	optics and CCDs will degrade with time.
 %	\todo[inline]{talk with Goddard people about this}
 	We are also assuming that, as with \ktwo\!, time-correlated spacecraft level systematics can be removed in post-processing.
 	These assumptions are reasonable at our current state of pre-flight knowledge, and will need to be changed accordingly as the mission progresses.

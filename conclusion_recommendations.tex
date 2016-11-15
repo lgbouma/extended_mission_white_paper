@@ -3,7 +3,8 @@
 
 This trade-study laid out technical requirements, science goals, opportunities, and risks relevant to observing with \tess after its first two years.
 The baseline science requirements for \tesss Primary Mission are defined~\citep{ricker_transiting_2014}, and an Extended Mission offers a chance to re-prioritize.
-Is securing \tesss ephemerides more important than probing out to the longest period planets? 
+Is securing \tesss ephemerides more important than trying to detect more
+planets at longer orbital periods? 
 Are the variations in absolute new planet yields, at $\lesssim30\%$ between all the Extended Missions, more valuable than other desires and opportunities?
 
 We leave these questions open for the community to discuss at the \tess Wiki\footnote{\url{https://spacebook.mit.edu/display/TESS/Extended+Missions}. Contact \url{luke@astro.princeton.edu}, copying \url{imeister@mit.edu}, for an account with editing rights.}.
@@ -19,8 +20,12 @@ We leave these questions open for the community to discuss at the \tess Wiki\foo
 	
       \item[Optimize cadence:] observing $4\times10^5$ target stars at 
 	      4 minute cadence, rather than $2\times10^5$ at 2 minute cadence,
-	      may improve prospects for transit detection. 
-	      Ideally a metric would be devised that
+	      would allow the FFIs to be returned at a higher cadence.
+	      This could in turn improve prospects for transit detection.  
+	      (Preliminary numerical experiments indicate that this is indeed the 
+	      case).
+	      
+	      In addition, a metric should be devised that
         quantifies, for each star, how much {\it improvement} would
         result from observing at short-cadence versus long-cadence.
         We could then prioritize the stars for which short-cadence 
@@ -28,13 +33,15 @@ We leave these questions open for the community to discuss at the \tess Wiki\foo
         For instance if the number of short-cadence stars could be 
         greatly reduced with little effect on the planet detection
         statistics, then this would allow the FFIs to be returned at a
-        higher cadence, which would likely be desirable.
+        higher cadence, which could be desirable.
 	
 	\item[Take steps to address the `upgrading cadence' problem:]
           if there is a likely transiting planet in full frame image
           data, upgrading the planet to short cadence in future
           observing sectors improves the probability and fidelity of
-          detection.
+          detection. How is this being addressed for the Primary Mission?
+          Could this be an argument to observe the southern
+          sky in year 3, in order to have extra time to prepare?
 	
 	\item[Guest Investigator Office or \tess Science Office should
           solicit advice] from experts in asteroseismology and
@@ -67,12 +74,24 @@ We leave these questions open for the community to discuss at the \tess Wiki\foo
           compared with discovery?
 	
 	\item[Further topics for study:]
+	\ 
+	
 	\textit{1.)}
+	How can a particular Extended Mission scenario reduce risk for measuring 
+	masses of 50 rocky planets (a baseline \tess science requirement)?
+	
+	\textit{2.)}
 	After how many years would the planet yield start to show steeply diminishing returns?
 	Suppose, for example, the Primary Mission were repeated indefinitely.
   How much dimmer would the host stars of new planets be, in each year?
 	Would the planets tend to be smaller?
 	Would there be fewer of them?
-	\textit{2.)}
-	Study the limiting case of \hemis\:for 2 years, vs Primary Mission repeat for 2 years, vs \npole$\times$2 for 2 years. The most interesting aspect here is the continuous viewing zones: 2 CVZs at 14-day sampling, vs. 2 CVZs at continuous sampling for one-year each, vs. 1 CVZ for full sampling over two years.\footnote{Our simplified perfect period extraction would miss challenges from the data processing.}
+	
+	\textit{3.)}
+	Study the limiting case of \hemis\:for 2 years, vs Primary Mission repeat 
+	for 2 years. The most interesting aspect of this comparison is the 
+	continuous viewing zones: 2 CVZs with 14-day window functions over 2 years, 
+	vs. 2 CVZs with continuous sampling for one-year each.\footnote{Our 
+	simplified perfect period extraction would miss deleterious effects from the 
+	uneven sampling.}
 \end{description}

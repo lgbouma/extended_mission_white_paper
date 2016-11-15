@@ -2,4 +2,70 @@
 Starting on p31.
 
 > p31: scenario or option. Choose one.
-Chose scenario, find&replaced throughout.
+I chose scenario, find&replaced 'option' and 'Option' throughout.
+
+> p31: clarify #7
+done
+
+> p32: clarify text (discussion of TESS's completeness)
+done
+
+> p33: clarify "diminishing returns".
+In this context I meant completeness (fixed in text).
+
+> p34: clarify "total number of transits"
+done
+
+> p34: add Fig17 to Fig16?
+I didn't want to b/c "New" candidates and "Pri" (from Primary) candidates are
+conceptually different -- didn't want to lump.
+It's also a comparison that I want to be drawing "intra" Extended Mission
+scenarios, rather than "inter" Extended Missions and Primary Missions.
+
+> p36: a,b,c,d,e.
+Read; likely won't mention, but I like the scaling arguments!
+I still wish Eq(4) had a Jmag, but D. Deming's confident that the offset is 
+corrected for in the prefactors.
+
+> p37: minor points
+clarified
+
+> p39: dimmer, level
+done
+
+> p41: "diminishing returns"
+Reframed in context of completeness.
+
+> p41: wordsmithing
+added
+
+> p42: wordsmithing
+added
+
+> p43: wordsmithing & eqn mis-reference
+Fixed (yes it was a mis-reference)
+
+> p44: wordsmithing
+added, with slightly diff wording at last sentence before Sec3.3
+
+> p46: confusion in OOM K2 estiamte. 
+Clarified via numerics. 
+
+> p48: wordsmithing
+done
+
+> p49: "could" 
+accepted. Slightly reworded this point and broke into 2 paragraphs.
+
+> p49: more detail on "updading cadence" problem
+Added
+
+> p49: add Q of how to reduce risk for measuring 50 rocky planet masses
+added
+
+> p49: clarify footnote 13
+done
+
+> p51: cite for lens hood model
+done
+

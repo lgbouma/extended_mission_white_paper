@@ -12,7 +12,9 @@ With this in mind, for each Extended Mission scenario we ask the following quest
 	\item $N_\mathrm{new,atm}$: How many new planets do we find that are amenable to atmospheric characterization (defined below by Eq.~\ref{eq:atmosphere_Deming})?
 	\item $N_\mathrm{new,new\ stars}$: How many of the new planets come from 
 	stars that were not observed in the Primary Mission? 
-	\item $N_\mathrm{new,SNR\lor N_{tra}}$ stars that were observed, but either did not have enough transits or a high enough SNR to result in a detection?
+	\item $N_\mathrm{new,SNR\lor N_{tra}}$: How many of the new planets come 
+	from candidates that after the Primary Mission had either a) 
+	$\mathrm{SNR}<7.3$ and/or b) less than 2 transits?
 \end{enumerate}
 \begin{figure}[!t]
 	\centering
@@ -33,8 +35,12 @@ With this in mind, for each Extended Mission scenario we ask the following quest
 	$N_\mathrm{sys,extra\ planets}$: number of systems in which extra planets are detected.
 	$N_\mathrm{new,atm}$: number of newly detected planets with SNR in transmission greater than (that of GJ 1214b)/2, as measured by \jwst\,-- see text.
 	$N_\mathrm{pri,atm}$: same as previous, from Primary Mission.
-	$N_\mathrm{new,new\ stars}$: number of newly detected planets that orbit stars that were not observed during the Primary Mission.
-	$N_\mathrm{new,SNR\lor N_{tra}}$: number of newly detected planets that were observed during the Primary Mission, but either (a) which had $\mathrm{SNR}<7.3$, a non-detection and/or (b) had $N_\mathrm{tra}<2$, and so would not be `detected'.}
+	$N_\mathrm{new,new\ stars}$: number of newly detected planets that orbit 
+	stars that were not observed during the Primary Mission.
+	$N_\mathrm{new,SNR\lor N_{tra}}$: number of newly detected planets that were 
+	observed during the Primary Mission, but either (a) had 
+	$\mathrm{SNR}<7.3$ and/or b) had $N_\mathrm{tra}<2$, and so would not be 
+	`detected'.}
 	\label{fig:yield_results}
 \end{figure}
 
@@ -68,11 +74,24 @@ We now discuss each metric in more depth:
 	This figure illustrates a point that was originally noted by~\citetalias{Sullivan_2015}:
         \tesss Primary Mission will miss many short-period planets around bright stars, and is therefore
         incomplete even its intended hunting ground.
-        For stars with $I_c>9$, there are at least an order of magnitude more $R_p<4R_\oplus$ transiting planets that \tess does not detect (Fig 22 of~\citetalias{Sullivan_2015}).
+        For stars with $I_c<11$, there are $\sim\! 10\times$ more transiting 
+        $2<R_p<4R_\oplus$ planets on $P<20\,\mathrm{day}$ orbital periods than 
+        \tess will detect in its first two years\footnote{Fig 22
+        of~\citetalias{Sullivan_2015}; only considers $R_\star<1.5R_\odot$ 
+        stars}.
+        \citetalias{Sullivan_2015} similarly note that there are $\sim\! 
+        20\times$ more transiting $R_p<2R_\oplus$ ($P<20\,\mathrm{day}$, 
+        $I_c<11$ host star) planets in the sky than \tess will discover in 
+        its Primary Mission.
 	Our findings agree: there are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (Fig.~\ref{fig:primary_planet_yield}).
 	An Extended Mission will probe and detect this population, irrespective of where on the sky we observe.
-	This result should hold equally well for realistic detection efficiency thresholds, and it demonstrates that extended observations will be valuable, because \tess will not yet be at the point of diminishing returns for longer observations (which will happen when more observations only allow pushing out to longer orbital periods). 
-	There will still be small, short-period candidates to discover after \tesss Primary Mission.
+	This result should hold equally well for realistic detection efficiency 
+	thresholds, and it demonstrates that extended observations will be valuable 
+	because \tess will not yet have detected all the planets in the parameter 
+	space of $R_p<4R_\oplus$ planets orbiting bright stars on short-period 
+	orbits;
+	there will still be small, short-period planets orbiting bright stars to 
+	be discovered after \tesss Primary Mission.
 \begin{figure}[!t]
 	\centering
 	\includegraphics[scale=1.]{figures/snrf_histogram_with_ps.pdf}
@@ -82,7 +101,8 @@ We now discuss each metric in more depth:
 \end{figure}
 
 	\item $N_\mathrm{new,P>20d}$: it will be possible to detect as many new $P>20$ day planets in one year of \tesss Extended Mission as in both years of the Primary Mission.
-	The Primary Mission detects about 295 such planets; \hemis\:and \npole\:scenarios detect similar amounts.
+	The Primary Mission detects about 295 such planets; \hemis\:and 
+	\npole\:scenarios detect similar numbers.
 	These two scenarios are achieving the goal of long-period planet detection in slightly different ways: % (see discussion in Sec.~\ref{sec:discussion}):
 	\npole\:maximizes the average observing baseline per star, while \hemis\:observes the greatest possible number of stars for longer than 40 days.
 	The latter approach could succeed at detecting many planets (our result is that \hemis\:detects the most $P>20$ day planets), but it relies heavily upon the assumption that we can detect planets from only two transits over the course of the entire mission, even if this means only one transit in the Primary, and one transit in the Extended.
@@ -95,12 +115,16 @@ We now discuss each metric in more depth:
         difficult to be confident in either the detection or in the derived 
         orbital period.
         Experience from the \kepler mission showed that requiring 3 or more self-consistent transits substantially lowers the fraction of false signals~\citep{burke_Q1Q8_2014}.
-	In cases with a relatively high SNR per transit it is possible to confirm candidates, but with less certainty than if we had more transits in the first place.
+	In cases with a relatively high SNR per transit it is possible to confirm 
+	candidates, but less conveniently than if we had more transits in the first 
+	place.
 	\begin{figure*}[!t]
 		\centering
 		\includegraphics[scale=1.]{figures/Ntra_histogram.pdf}
 		%this figure uses 160802 data, which should be the same as 160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes from ext_sim_notes on this -- something's a bit off with the normalization. That said, rather than redo the previous figures with a code that might have a minor bug, my point here -- which is the hemis14d has this issue with few-transit detections -- isn't really any different.
-		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet candidates from each Extended Mission as a function of the number of observed transits.
+		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet 
+		candidates from each Extended Mission as a function of the total number of 
+		observed transits over all 3 years.
 		Candidates are `detected' in Fig.~\protect\ref{fig:yield_results} if $N_\mathrm{tra}\geq2$.
 		\textit{Right:} Same as left, restricted to $P>20$ day planets.
 		If any given scenario has a `bump' at 2 observed transits, then that scenario depends more heavily on our assumption of being able to make detections based on only two transits.
@@ -121,7 +145,10 @@ We now discuss each metric in more depth:
 	With this approximation, the \hemis\:scenario finds the most new habitable zone planets: 146 (which is subject to the same caveats discussed above for long period planet detections). 
 	The next-best scenarios, \npole, \npole\:and \shemiAvoid, all detect around 120.
 	Relative to the Primary Mission's 210 detections, this means Extended Missions boost the number of detected habitable zone planets by a factor of $\sim1.6$.
-	For purposes of weighing the value of habitable-zone detections in deciding between missions, the result that these scenarios all detect a similar number of planets indicates that this metric will likely not `tip the scales' in any direction.
+	For purposes of weighing the value of habitable-zone detections in deciding 
+	between missions, the result that these scenarios all detect a similar 
+	number of HZ planets indicates that this metric will likely not `tip the 
+	scales' in any direction.
 	
 	We note in passing that $\sim\!80\%$ of the habitable zone planets that \tess detects orbit M dwarfs with spectral classes ranging from M4 - M0, and $\sim\!15\%$ of them orbit M dwarfs later than M4.
 	We show the relevant cumulative distribution in Fig.~\ref{fig:CDF_habitable_zone}.
@@ -160,7 +187,11 @@ We now discuss each metric in more depth:
 	\item $N_\mathrm{new,atm}$:
 	  We define `planets that are amenable to atmospheric characterization' to mean planets whose SNR in transmission is at least half as large as that of GJ~1214b. We chose ``at least half as large'' rather than
           ``equal to'' in order to give a sufficiently large sample to prevent Poisson fluctuations from hindering our comparisons.
-	The relevant signal in transit spectroscopy is the ratio of the areas of atmosphere's annulus to the star's disk on the sky plane, $\delta_\mathrm{atm} = 2\pi R_p h_\mathrm{eff}/(\pi R_\star^2)$, where the effective scale height of the atmosphere $h_\mathrm{eff}$ is proportional to the actual scale height.
+	The relevant signal in transmission spectroscopy is the ratio of the areas 
+	of atmosphere's annulus to the star's disk on the sky plane, 
+	$\delta_\mathrm{atm} = 2\pi R_p h_\mathrm{eff}/(\pi R_\star^2)$, where the 
+	effective scale height of the atmosphere $h_\mathrm{eff}$ is proportional to 
+	the actual scale height.
 	Assuming that the planet is in thermal equilibrium with incident radiation from the host star, and that its atmosphere has known mean molecular weight and Bond albedo, we can compute a representative signal.
 	The noise performance depends on the observing instrument, and could be complex if not simply dominated by shot-noise from IR photons.
 	We circumvent such complexities via an empirical formula provided to us by Drake Deming, based on a multi-variate regression fit to detailed simulations performed by Dana Louie.
@@ -177,7 +208,9 @@ We now discuss each metric in more depth:
 	The coefficients are physically sensible: the 2.98 coefficient of $R_p$ minus the 1.019 coefficient of $M_p$ implies that the SNR depends inversely as bulk density, with puffier planets giving higher SNR for transit spectroscopy.
 	Although this formula uses a $V$ band magnitude ($\approx$0.5--0.6$\mu$m), while NIRISS's SOSS mode covers 0.6--2.8$\mu$m, the only difference if we were to use $J$ band magnitudes would be in the coefficients preceding the stellar radius and the semi-major axis terms (and thus implicitly, in the stellar mass).
 	Focusing our analysis to a SNR measured by \jwst is sensible given \tesss role as a `\jwst finder scope'~\citep{deming_jwst_tess_2009}.
-	We focus specifically on NIRISS given that it will likely be the workhorse \jwst instrument for transmission spectroscopy~\citep{beichman_observations_2014}.
+	We focus specifically on NIRISS but our analysis will be broadly applicable 
+	to other JWST instruments for transmission 
+	spectroscopy (see review by~\citet{beichman_observations_2014}).
 	\begin{figure*}[!th]
 		\centering
 		\includegraphics[]{figures/SNR_in_transmission.pdf}
@@ -185,7 +218,8 @@ We now discuss each metric in more depth:
 			The SNR is computed from Eq.~\protect\ref{eq:atmosphere_Deming}.
 			Planets above the horizontal black line ($\mathrm{SNR_{planet}/SNR_{GJ\ 1214b}} = 0.5$) are counted for Fig.~\protect\ref{fig:yield_results}'s metric of planets with `good' atmospheres for transmission spectroscopy.
 			GJ 1214b is marked with a star.
-			The coloring of planets indicates their relative insolation, as well as whether they fall our ad-hoc habitable zone ($0.2<S/S_\oplus<2)$.
+			The coloring of planets indicates their relative insolation, as well as 
+			whether they are in our approximate habitable zone ($0.2<S/S_\oplus<2)$.
 		}
 		\label{fig:atmosphere_scatter}
 	\end{figure*}
@@ -193,8 +227,12 @@ We now discuss each metric in more depth:
 	The system values for GJ 1214b are those found
 	by~\citet{charbonneau_gj1214b_2009}: $R_p = 2.678R_\oplus$, $M_p = 6.55M_\oplus$,
 	$R_\star = 0.211R_\odot$, $a = 0.0144\mathrm{AU}$, $V = 15.1$.
-	Using Eq.~\ref{eq:atmosphere_Deming}, we compute the SNR in transmission for all detected planets, for all Extended Mission scenarios.
-	Fig.~\ref{fig:atmosphere_scatter} shows one realization of the resulting distribution for planets detected in all three years of the \npole\:scenario.
+	Using Eq.~\ref{eq:atmosphere_Deming}, we compute the SNR in transmission for 
+	all detected planets, for all Extended Mission scenarios.
+	We normalize them to the equivalent SNR for GJ 1214b (3.94, per 
+	Eq.~\ref{eq:atmosphere_Deming}).
+	Fig.~\ref{fig:atmosphere_scatter} shows one realization of the resulting 
+	distribution for planets detected in all three years of the \npole\:scenario.
 
 	\tess mostly detects strongly irradiated planets (most points on Fig.~\ref{fig:atmosphere_scatter} are yellow).
 	A very small number, $\lesssim 10$, are both in the approximate habitable zone and also `favorable for atmospheric characterization'.
@@ -203,11 +241,14 @@ We now discuss each metric in more depth:
 	%\todo[inline]{what cloud model/opacity does this use?}
 
 	More importantly, Fig.~\ref{fig:yield_results} shows that most of the planets with atmospheres that are best for transmission spectroscopy are already discovered after two years.
-	The best Extended Missions (\shemiAvoid, \elong, \eshort\:and \hemis) boost the yield of such planets from $\sim\!100$ to $\sim\!125$.
+	The best Extended Missions (\shemiAvoid, \elong, \eshort\:and \hemis) boost 
+	the yield of such planets from $\sim\!100$ ($N_\mathrm{pri,atm}$) to 
+	$\sim\!125$ ($N_\mathrm{pri,atm} + N_\mathrm{new,atm}$).
 	The worst, \npole, finds about an additional 10.
 	This best-case boost of $1.25\times$ more `good' planets for atmospheric characterization is less than the relative boost of $1.6\times$ more newly detected long period planets.
 	Put differently, among the various possibilities for the Extended Mission,
-        there is more variation in $N_\mathrm{new,P<20d}$ than in $N_\mathrm{new,atm}$.
+        there is more variation in $N_\mathrm{new,P>20d}$ than in 
+        $N_\mathrm{new,atm}$.
 	
 	
 	\item $N_\mathrm{new,new\ stars}$:
