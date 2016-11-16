@@ -92,9 +92,14 @@ precision over an hour' is arbitrarily selected.
 
 \begin{figure}[!t]
 	\centering
-	\includegraphics[angle=90,width=1.05\textwidth]{figures/outage_earth_moon_primary.pdf}
-	\caption{`Outage' caused by Earth and Moon crossings as a function of time in the orbit.
-	Specifically, the $y$-axis shows the probability of having a polluted frame with mean incident earthlight or moonlight of $>300\ \mathrm{ct/px/s}$ in a time-step bin of 1/20$^\mathrm{th}$ of an orbit (where the probability is the number of polluted frames divided by the total number of frames in that bin).
+	\includegraphics[angle=90,width=1.05\textwidth]{figures/outage_earth_moon_primary_panels.pdf}
+	\caption{`Outage' caused by direct or scattered Earth- or Moonlight as a 
+	function of time in \tesss orbit.
+	Specifically, the $y$-axis shows the probability of having a polluted frame 
+	with mean incident flux $>300\,\mathrm{ct/px/s}$ in a time-step bin of 
+	1/20$^\mathrm{th}$ of an 
+	orbit (where the probability is the number of polluted frames divided by 
+	the total number of frames in that bin).
 	The mean of this outage across any given year is used to compute the number of dropped fields in Table~\protect\ref{tab:dropped_fields}, which should then be an upper bound to the impact of Earth and Moon crossings.
 	In this plot, the first year of observations are in the southern ecliptic 
 	hemisphere. The dashed line marks the beginning of `Year 2' (northern 
@@ -103,15 +108,22 @@ precision over an hour' is arbitrarily selected.
 	The worst fractional outage per orbit is in Camera 1, which 
 	points towards the ecliptic, over the first $\sim\!5$ orbits of the second 
 	year.
-	The plot has `spikes' because outage typically only occurs over a small 
-	fraction of \tesss orbit.}
+	The plot has `spikes' because outages only occur over a small 
+	fraction of \tesss orbit when the relevant orbits align.}
 	\label{fig:earth_moon_primary}
 \end{figure}
 %\clearpage
 \begin{figure}[!t]
 	\centering
-	\includegraphics[angle=90,width=1.05\textwidth]{figures/outage_earth_moon_ecl_narrow_1yr.pdf}
-	\caption{Same as Fig.~\protect\ref{fig:earth_moon_primary}, except for a hypothetical third year in which \tess observes the ecliptic with the cameras' long axis along the ecliptic plane for the entire year. The latter half of the year experiences far less Earth and Moon interference than the first half. Considering it implausible that we would opt to sacrifice such a large fraction of our observing time, we study the \elong\:and \eshort\:scenarios instead, as their observations avoid this effect during the first $\sim5$ months.}
+	\includegraphics[angle=90,width=1.05\textwidth]{figures/outage_earth_moon_ecliptic_ext_panels.pdf}
+	\caption{Same as Fig.~\protect\ref{fig:earth_moon_primary}, except showing 
+	a hypothetical third year in which \tess observes the ecliptic with the 
+	cameras' long axis along the ecliptic plane for the entire year. The latter 
+	half of the year experiences far less Earth and Moon interference than the 
+	first half. Considering it implausible that we would opt to sacrifice such 
+	a large fraction of our observing time, we study the \elong\:and 
+	\eshort\:scenarios instead, as their observations avoid this effect during 
+	the first $\sim5$ months.}
 	\label{fig:earth_moon_elong}
 \end{figure}
 \begin{table}[!tb]

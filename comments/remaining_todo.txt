@@ -1,0 +1,62 @@
+Wed 16 Nov 2016 01:46:50 PM EST TODO
+
+* p2 "a lot of these are simply changing Ntra=1 to Ntra=2"
+  -> mention the low Ntra statistics result in exec summ? (that allsky is bad
+  for getting large number of transits)
+* p7 pole suppression: is it actually blocking the sun adequately? really not
+  obvious (see OOM calcn sent to Roland).
+* p16: we're getting into alternatives, is it too early?
+  -> move discussion of alternative prioritization approaches to end?
+* p21: (Remark) it would make more sense for us to account for scattered sunlight 
+  in the same manner as zodiacal light in S+15. Compute a photon flux which 
+  varies as a function of ecliptic latitude & LONGITUDE. Assuming longitude=0 
+  (in sun direction), combine with lens hood plot **analytically**
+* Sec 1.1: add discussion of OOM issue with an pole-focused mission:
+  looking at the ecliptic pole btwn 2&3 puts 4 just 45deg off from the sun.
+  This is bad.
+
+* In Exec Summ, Make caveat that allsky is overly dependent on 2 transit
+  scenarios.
+  (in the paragraph of "to first order, everything is the same".
+  then, "however, there are some qualitative differences that are not obvious")
+
+* Possible: Table with QUALITATIVE differences btwn scenarios:
+  * e.g., allsky 2transit issue
+  and the pole scenario of scattered light.
+
+* Added appendix with OOM calculation (perhaps with equations) describing the
+  issue with pole scenario.
+
+  --> Plausible qualitative issues: 
+    scattered light (Earth/Moon/Sun), 
+    bad ephemerides, 
+    P>20d dependent on 2 transits, 
+    zodiacal background, 
+    extensible (to>year3), 
+    ability to move targets from FFIs to PSs, 
+    overlap w/
+      K2, 
+      Kepler, 
+      JWST, 
+      CHEOPS
+
+Contact Isaac:
+  * Can we have a read-only (for anonymous people) version of the wiki page?
+  (a single URL & its sub-URLs)
+  * Make this happen before Monday, Nov 21.
+
+Memo to attendees by Monday of presentation week. (Dec 5)
+
+To TSC no later than Monday 21st Nov.; then they'll have 2 weeks.
+
+
+
+
+
+
+other:
+
+* Kipping & Lam 2016 seemed to have missed this question of the probability of 
+  detecting an outer companion as a function of the orbital inclination of the 
+  inner companion.
+  Likely be worth emailing them about.
