@@ -69,7 +69,24 @@ They both do well at maximizing the number of newly detected planets, while also
 We now discuss each metric in more depth:
 \begin{enumerate}
 	\item $N_\mathrm{new}$: we detect about as many new planets in Year 3 as we detect planets in either Years 1 or 2: roughly $1250$.
-	The worst and the best scenarios (\elong\:and \hemis, respectively) differ only by a factor of 1.2.
+	The worst and the best scenarios (\elong\:and \hemis, respectively) differ 
+	only by a factor of 1.2.
+	\begin{figure}[!t]
+		\centering
+		\includegraphics[scale=1.]{figures/snrf_histogram_with_ps.pdf}
+		\caption{Histogram of phase-folded SNRs for candidate $R_p<4R_\oplus$ 
+		planets following the Primary Mission (from both PS and FFI 
+		observations; values are means of 20 Monte Carlo trials; 
+		$N_\mathrm{tra}\geq2$).
+			If an Extended Mission observes half of the sky, it roughly doubles 
+			the number of observed transits for half of the planets observed in 
+			the Primary Mission, enabling detection of $\approx 2316/2 = 1158$ 
+			planets (half of the blue integrated area in the plot). This coarse 
+			estimate is a similar result to our detailed calculations, and 
+			shows the value of continuing \tesss observations 
+			\textit{irrespective of where we observe}.}
+		\label{fig:snrf_histogram}
+	\end{figure}
 	The fact that there are so many new planets to be detected from extended observations, particularly from full frame images, and that the absolute number of new planets is roughly invariant to the spacecraft's pointing, can be understood from Fig.~\ref{fig:snrf_histogram}.
 	This figure illustrates a point that was originally noted by~\citetalias{Sullivan_2015}:
         \tesss Primary Mission will miss many short-period planets around bright stars, and is therefore
@@ -92,22 +109,64 @@ We now discuss each metric in more depth:
 	orbits;
 	there will still be small, short-period planets orbiting bright stars to 
 	be discovered after \tesss Primary Mission.
-\begin{figure}[!t]
-	\centering
-	\includegraphics[scale=1.]{figures/snrf_histogram_with_ps.pdf}
-	\caption{Histogram of phase-folded SNRs for candidate $R_p<4R_\oplus$ planets following the Primary Mission (from both PS and FFI observations; values are means of 20 Monte Carlo trials; $N_\mathrm{tra}\geq2$).
-	If an Extended Mission observes half of the sky, it roughly doubles the number of observed transits for half of the planets observed in the Primary Mission, enabling detection of $\approx 2316/2 = 1158$ planets (half of the blue integrated area in the plot). This coarse estimate is a similar result to our detailed calculations, and shows the value of continuing \tesss observations \textit{irrespective of where we observe}.}
-	\label{fig:snrf_histogram}
-\end{figure}
 
-	\item $N_\mathrm{new,P>20d}$: it will be possible to detect as many new $P>20$ day planets in one year of \tesss Extended Mission as in both years of the Primary Mission.
+
+	\item $N_\mathrm{new,P>20d}$: it will be possible to detect as many new 
+	$P>20$ day planets in one year of \tesss Extended Mission as in both years 
+	of the Primary Mission.
 	The Primary Mission detects about 295 such planets; \hemis\:and 
 	\npole\:scenarios detect similar numbers.
-	These two scenarios are achieving the goal of long-period planet detection in slightly different ways: % (see discussion in Sec.~\ref{sec:discussion}):
-	\npole\:maximizes the average observing baseline per star, while \hemis\:observes the greatest possible number of stars for longer than 40 days.
-	The latter approach could succeed at detecting many planets (our result is that \hemis\:detects the most $P>20$ day planets), but it relies heavily upon the assumption that we can detect planets from only two transits over the course of the entire mission, even if this means only one transit in the Primary, and one transit in the Extended.
-
-	This point -- that the ability of the \hemis\:scenario to detect many long period planets is grounded on the assumption that two transits at high enough SNR are sufficient for detection -- is made explicit in the right panel of Fig.~\ref{fig:Ntra_hist}.
+	These two scenarios are achieving the goal of long-period planet detection 
+	in slightly different ways: % (see discussion in Sec.~\ref{sec:discussion}):
+	\npole\:maximizes the average observing baseline per star, while 
+	\hemis\:observes the greatest possible number of stars for longer than 40 
+	days.
+	The latter approach could succeed at detecting many planets (our result is 
+	that \hemis\:detects the most $P>20$ day planets), but it relies heavily 
+	upon the assumption that we can detect planets from only two transits over 
+	the course of the entire mission, even if this means only one transit in 
+	the Primary, and one transit in the Extended.
+	\begin{figure}[!t]
+		\centering
+		\includegraphics{figures/Ntra_histogram.pdf}
+		%this figure uses 160802 data, which should be the same as 
+		%160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes 
+		%from ext_sim_notes on this -- something's a bit off with the 
+		%normalization. That said, rather than redo the previous figures 
+		%with a code that might have a minor bug, my point here -- which is 
+		%the hemis14d has this issue with few-transit detections -- isn't 
+		%really any different.
+		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet 
+			candidates from each Extended Mission as a function of the 
+			total number of 
+			observed transits over all 3 years.
+			Candidates are `detected' in 
+			Fig.~\protect\ref{fig:yield_results} if $N_\mathrm{tra}\geq2$.
+			\textit{Right:} Same as left, restricted to $P>20$ day planets.
+			If any given scenario has a `bump' at 2 observed transits, then 
+			that scenario depends more heavily on our assumption of being 
+			able to make detections based on only two transits.
+			Lines between points have no physical meaning; they are 
+			intended to improve readability.}
+		\label{fig:Ntra_hist}
+	\end{figure}
+	\begin{marginfigure}[-2in]
+		\centering
+		\includegraphics[scale=1.]{figures/Ntra_histogram_primary.pdf}
+		%\missingfigure{histogram of Primary Mission number of transits for 
+		%detected planets}
+		% this figure uses BLAH data
+		\caption{ 
+			Similar to Fig.~\protect\ref{fig:Ntra_hist}, but for the Primary 
+			Mission.
+		}
+		\label{fig:Ntra_hist_primary}
+	\end{marginfigure}
+	\vspace{-0.47cm}
+	This point -- that the ability of the \hemis\:scenario to detect many long 
+	period planets is grounded on the assumption that two transits at high 
+	enough SNR are sufficient for detection -- is made explicit in the right 
+	panel of Fig.~\ref{fig:Ntra_hist}.
 	About half of the long period planets that \hemis\:finds are detected with only two transits.
 	By way of comparison, \npole\:detects most of its long-period planets with $\ge 4$ transits.
 	This means that the \npole\:detections are more secure.
@@ -120,29 +179,7 @@ We now discuss each metric in more depth:
 	In cases with a relatively high SNR per transit it is possible to confirm 
 	candidates, but less conveniently than if we had more transits in the first 
 	place.
-	\begin{figure}[!t]
-		\centering
-		\includegraphics{figures/Ntra_histogram.pdf}
-		%this figure uses 160802 data, which should be the same as 160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes from ext_sim_notes on this -- something's a bit off with the normalization. That said, rather than redo the previous figures with a code that might have a minor bug, my point here -- which is the hemis14d has this issue with few-transit detections -- isn't really any different.
-		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet 
-		candidates from each Extended Mission as a function of the total number of 
-		observed transits over all 3 years.
-		Candidates are `detected' in Fig.~\protect\ref{fig:yield_results} if $N_\mathrm{tra}\geq2$.
-		\textit{Right:} Same as left, restricted to $P>20$ day planets.
-		If any given scenario has a `bump' at 2 observed transits, then that scenario depends more heavily on our assumption of being able to make detections based on only two transits.
-		Lines between points have no physical meaning; they are intended to improve readability.}
-		\label{fig:Ntra_hist}
-	\end{figure}
-	\begin{marginfigure}[-8in]
-		\centering
-		\includegraphics[scale=1.]{figures/Ntra_histogram_primary.pdf}
-		%\missingfigure{histogram of Primary Mission number of transits for detected planets}
-		% this figure uses BLAH data
-		\caption{ 
-			Similar to Fig.~\protect\ref{fig:Ntra_hist}, but for the Primary Mission.
-		}
-		\label{fig:Ntra_hist_primary}
-	\end{marginfigure}
+
 	\item $N_\mathrm{new,HZ}$: we approximate the habitable zone as the geometric shell around a host star in which a planet's insolation satisfies $0.2>S/S_\oplus>2.0$.
 	With this approximation, the \hemis\:scenario finds the most new habitable zone planets: 146 (which is subject to the same caveats discussed above for long period planet detections). 
 	The next-best scenarios, \npole, \npole\:and \shemiAvoid, all detect around 120.
@@ -159,26 +196,32 @@ We now discuss each metric in more depth:
 	Adopting the habitable zone of~\citet{kopparapu_habitable_2013},~\citetalias{Sullivan_2015} found $14\pm4$ planets with $R_p<2R_\oplus$. We find $11 \pm 3$ such planets.
 	The rule of thumb that Extended Missions give roughly $1.6\times$ the number of new $0.2<S/S_\oplus<2$ habitable zone planets applies to the~\citet{kopparapu_habitable_2013} habitable zone as well as $0.2<S/S_\oplus<2.0$.
 	Another point raised by Fig.~\ref{fig:scatter_habitable_zone} is that the~\citet{kopparapu_habitable_2013} habitable zone, which is physically motivated by 1-D radiative-convective cloud-free climate models with accurate absorption coefficients, results in roughly 3 times fewer `habitable zone' planet detections than our ad-hoc criterion of $0.2<S/S_\oplus<2$.
-	\begin{marginfigure}[-7in]
+	\begin{marginfigure}[-8in]
 		\centering
 		\includegraphics[scale=1.]{figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf}
 		\caption{Cumulative distribution of $R_p<4R_\oplus$ and $0.2<S/S_\oplus<2$ planet candidates from the Primary Mission (a proxy for the habitable zone). Boundaries of spectral classes are highly approximate, and taken from from~\protect\citet{habets_empirical_1981} and~\protect\citet{baraffe_massspectral_1996}.}
 		\label{fig:CDF_habitable_zone}
 	\end{marginfigure}
-	\begin{marginfigure}[-2in]
+	\begin{marginfigure}[-3in]
 		\centering
 		\includegraphics[scale=1.]{figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf}
-		\caption{Scatter plot of $R_p<4R_\oplus$ planet candidates falling in the~\protect\citetalias{Sullivan_2015} or \protect\citet{kopparapu_habitable_2013} habitable zones. }
+		\caption{Scatter plot of $R_p<4R_\oplus$ planet candidates falling 
+			in the~\protect\citetalias{Sullivan_2015} or 
+			\protect\citet{kopparapu_habitable_2013} habitable zones. }
 		\label{fig:scatter_habitable_zone}
 	\end{marginfigure}	
-	
+
 	\item $N_\mathrm{sys,extra\ planets}$: for how many systems do we detect extra planets?
 	Our assumptions about multiple planet system distributions are crude -- we assume independent probability draws from single planet occurrence distributions.
 	Thus our simulated planet population does not have systems of tightly packed inner planets in realistic numbers.
 	That said, we expect this statistic to be some indication of the information that we are not explicitly modeling, but which can be obtained from extended observations of planetary systems post-planet detection. 
 	This additional information includes improved precision on physical and dynamical parameters of the system.
 	It also includes transit timing variations, which could be used to discover non-transiting planets as well as transiting outer companions.
-	TTVs can also give dynamical hints for the formation history of planetary systems, for instance, discriminating between \textit{in situ} formation and inward migration as~\citet{mills_resonant_2016} argued for the Kepler 223 system.
+	TTVs can also give dynamical hints for the formation history of planetary 
+	systems, for instance, discriminating between \textit{in situ} formation 
+	and inward migration as~\citet{mills_resonant_2016} argued for the Kepler 
+	223 system.
+
 	
 	The most prominent feature in the results for this metric is that \elong\:detects the fewest systems with extra planets (44, which is $39\%$ worse than the next-best). 
 	This is reasonable because \elong\:spends the most time looking at new sky, and in the process observes fewer systems that were detected in the Primary Mission.

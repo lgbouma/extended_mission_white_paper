@@ -1,29 +1,6 @@
 Wed 16 Nov 2016 01:46:50 PM EST TODO
 
-* Sec 1.1: add discussion of OOM issue with a pole-focused mission:
-  looking at the ecliptic pole btwn 2&3 puts 4 just 45deg off from the sun.
 
-* Merge into memo (as appendices or in relevant sections):
-  * Discussion of whether sun is being adequately blocked in pole scenario
-    (likely is not). Likely footnote when pole is introduced.
-  * Analytic version of the extra scattered light calcn
-  * Moon,Earth,Sun additional flux plots.
-
-* Possible: Table with QUALITATIVE differences btwn scenarios:
-  * e.g., allsky 2transit issue and the pole scenario of scattered light.
-
-  --> Plausible qualitative issues: 
-    scattered light (Earth/Moon/Sun), 
-    bad ephemerides, 
-    P>20d dependent on 2 transits, 
-    zodiacal background, 
-    extensible (to>year3), 
-    ability to move targets from FFIs to PSs, 
-    overlap w/
-      K2, 
-      Kepler, 
-      JWST, 
-      CHEOPS
 
 Contact Isaac:
   * Can we have a read-only (for anonymous people) version of the wiki page?
@@ -46,4 +23,21 @@ To TSC no later than Monday 21st Nov.; then they'll have 2 weeks.
 
 
 
+==============================
+For discussion (but not to be written)
+* Possible: Table with QUALITATIVE differences btwn scenarios:
+  * e.g., allsky 2transit issue and the pole scenario of scattered light.
+
+  --> Plausible qualitative issues: 
+    scattered light (Earth/Moon/Sun), 
+    bad ephemerides, 
+    P>20d dependent on 2 transits, 
+    zodiacal background, 
+    extensible (to>year3), 
+    ability to move targets from FFIs to PSs, 
+    overlap w/
+      K2, 
+      Kepler, 
+      JWST, 
+      CHEOPS
 
