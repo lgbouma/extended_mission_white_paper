@@ -114,13 +114,15 @@ We now discuss each metric in more depth:
 	For two-transit detections, especially those separated by a gap of a year or more in the \tess data, it will be
         difficult to be confident in either the detection or in the derived 
         orbital period.
-        Experience from the \kepler mission showed that requiring 3 or more self-consistent transits substantially lowers the fraction of false signals~\citep{burke_Q1Q8_2014}.
+    Experience from the \kepler mission showed that requiring 3 or more 
+    self-consistent transits substantially lowers the fraction of false 
+    signals~\citep{burke_Q1Q8_2014}.
 	In cases with a relatively high SNR per transit it is possible to confirm 
 	candidates, but less conveniently than if we had more transits in the first 
 	place.
-	\begin{figure*}[!t]
+	\begin{figure}[!t]
 		\centering
-		\includegraphics[scale=1.]{figures/Ntra_histogram.pdf}
+		\includegraphics{figures/Ntra_histogram.pdf}
 		%this figure uses 160802 data, which should be the same as 160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes from ext_sim_notes on this -- something's a bit off with the normalization. That said, rather than redo the previous figures with a code that might have a minor bug, my point here -- which is the hemis14d has this issue with few-transit detections -- isn't really any different.
 		\caption{ \textit{Left:} Histogram of new $R_p<4R_\oplus$ planet 
 		candidates from each Extended Mission as a function of the total number of 
@@ -130,8 +132,8 @@ We now discuss each metric in more depth:
 		If any given scenario has a `bump' at 2 observed transits, then that scenario depends more heavily on our assumption of being able to make detections based on only two transits.
 		Lines between points have no physical meaning; they are intended to improve readability.}
 		\label{fig:Ntra_hist}
-	\end{figure*}
-	\begin{marginfigure}[3in]
+	\end{figure}
+	\begin{marginfigure}[-8in]
 		\centering
 		\includegraphics[scale=1.]{figures/Ntra_histogram_primary.pdf}
 		%\missingfigure{histogram of Primary Mission number of transits for detected planets}
@@ -157,13 +159,13 @@ We now discuss each metric in more depth:
 	Adopting the habitable zone of~\citet{kopparapu_habitable_2013},~\citetalias{Sullivan_2015} found $14\pm4$ planets with $R_p<2R_\oplus$. We find $11 \pm 3$ such planets.
 	The rule of thumb that Extended Missions give roughly $1.6\times$ the number of new $0.2<S/S_\oplus<2$ habitable zone planets applies to the~\citet{kopparapu_habitable_2013} habitable zone as well as $0.2<S/S_\oplus<2.0$.
 	Another point raised by Fig.~\ref{fig:scatter_habitable_zone} is that the~\citet{kopparapu_habitable_2013} habitable zone, which is physically motivated by 1-D radiative-convective cloud-free climate models with accurate absorption coefficients, results in roughly 3 times fewer `habitable zone' planet detections than our ad-hoc criterion of $0.2<S/S_\oplus<2$.
-	\begin{marginfigure}
+	\begin{marginfigure}[-7in]
 		\centering
 		\includegraphics[scale=1.]{figures/CDF_most_HZ_planets_orbit_early_M_dwarfs.pdf}
 		\caption{Cumulative distribution of $R_p<4R_\oplus$ and $0.2<S/S_\oplus<2$ planet candidates from the Primary Mission (a proxy for the habitable zone). Boundaries of spectral classes are highly approximate, and taken from from~\protect\citet{habets_empirical_1981} and~\protect\citet{baraffe_massspectral_1996}.}
 		\label{fig:CDF_habitable_zone}
 	\end{marginfigure}
-	\begin{marginfigure}
+	\begin{marginfigure}[-2in]
 		\centering
 		\includegraphics[scale=1.]{figures/hz_planet_detections_rp_lt_4re_kopparapu_2013_incl.pdf}
 		\caption{Scatter plot of $R_p<4R_\oplus$ planet candidates falling in the~\protect\citetalias{Sullivan_2015} or \protect\citet{kopparapu_habitable_2013} habitable zones. }
@@ -211,7 +213,7 @@ We now discuss each metric in more depth:
 	We focus specifically on NIRISS but our analysis will be broadly applicable 
 	to other JWST instruments for transmission 
 	spectroscopy (see review by~\citet{beichman_observations_2014}).
-	\begin{figure*}[!th]
+	\begin{figure*}[!t]
 		\centering
 		\includegraphics[]{figures/SNR_in_transmission.pdf}
 		\caption{ Scatter plot showing the SNR in transmission of detected planets with $R_p<4R_\oplus$ from one Monte Carlo realization of all 3 years of the \npole\:scenario.
