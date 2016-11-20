@@ -7,7 +7,7 @@ s(\theta) \equiv \frac{F_\mathrm{obs}}{F_\mathrm{ns}},
 \end{equation}
 for $F_\mathrm{obs}$ the observed flux of the source (that which reaches the 
 CCD), and $F_\mathrm{ns}$ the flux that would be observed with no 
-suppression.
+suppression and $\theta=0$.
 The observed flux of the source can then be written as a function of $\theta$
 \begin{align}
 	F_\mathrm{obs}(\theta) &= s(\theta) F_\mathrm{ns}  \\
@@ -42,8 +42,9 @@ these numbers gives
 \end{equation}
 
 The above expression assumes that the scattered flux from the source 
-is uniformly spread across the CCD. The reality may be quite different.
-In addition, our zero-point relies on an $I$ magnitude calibration -- 
+is uniformly spread across the CCD. The reality may be quite different,
+but our purpose in this case is to simply get order-of-magnitude accuracy.
+Another caveat is that our zero-point relies on an $I$ magnitude calibration -- 
 a more accurate approach would use separate bandpass-dependent zero-points.
 
 Assuming a Poisson arrival rate, the standard deviation in the number of counts 
@@ -101,7 +102,6 @@ Given the coarseness of our lens hood model
 (Fig.~\ref{fig:lens_hood_suppression}), we proceed in the main report as if
 this problem can be addressed, and for simplicity ignore the expected
 modified RMS shown in Fig.~\ref{fig:sun_scat}'s dashed red line.
-
 
  
 
