@@ -5,3 +5,4 @@
 *.out
 *.tdo
 *.log
+/figures/fully*

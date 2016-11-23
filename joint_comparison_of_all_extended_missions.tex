@@ -18,7 +18,7 @@ With this in mind, for each Extended Mission scenario we ask the following quest
 \end{enumerate}
 \begin{figure}[!t]
 	\centering
-	\includegraphics[scale=2.]{tables/cropped_tables_vis.pdf}
+	\includegraphics[scale=2.]{tables/cropped_tables_vis_nogap.pdf}
 	%from 160729_t50 data. generate with tables_vis.tex
 	\caption{Detected planet metrics for six possible Extended Missions (values are means of 50 Monte Carlo realizations of our calculation, all for $R_p<4R_\oplus$).
 	\textit{Top:} postage stamp detections, \textit{Middle:} full frame image only detections, \textit{Bottom:} sum of both.
@@ -66,18 +66,14 @@ Skimming the bottom panel for which missions are highlighted in green when accou
 They both do well at maximizing the number of newly detected planets, while also performing well at detecting long period planets, and thus planets in their stars' habitable zones.
 \hemis\:also has the largest number of systems in which extra planets are detected.
 
-We now discuss each metric in more depth:
-\begin{enumerate}
-	\item $N_\mathrm{new}$: we detect about as many new planets in Year 3 as we detect planets in either Years 1 or 2: roughly $1250$.
-	The worst and the best scenarios (\elong\:and \hemis, respectively) differ 
-	only by a factor of 1.2.
+We now discuss each metric of Fig.~\ref{fig:yield_results} in more depth:
 	\begin{figure}[!t]
 		\centering
 		\includegraphics[scale=1.]{figures/snrf_histogram_with_ps.pdf}
 		\caption{Histogram of phase-folded SNRs for candidate $R_p<4R_\oplus$ 
-		planets following the Primary Mission (from both PS and FFI 
-		observations; values are means of 20 Monte Carlo trials; 
-		$N_\mathrm{tra}\geq2$).
+			planets following the Primary Mission (from both PS and FFI 
+			observations; values are means of 20 Monte Carlo trials; 
+			$N_\mathrm{tra}\geq2$).
 			If an Extended Mission observes half of the sky, it roughly doubles 
 			the number of observed transits for half of the planets observed in 
 			the Primary Mission, enabling detection of $\approx 2316/2 = 1158$ 
@@ -87,7 +83,14 @@ We now discuss each metric in more depth:
 			\textit{irrespective of where we observe}.}
 		\label{fig:snrf_histogram}
 	\end{figure}
-	The fact that there are so many new planets to be detected from extended observations, particularly from full frame images, and that the absolute number of new planets is roughly invariant to the spacecraft's pointing, can be understood from Fig.~\ref{fig:snrf_histogram}.
+\begin{enumerate}
+	\item $N_\mathrm{new}$: we detect about as many new planets in Year 3 as we detect planets in either Years 1 or 2: roughly $1250$.
+	The worst and the best scenarios (\elong\:and \hemis, respectively) differ 
+	only by a factor of 1.2.
+	The fact that there are so many new planets to be detected from extended 
+	observations, particularly from full frame images, and that the absolute 
+	number of new planets is roughly invariant to the spacecraft's pointing, 
+	can be justified (post-facto) with Fig.~\ref{fig:snrf_histogram}.
 	This figure illustrates a point that was originally noted by~\citetalias{Sullivan_2015}:
         \tesss Primary Mission will miss many short-period planets around bright stars, and is therefore
         incomplete even its intended hunting ground.
@@ -128,7 +131,7 @@ We now discuss each metric in more depth:
 	the Primary, and one transit in the Extended.
 	\begin{figure}[!t]
 		\centering
-		\includegraphics{figures/Ntra_histogram.pdf}
+		\includegraphics{figures/Ntra_histogram_nogap.pdf}
 		%this figure uses 160802 data, which should be the same as 
 		%160728_t50, but has ntra_min set to 1 in yieldCode. Read my notes 
 		%from ext_sim_notes on this -- something's a bit off with the 
@@ -288,7 +291,7 @@ We now discuss each metric in more depth:
 	More importantly, Fig.~\ref{fig:yield_results} shows that most of the planets with atmospheres that are best for transmission spectroscopy are already discovered after two years.
 	The best Extended Missions (\shemiAvoid, \elong, \eshort\:and \hemis) boost 
 	the yield of such planets from $\sim\!100$ ($N_\mathrm{pri,atm}$) to 
-	$\sim\!125$ ($N_\mathrm{pri,atm} + N_\mathrm{new,atm}$).
+	$\sim\!120$ ($N_\mathrm{pri,atm} + N_\mathrm{new,atm}$).
 	The worst, \npole, finds about an additional 10.
 	This best-case boost of $1.25\times$ more `good' planets for atmospheric characterization is less than the relative boost of $1.6\times$ more newly detected long period planets.
 	Put differently, among the various possibilities for the Extended Mission,
@@ -303,10 +306,16 @@ We now discuss each metric in more depth:
          And the region on the sky with the greatest number of new stars is the ecliptic.
 	 It is not surprising, then, that the \elong\:scenario finds the largest number of planets around new stars.
          The \elong\:scenario dedicates 7 of a single year's 13 observing sectors to the ecliptic (where the other 6 are spent centered at the North Ecliptic Pole due to excessive Earth and Moon crossings).
-	It consequently detects twice as many new planets about newly observed stars as the next-best scenarios: \eshort\:and \shemiAvoid\:(366 vs 171 and 161, respectively).
+	It consequently detects twice as many new planets about newly observed 
+	stars as the next-best scenarios: \eshort\:and \shemiAvoid\:(366 vs 171 and 
+	114, respectively).
 	These latter two scenarios also spend time observing the ecliptic, but with 
 	only one camera, rather than with all four cameras simultaneously.
-	We note that even though \elong\:is the scenario most successful in detecting planets about new stars, the new stars represent only $\sim\!30\%$ of the total number of new detections.~\footnote{Here, we remind the reader that ``new'' refers only to \tess observations. Some of these stars will
+	We note that even though \elong\:is the scenario most successful in 
+	detecting planets about new stars, the new stars represent only 
+	$\sim\!30\%$ of the total number of new detections.\footnote{Here, we 
+	remind the reader that ``new'' refers only to \tess observations. Some of 
+	these stars will
           have been observed by K2 or other projects (see discussion in Sec.~\ref{sec:discussion}).}
 
 	\item $N_\mathrm{new,SNR\lor N_{tra}}$:

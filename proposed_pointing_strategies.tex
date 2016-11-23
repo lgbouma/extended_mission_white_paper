@@ -9,7 +9,7 @@ outlined in Sec.~\ref{sec:constraints_on_pointings}, we selected the
 following scenarios for detailed study:
 
 \begin{figure*}[!bt]
-	\includegraphics{figures/proposed_pointings_fin_names.pdf}
+	\includegraphics{figures/proposed_pointings_flat.pdf}
 	\caption{Proposed pointing strategies for a \tess Extended Mission, visualized in ecliptic coordinates. \nhemi, \npole, \shemiAvoid, \elong, \eshort, and \hemis. Note for \elong\:and \eshort\:that Earth and moon crossings likely make an entire year looking at the ecliptic impractical (see Fig.~\protect\ref{fig:earth_moon_elong}).}
 	\label{fig:proposed_pointings}
 \end{figure*}
@@ -53,12 +53,13 @@ following scenarios for detailed study:
 	greatest sensitivity to long-period planets.
 
 \item[Scenario 3.] \shemiAvoid: Repeat observations of one of the two
-  ecliptic hemispheres, but in this case shifting all fields $12^\circ$
+  ecliptic hemispheres, but in this case shifting all fields $6^\circ$
   toward the ecliptic, such that the combined fields-of-view reach all
-  the way from $6^\circ$ below the ecliptic to the ecliptic pole.
+  the way from the ecliptic to $6^\circ$ behind the ecliptic pole.
   \textit{Justification:} trades the long continuous viewing zone near
   the pole for greater sky coverage, and in particular, coverage of
-  the ecliptic zone which was missed in the Primary Mission.  Chose
+  the ecliptic zone which was missed in the Primary Mission. Extensible
+  to Year 4, and freshens ephemerides. Chose
   to simulate southern ecliptic hemisphere since the northern
   version of this plan would suffer more from Earth and Moon interference
   (cf. Table~\ref{tab:dropped_fields} in
@@ -102,7 +103,13 @@ report manageable.  Among these other possibilities that were considered but not
 	\item The \nhemi\:strategy applied to the southern ecliptic hemipshere rather than the northern (we do not expect major differences).
 	Similarly, the \nhemi\:strategy, but rotated about the ecliptic polar axis by
 	$12^\circ$ in longitude.
-	\item The north/south inversion of \shemiAvoid, which is more strongly affected by Earth and Moon crossings (see Sec.~\ref{sec:earth_moon_crossings}).
+	\item The Northern inversion of \shemiAvoid, which is more strongly 
+	affected by Earth and Moon crossings (Sec.~\ref{sec:earth_moon_crossings}) 
+	and is less able to 
+	improve knowledge of mid-transit times 
+	(Fig.~\ref{fig:lowering_uncertainty_tc}).
+	\item A version of \nhemi\ in which all fields are $12^\circ$ closer to 
+    the ecliptic, rather than $6^\circ$ as in \shemiAvoid.
 	\item A full year spent observing the ecliptic.  Such a plan would similarly 
 	suffer from Earth and Moon crossings for a substantial fraction of the year.
 	We show the outage as a function of time in Fig.~\ref{fig:earth_moon_elong}.
