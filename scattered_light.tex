@@ -61,12 +61,12 @@ per pixel per 2 second readout is then
 	\centering
 	\includegraphics{figures/precision_angles_sun.pdf}
 	\caption{Noise budget including Solar scattered light at different angles 
-		$\theta$ from camera boresight. Note that lines where $\mu \gtrsim 
-		10^5\,\mathrm{ct/px/s}$ from Eq.~\protect\ref{eq:mean_added_flux} are 
-		in 
-		fact 
-		saturated and thus completely unusable. The lines are spaced by 
-		$1^\circ$.} 
+		$\theta$ from camera boresight. 
+		The number given in brackets is $\sigma$ in 
+		Eq.~\protect\ref{eq:added_RMS} --
+		the extra standard deviation about the mean.
+		Squaring, lines where $\mu \gtrsim 10^5 \mathrm{ct/px/s}$ will saturate 
+		the CCD pixels (and thus are not plotted).} 
 	\label{fig:sun_scat}
 \end{figure}
 To compute the net effect on TESS's noise budget, we add $\sigma$ from 
@@ -108,13 +108,14 @@ modified RMS shown in Fig.~\ref{fig:sun_scat}'s dashed red line.
 \begin{figure}[!t]
 	\centering
 	\includegraphics{figures/precision_angles_moon.pdf}
-	\caption{Same as Fig.~\protect\ref{fig:sun_scat}, for scattered Moonlight.} 
+	\caption{Same as Fig.~\protect\ref{fig:sun_scat}, for scattered Moonlight.
+		Gray lines are spaced by $1^\circ$.} 
 	\label{fig:moon_scat}
 \end{figure}
 \begin{figure}[!t]
 	\centering
 	\includegraphics{figures/precision_angles_earth.pdf}
 	\caption{Same as Fig.~\protect\ref{fig:sun_scat}, for scattered 
-	Earthlight.} 
+	Earthlight. Gray lines are spaced by $1^\circ$.} 
 	\label{fig:earth_scat}
 \end{figure}
