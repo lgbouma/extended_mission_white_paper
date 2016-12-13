@@ -1,7 +1,7 @@
 \documentclass{tufte-handout}
-
 %\geometry{showframe}% for debugging purposes -- displays the margins
-
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{float} % has option [H] for force placement
 \usepackage{graphicx} % useful for eg. pdf or eps or svg graphics
 \usepackage[space]{grffile}
@@ -19,7 +19,6 @@
 \usepackage{pdfpages}
 \usepackage{verbatim} % for \begin{comment}
 \usepackage{todonotes}
-\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{longtable} % For caption on head of table, long-table example.
 \usepackage{afterpage}  % to put at beginning of longtables to float them
@@ -37,15 +36,12 @@
 % The units package provides nice, non-stacked fractions and better spacing
 % for units.
 \usepackage{units}
-
 % The fancyvrb package lets us customize the formatting of verbatim
 % environments.  We use a slightly smaller font.
 \usepackage{fancyvrb}
 \fvset{fontsize=\normalsize}
-
 % Small sections of multiple columns
 \usepackage{multicol}
-
 % These commands are used to pretty-print LaTeX commands
 \newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
 \newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
@@ -56,19 +52,26 @@
 \newcommand{\doccls}[1]{\texttt{#1}}% document class name
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 
-
 \setcounter{secnumdepth}{3} % show section and subsection numbers
-
 %\bibliographystyle{plainnat} % plain numbered bibliography style
 \bibliographystyle{abbrvnat} % abbreviated style
-
 % In align* environment, use \numberthis to only number last eqn
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+% For footnote memory
+
 
 % % TITLE, AUTHORS
 
 \title{Planet-Detection Simulations for Several Possible TESS Extended Missions}
+%N.b. \thanks{} in author gives a footnote
+%\renewcommand\Authfont{\itshaped\large}
+%\renewcommand\Affilfont{\itshape\tiny}
 
-\author[listhere]{Luke Bouma, Josh Winn, Jacobi Kosiarek, Peter McCullough}
+\author{\normalsize{Luke Bouma$^{1,2,3}$, 
+	Josh Winn$^{1,2,3}$, 
+	Jacobi Kosiarek$^{2}$ 
+	and Peter McCullough$^{4,5}$}}
+
+\date{}
 
 %\date{24 January 2009}  % if left out, the current date will be used

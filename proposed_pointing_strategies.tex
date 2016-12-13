@@ -35,19 +35,22 @@ following scenarios for detailed study:
 
 \item[Scenario 2.] \npole: Focus on one of the ecliptic poles,
 	arbitrarily chosen to be the north ecliptic pole for
-	concreteness. \tesss lens hood must still
+	concreteness. \tesss sunshade and lens hoods must still
 	suppress incoming sunlight in this scenario.
-	Simply rotating $36^\circ$ about spacecraft $+Y$ (cf. 
-	Fig.~\ref{fig:spacecraft_angles}) is likely insufficient, because
-	it would result in Camera 4's boresight pointing only $45^\circ$
-	away from the Sun. Appendix~\ref{sec:scattered_npole} details the
-	tradeoff, unique to this scenario, between scattered sunlight and solar 
-	power.
-	We assume that this trade-off can be addressed without adversely
-	impacting \tesss noise budget.\footnote{Whether this 
-		assumption is sound depends on the lens hood's performance,
-		which will be verified by measurements during the spacecraft's 
-		commissioning (cf. Sec.~\ref{sec:scattered_npole}).}
+	A minor caveat comes due to the Sun's angular extent:
+	if sunlight reflects off the interior of the sunshade and into a lens hood, 
+	it could act as a background source.
+	Since rotating the spacecraft to point slightly anti-Sun would address this 
+	problem (by putting the cameras in the shadow of the sunshade), we assume 
+	that 
+	this caveat can be ignored\footnote{The details of whether this minor 
+	adjustment is even necessary depends on the combined performance of the
+		sunshade and each camera's lens hood.
+		These will be verified by measurements during the spacecraft's 
+		commissioning. Note that the effect of the scattered sunlight is 
+		maximal when the spacecraft is 
+		at its furthest separation from the ecliptic plane, scaling with the 
+		spacecraft's orbital inclination.}.
 	\textit{Justification:} maximizes the average duration of
 	observations per star; intuitively expected to provide
 	greatest sensitivity to long-period planets.

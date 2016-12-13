@@ -1,5 +1,4 @@
-\section{Scattered Light}
-\subsection{Additional Count Rate from Arbitrary Source}
+\section{Lens Hood Model: Additional Count Rate from Arbitrary Source}
 Let $s(\theta)$ be the lens hood suppression as a function of angle $\theta$ 
 from the camera boresight to a given point-source on the sky. By definition,
 \begin{equation}
@@ -40,13 +39,6 @@ these numbers gives
 \mathrm{[ct/px/s]}.
 \label{eq:mean_added_flux}
 \end{equation}
-
-The above expression assumes that the scattered flux from the source 
-is uniformly spread across the CCD. The reality may be quite different,
-but our purpose in this case is to simply get order-of-magnitude accuracy.
-Another caveat is that our zero-point relies on an $I$ magnitude calibration -- 
-a more accurate approach would use separate bandpass-dependent zero-points.
-
 Assuming a Poisson arrival rate, the standard deviation in the number of counts 
 per pixel per 2 second readout is then
 \begin{equation}
@@ -55,13 +47,28 @@ per pixel per 2 second readout is then
 \label{eq:added_RMS}
 \end{equation}
 
-\subsection{Effect on  {\rm \npole}}
-\label{sec:scattered_npole}
-\begin{figure}[!t]
+The above expression assumes that the scattered flux from the source 
+is uniformly spread across the CCD. The reality may be quite different,
+but our purpose in this case is to simply get order-of-magnitude accuracy.
+Another caveat is that our zero-point relies on an $I$ magnitude calibration -- 
+a more accurate approach would use separate bandpass-dependent zero-points.
+
+To compute the net effect on TESS's noise budget, we add $\sigma$ from 
+Eq.~\ref{eq:added_RMS} in quadrature with Eq.~\ref{eq:snr}.
+We assume $m_\mathrm{ns}$ values of $-26,-13,\,\mathrm{and}\ -17.76$ for the 
+Sun, Moon, and Earth respectively.
+This gives Figs.~\ref{fig:sun_scat}-\ref{fig:earth_scat}.
+
+\begin{figure}[!h]
 	\centering
 	\includegraphics{figures/precision_angles_sun.pdf}
 	\caption{Noise budget including Solar scattered light at different angles 
 		$\theta$ from camera boresight. 
+		Note that the suppression model 
+		(Fig.~\protect\ref{fig:lens_hood_suppression}) 
+		accounts solely for lens hood suppression, omitting sunshade 
+		suppression (which substantially lowers the dashed red line for most
+		orientations of the Sun).
 		The number given in brackets is $\sigma$ in 
 		Eq.~\protect\ref{eq:added_RMS} --
 		the extra standard deviation about the mean.
@@ -69,53 +76,20 @@ per pixel per 2 second readout is then
 		the CCD pixels (and thus are not plotted).} 
 	\label{fig:sun_scat}
 \end{figure}
-To compute the net effect on TESS's noise budget, we add $\sigma$ from 
-Eq.~\ref{eq:added_RMS} in quadrature with Eq.~\ref{eq:snr}.
-We assume $m_\mathrm{ns}$ values of $-26,-13,\,\mathrm{and}\ -17.76$ for the 
-Sun, Moon, and Earth respectively.
-This gives Figs.~\ref{fig:sun_scat}-\ref{fig:earth_scat}.
-The important point for \npole\ is shown in the dotted and dashed red lines of 
-Fig.~\ref{fig:sun_scat}. 
-The dotted red line corresponds to the Sun at $\theta=37-60^\circ$.
-If \tess were to simply rotate $36^\circ$ about spacecraft $+Y$ 
-(Fig.~\ref{fig:spacecraft_angles}) Camera 4 would be $45^\circ$
-away from the Sun.
-Thus it would be in the regime of the dotted red line -- likely an unacceptable 
-level of background flux.
-
-The next thing to imagine would be rotating $\zeta=90^\circ$ about spacecraft 
-$+Z$, 
-following the initial rotation that oriented the spacecraft in the `dotted red 
-line' regime.
-This puts us in the regime of the dashed red line, now for all cameras.
-This is likely an acceptable level of background noise.
-However, it puts one solar panel completely in the shadow of the spacecraft, 
-while the other's normal would be perpendicular to incoming solar rays and thus 
-unable to operate.
-
-The middle ground would be rather than rotating all the way to 
-$\zeta=90^\circ$, rotate by $\zeta = 60^\circ$, or some amount dependent on 
-in-flight diagnostics of \tesss lens hood performance.
-If there is a regime in which a  compromise can be reached between
-power usage and scattered sunlight, it will exist near here.
-Given the coarseness of our lens hood model 
-(Fig.~\ref{fig:lens_hood_suppression}), we proceed in the main report as if
-this problem can be addressed, and for simplicity ignore the expected
-modified RMS shown in Fig.~\ref{fig:sun_scat}'s dashed red line.
-
- 
-
-\begin{figure}[!t]
+\begin{figure}[!h]
 	\centering
 	\includegraphics{figures/precision_angles_moon.pdf}
 	\caption{Same as Fig.~\protect\ref{fig:sun_scat}, for scattered Moonlight.
 		Gray lines are spaced by $1^\circ$.} 
 	\label{fig:moon_scat}
 \end{figure}
-\begin{figure}[!t]
+\begin{figure}[!h]
 	\centering
 	\includegraphics{figures/precision_angles_earth.pdf}
 	\caption{Same as Fig.~\protect\ref{fig:sun_scat}, for scattered 
-	Earthlight. Gray lines are spaced by $1^\circ$.} 
+		Earthlight. Gray lines are spaced by $1^\circ$.} 
 	\label{fig:earth_scat}
 \end{figure}
+
+ 
+
