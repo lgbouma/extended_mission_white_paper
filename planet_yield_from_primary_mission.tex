@@ -28,87 +28,26 @@ rather than the idealized PSF described in Sec 6.1
 of~\citetalias{Sullivan_2015}, had only minor impact on this final result 
 ($10\%$ change in yield).
 
-A modification that did influence our lowered expected yields was a bug-fix 
-from~\citetalias{Sullivan_2015}'s dilution calculation. Recall our definition 
-of 
-the dilution parameter $D$ (Eq.~\ref{eq:dilution}): placing a binary companion 
-with luminosity identical to the host star into a system with a transiting 
-planet that would typically transit with depth $\delta$ leads to a transit with 
-`effective depth' $\delta/2$. A single missing symbol\footnote{An $\texttt{=}$ rather than 
-a $\texttt{+=}$} led~\citetalias{Sullivan_2015} to under-account for this 
-effect, which 
-in our simulations brought about factors of $1.5\times, 1.3\times,\ 
-\mathrm{and}\ 1.2\times$ fewer Earths, super-Earths, and sub-Neptunes 
-respectively. This error can be noted in Table 6 
-of~\citetalias{Sullivan_2015}, where nearly all the dilution parameter 
-values are near 1.
-
-
-An additional note is that in the preparation of this report, a glaring 
+In the preparation of this report, a
 discrepancy emerged between our predicted $\approx 400$ super-Earth detections 
 and those shown in Fig.~18 of~\citetalias{Sullivan_2015}, which 
-displays $\approx 1400$ planets. The subsequent investigation led to the 
+displays $\approx$1400 planets. The subsequent investigation led to the 
 discovery of a bug in the plotting script used to create 
-Fig.~18~\citetalias{Sullivan_2015} (erratum in press). The 
+Fig.~18~\citetalias{Sullivan_2015} (an Erratum has been published). The 
 error did not
 affect any of the results described in~\citetalias{Sullivan_2015}'s text, or 
 the simulation results that were tabulated in the paper and sent electronically 
 to interested parties.
 The corrected version 
-of~\citetalias{Sullivan_2015}'s Fig. 18 shows $\approx 500$ expected 
+of~\citetalias{Sullivan_2015}'s Fig.~18 shows $\approx 500$ expected 
 super-Earths, which closely agrees with our work when also accounting for the 
-dilution error described above.
+dilution error described below.
 
-
-\begin{comment}
-However, our yields from full frame images differ markedly from those quoted in Fig. 18 of~\citetalias{Sullivan_2015}.
-We agree with~\citetalias{Sullivan_2015} that no Earths are detected in the full frame images.
-However, we detect only $\sim$10 super-Earths by observing the $200,001\mathrm{^{st}}$ to $4,000,000\mathrm{^{th}}$ \texttt{Merit}-ranked stars at 30 minute cadence.
-This is two orders of magnitude less than the $\sim$1000 super-Earth detections claimed from FFIs by~\citetalias{Sullivan_2015}.
-There is also a discrepancy in FFI-detected sub-Neptunes, for which our current simulations predict that $\sim$1000 will be detected,
-while~\citetalias{Sullivan_2015} predicted $\sim$2000.
-
-We empirically verified that our full frame image detections are complete for $R < 4R_\oplus$ by enlarging the number of stars observed at 30-minute cadence and seeing that the number of detected planets with radii less than Neptune did not change.
-%In this context,~\citetalias{Sullivan_2015}'s claim of detecting $1000$ super-Earths in \tesss full-frame images must be false.
-We do not understand the origin of the difference between our method and~\citetalias{Sullivan_2015}'s, even after corresponding with P. Sullivan, but note that our results are in much better agreement with order-of-magnitude analytic arguments for \tesss expected planet yield.
-Assuming an exponentially distributed stellar population in the galaxy and computing limiting magnitude thresholds,~\citet{winn_searchable_2013} predicted detections of $600-6000$ Neptunes, $24-300$ super-Earths, and $1-10$ Earth-sized planets, where the lower bounds correspond to planets detected with $\mathrm{SNR}>10$, and the upper bounds $\mathrm{SNR}>7$.
-~\citetalias{Sullivan_2015}'s prediction of a total of $1500$ detected super-Earths is a factor of 5 larger than these analytic estimates, while
-ours is in much better agreement.
-
-Another plausibility argument that our current treatment of the FFIs
-is delivering more accurate results than the code employed
-by~\citetalias{Sullivan_2015} is that starting from the same input
-distribution of planets, we find a more reasonable detection bias
-against small planets.
-One should expect that the detection bias against small planets is a steep function of radius, given that $\delta\propto R_p^2$.
-\citetalias{Sullivan_2015} predicted the detection of roughly twice as many sub-Neptunes as super-Earths; our current
-result has the ratio is closer to 5-to-1 which seems more realistic.
-\end{comment}
-
-
-\begin{comment}
-  Consider the two relevant bins in the
-  distribution of detected planet count \textit{vs}. planet radius.
-  The $1.25R_\oplus<R_p<2R_\oplus$ bin has width $0.75R_\oplus$ and
-  contains 1400 (400) detected planets according
-  to~\citetalias{Sullivan_2015} (according to us).  The
-  $2R_\oplus<R_p<4R_\oplus$ bin has width $2R_\oplus$ and contains 3000 (2000)
-  detected planets according to~\citetalias{Sullivan_2015}
-  (according to us).  The ratio of the number of detected super-Earths
-  to sub-Neptunes, adjusted to the same bin width $\Delta R_p=0.75~R_\oplus$,
-  is $(1400/0.75R_\oplus)/(3000/2R_\oplus)=1.25$ for \citetalias{Sullivan_2015}
-  and $(400/0.75R_\oplus)/(2000/2R_\oplus)=0.53$ for our current simulations.
-
-  The input planet occurrence distributions
-  (\citetalias{Sullivan_2015}'s Fig 8) imply that the intrinsic
-  population ratio in this bin is $\sim\!2$ for $T_\mathrm{eff}<4000$K
-  hosts and $\sim\!1.5$ for $T_\mathrm{eff}>4000$K hosts.  Thus the
-  input ratio for the number of existing super-Earths (per bin width)
-  to sub-Neptunes (per bin width) across all stars is between 1.5 and
-  2.
-\end{comment}
-
-% Also, Peter's data from plat10r.fits, May 4 2015, agree with my results. I never was able to find the data with his FFI numbers...
+Another modification was the correction of a bug in the dilution calculations
+of~\citetalias{Sullivan_2015}. A single missing symbol\footnote{An $\texttt{=}$ rather than 
+a $\texttt{+=}$} led~\citetalias{Sullivan_2015} to under-account for this 
+effect. After correcting this error, the simulations yielded
+about 30\% fewer Earth-sized and super-Earth planets than reported by \citetalias{Sullivan_2015}.
 
 \paragraph{Properties of planets detected in Primary Mission} 
 
