@@ -8,7 +8,7 @@
 \tesss orbit is stable, in principle, for more than 1000 years~\citep{gangestad_high_2013}.
 While minor mechanical failures should be expected on the timescale of a few 
 years, it is plausible that the spacecraft could be operable for up to a decade.
-Therefore, when choosing any particular plan for a 1-year Extended Mission, it makes
+Therefore, when choosing any particular plan for a one-year Extended Mission, it makes
 sense to also consider the implications of an even longer Extended Mission.
 
 % Preliminary discussion of immediate extensibility
@@ -61,7 +61,7 @@ Thus \#2 allows 2-transit detections of $P\lesssim1$ year planets over
 $2\%$ of the sky.  \#1 allows 2-transit detections of
 $P\lesssim6$ month planets over $1\%$ of the sky.  
 In the competition between better time-sampling and longer baselines,
-it is not clear which strategy would win.
+it is not clear which strategy is superior.
 
 Another longer-term question is ``when will \tess hit the point of
 diminishing returns?''  The `low-hanging fruit' of small planets
@@ -75,7 +75,7 @@ will enable their detection.  Eventually though, once \tess is complete
 for $R_p<4R_\oplus$ planets orbiting bright stars on $P<20\,\mathrm{day}$ 
 orbits, more observations will
 only allow us to probe out to longer orbital periods and dimmer stars.
-No detailed study has yet quantified when \tess will reach this
+We have not yet quantified when \tess will reach this
 regime.
 
 \subsection{The Ephemeris Problem}
@@ -133,8 +133,7 @@ $\sigma_{t_c}\approx 75\sigma_0$.
 Hence the predicted $1\sigma$ uncertainty on its mid-transit time 
 is 5 hours (two years later) or 10 hours (four years later).
  
- This leads to a simple rule of thumb: % my oom is 5 minutes. Peter's is 2 
- %minutes. The analytics are 5 minutes. I'll take the analytics.
+ This leads to a simple rule of thumb: 
 \begin{quotation}
   For a two-transit super-Earth, the $1\sigma$ uncertainty in the predicted 
   transit time, in hours, is numerically equal to about
@@ -231,8 +230,7 @@ difficult to follow up.
 What is the risk that we over or under-estimated \tesss planet yield, either in the Primary Mission, or in any given Extended Mission?
 We summarized the assumptions that went into our yield calculations in Sec.~\ref{sec:input_assumptions}.
 We made them believing that they were all good enough for useful relative comparisons of different sky-scanning scenarios,
-even if they are not correct in absolute terms to better than $\sim$50\%.
-%Fortunately, we can be absolutely wrong, if all we care about are the relative differences between Extended Missions (although of course these must be compared with the absolute values of the Primary Mission, and now we get back into murky water).
+even if they are not correct in absolute terms to better than $\approx$50\%.
 
 Highlighting a few of these assumptions, in order of what we feel is decreasing
 concern:
@@ -255,78 +253,14 @@ concern:
         opportunity could be an important reason to actually do
         \elong\:or \eshort\:and thus demands detailed study, which we
         recommend below.
-	
-	\begin{comment}
-	\item [2.) The difference in $1.25R_\oplus<R_p<2R_\oplus$
-          planet yield from~\protect\citetalias{Sullivan_2015}.]  We
-          discussed this point in
-          Sec.~\ref{sec:results_from_primary_missions}.
-          \citetalias{Sullivan_2015} claim that \tess detects roughly
-          900 super-Earths in full frame images, and 500 in postage
-          stamps.  We claim that \tess detects roughly 10 super-Earths
-          in full frame images, and 400 in postage stamps.  This is a
-          discrepancy of a factor of 4 in one of \tesss most
-          significant data products.
-
-	%My code is essentially an updated version of Peter's with
-	%some important parts that were refactored, but it uses the
-	%same instrument model and the basic structure inherits from
-	%what Peter built.  Probably the weakest part of my
-	%understanding is in eclip\_observe, where the synthetic
-	%images are done.  But I can give you a rough version of that:
-	%you're integrating the PSF model over wavelengths to get a
-	%PRF (i.e. fraction of flux the pixel captures), and using a
-	%table of stellar fluxes (as a function of effective temp and
-	%apparent magnitude) to then get the number of photons in each
-	%pixel on a small grid. This is only relevant for the noise
-	%calculation -- the signal is known. For actual transit
-	%detection, this is probably overkill -- literally just the
-	%expected noise curve plus scatter would be fine.  I haven't
-	%REWRITTEN this bit from scratch, but it looks fine. I
-	%probably won't be comfortable with it UNTIL i rewrite it from
-	%scratch In terms of code-differences, we use a degraded PSF,
-	%assume that it has no angular dependence on the CCDs, and
-	%have a distinct way of selecting which stars are observed at
-	%2 vs 30 minute cadence (selecting a smaller number of stars
-	%based on a merit statistic, and showing that we're complete).
-	%But using the `production-version' of the code that in my
-	%mind was what~\citetalias{Sullivan_2015} must have used
-	%%(i.e., what I was given October 6 2015 -- there's a break in
-	%Peter's SVN logs from January 17 2015 on, but I have at least
-	%a subset of his output logs from January to May 2015. I'm
-	%using all the old PSFs, on all the old assumptions), !!!!I
-	%got FFI results much closer to my own.!!!! So it has nothing
-	%to DO with ANY of my new changes. It has something to do with
-	%differences in Peter's code between the time of publication,
-	%or the time between he made the yield figure, and the time
-	%of me getting his code.  Looking through the private data
-	%logs from~\citetalias{Sullivan_2015}, I only found data files
-	%with FFI results closer to my own.  For instance,
-	%plat10r.fits, May 4 2015 And finally, comparing with analytic
-	%calculations, my results are slightly above Winn 2013, and
-	%Peter's are 5x Winn 2013's.
-	
-
-          
-	We do not understand the origin of the difference between our method and~\citetalias{Sullivan_2015}'s.
-	That said, based on 
-	\textit{(a)} raw output data generated by the author of~\citetalias{Sullivan_2015} and dated in May 2015 (3 months after initial ApJ submission, 1 month before acceptance); 
-	\textit{(b)} the data we generated from the earliest available version of~\citetalias{Sullivan_2015}'s code, dated in October 2015 (before any of our methodological changes); 
-	\textit{(c)} the analytic estimates of~\citet{winn_searchable_2013} which predict $\sim300$ super-Earth detections;
-	and \textit{(d)} a plausibility argument presented in Sec.~\ref{sec:results_from_primary_missions} that showed~\citetalias{Sullivan_2015}'s results implied a detection efficiency biased sub-linearly in $R_p$, whilst ours implies a bias between linear and quadratic in $R_p$,
-	%and \textit{(e)} our actual updated calculations that update~\citetalias{Sullivan_2015}'s code in ways that are superficial with regard to this issue, 
-	we think that the current simulations give a more accurate picture.
-	    \end{comment}   
 	    
-	    
-	\item [2.) We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one false positive per $2\times10^5$ light curves.
-	This criterion is a self-consistent ad-hoc choice that we made for target stars.
+	\item [2.) We use a SNR threshold of 7.3.] This number was computed by~\citetalias{Sullivan_2015} based on the argument that it would be a sufficient threshold to give one statistical false positive per $2\times10^5$ light curves.
 	Applying the same criterion to full frame images would lead to more than one false positive, since full frame images come from a much larger sample of stars.
 	Any pipeline that is written to work with \tess data will confront this problem:
 	processing $10^8$ vs. $10^6$ stars requires different false positive thresholds.
 	Extrapolating from~\citetalias{Sullivan_2015}'s Fig 15, a threshold sufficient to give 0.05 false positives per $2\times10^5$ light curves, or 1 false positive per $4\times10^6$ light curves (as from our full frame images), is roughly 7.5.
 	Making the same ad-hoc estimate that~\citetalias{Sullivan_2015} did and multiplying by 1.03 for the expected drop in SNR from cosmic ray noise gives a SNR threshold of 7.7 for full frame images.
-	Considering our Fig.~\ref{fig:snrf_histogram} (and noting the black line is for the sum of postage stamp and full frame image detections), adopting a SNR threshold of 7.7 for FFIs would mean a loss of $\sim30\times4=120$ planets over two years, or 60 of what we claim are `detected planets' from full frame images in 1 year's Extended Mission.	
+	Considering our Fig.~\ref{fig:snrf_histogram} (and noting the black line is for the sum of postage stamp and full frame image detections), adopting a SNR threshold of 7.7 for FFIs would mean a loss of $\sim30\times4=120$ planets over two years, or 60 of what we claim are `detected planets' from full frame images in 1 year's Extended Mission.	 We also note that our model lacks any accounting for time-correlated noise and the probabilistic nature of the signal recovery process, which are likely to be more important factors than the purely white-noise statistical fluctuations.
 	
 	
 	\item [3.) We use synthetic stars from a single galactic model (TRILEGAL).]
@@ -368,26 +302,3 @@ concern:
 	This exercise would likely also be a useful way to prepare the SPOC and broader community for what we expect the era of \tess photometry to entail in terms of data quality.	
 \end{itemize}
 
-
-%Given these assumptions in which we are most-wrong, we ask: are we fooling ourselves? How accurate can we hope our $R_p<4R_\oplus$ yield calculations to be?
-%Assuming that our most important assumption -- the in-flight photometric performance -- holds, and qualifying our global uncertainty as greater for ecliptic vs. non-ecliptic focused scenarios because of \ktwo\!, we hope to be no more wrong than a factor of two.
-
-\paragraph{Miscellaneous risks}
-\begin{itemize}
-	\item What is the risk of not meeting `threshold' science -- essentially 
-	whatever goals the \tess science team decides will be the main drivers for 
-	an Extended Mission?
-	\item Is there a risk of excessive false positives, for instance from field 
-	crowding, from any particular Extended Mission? This is primarily an issue 
-	for fields near the galactic plane and bulge, and should be considered as 
-	knowledge of \tesss in-flight performance improves.
-	\item Would any expected partial instrument failures make a certain observing scenario infeasible? (\`a la \ktwo\!, for instance)
-\end{itemize}
-
-\begin{comment}
-\subsection{We have missed a great deal}
-We didn't try exploring the regime of ``maximize the number of stars that are observed for more than say 9 months each year''. This would likely mean being slightly off-center from the standard CVZ axis, and is some mix of geometry and minimization problems.
-
-What about phase curve science?
-for instance hot Jupiter companions of transiting super-Earths~\citep{millholland_detection_2016}
-\end{comment}
