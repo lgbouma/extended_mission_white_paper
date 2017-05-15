@@ -1,12 +1,12 @@
 \subsection{Selecting Target Stars (and Modelling Full Frame Images)}
 \label{sec:selection_criteria}
 For the Primary Mission, \tesss short cadence (2 min) targets will be drawn from a subset of the \tic. 
-The prioritization statistic that the mission will use in this selection has yet to be explicitly defined.
+The exact manner in which these targets will be chosen has not yet been determined.
 
 We know that for \tess to detect small transiting planets
 it should observe stars that are small and bright.  For this work, we
 define a simple statistic, \texttt{Merit}, proportional to the SNR we
-should expect from an arbitrarily sized planet orbiting any star:
+should expect from a given planet orbiting the star:
 \begin{align}
 \texttt{Merit} &\equiv 
 	\frac{1/R_\star^2}{\sigma_\text{1-hr}(I_c)/\sqrt{N_\text{obs}}}\ ,
@@ -21,9 +21,7 @@ $N_\text{obs}$ is the number of observations the star receives over
 the course of the mission.  For multiple star systems, $R_\star$ is
 taken to be the radius of
 the planet-hosting star, and the $I_c$ magnitude is computed from the 
-combined flux of all the stars (this simulates contamination of the 
-high-priority target list by the stars that have not been identified
-as binaries).
+combined flux of all the stars.
 
 \begin{figure*}[!tb] %[!thb]
 	\centering
@@ -47,26 +45,15 @@ as binaries).
 		dwarfs, and selecting more F and G dwarfs than K dwarfs. This
 		shape arises from the combined $1/R_\star^2$ and
 		$1/\sigma_\text{1-hr}(I_c)$ weights: the fact that the minimum
-		falls around K dwarfs occurs because of both a Malmquist bias
-		(there are more F than K stars of comparable brightness in our
-		catalog from which to select) as well as a corresponding dip
-		in the TRILEGAL (\& observed) $V$-band luminosity functions
+		falls between FG and M stars is because there are many more FG stars than K stars in our
+		catalog, and because M stars offer the largest signals. Note also the
+		dip in the TRILEGAL (\& observed) $V$-band luminosity functions for K stars
 		(see~\citetalias{Sullivan_2015} Figure 5).
 		% N.b. Winn showed this bias ANALYTICALLY in the searchable stars memo (he showed there are ~4* more stars e.g. in 0.75<R/Rsun<0.85 than 0.5<R/Rsun<0.6)
 		
-		Outliers visible in the upper scatterplot are non-physical,
-		possibly artifacts from~\citetalias{Sullivan_2015}'s
-		Padova-to-Dartmouth interpolation as they tend to have greater
-		masses than all other stars on the main sequence. 
-		As they comprise less than 1\% of the target stars, we ignore them
-		in order to proceed.
-		%Outliers in the upper scatterplot are almost certainly non-physical, but are less than 1\% of the catalog. Call it `sloppy' but I can show you a bunch of plots that make me think this is~\citet{Sullivan_2015}'s Padova-Dartmouth replacement scheme gone awry. Maybe it was bad interpolation.
-		%\todo[inline]{reword snarky paragraph}
-		% Q: could these just be in the CVZs? A: no. A much larger proportion are actually close to the ecliptic, which suggests a bias that I don't understand. An above-average fraction are in binary systems, but I don't have easy access to the binary companions.
-		% Well, what are they? I think it might have something to do with the weird, likely non-physical (perhaps imposed by Peter's mass/radius fiddling) split you see in the Fig16 replica that you're not showing here.
-		% Why? See our replica of Fig4, showing the nasty things that happen with EB radii + different radius / luminosity tracks being all mixed together!!
-		% This would be important to address if it were the main focus.
-		% Even though it looks ugly it's only ~700 stars. This means it's a ~1 % effect. Consequently, I'm fine with ignoring it.
+		The outliers visible in the upper scatter plot represent nonphysical "stars",
+		possibly artifacts of the Padova-to-Dartmouth conversion performed by~\citetalias{Sullivan_2015}.
+		These comprise fewer than 1\% of the target stars, and are ignored in what follows.
 	}
 \end{figure}
 \begin{figure}[!tb]
@@ -128,36 +115,23 @@ For purposes of transit detection, the difference between 2 and 30
 minute cadence matters most when transits have short durations -- in
 other words for small stars, and for close-in planets.  Switching to
 this alternative approach would consequently bias us even more
-strongly towards selecting M dwarfs.  We already select almost every M
+strongly toward selecting M dwarfs.  We already select almost every M
 dwarf with $I_c < 14$.  The limiting $I_c$ magnitude for detecting
 $R_p > 4R_\oplus$ planets with \tess is $\sim\!16$, which is where we
 see the dimmest stars in Fig.~\ref{fig:fig17_replica}.
 
 Additionally, the procedure of applying Eq.~\ref{eq:merit} and
 assuming that it will maximize the number of small planets that \tess
-will detect about bright stars ignores the functional dependence of
-planet occurrence rates on stellar properties.  For instance, should
-we prioritize target stars that are metal-rich?  Metal-rich stars
-demonstrably host more giant planets within \tesss period sensitivity
-than metal-poor
-stars~\citep{fischer_planet-metallicity_2005,johnson_giant_2010}.  The
-question of whether this correlation extends to sub-Neptune radius
-planets is somewhat contested, but for
-instance~\citet{wang_revealing_2015} used a sample of KOIs and found
-that the planet occurrence rates of (gas dwarf) planets are
-$1.72^{+0.19}_{-0.17}$ ($2.03^{+0.29}_{-0.26}$) higher around
-metal-rich than metal-poor stars.  Note that in this study,
-`terrestrial' means $R_p<1.7R_\oplus$, `gas dwarf' 
-$1.7R_\oplus < R_p < 3.9R_\oplus$, and the authors focused only on
-solar-type stars ($4800\ \mathrm{K}<T_\mathrm{eff}<6500\ \mathrm{K}$).
-
-A more robust approach for \tesss target selection might take these
-kinds of results into account probabilistically.  For
-instance,~\protect\citet{kipping_transit_2016} note that the
-probability of short-period transiters having additional transiting
-outer companions is functionally dependent upon the properties of the
-short period transiters -- for instance their orbital periods and
-radii.  They navigate the optimization problem using artificial neural
+will detect about bright stars ignores the dependence of
+planet occurrence rates on stellar properties, or on the properties of
+ planets already known to exist around those stars. If the goal is literally to maximize the number of planet
+detections (a goal which we do not advocate) then \tesss target selection might take these dependences into
+account. For example the planet occurrence rates measured with {\it Kepler} data could be used
+to upweight those types of stars most likely to have planets.
+Likewise~\protect\citet{kipping_transit_2016} note that the
+probability for a star with short-period transiting planets to have additional transiting
+planets is dependent upon the radii and periods of the
+short-period planets.  They navigate the optimization problem using artificial neural
 networks (ANNs) trained to select for features that improve the
 probability of detecting transiting outer companions.  \tess might
 benefit from a similar approach in target selection.
@@ -176,27 +150,26 @@ We want to simulate the full frame image detections in a
 computationally tractable manner.  While~\citetalias{Sullivan_2015}
 evaluated the phase-folded SNR for every potentially transiting object
 about each of the $\sim\!1.6\times10^8$ stars in our synthetic catalog,
-we focus only on the stars for which \tess could plausibly detect a
-sub-Neptune planet over the 3-year mission.  Most stars that
+we consider only the stars for which \tess could plausibly detect a
+sub-Neptune planet during a 3-year mission.  Most stars that
 \tess sees are too dim or too large to detect $R_p<4R_\oplus$ planets
 -- while we expect many giant planet detections towards the galactic
 plane (\citetalias{Sullivan_2015} Fig 19), small-planet detections are
 more nearly isotropic, since practically all occur for stars at
-$<1\rm\ kpc$.  For our purposes in this study, we argue that knowing
-there will be thousands of giant planet candidates is sufficiently
-accurate. The prospects for detecting smaller planets are more likely
+$<1\rm\ kpc$.  While thousands of transiting giant planets will be revealed by \tess,
+we assume here that the prospects for detecting smaller planets are more likely
 to help discriminate between different scenarios for the Extended Mission.
 
 In this vein, we only simulate full frame image detections for the
 $3.8\times10^6$ highest \texttt{Merit} stars following the
-$2\times10^5$ highest \texttt{Merit} stars observed as `postage
-stamps'.  This number ($3.8\times10^6$) was initially estimated based
+$2\times10^5$ highest \texttt{Merit} stars that are selected for 2-minute observations.
+This number ($3.8\times10^6$) was initially estimated based
 on the number of searchable stars about which we expect \tess to be
 able to detect sub-Neptune radius
-planets~\citep{winn_searchable_2013}.  The detection process is then
-identical to that for postage stamps, except with 30 minute instead of
-2 minute exposures, which increases the apparent durations and shrinks
-the apparent depths for transits with durations of $\lesssim 1$ hour.
+planets~\citep{winn_searchable_2013}. Our model for the detection process for the FFI data is 
+identical to that of the PS data, except that the effects of time-smearing on
+the apparent transit duration and depth are taken into account (which is
+important for durations $\lesssim 1$~hour).
 
 To check that the $4\times10^6$ highest \texttt{Merit} stars includes 
 all stars about which \tess might detect sub-Neptune radius planets, 
@@ -205,8 +178,8 @@ $9.8\times10^6$ and $19.8\times10^6$ `full frame image' stars, and
 confirmed that there was no significant difference in the planet
 yields at $R_p\le4R_\oplus$ between any of the cases.
 %see ext_sim_notes/160817_on_the_FFI_assumtion. (10 Monte Carlo realizations each)
-Increasing the number of FFI stars, the runs yield
-increasing numbers of giant planets, particularly near the galactic
-disk.  Meanwhile the number of sub-Neptune radius planets remains
-fixed, and thus convinces us that our simulation includes a sufficient
-number of target stars to be complete for sub-Neptune detection statistics.
+With an increased number of FFI stars, the number of detected giant planets also increased,
+particularly near the galactic
+disk.  Meanwhile the number of sub-Neptune planets remained
+fixed. This convinced us that $4\times10^6$ is a sufficient
+number of target stars to compute detection statistics for sub-Neptune planets.
