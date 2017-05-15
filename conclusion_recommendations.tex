@@ -1,41 +1,44 @@
 \section{Concluding remarks and recommendations}
 \label{sec:conclusions}
 
-This trade-study laid out technical requirements, science goals, opportunities, and risks relevant to observing with \tess after its first two years.
-The baseline science requirements for \tesss Primary Mission are 
-defined~\citep{ricker_transiting_2014}, and an Extended Mission offers the
-whole community a chance to re-prioritize.
-Is securing \tesss ephemerides more important than trying to detect more
-planets at longer orbital periods? 
-Are the variations in absolute new planet yields, at $\lesssim30\%$ between all 
-the Extended Missions, more valuable than other desires and opportunities?
-We leave these questions open for broader community discussion.
-
+Although the science requirements for \tesss Primary Mission have already been
+written~\citep{ricker_transiting_2014}, an Extended Mission offers the
+entire astronomical community a chance to rethink and reprioritize the use of the spacecraft.
+The data from a \tess Extended Mission would have wide-ranging applications, and should be planned and proposed with much broader goals than exoplanet science alone. 
+The purpose of this trade study was to inform the exoplanet-related portion of that
+discussion. By simulating different scenarios for a third year of operations, we can anticipate
+the numbers and types of planets that would be discovered. Our study has also highlighted other issues,
+such as the 'stale ephemerides' problem, and the opportunity to change the
+selection of the PSs and the cadence of the FFIs for diverse reasons.
+This study was not designed to provide any definitive answers; but rather,
+to provide materials to use in further discussions.  Our study has also
+prompted us to make
+some recommendations for future work that would be useful in this regard.
 
 \subsection{Recommendations}
 \label{sec:recommendations}
 \begin{description}
   
-	\item[Analyze target prioritization problem] and decide whether or not to optimize target selection based on results. %for instance \'a la~\protect\citet{kipping_transit_2016}. 
-	Planet occurrence rates are functionally dependent on a star's properties -- should this affect which stars we give upgraded cadence?
-	Is our proposed \texttt{Merit} statistic (Eq.~\ref{eq:merit}) how we want to prioritize targets?
+	\item[Deeper analysis of the target prioritization scheme]. How should the
+	results of the Primary Mission, or other sources of new data, be used to
+	choose target stars for finer time sampling during an Extended Mission?
 	
-      \item[Optimize cadence:] observing $4\times10^5$ target stars at 
-	      4 minute cadence, rather than $2\times10^5$ at 2 minute cadence,
-	      would allow the FFIs to be returned at a higher cadence.
+        \item[Optimize cadence]. What is the optimal time sampling for transit detection? For example, observing $4\times10^5$ target stars at 
+	      4-minute cadence, rather than $2\times10^5$ at 2-minute cadence,
+	      would allow the FFIs to be returned more frequently.
 	      This could in turn improve prospects for transit detection.  
 	      (Preliminary numerical experiments indicate that this is indeed the 
-	      case).
+	      case.)
 	      
 	      In addition, a metric should be devised that
         quantifies, for each star, how much {\it improvement} would
-        result from observing at short-cadence versus long-cadence.
-        We could then prioritize the stars for which short-cadence 
-        delivers the most significant benefit. 
+        result from observing at a shorter cadence.
+        Stars could then be prioritized according to this improvement
+	statistic, rather than an overall planet-detectability statistic.
         For instance if the number of short-cadence stars could be 
         greatly reduced with little effect on the planet detection
-        statistics, then this would allow the FFIs to be returned at a
-        higher cadence, which could be desirable.
+        statistics, then this might allow the FFIs to be returned at a
+        higher cadence..
 	
 	\item[Take steps to address the `upgrading cadence' problem:]
           if there is a likely transiting planet in full frame image
@@ -45,25 +48,21 @@ We leave these questions open for broader community discussion.
           Could this be an argument to observe the southern
           sky in year 3, in order to have extra time to prepare?
 	
-	\item[Guest Investigator Office or \tess Science Office should
-          solicit advice] from experts in asteroseismology and
-          variable-sky astronomy to understand how Extended Missions
-          affect their science cases (\textit{e.g.}, data throughput
-          rates are particularly important for time-sensitive
-          supernovae observations).  More broadly, solicit community
-          feedback during the process of defining the Extended
-          mission.  This may entail a call for white papers, comments
-          on this report, or direct proposals to the GI office.  As
+	\item[Solicit expert advice] from experts in asteroseismology, transient detection,
+	and other relevant areas to understand how the parameters of an Extended Mission
+          would affect their scientific prospects. Comments on this report sent to
+	  the authors will be gratefully received. A more formal and comprehensive process would
+          be a call for White Papers organized
+	  by the Guest Investigator program or the \tess Science Office. As
           exemplified in NASA’s 2016 Astrophysics Senior Review,
           everyone benefits from the discussions generated by such
           community feedback~\citep{donahue_senior_2016}.
 	
-	\item[Decide (explicitly or implicitly) on weights between our
-          proposed metrics.]  Perhaps also brainstorm others --
-          Sec.~\ref{sec:comparing_pointing_strategies} gives a
-          summarized list.  Are the $\lesssim30\%$ variations in
-          absolute new planet yields more valuable than other desires
-          or opportunities?
+	\item[Consider which of our proposed exoplanet metrics is most important
+	for driving further progress in this field.]  Sec.~\ref{sec:comparing_pointing_strategies} summarizes these; the reader may have others to suggest. The crude metric of "total number of new planet detections" is not
+	likely to be the most important, and we have found that the scenarios we considered
+	differ by $\lesssim30\%$ in
+          this regard. 
 	
 	\item[Simulate combining \tess and \ktwo data from
           \rm{\elong\:} \textit{and} \rm{\eshort}.]  This is perhaps
@@ -78,25 +77,8 @@ We leave these questions open for broader community discussion.
     \item[Ensure {\rm \npole} adequately mitigates scattered sunlight.]
     See description in Sec.~\ref{sec:proposed_pointings}.
 	
-	\item[Further topics for study:]
-	\ 
+    \item[Point of diminishing returns.] Suppose, for example, the Primary Mission were repeated indefinitely.
+    At what point would the planet discovery rate start falling significantly below that of Years 1-3?
+    How much fainter would the host stars of new planets be, in each year?
 	
-	\textit{1.)}
-	How can a particular Extended Mission scenario reduce risk for measuring 
-	masses of 50 rocky planets (a baseline \tess science requirement)?
-	
-	\textit{2.)}
-	After how many years would the planet yield start to show steeply diminishing returns?
-	Suppose, for example, the Primary Mission were repeated indefinitely.
-  How much dimmer would the host stars of new planets be, in each year?
-	Would the planets tend to be smaller?
-	Would there be fewer of them?
-	
-	\textit{3.)}
-	Study the limiting case of \hemis\:for 2 years, vs Primary Mission repeat 
-	for 2 years. The most interesting aspect of this comparison is the 
-	continuous viewing zones: 2 CVZs with 14-day window functions over 2 years, 
-	vs. 2 CVZs with continuous sampling for one-year each.\footnote{Our 
-	simplified perfect period extraction would miss deleterious effects from the 
-	uneven sampling.}
 \end{description}
