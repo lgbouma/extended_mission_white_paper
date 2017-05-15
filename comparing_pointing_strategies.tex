@@ -2,27 +2,30 @@
 \label{sec:comparing_pointing_strategies}
 
 We assess Extended Missions based on the risks and opportunities they
-present, as well as through their performance on select technical and
+present, as well as their performance on selected technical and
 science-based criteria.  These criteria are organized following an
 approach originally outlined by~\citet{kepner_rational_1965}.
 Summarizing them in list form:
 \begin{description}
-\item[Technical musts:] Cameras anti-sun? Solar panels collecting sunlight?
-\item[Technical wants:] Duration of each sector $<28$ days? No Earth or Moon 
-crossings? Minimal zodiacal background? Minimal scattered sunlight off lens 
-hood?
+\item[Technical musts:] Point cameras anti-sun. Allow the solar panels to collect sunlight.
+\item[Technical wants:] Keep the duration of each sector $<28$ days. Minimize Earth or Moon 
+crossings. Minimize zodiacal background light. Minimize scattered sunlight.
 \item[Metrics in exoplanet science:]\
 	\begin{itemize}
-	\item number of newly detected planets (from 2-minute cadence 
-	fixed-aperture target stars, known colloquially as `postage stamps' (PSs), 
-	as well as 30-minute full frame images (FFIs). Should consider 
-	both data products independently and combined); 
-	\item number of new long-period planets (which may be detected through long period coverage, or by follow-up on single-transit events); 
+	\item number of newly detected planets
+	\begin{itemize}
+	  \item from stars observed with 2-minute time sampling from among $\approx$200,000 subrasters, known colloquially as "postage stamps" (PS),
+	  \item from stars observed with 30-minute time sampling in the full-frame images (FFIs);
+	\end{itemize}
+	\item number of new long-period planets 
+	\begin{itemize} 
+          \item by detecting additional transits of planets for which only one transit was observed in the Primary Mission,
+	  \item by detecting transits of long-period planets that were not detected in the Primary Mission;
+	 \end{itemize}
 	\item number of new habitable-zone planets; 
 	\item number of new planets with ``characterizable'' atmospheres; 
 	\item number of newly detected planets with bright host stars; 
-	\item number of stars with transiting planets detected in the Primary Mission for which the Extended Mission reveals an additional
-          transiting planet (usually long-period companions to short-period planets);
+	\item number of planet-hosting stars detected in the Primary Mission for which the Extended Mission reveals an additional transiting planet;
         \item ability to improve transit ephemerides for previously detected transiting planets;
 	\item ability to observe more transits over a longer baseline to enable searches for transit-timing variations.
         \end{itemize}
@@ -32,20 +35,13 @@ These metrics were chosen for their apparent importance as well as our
 ability to quantify them with simulations. Of course there are other considerations
 that may be very important but are more difficult to quantify:
 \begin{itemize}
-\item Prospects for altering target allocation weights between: white
-  dwarfs, known planet-hosts, candidate planet-hosts, circumbinary \&
-  circumprimary planets, open clusters, evolved stars (notably to
-  detect asteroseismic oscillations), dwarf stars later than M7, stars
-  with well-measured properties, etc.
-\item Prospects for observations relevant to stellar astrophysics, many of which may overlap with exoplanetary science.
-    For instance, we may wish to try and measure a large sample of stellar rotation periods, or allocate a larger fraction of the data mass for short-cadence asteroseismic targets.
-    We may also wish to observe optical/near-IR variable targets across the sky, in particular 
-	pulsating stars (Cepheids, RR Lyrae, $\delta$ Scuti, slowly pulsating B 
-	stars),
-	eruptive stars (protostars, giants, eruptive binaries, flare stars), 
-	cataclysmic variables (dwarf novae, novae, supernovae), 
-	rotating variable stars (deformed by ellipsoidal variations, showing variability from stellar spots or magnetic fields),
-	and eclipsing binaries.
+\item Different ways to choose the stars that are observed with finer time sampling.
+  It will likely be advantageous to use the results of the Primary Mission to
+  choose stars for which photometric variability is known to be detectable and interesting.
+  Examples include planet hosts, candidate planet hosts, circumbinary \&
+  circumprimary planets, white dwarfs, open clusters, eclipsing binaries and higher-order systems,
+  pulsating stars (Cepheids, RR Lyrae, $\delta$ Scuti, slowly pulsating B 
+	stars), eruptive stars, cataclysmic variables, and stars of special interest for asteroseismology.
 \item Prospects for solar-system science, such as observations of main belt asteroids and the brightest near-Earth asteroids.
 \item Prospects for extragalactic astronomy and high energy astrophysics; for 
 instance, gathering light curves of variable active galactic nuclei, or imaging
@@ -56,20 +52,18 @@ Regarding opportunities and risks, the following need to be considered:
 \begin{description}
 	\item[Opportunities:]\ 
 	\begin{itemize}
-	\item What's best on a $>1$ year horizon? For instance, if it were known in advance
-	that \tess would continue operations for several additional years (or even 10
-	years), how would such knowledge affect the optimal choice of the immediate
-	one-year plan?
+	\item Optimizing science beyond the 3-year horizon. For example, suppose it were known in advance
+	that \tess would likely continue operations for 5-10 years: how would this knowledge affect
+	the decision on what to do in the year following the Primary Mission?
 		\item Ability to promote targets that were detected in FFIs to PSs in the Extended Mission.
-		\item Shorten the cadence of FFIs and/or lengthen the cadence of `target' 
-		stars.
+		\item Alter the number of PSs, the time sampling of the PS, and the time sampling of the FFIs, under the constraint of fixed data volume. An extreme case is eliminating the PSs and returning only FFIs.
 		\item \textit{\tess as follow-up mission:} ability to
                   observe \corot objects; ability to observe the \kepler
                   field;
                   ability to observe \ktwo fields (follow-up \ktwo
                   few-transit objects); ability to observe targets
                   previously monitored by ground-based surveys.
-		\item \textit{Follow-up for \tess\!:} 
+		\item \textit{Prospects for follow-up with other resources:}
 		potential for \jwst follow-up, 
 		potential for \cheops follow-up,
 		ability to obtain \tess photometry contemporaneously with ground-based observations,
@@ -80,7 +74,7 @@ Regarding opportunities and risks, the following need to be considered:
 	\item[Risks:] 
 	Risk of spacecraft damage. 
 	Risk of not meeting threshold science (however it is defined for the Extended Mission).
-	Risk of excessive false positives, for instance from crowding. 
+	Risk of poorer photometric precision than desired, e.g., from confusion in crowded fields.
 	Would partial instrument failure in Primary Mission make this scenario infeasible? 
 	Would reduced precision (from aged CCDs, worse pointing accuracy, or other mechanical sources) invalidate this scenario? 
 	Risk of planet detection simulation over- or under-estimating planet yield.
