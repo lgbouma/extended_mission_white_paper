@@ -1,7 +1,7 @@
 \subsection{Summary of Key Assumptions and Attributes of Planet Detection 
 Simulations}
 \label{sec:input_assumptions}
-%Garbage in, garbage out. Better to be clear about what's going in.
+
 \begin{itemize}
   
 	\item We focus almost exclusively on planets with $R_p < 4R_\oplus$.
@@ -22,24 +22,18 @@ Simulations}
         
 	\item We assume prior knowledge of the radii and apparent
           magnitudes of TRILEGAL's synthetic stars, so we can
-          prescribe a simple prioritization statistic
-          (Eq.~\ref{eq:merit}) that we expect (but have not verified)
-          maximizes the number of small planets we discover about
-          bright stars\footnote{Although it is difficult to determine
-            accurate photometric radii, we expect that by the time
+          prioritize the stars with a simple planet-detectability statistic
+          (Eq.~\ref{eq:merit}).\footnote{Although it is difficult to determine
+            accurate radii based on currently available data, we expect that by the time
             \tess launches \gaia will provide parallaxes and proper
-            motions for many \tess targets, allowing \tess to
-            discriminate between red dwarfs and red giants for
-            purposes of target prioritization.}.
+            motions for many potential \tess targets, which will enable more reliable giant/dwarf discrimination and radius estimates.}.
           
 	\item In evaluating a star's \texttt{Merit}
-          (Eq.~\ref{eq:merit}), we assume an observed magnitude for
-          each star that comes from the sum of the flux from the star
-          itself in addition to any companion and background stars
-          (whose presence will not be known by the mission a priori,
-          but which we then account for when computing `observed'
-          SNRs).
-          
+          (Eq.~\ref{eq:merit}), we compute the apparent magnitude of each "star"
+          based on the sum of the flux from the star
+          itself as well as any companion or background stars
+          (whose presence will not be known {\it a priori}).
+	            
 	\item We use occurrence rates of planets as a function of radius
           and orbital period as calculated by~\citet{fressin_false_2013}
           and~\citet{dressing_occurrence_2015}.
@@ -64,19 +58,10 @@ Simulations}
             Compared with the PSF described by~\citetalias{Sullivan_2015} in 
             their Sec 6.1, ours incorporates lower charge diffusion (based on 
             laboratory measurements) and as-built (rather than ideal) optics.
-            The net result is a more `smeared' PSF, which leads to $10\%$ fewer 
-            $R_p<4R_\oplus$ planets than when we use 
-            the~\citetalias{Sullivan_2015} PSF.
-            \begin{comment} % Deb Woods, Wed, Oct 21, 2015 at 9:43 PM
-            I used a charge diffusion model that added 42 um RMS charge 
-            diffusion for electrons traveling the 100 um silicon thickness. 
-            Using new data on charge diffusion measurements, and taking the 
-            temperature dependence of charge diffusion in silicon into account, 
-            the new simulations add 2.6 um RMS charge diffusion for electrons 
-            traveling the 100 um silicon thickness Therefore, the new PSFs are 
-            better (lower charge diffusion) and worse (as-built vs. ideal 
-            optics) than the earlier modeling.
-            \end{comment}
+            The net result is a slightly wider PSF, leading to $10\%$ fewer 
+            $R_p<4R_\oplus$ planets than
+            the same PSF model used by \citetalias{Sullivan_2015}.
+            
           \item All stars are observed at the \textit{center} of the
             \tess CCDs. This ignores off-axis and chromatic
             aberrations within the \tess optics, and consequently
@@ -84,8 +69,7 @@ Simulations}
             function (the fraction of light from a star that is
             collected by a given pixel).
             While~\citetalias{Sullivan_2015} attempted to model the
-            field-angle dependence, we note that the methodology used
-            in that work was inconsistent (see appendix
+            field-angle dependence, we found some problems with this approach (see appendix
             Sec.~\ref{sec:changes_from_S15}).  
             Ignoring the field-angle dependence is a simplification that may 
             lead to loss of accuracy, but since this applies uniformly to all 
@@ -129,7 +113,7 @@ Simulations}
 
 	  \begin{itemize}
                 
-    \item We require $\geq$ 2 transits for detection.  We assume
+    \item We require $\geq$2 transits for detection.  We assume
 	     the period can be recovered without ambiguity and likewise
 	     there is no ambiguity in identifying which target star is
 	     exhibiting a given transit signal.
