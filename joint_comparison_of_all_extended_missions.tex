@@ -6,7 +6,7 @@ With this in mind, for each Extended Mission scenario we ask the following quest
 
 \begin{enumerate}
 	\item $N_\mathrm{new}$: How many new planets do we detect?
-	\item $N_\mathrm{new,P>20d}$: How many of these new planets are at long orbital periods, for instance $P>20$ days?
+	\item $N_\mathrm{new,P>20d}$: How many of these new planets have periods $>20$ days?
 	\item $N_\mathrm{new,HZ}$: How many are in the habitable zone?
 	\item $N_\mathrm{sys,extra\ planets}$: In how many systems in which at least one planet was detected during the Primary Mission do we find extra planets in the Extended Mission?
 	\item $N_\mathrm{new,atm}$: How many new planets do we find that are amenable to atmospheric characterization (defined below by Eq.~\ref{eq:atmosphere_Deming})?
@@ -89,11 +89,11 @@ We now discuss each metric of Fig.~\ref{fig:yield_results} in more depth:
 	only by a factor of 1.2.
 	The fact that there are so many new planets to be detected from extended 
 	observations, particularly from full frame images, and that the absolute 
-	number of new planets is roughly invariant to the spacecraft's pointing, 
+	number of new planets does not depend strongly on the schedule of pointings,
 	can be justified (post-facto) with Fig.~\ref{fig:snrf_histogram}.
 	This figure illustrates a point that was originally noted by~\citetalias{Sullivan_2015}:
         \tesss Primary Mission will miss many short-period planets around bright stars, and is therefore
-        incomplete even its intended hunting ground.
+        incomplete even in its intended hunting ground.
         For stars with $I_c<11$, there are $\sim\! 10\times$ more transiting 
         $2<R_p<4R_\oplus$ planets on $P<20\,\mathrm{day}$ orbital periods than 
         \tess will detect in its first two years\footnote{Fig 22
@@ -104,7 +104,7 @@ We now discuss each metric of Fig.~\ref{fig:yield_results} in more depth:
         $I_c<11$ host star) planets in the sky than \tess will discover in 
         its Primary Mission.
 	Our findings agree: there are a substantial number of planets just below the detection threshold, predominantly with $2R_\oplus < R_p <4R_\oplus$ (Fig.~\ref{fig:primary_planet_yield}).
-	An Extended Mission will probe and detect this population, irrespective of where on the sky we observe.
+	An Extended Mission will probe and detect this population, in any of the scenarios we investigate.
 	This result should hold equally well for realistic detection efficiency 
 	thresholds, and it demonstrates that extended observations will be valuable 
 	because \tess will not yet have detected all the planets in the parameter 
@@ -219,7 +219,7 @@ We now discuss each metric of Fig.~\ref{fig:yield_results} in more depth:
 
 	\item $N_\mathrm{sys,extra\ planets}$: for how many systems do we detect extra planets?
 	Our assumptions about multiple planet system distributions are crude -- we assume independent probability draws from single planet occurrence distributions.
-	Thus our simulated planet population does not have systems of tightly packed inner planets in realistic numbers.
+	Thus our simulated planet population may not have systems of tightly packed inner planets in realistic numbers.
 	That said, we expect this statistic to be some indication of the information that we are not explicitly modeling, but which can be obtained from extended observations of planetary systems post-planet detection. 
 	This additional information includes improved precision on physical and dynamical parameters of the system.
 	It also includes transit timing variations, which could be used to discover non-transiting planets as well as transiting outer companions.
