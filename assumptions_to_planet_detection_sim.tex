@@ -23,7 +23,7 @@ Simulations}
 	\item We assume prior knowledge of the radii and apparent
           magnitudes of TRILEGAL's synthetic stars, so we can
           prioritize the stars with a simple planet-detectability statistic
-          (Eq.~\ref{eq:merit}).\footnote{Although it is difficult to determine
+          (Eq.~\ref{eq:merit})\footnote{Although it is difficult to determine
             accurate radii based on currently available data, we expect that by the time
             \tess launches \gaia will provide parallaxes and proper
             motions for many potential \tess targets, which will enable more reliable giant/dwarf discrimination and radius estimates.}.
@@ -72,8 +72,9 @@ Simulations}
             field-angle dependence, we found some problems with this approach (see appendix
             Sec.~\ref{sec:changes_from_S15}).  
             Ignoring the field-angle dependence is a simplification that may 
-            lead to loss of accuracy, but since this applies uniformly to all 
-            the scenarios under consideration, it should still be possible
+            lead to loss of absolute accuracy, but since this applies uniformly 
+            to all 
+            the scenarios under consideration, it is still be possible
             to {\it compare} the results of different scenarios
             without much loss of accuracy.
             
@@ -178,7 +179,7 @@ Simulations}
         lowering our computational cost).  This $16\times16$ pixel
         image is of the number of photoelectrons \tess sees from the
         star and its companions/background stars at each pixel of each
-        CCD.  We produce it through our PRF model, which in turn
+        CCD.  We produce it through our PSF model, which in turn
         requires the host star's $T_\mathrm{eff}$ and apparent $I_c$.
         Over each image, the noise is computed for a range of possible
         aperture sizes about the brightest pixel

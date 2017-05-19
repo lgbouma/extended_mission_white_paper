@@ -15,9 +15,9 @@ Mission.
 
 \paragraph{Background on synthetic catalogs:}
 
-\tess is sensitive to sub-Neptune sized transiting planets orbiting M
+\tess will be sensitive to sub-Neptune sized transiting planets orbiting M
 dwarfs out to $\sim\!200\,\text{pc}$ and G dwarfs out to
-$\sim\!1\,\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3).  It is
+$\sim\!1\,\text{kpc}$~(\citetalias{Sullivan_2015}, Sec. 2.3).  It will be
 sensitive to giant planets and eclipsing binaries across a significant
 fraction of the galactic disk.  With this sensitivity in mind, the
 stellar catalog we `observe' in our planet detection simulation is
@@ -31,7 +31,8 @@ observations\footnote{Looking closely at the radius-luminosity
   relations, we do see non-physical interpolation artifacts. These
   outliers are visible in Figs.~\ref{fig:fig17_replica}
   and~\ref{fig:fig17_radius_on_x} below, but are a small enough subset
-  of the population that we ignore them for this work.}, specifically
+  of the population that they can be ignored on statistical grounds in this 
+  work.}, specifically
 the Hipparcos
 sample~\citep{perryman_hipparcos_1997,van_leeuwen_validation_2007} and
 the $10\text{pc}$ RECONS sample~\citep{henry_solar_2006}.
@@ -80,23 +81,26 @@ Fig.~\ref{fig:noise_with_moon}.
 A realistic simulation of the signal detection process
 would begin with a realistic noise model for each 2-second CCD readout, taking into account both
 instrumental and astrophysical variations. These 2-second data would be stacked into 2-minute
-averages for the PSs and 30-minute averages for the FFIs. The time series would then be prepared and searched for transit signals using the same code that is used on real data.
-Our calculation is much simpler. We calculate the total SNR based on all the
-data points collected during transits, with a simple threshold value of 7.3 for detection.
+averages for the PSs and 30-minute averages for the FFIs. The time series would 
+then be prepared and searched for transit signals using the same code that is 
+used on real data.
+
+Our calculation is much simpler. We calculate the phase-folded SNR based on an 
+analytic approximation.
 We implicitly assume that the correct period can be identified and that the noise follows
 the simple model of \citetalias{Sullivan_2015}, which includes instrumental noise
 and an empirically-determined level of stellar variability.
-
-We also assume the transit signal to be constant in amplitude, although it may be reduced
-in amplitude ("diluted") below $(R_p/R_\star)^2$ due to the constant light from other stars
+We also assume the transit signal to be constant in amplitude, although it may 
+be reduced
+in amplitude (``diluted'') below $(R_p/R_\star)^2$ due to the constant light 
+from other stars
 that fall within the same photometric aperture.
-Our approach is then to simply tally the number of \tess fields a
-given host star falls within, which corresponds to a known total
+We then simply tally the number of \tess fields a
+given host star falls in, which corresponds to a known total
 observing baseline.  Knowing a planet's orbital period, and assuming the
 planet is randomly phased in a circular orbit when \tess begins observing, 
-we then count the number of transits \tess observes for the planet over the 
+we can count the number of transits \tess observes for the planet over the 
 total baseline.
-
 Using a model PSF, we determine ideal aperture sizes and obtain 
 an estimated noise per transit.
 Summarizing the relevant terms in an equation,

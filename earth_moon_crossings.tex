@@ -29,10 +29,9 @@ pixels are flooded to their full well capacity ($\sim2\times10^5$
 photoelectrons).  Precision differential photometry becomes impossible
 in any pixels that are directly hit during these crossings.  Even when
 the Earth or Moon is not directly in the camera's field of
-view, light may scatter off the interior of spacecraft's lens hood
-and act as a source of contaminating flux across many of
-the cameras. The Poisson noise in the number of photons
-arriving from the Earth or the Moon in such a scenario degrades \tesss
+view, light may scatter off the interior of a camera's lens hood
+and act as a source of contaminating flux. The Poisson noise in the number of 
+photons arriving from the Earth or the Moon in such a scenario degrades \tesss
 photometric performance, although a detailed model for the scattered light is not yet available.
 
 We first illustrate with an example.
@@ -40,8 +39,10 @@ When the Moon is $24^\circ$ from a camera boresight the lens hood
 is expected to suppress $1/100^\mathrm{th}$ of a mean 
 $3\times10^6\,\mathrm{ct/px}$ (per 2 second image) from incoming 
 moonlight\footnote{Our model for suppression as a function of angle is 
-appended in Fig.~\ref{fig:lens_hood_suppression}. We implicitly assume 100\% 
-quantum efficiency, so photons, electrons, and counts are interchangeable; 
+appended in Fig.~\ref{fig:lens_hood_suppression}. For estimates in this section 
+we assume 
+100\% quantum efficiency, so photons, electrons, and counts are 
+interchangeable; 
 $1\,\mathrm{ph} = 1\,\mathrm{e^{-1}} = 1\,\mathrm{ct}$.}.
 Thus a mean flux of $3\times10^4\,\mathrm{ct/px}$ reaches the cameras per 
 image. 
